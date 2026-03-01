@@ -1,0 +1,2176 @@
+====== 1. PASTE THIS INTO common/custom_game_rules/SAH_custom_rules.txt ======
+
+# --- AUTO-GENERATED SCENARIO RULES ---
+custom_game_rule = {
+	name = SAH_usa_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_usa_scenario_start_rule_normal }
+	option = { name = american_caesar text = SAH_SAH_usa_scenario_start_rule_american_caesar }
+	option = { name = fascist_menace text = SAH_SAH_usa_scenario_start_rule_fascist_menace }
+	option = { name = communist text = SAH_SAH_usa_scenario_start_rule_communist }
+	option = { name = giant_wakes text = SAH_SAH_usa_scenario_start_rule_giant_wakes }
+}
+
+custom_game_rule = {
+	name = SAH_ger_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_ger_scenario_start_rule_normal }
+	option = { name = danzig_or_war text = SAH_SAH_ger_scenario_start_rule_danzig_or_war }
+	option = { name = return_of_kaiser text = SAH_SAH_ger_scenario_start_rule_return_of_kaiser }
+	option = { name = communist_uprising text = SAH_SAH_ger_scenario_start_rule_communist_uprising }
+	option = { name = anti_soviet_pact text = SAH_SAH_ger_scenario_start_rule_anti_soviet_pact }
+}
+
+custom_game_rule = {
+	name = SAH_sov_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_sov_scenario_start_rule_normal }
+	option = { name = historical_stalin text = SAH_SAH_sov_scenario_start_rule_historical_stalin }
+	option = { name = permanent_revolution text = SAH_SAH_sov_scenario_start_rule_permanent_revolution }
+	option = { name = new_economic_policy text = SAH_SAH_sov_scenario_start_rule_new_economic_policy }
+	option = { name = tsarist_restored text = SAH_SAH_sov_scenario_start_rule_tsarist_restored }
+	option = { name = republic text = SAH_SAH_sov_scenario_start_rule_republic }
+	option = { name = fascist_destiny text = SAH_SAH_sov_scenario_start_rule_fascist_destiny }
+}
+
+custom_game_rule = {
+	name = SAH_eng_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_eng_scenario_start_rule_normal }
+	option = { name = churchill text = SAH_SAH_eng_scenario_start_rule_churchill }
+	option = { name = kings_party text = SAH_SAH_eng_scenario_start_rule_kings_party }
+	option = { name = mosley_fascist text = SAH_SAH_eng_scenario_start_rule_mosley_fascist }
+	option = { name = communist_britain text = SAH_SAH_eng_scenario_start_rule_communist_britain }
+}
+
+custom_game_rule = {
+	name = SAH_fra_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_fra_scenario_start_rule_normal }
+	option = { name = french_commune text = SAH_SAH_fra_scenario_start_rule_french_commune }
+	option = { name = legitimist text = SAH_SAH_fra_scenario_start_rule_legitimist }
+	option = { name = bonapartist text = SAH_SAH_fra_scenario_start_rule_bonapartist }
+	option = { name = latin_entente text = SAH_SAH_fra_scenario_start_rule_latin_entente }
+}
+
+custom_game_rule = {
+	name = SAH_jap_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_jap_scenario_start_rule_normal }
+	option = { name = strike_south text = SAH_SAH_jap_scenario_start_rule_strike_south }
+	option = { name = showa_restoration text = SAH_SAH_jap_scenario_start_rule_showa_restoration }
+	option = { name = democratic_diet text = SAH_SAH_jap_scenario_start_rule_democratic_diet }
+	option = { name = communist_japan text = SAH_SAH_jap_scenario_start_rule_communist_japan }
+}
+
+custom_game_rule = {
+	name = SAH_ita_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_ita_scenario_start_rule_normal }
+	option = { name = pact_of_steel text = SAH_SAH_ita_scenario_start_rule_pact_of_steel }
+	option = { name = latin_bloc text = SAH_SAH_ita_scenario_start_rule_latin_bloc }
+	option = { name = kingdom_of_god text = SAH_SAH_ita_scenario_start_rule_kingdom_of_god }
+	option = { name = republic_of_italy text = SAH_SAH_ita_scenario_start_rule_republic_of_italy }
+	option = { name = communist_italy text = SAH_SAH_ita_scenario_start_rule_communist_italy }
+}
+
+custom_game_rule = {
+	name = SAH_pol_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_pol_scenario_start_rule_normal }
+	option = { name = april_constitution text = SAH_SAH_pol_scenario_start_rule_april_constitution }
+	option = { name = falanga text = SAH_SAH_pol_scenario_start_rule_falanga }
+	option = { name = comintern text = SAH_SAH_pol_scenario_start_rule_comintern }
+	option = { name = regency_council text = SAH_SAH_pol_scenario_start_rule_regency_council }
+}
+
+custom_game_rule = {
+	name = SAH_can_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_can_scenario_start_rule_normal }
+	option = { name = zombies text = SAH_SAH_can_scenario_start_rule_zombies }
+	option = { name = fascist_canada text = SAH_SAH_can_scenario_start_rule_fascist_canada }
+	option = { name = communist_canada text = SAH_SAH_can_scenario_start_rule_communist_canada }
+}
+
+custom_game_rule = {
+	name = SAH_ast_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_ast_scenario_start_rule_normal }
+	option = { name = never_gallipoli_again text = SAH_SAH_ast_scenario_start_rule_never_gallipoli_again }
+	option = { name = australia_first text = SAH_SAH_ast_scenario_start_rule_australia_first }
+	option = { name = communist_australia text = SAH_SAH_ast_scenario_start_rule_communist_australia }
+}
+
+custom_game_rule = {
+	name = SAH_saf_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_saf_scenario_start_rule_normal }
+	option = { name = appeasement text = SAH_SAH_saf_scenario_start_rule_appeasement }
+	option = { name = ossewabrandwag text = SAH_SAH_saf_scenario_start_rule_ossewabrandwag }
+	option = { name = anti_colonialist text = SAH_SAH_saf_scenario_start_rule_anti_colonialist }
+}
+
+custom_game_rule = {
+	name = SAH_raj_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_raj_scenario_start_rule_normal }
+	option = { name = provincial_elections text = SAH_SAH_raj_scenario_start_rule_provincial_elections }
+	option = { name = quit_india text = SAH_SAH_raj_scenario_start_rule_quit_india }
+	option = { name = indian_national_army text = SAH_SAH_raj_scenario_start_rule_indian_national_army }
+}
+
+custom_game_rule = {
+	name = SAH_rom_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_rom_scenario_start_rule_normal }
+	option = { name = preserve_romania text = SAH_SAH_rom_scenario_start_rule_preserve_romania }
+	option = { name = align_axis text = SAH_SAH_rom_scenario_start_rule_align_axis }
+	option = { name = balkan_dominance text = SAH_SAH_rom_scenario_start_rule_balkan_dominance }
+}
+
+custom_game_rule = {
+	name = SAH_yug_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_yug_scenario_start_rule_normal }
+	option = { name = regency_council text = SAH_SAH_yug_scenario_start_rule_regency_council }
+	option = { name = tripartite_pact text = SAH_SAH_yug_scenario_start_rule_tripartite_pact }
+	option = { name = communist_partisans text = SAH_SAH_yug_scenario_start_rule_communist_partisans }
+	option = { name = western_focus text = SAH_SAH_yug_scenario_start_rule_western_focus }
+}
+
+custom_game_rule = {
+	name = SAH_gre_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_gre_scenario_start_rule_normal }
+	option = { name = metaxas text = SAH_SAH_gre_scenario_start_rule_metaxas }
+	option = { name = megali_idea text = SAH_SAH_gre_scenario_start_rule_megali_idea }
+	option = { name = venizelist text = SAH_SAH_gre_scenario_start_rule_venizelist }
+}
+
+custom_game_rule = {
+	name = SAH_tur_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_tur_scenario_start_rule_normal }
+	option = { name = peace_at_home text = SAH_SAH_tur_scenario_start_rule_peace_at_home }
+	option = { name = multi_party text = SAH_SAH_tur_scenario_start_rule_multi_party }
+}
+
+custom_game_rule = {
+	name = SAH_mex_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_mex_scenario_start_rule_normal }
+	option = { name = prm text = SAH_SAH_mex_scenario_start_rule_prm }
+	option = { name = gold_shirts text = SAH_SAH_mex_scenario_start_rule_gold_shirts }
+	option = { name = hispanic_alliance text = SAH_SAH_mex_scenario_start_rule_hispanic_alliance }
+}
+
+custom_game_rule = {
+	name = SAH_bra_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_bra_scenario_start_rule_normal }
+	option = { name = estado_novo text = SAH_SAH_bra_scenario_start_rule_estado_novo }
+	option = { name = integralist text = SAH_SAH_bra_scenario_start_rule_integralist }
+	option = { name = aln_revolt text = SAH_SAH_bra_scenario_start_rule_aln_revolt }
+}
+
+custom_game_rule = {
+	name = SAH_spr_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_spr_scenario_start_rule_normal }
+	option = { name = popular_front text = SAH_SAH_spr_scenario_start_rule_popular_front }
+	option = { name = falange text = SAH_SAH_spr_scenario_start_rule_falange }
+	option = { name = anti_fascist_unity text = SAH_SAH_spr_scenario_start_rule_anti_fascist_unity }
+}
+
+custom_game_rule = {
+	name = SAH_hol_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_hol_scenario_start_rule_normal }
+	option = { name = gateway_to_europe text = SAH_SAH_hol_scenario_start_rule_gateway_to_europe }
+	option = { name = anton_mussert text = SAH_SAH_hol_scenario_start_rule_anton_mussert }
+}
+
+custom_game_rule = {
+	name = SAH_swe_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_swe_scenario_start_rule_normal }
+	option = { name = per_albin_bus text = SAH_SAH_swe_scenario_start_rule_per_albin_bus }
+	option = { name = svea_rike text = SAH_SAH_swe_scenario_start_rule_svea_rike }
+	option = { name = socialist_republic text = SAH_SAH_swe_scenario_start_rule_socialist_republic }
+}
+
+custom_game_rule = {
+	name = SAH_arg_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_arg_scenario_start_rule_normal }
+	option = { name = infamous_decade text = SAH_SAH_arg_scenario_start_rule_infamous_decade }
+	option = { name = radical_civic text = SAH_SAH_arg_scenario_start_rule_radical_civic }
+	option = { name = peronist text = SAH_SAH_arg_scenario_start_rule_peronist }
+}
+
+custom_game_rule = {
+	name = SAH_aus_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_aus_scenario_start_rule_normal }
+	option = { name = fatherland_front text = SAH_SAH_aus_scenario_start_rule_fatherland_front }
+	option = { name = austrofascism text = SAH_SAH_aus_scenario_start_rule_austrofascism }
+	option = { name = social_democrats text = SAH_SAH_aus_scenario_start_rule_social_democrats }
+}
+
+custom_game_rule = {
+	name = SAH_bel_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_bel_scenario_start_rule_normal }
+	option = { name = catholic_bloc text = SAH_SAH_bel_scenario_start_rule_catholic_bloc }
+	option = { name = liberal_party text = SAH_SAH_bel_scenario_start_rule_liberal_party }
+	option = { name = rexist_party text = SAH_SAH_bel_scenario_start_rule_rexist_party }
+}
+
+custom_game_rule = {
+	name = SAH_bul_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_bul_scenario_start_rule_normal }
+	option = { name = tsars_dictatorship text = SAH_SAH_bul_scenario_start_rule_tsars_dictatorship }
+	option = { name = zveno text = SAH_SAH_bul_scenario_start_rule_zveno }
+	option = { name = fatherland_front text = SAH_SAH_bul_scenario_start_rule_fatherland_front }
+}
+
+custom_game_rule = {
+	name = SAH_chi_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_chi_scenario_start_rule_normal }
+	option = { name = historical text = SAH_SAH_chi_scenario_start_rule_historical }
+	option = { name = welfare text = SAH_SAH_chi_scenario_start_rule_welfare }
+}
+
+custom_game_rule = {
+	name = SAH_chl_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_chl_scenario_start_rule_normal }
+	option = { name = popular_front text = SAH_SAH_chl_scenario_start_rule_popular_front }
+	option = { name = nacistas text = SAH_SAH_chl_scenario_start_rule_nacistas }
+}
+
+custom_game_rule = {
+	name = SAH_cog_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_cog_scenario_start_rule_normal }
+	option = { name = force_publique text = SAH_SAH_cog_scenario_start_rule_force_publique }
+	option = { name = evolues text = SAH_SAH_cog_scenario_start_rule_evolues }
+}
+
+custom_game_rule = {
+	name = SAH_cze_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_cze_scenario_start_rule_normal }
+	option = { name = political_direction text = SAH_SAH_cze_scenario_start_rule_political_direction }
+	option = { name = fascist_direction text = SAH_SAH_cze_scenario_start_rule_fascist_direction }
+	option = { name = communist_direction text = SAH_SAH_cze_scenario_start_rule_communist_direction }
+}
+
+custom_game_rule = {
+	name = SAH_den_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_den_scenario_start_rule_normal }
+	option = { name = social_democrats text = SAH_SAH_den_scenario_start_rule_social_democrats }
+	option = { name = conservative text = SAH_SAH_den_scenario_start_rule_conservative }
+}
+
+custom_game_rule = {
+	name = SAH_egy_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_egy_scenario_start_rule_normal }
+	option = { name = anglo_treaty text = SAH_SAH_egy_scenario_start_rule_anglo_treaty }
+	option = { name = wafd_party text = SAH_SAH_egy_scenario_start_rule_wafd_party }
+}
+
+custom_game_rule = {
+	name = SAH_est_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_est_scenario_start_rule_normal }
+	option = { name = era_of_silence text = SAH_SAH_est_scenario_start_rule_era_of_silence }
+	option = { name = vaps_movement text = SAH_SAH_est_scenario_start_rule_vaps_movement }
+}
+
+custom_game_rule = {
+	name = SAH_eth_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_eth_scenario_start_rule_normal }
+	option = { name = emperor text = SAH_SAH_eth_scenario_start_rule_emperor }
+}
+
+custom_game_rule = {
+	name = SAH_fin_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_fin_scenario_start_rule_normal }
+	option = { name = finnish_model text = SAH_SAH_fin_scenario_start_rule_finnish_model }
+	option = { name = lapua_movement text = SAH_SAH_fin_scenario_start_rule_lapua_movement }
+	option = { name = red_guards text = SAH_SAH_fin_scenario_start_rule_red_guards }
+}
+
+custom_game_rule = {
+	name = SAH_hun_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_hun_scenario_start_rule_normal }
+	option = { name = renounce_trianon text = SAH_SAH_hun_scenario_start_rule_renounce_trianon }
+	option = { name = king text = SAH_SAH_hun_scenario_start_rule_king }
+	option = { name = communist text = SAH_SAH_hun_scenario_start_rule_communist }
+	option = { name = habsburg text = SAH_SAH_hun_scenario_start_rule_habsburg }
+}
+
+custom_game_rule = {
+	name = SAH_irq_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_irq_scenario_start_rule_normal }
+	option = { name = hashemite text = SAH_SAH_irq_scenario_start_rule_hashemite }
+	option = { name = golden_square text = SAH_SAH_irq_scenario_start_rule_golden_square }
+}
+
+custom_game_rule = {
+	name = SAH_lat_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_lat_scenario_start_rule_normal }
+	option = { name = ulmainis text = SAH_SAH_lat_scenario_start_rule_ulmainis }
+	option = { name = perkonkrusts text = SAH_SAH_lat_scenario_start_rule_perkonkrusts }
+}
+
+custom_game_rule = {
+	name = SAH_lit_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_lit_scenario_start_rule_normal }
+	option = { name = smetona text = SAH_SAH_lit_scenario_start_rule_smetona }
+	option = { name = iron_wolf text = SAH_SAH_lit_scenario_start_rule_iron_wolf }
+}
+
+custom_game_rule = {
+	name = SAH_man_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_man_scenario_start_rule_normal }
+	option = { name = obedience text = SAH_SAH_man_scenario_start_rule_obedience }
+	option = { name = assertiveness text = SAH_SAH_man_scenario_start_rule_assertiveness }
+	option = { name = democratic text = SAH_SAH_man_scenario_start_rule_democratic }
+	option = { name = communist text = SAH_SAH_man_scenario_start_rule_communist }
+}
+
+custom_game_rule = {
+	name = SAH_nor_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_nor_scenario_start_rule_normal }
+	option = { name = nygaardsvold text = SAH_SAH_nor_scenario_start_rule_nygaardsvold }
+	option = { name = quisling text = SAH_SAH_nor_scenario_start_rule_quisling }
+	option = { name = communist text = SAH_SAH_nor_scenario_start_rule_communist }
+}
+
+custom_game_rule = {
+	name = SAH_nzl_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_nzl_scenario_start_rule_normal }
+	option = { name = labour text = SAH_SAH_nzl_scenario_start_rule_labour }
+}
+
+custom_game_rule = {
+	name = SAH_par_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_par_scenario_start_rule_normal }
+	option = { name = febrerista text = SAH_SAH_par_scenario_start_rule_febrerista }
+}
+
+custom_game_rule = {
+	name = SAH_per_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_per_scenario_start_rule_normal }
+	option = { name = pahlavi text = SAH_SAH_per_scenario_start_rule_pahlavi }
+	option = { name = tudeh text = SAH_SAH_per_scenario_start_rule_tudeh }
+}
+
+custom_game_rule = {
+	name = SAH_phi_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_phi_scenario_start_rule_normal }
+	option = { name = commonwealth text = SAH_SAH_phi_scenario_start_rule_commonwealth }
+	option = { name = ganap text = SAH_SAH_phi_scenario_start_rule_ganap }
+	option = { name = hukbalahap text = SAH_SAH_phi_scenario_start_rule_hukbalahap }
+}
+
+custom_game_rule = {
+	name = SAH_por_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_por_scenario_start_rule_normal }
+	option = { name = estado_novo text = SAH_SAH_por_scenario_start_rule_estado_novo }
+	option = { name = popular_front text = SAH_SAH_por_scenario_start_rule_popular_front }
+}
+
+custom_game_rule = {
+	name = SAH_prc_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_prc_scenario_start_rule_normal }
+	option = { name = maoism text = SAH_SAH_prc_scenario_start_rule_maoism }
+	option = { name = orthodox_marxism text = SAH_SAH_prc_scenario_start_rule_orthodox_marxism }
+	option = { name = social_democracy text = SAH_SAH_prc_scenario_start_rule_social_democracy }
+}
+
+custom_game_rule = {
+	name = SAH_swi_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_swi_scenario_start_rule_normal }
+	option = { name = federal_council text = SAH_SAH_swi_scenario_start_rule_federal_council }
+}
+
+custom_game_rule = {
+	name = SAH_uru_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_uru_scenario_start_rule_normal }
+	option = { name = colorado text = SAH_SAH_uru_scenario_start_rule_colorado }
+}
+
+custom_game_rule = {
+	name = SAH_wrl_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_wrl_scenario_start_rule_normal }
+	option = { name = nationalists text = SAH_SAH_wrl_scenario_start_rule_nationalists }
+	option = { name = communists text = SAH_SAH_wrl_scenario_start_rule_communists }
+}
+
+custom_game_rule = {
+	name = SAH_afg_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_afg_scenario_start_rule_normal }
+	option = { name = barakzai text = SAH_SAH_afg_scenario_start_rule_barakzai }
+}
+
+
+
+====== 2. PASTE THIS INTO events/SAH_init_events.txt (Inside immediate = {}) ======
+		# --- AUTO-GENERATED SCENARIO STARTS ---
+		USA = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar } }
+				# Rewards for USA_reestablish_the_gold_standard
+				add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rewards for USA_america_first_committee
+				add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rewards for USA_neutrality_to_the_end
+				add_ideas = USA_strict_neutrality
+				# Rewards for USA_the_american_caesar
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace } }
+				# Rewards for USA_america_first
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for USA_ally_with_the_silver_shirts
+				add_popularity = { ideology = fascism popularity = 0.15 }
+				# Rewards for USA_corporate_statism
+				random_owned_controlled_state = {
+                limit = { free_building_slots = { building = industrial_complex size > 0 } }
+                add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
+            }
+				# Rewards for USA_voter_registration_act
+				add_popularity = { ideology = fascism popularity = 0.2 }
+				# Rewards for USA_paramilitary_training
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for USA_the_national_defense_state
+				set_rule = { can_declare_war_without_wargoal_when_in_war = yes }
+				# Rewards for USA_the_fascist_menace
+				set_politics = { ruling_party = fascism elections_allowed = no }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist } }
+				# Rewards for USA_suspend_the_persecution
+				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for USA_unholy_alliance
+				add_popularity = { ideology = communism popularity = 0.15 }
+				# Rewards for USA_democratic_socialism
+				add_popularity = { ideology = communism popularity = 0.2 }
+				# Rewards for USA_the_peoples_republic
+				set_politics = { ruling_party = communism elections_allowed = no }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes } }
+				# Rewards for USA_continue_the_new_deal
+				add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for USA_neutrality_act
+				add_ideas = neutrality_idea
+				# Rewards for USA_arsenal_of_democracy
+				add_ideas = USA_arsenal_of_democracy
+				# Rewards for USA_war_department_expansion
+				random_owned_controlled_state = {
+                limit = { free_building_slots = { building = arms_factory size > 0 } }
+                add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+            }
+				# Rewards for USA_selective_service_act
+				add_ideas = USA_selective_service_idea
+				# Rewards for USA_wpa
+				random_owned_controlled_state = {
+                limit = { free_building_slots = { building = industrial_complex size > 0 } }
+                add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+            }
+				# Rewards for USA_war_production_board
+				add_ideas = USA_war_production_board
+				# Rewards for USA_the_giant_wakes
+				remove_ideas = USA_great_depression
+			}
+		}
+		GER = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war } }
+				# Rewards for GER_oppose_hitler
+				add_popularity = { ideology = neutrality popularity = 0.2 }
+				# Rewards for GER_communist_uprising
+				add_popularity = { ideology = communism popularity = 0.3 }
+				# Rewards for GER_anschluss
+				create_wargoal = { type = annex_everything target = AUS }
+				# Rewards for GER_demand_sudetenland
+				create_wargoal = { type = annex_everything target = CZE }
+				# Rewards for GER_befriend_poland
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for GER_danzig_or_war
+				create_wargoal = { type = annex_everything target = POL }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser } }
+				# Rewards for GER_communist_uprising
+				add_popularity = { ideology = communism popularity = 0.3 }
+				# Rewards for GER_oppose_hitler
+				add_popularity = { ideology = neutrality popularity = 0.2 }
+				# Rewards for GER_reestablish_free_elections
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Rewards for GER_revive_the_kaiserreich
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				# Rewards for GER_return_of_the_kaiser
+				add_ideas = GER_kaiser_returns
+                        add_stability = 0.1
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising } }
+				# Rewards for GER_oppose_hitler
+				add_popularity = { ideology = neutrality popularity = 0.2 }
+				# Rewards for GER_communist_uprising
+				add_popularity = { ideology = communism popularity = 0.3 }
+				# Rewards for GER_the_workers_republic
+				set_politics = { ruling_party = communism elections_allowed = no }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact } }
+				# Rewards for GER_communist_uprising
+				add_popularity = { ideology = communism popularity = 0.3 }
+				# Rewards for GER_oppose_hitler
+				add_popularity = { ideology = neutrality popularity = 0.2 }
+				# Rewards for GER_revive_the_kaiserreich
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				# Rewards for GER_reestablish_free_elections
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Rewards for GER_support_democracy_in_europe
+				add_popularity = { ideology = democratic popularity = 0.15 }
+			}
+		}
+		SOV = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin } }
+				# Rewards for SOV_beaten_but_not_defeated
+				add_stability = -0.2
+                        add_popularity = { ideology = neutrality popularity = 0.2 }
+                        add_popularity = { ideology = fascism popularity = 0.1 }
+                        add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for SOV_the_center
+				add_ideas = SOV_stalin_cult_of_personality
+				# Rewards for SOV_the_great_purge
+				add_stability = -0.1
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution } }
+				# Rewards for SOV_the_center
+				add_ideas = SOV_stalin_cult_of_personality
+				# Rewards for SOV_beaten_but_not_defeated
+				add_stability = -0.2
+                        add_popularity = { ideology = neutrality popularity = 0.2 }
+                        add_popularity = { ideology = fascism popularity = 0.1 }
+                        add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for SOV_permanent_revolution
+				add_ideas = SOV_permanent_revolution_idea
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy } }
+				# Rewards for SOV_the_center
+				add_ideas = SOV_stalin_cult_of_personality
+				# Rewards for SOV_beaten_but_not_defeated
+				add_stability = -0.2
+                        add_popularity = { ideology = neutrality popularity = 0.2 }
+                        add_popularity = { ideology = fascism popularity = 0.1 }
+                        add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for SOV_the_new_economic_policy
+				add_ideas = SOV_nep_idea
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored } }
+				# Rewards for SOV_the_center
+				add_ideas = SOV_stalin_cult_of_personality
+				# Rewards for SOV_beaten_but_not_defeated
+				add_stability = -0.2
+                        add_popularity = { ideology = neutrality popularity = 0.2 }
+                        add_popularity = { ideology = fascism popularity = 0.1 }
+                        add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for SOV_a_new_russia
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Rewards for SOV_the_fascist_destiny
+				set_politics = { ruling_party = fascism elections_allowed = no }
+				# Rewards for SOV_the_romanovs_restored
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic } }
+				# Rewards for SOV_the_center
+				add_ideas = SOV_stalin_cult_of_personality
+				# Rewards for SOV_beaten_but_not_defeated
+				add_stability = -0.2
+                        add_popularity = { ideology = neutrality popularity = 0.2 }
+                        add_popularity = { ideology = fascism popularity = 0.1 }
+                        add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for SOV_the_fascist_destiny
+				set_politics = { ruling_party = fascism elections_allowed = no }
+				# Rewards for SOV_the_romanovs_restored
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				# Rewards for SOV_a_new_russia
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Rewards for SOV_the_duma
+				add_stability = 0.15
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny } }
+				# Rewards for SOV_the_center
+				add_ideas = SOV_stalin_cult_of_personality
+				# Rewards for SOV_beaten_but_not_defeated
+				add_stability = -0.2
+                        add_popularity = { ideology = neutrality popularity = 0.2 }
+                        add_popularity = { ideology = fascism popularity = 0.1 }
+                        add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for SOV_a_new_russia
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Rewards for SOV_the_romanovs_restored
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				# Rewards for SOV_the_fascist_destiny
+				set_politics = { ruling_party = fascism elections_allowed = no }
+				# Rewards for SOV_the_russian_fascist_party
+				add_ideas = SOV_russian_fascism
+                        add_stability = 0.1
+			}
+		}
+		ENG = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill } }
+				# Rewards for ENG_concessions_to_the_trade_unions
+				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for ENG_a_change_in_course
+				add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rewards for ENG_organize_the_blackshirts
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for ENG_steady_as_she_goes
+				add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for ENG_rearmament
+				add_ideas = ENG_rearmament_idea
+				# Rewards for ENG_early_mobilization
+				add_ideas = early_mobilization
+				# Rewards for ENG_the_shadow_scheme
+				random_owned_controlled_state = {
+                limit = { free_building_slots = { building = industrial_complex size > 0 } }
+                add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+            }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party } }
+				# Rewards for ENG_concessions_to_the_trade_unions
+				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for ENG_steady_as_she_goes
+				add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for ENG_organize_the_blackshirts
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for ENG_a_change_in_course
+				add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rewards for ENG_the_kings_party
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist } }
+				# Rewards for ENG_concessions_to_the_trade_unions
+				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for ENG_steady_as_she_goes
+				add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for ENG_a_change_in_course
+				add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rewards for ENG_organize_the_blackshirts
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for ENG_march_on_london
+				set_politics = { ruling_party = fascism elections_allowed = no }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain } }
+				# Rewards for ENG_steady_as_she_goes
+				add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for ENG_organize_the_blackshirts
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for ENG_a_change_in_course
+				add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rewards for ENG_concessions_to_the_trade_unions
+				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for ENG_the_communist_alternative
+				set_politics = { ruling_party = communism elections_allowed = no }
+			}
+		}
+		FRA = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune } }
+				# Rewards for FRA_utilize_the_leagues
+				add_popularity = { ideology = fascism popularity = 0.1 }
+                        add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rewards for FRA_form_the_popular_front
+				add_popularity = { ideology = democratic popularity = 0.1 }
+                        add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for FRA_national_bloc
+				add_popularity = { ideology = democratic popularity = 0.2 }
+				# Rewards for FRA_invite_communist_ministers
+				add_popularity = { ideology = communism popularity = 0.2 }
+                        add_stability = -0.05
+				# Rewards for FRA_the_french_commune
+				set_politics = { ruling_party = communism elections_allowed = no }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist } }
+				# Rewards for FRA_form_the_popular_front
+				add_popularity = { ideology = democratic popularity = 0.1 }
+                        add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for FRA_utilize_the_leagues
+				add_popularity = { ideology = fascism popularity = 0.1 }
+                        add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rewards for FRA_laissez_faire
+				set_politics = { ruling_party = fascism elections_allowed = no }
+				# Rewards for FRA_bonapartist_restoration
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				# Rewards for FRA_orleanist_restoration
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+                        add_stability = 0.1
+				# Rewards for FRA_legitimist_restoration
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist } }
+				# Rewards for FRA_form_the_popular_front
+				add_popularity = { ideology = democratic popularity = 0.1 }
+                        add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for FRA_utilize_the_leagues
+				add_popularity = { ideology = fascism popularity = 0.1 }
+                        add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rewards for FRA_laissez_faire
+				set_politics = { ruling_party = fascism elections_allowed = no }
+				# Rewards for FRA_legitimist_restoration
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				# Rewards for FRA_orleanist_restoration
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+                        add_stability = 0.1
+				# Rewards for FRA_bonapartist_restoration
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente } }
+				# Rewards for FRA_form_the_popular_front
+				add_popularity = { ideology = democratic popularity = 0.1 }
+                        add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for FRA_utilize_the_leagues
+				add_popularity = { ideology = fascism popularity = 0.1 }
+                        add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rewards for FRA_laissez_faire
+				set_politics = { ruling_party = fascism elections_allowed = no }
+			}
+		}
+		JAP = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south } }
+				# Rewards for JAP_support_the_kodoha_faction
+				add_popularity = { ideology = neutrality popularity = 0.15 }
+				# Rewards for JAP_the_unthinkable_option
+				add_popularity = { ideology = democratic popularity = 0.15 }
+                        add_popularity = { ideology = communism popularity = 0.15 }
+				# Rewards for JAP_purge_the_kodoha_faction
+				add_popularity = { ideology = fascism popularity = 0.15 }
+				# Rewards for JAP_nationalize_state_shinto
+				add_ideas = JAP_state_shinto_idea
+				# Rewards for JAP_marco_polo_bridge_incident
+				create_wargoal = { type = annex_everything target = CHI }
+				# Rewards for JAP_strike_south_doctrine
+				create_wargoal = { type = annex_everything target = HOL }
+                        create_wargoal = { type = annex_everything target = ENG }
+                        create_wargoal = { type = annex_everything target = USA }
+                        add_ideas = JAP_strike_south
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration } }
+				# Rewards for JAP_purge_the_kodoha_faction
+				add_popularity = { ideology = fascism popularity = 0.15 }
+				# Rewards for JAP_the_unthinkable_option
+				add_popularity = { ideology = democratic popularity = 0.15 }
+                        add_popularity = { ideology = communism popularity = 0.15 }
+				# Rewards for JAP_support_the_kodoha_faction
+				add_popularity = { ideology = neutrality popularity = 0.15 }
+				# Rewards for JAP_showa_restoration
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+                        add_ideas = JAP_showa_restoration_idea
+                        add_stability = 0.1
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet } }
+				# Rewards for JAP_purge_the_kodoha_faction
+				add_popularity = { ideology = fascism popularity = 0.15 }
+				# Rewards for JAP_support_the_kodoha_faction
+				add_popularity = { ideology = neutrality popularity = 0.15 }
+				# Rewards for JAP_the_unthinkable_option
+				add_popularity = { ideology = democratic popularity = 0.15 }
+                        add_popularity = { ideology = communism popularity = 0.15 }
+				# Rewards for JAP_the_japanese_communist_party
+				set_politics = { ruling_party = communism elections_allowed = no }
+                        add_stability = -0.1
+				# Rewards for JAP_restore_the_diet
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan } }
+				# Rewards for JAP_purge_the_kodoha_faction
+				add_popularity = { ideology = fascism popularity = 0.15 }
+				# Rewards for JAP_support_the_kodoha_faction
+				add_popularity = { ideology = neutrality popularity = 0.15 }
+				# Rewards for JAP_the_unthinkable_option
+				add_popularity = { ideology = democratic popularity = 0.15 }
+                        add_popularity = { ideology = communism popularity = 0.15 }
+				# Rewards for JAP_restore_the_diet
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Rewards for JAP_the_japanese_communist_party
+				set_politics = { ruling_party = communism elections_allowed = no }
+                        add_stability = -0.1
+			}
+		}
+		ITA = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_ita_scenario_start_rule option = pact_of_steel } }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_ita_scenario_start_rule option = latin_bloc } }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_ita_scenario_start_rule option = kingdom_of_god } }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_ita_scenario_start_rule option = republic_of_italy } }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_ita_scenario_start_rule option = communist_italy } }
+			}
+		}
+		POL = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution } }
+				# Rewards for POL_the_morges_front
+				set_politics = { ruling_party = democratic }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for POL_the_polish_communist_party
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for POL_the_regency_council
+				add_stability = -0.1
+				# Rewards for POL_the_falanga
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for POL_the_castle
+				add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rewards for POL_april_constitution
+				add_stability = 0.1
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_pol_scenario_start_rule option = falanga } }
+				# Rewards for POL_the_morges_front
+				set_politics = { ruling_party = democratic }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for POL_the_polish_communist_party
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for POL_the_regency_council
+				add_stability = -0.1
+				# Rewards for POL_the_castle
+				add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rewards for POL_the_falanga
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern } }
+				# Rewards for POL_the_morges_front
+				set_politics = { ruling_party = democratic }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for POL_the_regency_council
+				add_stability = -0.1
+				# Rewards for POL_the_castle
+				add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rewards for POL_the_falanga
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for POL_the_polish_communist_party
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council } }
+				# Rewards for POL_the_morges_front
+				set_politics = { ruling_party = democratic }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for POL_the_polish_communist_party
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for POL_the_castle
+				add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rewards for POL_the_falanga
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for POL_the_regency_council
+				add_stability = -0.1
+				# Rewards for POL_invite_the_king
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+			}
+		}
+		CAN = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies } }
+				# Rewards for CAN_swastika_clubs
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for CAN_patriation
+				add_autonomy_ratio = { value = 0.5 }
+				# Rewards for CAN_bring_the_unions_to_the_table
+				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for CAN_send_in_the_zombies
+				add_manpower = 50000
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada } }
+				# Rewards for CAN_bring_the_unions_to_the_table
+				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for CAN_patriation
+				add_autonomy_ratio = { value = 0.5 }
+				# Rewards for CAN_swastika_clubs
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for CAN_national_unity_party
+				set_politics = { ruling_party = fascism }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada } }
+				# Rewards for CAN_swastika_clubs
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for CAN_patriation
+				add_autonomy_ratio = { value = 0.5 }
+				# Rewards for CAN_bring_the_unions_to_the_table
+				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for CAN_communist_revolution
+				set_politics = { ruling_party = communism }
+			}
+		}
+		AST = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_ast_scenario_start_rule option = never_gallipoli_again } }
+				# Rewards for AST_support_the_centre_party
+				add_autonomy_ratio = { value = 0.5 }
+				# Rewards for AST_the_communist_party_of_australia
+				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for AST_empower_the_workers
+				add_popularity = { ideology = fascism popularity = 0.1 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_ast_scenario_start_rule option = australia_first } }
+				# Rewards for AST_support_the_centre_party
+				add_autonomy_ratio = { value = 0.5 }
+				# Rewards for AST_the_communist_party_of_australia
+				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for AST_empower_the_workers
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for AST_the_australia_first_movement
+				set_politics = { ruling_party = fascism }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_ast_scenario_start_rule option = communist_australia } }
+				# Rewards for AST_support_the_centre_party
+				add_autonomy_ratio = { value = 0.5 }
+				# Rewards for AST_empower_the_workers
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for AST_the_communist_party_of_australia
+				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for AST_workers_revolution
+				set_politics = { ruling_party = communism }
+			}
+		}
+		SAF = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_saf_scenario_start_rule option = appeasement } }
+				# Rewards for SAF_abandon_westminster
+				add_autonomy_ratio = { value = 0.5 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_saf_scenario_start_rule option = ossewabrandwag } }
+				# Rewards for SAF_abandon_westminster
+				add_autonomy_ratio = { value = 0.5 }
+				# Rewards for SAF_support_the_ossewabrandwag
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.2 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_saf_scenario_start_rule option = anti_colonialist } }
+				# Rewards for SAF_abandon_westminster
+				add_autonomy_ratio = { value = 0.5 }
+				# Rewards for SAF_anti_colonialist_crusade
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.2 }
+			}
+		}
+		RAJ = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_raj_scenario_start_rule option = provincial_elections } }
+				# Rewards for RAJ_indian_national_congress
+				add_autonomy_ratio = { value = 0.5 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_raj_scenario_start_rule option = quit_india } }
+				# Rewards for RAJ_indian_national_congress
+				add_autonomy_ratio = { value = 0.5 }
+				# Rewards for RAJ_quit_india_movement
+				add_stability = -0.05
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_raj_scenario_start_rule option = indian_national_army } }
+				# Rewards for RAJ_indian_national_congress
+				add_autonomy_ratio = { value = 0.5 }
+				# Rewards for RAJ_quit_india_movement
+				add_stability = -0.05
+				# Rewards for RAJ_indian_national_army
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.2 }
+			}
+		}
+		ROM = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_rom_scenario_start_rule option = preserve_romania } }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_rom_scenario_start_rule option = align_axis } }
+				# Rewards for ROM_the_royal_dictatorship
+				set_politics = { ruling_party = neutrality }
+				# Rewards for ROM_align_axis
+				add_popularity = { ideology = fascism popularity = 0.1 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_rom_scenario_start_rule option = balkan_dominance } }
+				# Rewards for ROM_the_royal_dictatorship
+				set_politics = { ruling_party = neutrality }
+				# Rewards for ROM_the_balkan_dominance
+				create_faction = "The Balkan Entente"
+			}
+		}
+		YUG = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_yug_scenario_start_rule option = regency_council } }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_yug_scenario_start_rule option = tripartite_pact } }
+				# Rewards for YUG_sign_the_tripartite_pact
+				set_politics = { ruling_party = fascism }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_yug_scenario_start_rule option = communist_partisans } }
+				# Rewards for YUG_the_communist_partisans
+				set_politics = { ruling_party = communism }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_yug_scenario_start_rule option = western_focus } }
+				# Rewards for YUG_western_focus
+				random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 } } add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			}
+		}
+		GRE = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_gre_scenario_start_rule option = metaxas } }
+				# Rewards for GRE_the_venizelist_movement
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for GRE_the_metaxas_dictatorship
+				set_politics = { ruling_party = neutrality }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea } }
+				# Rewards for GRE_the_venizelist_movement
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for GRE_the_metaxas_dictatorship
+				set_politics = { ruling_party = neutrality }
+				# Rewards for GRE_the_4th_of_august_regime
+				add_stability = 0.1
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_gre_scenario_start_rule option = venizelist } }
+				# Rewards for GRE_the_metaxas_dictatorship
+				set_politics = { ruling_party = neutrality }
+				# Rewards for GRE_the_venizelist_movement
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+			}
+		}
+		TUR = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_tur_scenario_start_rule option = peace_at_home } }
+				# Rewards for TUR_multi_party_system
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Rewards for TUR_peace_at_home
+				set_politics = { ruling_party = neutrality }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_tur_scenario_start_rule option = multi_party } }
+				# Rewards for TUR_peace_at_home
+				set_politics = { ruling_party = neutrality }
+				# Rewards for TUR_multi_party_system
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+			}
+		}
+		MEX = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_mex_scenario_start_rule option = prm } }
+				# Rewards for MEX_support_the_synarchists
+				add_popularity = { ideology = fascism popularity = 0.1 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_mex_scenario_start_rule option = gold_shirts } }
+				# Rewards for MEX_support_the_synarchists
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for MEX_the_gold_shirts
+				set_politics = { ruling_party = fascism }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance } }
+				# Rewards for MEX_support_the_synarchists
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for MEX_the_gold_shirts
+				set_politics = { ruling_party = fascism }
+				# Rewards for MEX_hispanic_alliance
+				create_faction = "The Hispanic Alliance"
+			}
+		}
+		BRA = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo } }
+				# Rewards for BRA_integralist_uprising
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for BRA_the_aln_revolt
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for BRA_the_1937_elections
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist } }
+				# Rewards for BRA_the_aln_revolt
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for BRA_the_1937_elections
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Rewards for BRA_integralist_uprising
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt } }
+				# Rewards for BRA_integralist_uprising
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for BRA_the_1937_elections
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Rewards for BRA_the_aln_revolt
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+			}
+		}
+		SPR = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_spr_scenario_start_rule option = popular_front } }
+				# Rewards for SPR_the_nationalist_uprising
+				set_politics = { ruling_party = fascism }
+				# Rewards for SPR_the_popular_front
+				set_politics = { ruling_party = communism }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_spr_scenario_start_rule option = falange } }
+				# Rewards for SPR_the_popular_front
+				set_politics = { ruling_party = communism }
+				# Rewards for SPR_the_nationalist_uprising
+				set_politics = { ruling_party = fascism }
+				# Rewards for SPR_the_falange
+				add_stability = 0.1
+            add_popularity = { ideology = fascism popularity = 0.1 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_spr_scenario_start_rule option = anti_fascist_unity } }
+				# Rewards for SPR_the_nationalist_uprising
+				set_politics = { ruling_party = fascism }
+				# Rewards for SPR_the_popular_front
+				set_politics = { ruling_party = communism }
+				# Rewards for SPR_anti_fascist_unity
+				add_popularity = { ideology = communism popularity = 0.1 }
+			}
+		}
+		HOL = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_hol_scenario_start_rule option = gateway_to_europe } }
+				# Rewards for HOL_the_nsb
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for HOL_form_the_new_government
+				set_politics = { ruling_party = democratic }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_hol_scenario_start_rule option = anton_mussert } }
+				# Rewards for HOL_form_the_new_government
+				set_politics = { ruling_party = democratic }
+				# Rewards for HOL_the_nsb
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for HOL_anton_mussert
+				set_politics = { ruling_party = fascism }
+			}
+		}
+		SWE = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus } }
+				# Rewards for SWE_sveriges_kommunistiska_parti
+				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for SWE_the_right_wing_coalition
+				add_popularity = { ideology = fascism popularity = 0.1 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike } }
+				# Rewards for SWE_sveriges_kommunistiska_parti
+				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for SWE_the_right_wing_coalition
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for SWE_the_svea_rike
+				set_politics = { ruling_party = fascism }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic } }
+				# Rewards for SWE_the_right_wing_coalition
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for SWE_sveriges_kommunistiska_parti
+				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for SWE_socialist_republic_of_sweden
+				set_politics = { ruling_party = communism }
+			}
+		}
+		ARG = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_arg_scenario_start_rule option = infamous_decade } }
+				# Rewards for ARG_the_concordancia_government
+				set_politics = { ruling_party = neutrality }
+            add_stability = -0.05
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_arg_scenario_start_rule option = radical_civic } }
+				# Rewards for ARG_the_radical_civic_union
+				add_popularity = { ideology = democratic popularity = 0.1 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_arg_scenario_start_rule option = peronist } }
+				# Rewards for ARG_the_peronist_movement
+				set_politics = { ruling_party = fascism }
+			}
+		}
+		AUS = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_aus_scenario_start_rule option = fatherland_front } }
+				# Rewards for AUS_the_social_democrats
+				add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for AUS_the_fatherland_front
+				set_politics = { ruling_party = neutrality }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_aus_scenario_start_rule option = austrofascism } }
+				# Rewards for AUS_the_social_democrats
+				add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for AUS_the_fatherland_front
+				set_politics = { ruling_party = neutrality }
+				# Rewards for AUS_austrofascism
+				set_politics = { ruling_party = fascism }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_aus_scenario_start_rule option = social_democrats } }
+				# Rewards for AUS_the_fatherland_front
+				set_politics = { ruling_party = neutrality }
+				# Rewards for AUS_the_social_democrats
+				add_popularity = { ideology = democratic popularity = 0.1 }
+			}
+		}
+		BEL = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_bel_scenario_start_rule option = catholic_bloc } }
+				# Rewards for BEL_the_rexist_party
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for BEL_the_catholic_bloc
+				set_politics = { ruling_party = democratic }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_bel_scenario_start_rule option = liberal_party } }
+				# Rewards for BEL_the_rexist_party
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for BEL_the_catholic_bloc
+				set_politics = { ruling_party = democratic }
+				# Rewards for BEL_the_liberal_party
+				add_stability = 0.1
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_bel_scenario_start_rule option = rexist_party } }
+				# Rewards for BEL_the_catholic_bloc
+				set_politics = { ruling_party = democratic }
+				# Rewards for BEL_the_rexist_party
+				add_popularity = { ideology = fascism popularity = 0.1 }
+			}
+		}
+		BUL = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_bul_scenario_start_rule option = tsars_dictatorship } }
+				# Rewards for BUL_the_fatherland_front
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for BUL_zveno
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for BUL_the_tsars_dictatorship
+				set_politics = { ruling_party = neutrality }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_bul_scenario_start_rule option = zveno } }
+				# Rewards for BUL_the_fatherland_front
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for BUL_the_tsars_dictatorship
+				set_politics = { ruling_party = neutrality }
+				# Rewards for BUL_zveno
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_bul_scenario_start_rule option = fatherland_front } }
+				# Rewards for BUL_zveno
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for BUL_the_tsars_dictatorship
+				set_politics = { ruling_party = neutrality }
+				# Rewards for BUL_the_fatherland_front
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+			}
+		}
+		CHI = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_chi_scenario_start_rule option = historical } }
+				# Rewards for CHI_three_principles_of_the_people
+				add_ideas = CHI_three_principles_idea
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_chi_scenario_start_rule option = welfare } }
+				# Rewards for CHI_three_principles_of_the_people
+				add_ideas = CHI_three_principles_idea
+				# Rewards for CHI_welfare
+				add_stability = 0.1
+			}
+		}
+		CHL = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_chl_scenario_start_rule option = popular_front } }
+				# Rewards for CHL_the_nacistas
+				add_popularity = { ideology = fascism popularity = 0.1 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_chl_scenario_start_rule option = nacistas } }
+				# Rewards for CHL_the_nacistas
+				add_popularity = { ideology = fascism popularity = 0.1 }
+			}
+		}
+		COG = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_cog_scenario_start_rule option = force_publique } }
+				# Rewards for COG_the_evolues
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for COG_the_force_publique
+				set_politics = { ruling_party = neutrality }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_cog_scenario_start_rule option = evolues } }
+				# Rewards for COG_the_force_publique
+				set_politics = { ruling_party = neutrality }
+				# Rewards for COG_the_evolues
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+			}
+		}
+		CZE = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_cze_scenario_start_rule option = political_direction } }
+				# Rewards for CZE_fascist_direction
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for CZE_communist_direction
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_cze_scenario_start_rule option = fascist_direction } }
+				# Rewards for CZE_communist_direction
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for CZE_fascist_direction
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_cze_scenario_start_rule option = communist_direction } }
+				# Rewards for CZE_fascist_direction
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for CZE_communist_direction
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+			}
+		}
+		DEN = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_den_scenario_start_rule option = social_democrats } }
+				# Rewards for DEN_the_conservative_peoples_party
+				add_popularity = { ideology = neutrality popularity = 0.1 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_den_scenario_start_rule option = conservative } }
+				# Rewards for DEN_the_conservative_peoples_party
+				add_popularity = { ideology = neutrality popularity = 0.1 }
+			}
+		}
+		EGY = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_egy_scenario_start_rule option = anglo_treaty } }
+				# Rewards for EGY_the_wafd_party
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for EGY_the_anglo_egyptian_treaty
+				set_politics = { ruling_party = neutrality }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_egy_scenario_start_rule option = wafd_party } }
+				# Rewards for EGY_the_anglo_egyptian_treaty
+				set_politics = { ruling_party = neutrality }
+				# Rewards for EGY_the_wafd_party
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+			}
+		}
+		EST = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_est_scenario_start_rule option = era_of_silence } }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_est_scenario_start_rule option = vaps_movement } }
+				# Rewards for EST_the_vaps_movement
+				add_popularity = { ideology = fascism popularity = 0.1 }
+			}
+		}
+		ETH = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_eth_scenario_start_rule option = emperor } }
+				# Rewards for ETH_the_emperor
+				set_politics = { ruling_party = neutrality }
+			}
+		}
+		FIN = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_fin_scenario_start_rule option = finnish_model } }
+				# Rewards for FIN_the_lapua_movement
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for FIN_the_red_guards
+				add_popularity = { ideology = communism popularity = 0.1 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_fin_scenario_start_rule option = lapua_movement } }
+				# Rewards for FIN_the_red_guards
+				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for FIN_the_lapua_movement
+				add_popularity = { ideology = fascism popularity = 0.1 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_fin_scenario_start_rule option = red_guards } }
+				# Rewards for FIN_the_lapua_movement
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for FIN_the_red_guards
+				add_popularity = { ideology = communism popularity = 0.1 }
+			}
+		}
+		HUN = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_hun_scenario_start_rule option = renounce_trianon } }
+				# Rewards for HUN_the_communist_party
+				set_politics = { ruling_party = communism elections_allowed = no }
+				# Rewards for HUN_a_king_for_our_people
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Rewards for HUN_renounce_the_treaty_of_trianon
+				add_popularity = { ideology = fascism popularity = 0.1 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_hun_scenario_start_rule option = king } }
+				# Rewards for HUN_the_communist_party
+				set_politics = { ruling_party = communism elections_allowed = no }
+				# Rewards for HUN_renounce_the_treaty_of_trianon
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for HUN_a_king_for_our_people
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_hun_scenario_start_rule option = communist } }
+				# Rewards for HUN_a_king_for_our_people
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Rewards for HUN_renounce_the_treaty_of_trianon
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for HUN_the_communist_party
+				set_politics = { ruling_party = communism elections_allowed = no }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_hun_scenario_start_rule option = habsburg } }
+				# Rewards for HUN_the_communist_party
+				set_politics = { ruling_party = communism elections_allowed = no }
+				# Rewards for HUN_a_king_for_our_people
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Rewards for HUN_renounce_the_treaty_of_trianon
+				add_popularity = { ideology = fascism popularity = 0.1 }
+			}
+		}
+		IRQ = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_irq_scenario_start_rule option = hashemite } }
+				# Rewards for IRQ_the_golden_square
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for IRQ_the_hashemite_kingdom
+				set_politics = { ruling_party = neutrality }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_irq_scenario_start_rule option = golden_square } }
+				# Rewards for IRQ_the_hashemite_kingdom
+				set_politics = { ruling_party = neutrality }
+				# Rewards for IRQ_the_golden_square
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+			}
+		}
+		LAT = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_lat_scenario_start_rule option = ulmainis } }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_lat_scenario_start_rule option = perkonkrusts } }
+				# Rewards for LAT_the_perkonkrusts
+				add_popularity = { ideology = fascism popularity = 0.1 }
+			}
+		}
+		LIT = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_lit_scenario_start_rule option = smetona } }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_lit_scenario_start_rule option = iron_wolf } }
+				# Rewards for LIT_the_iron_wolf
+				add_popularity = { ideology = fascism popularity = 0.1 }
+			}
+		}
+		MAN = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_man_scenario_start_rule option = obedience } }
+				# Rewards for MAN_assertiveness
+				set_politics = { ruling_party = neutrality }
+				# Rewards for MAN_the_democratic_party
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for MAN_the_communist_party
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for MAN_obedience
+				set_politics = { ruling_party = fascism }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_man_scenario_start_rule option = assertiveness } }
+				# Rewards for MAN_obedience
+				set_politics = { ruling_party = fascism }
+				# Rewards for MAN_the_democratic_party
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for MAN_the_communist_party
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for MAN_assertiveness
+				set_politics = { ruling_party = neutrality }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_man_scenario_start_rule option = democratic } }
+				# Rewards for MAN_obedience
+				set_politics = { ruling_party = fascism }
+				# Rewards for MAN_assertiveness
+				set_politics = { ruling_party = neutrality }
+				# Rewards for MAN_the_communist_party
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for MAN_the_democratic_party
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_man_scenario_start_rule option = communist } }
+				# Rewards for MAN_obedience
+				set_politics = { ruling_party = fascism }
+				# Rewards for MAN_assertiveness
+				set_politics = { ruling_party = neutrality }
+				# Rewards for MAN_the_democratic_party
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for MAN_the_communist_party
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+			}
+		}
+		NOR = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_nor_scenario_start_rule option = nygaardsvold } }
+				# Rewards for NOR_the_right_wing_coalition
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for NOR_the_communist_party
+				add_popularity = { ideology = communism popularity = 0.1 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_nor_scenario_start_rule option = quisling } }
+				# Rewards for NOR_the_communist_party
+				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for NOR_the_right_wing_coalition
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for NOR_quisling_government
+				set_politics = { ruling_party = fascism }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_nor_scenario_start_rule option = communist } }
+				# Rewards for NOR_the_right_wing_coalition
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for NOR_the_communist_party
+				add_popularity = { ideology = communism popularity = 0.1 }
+			}
+		}
+		NZL = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_nzl_scenario_start_rule option = labour } }
+			}
+		}
+		PAR = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_par_scenario_start_rule option = febrerista } }
+				# Rewards for PAR_the_febrerista_revolution
+				set_politics = { ruling_party = fascism }
+			}
+		}
+		PER = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_per_scenario_start_rule option = pahlavi } }
+				# Rewards for PER_the_tudeh_party
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for PER_the_pahlavi_dynasty
+				set_politics = { ruling_party = neutrality }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_per_scenario_start_rule option = tudeh } }
+				# Rewards for PER_the_pahlavi_dynasty
+				set_politics = { ruling_party = neutrality }
+				# Rewards for PER_the_tudeh_party
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+			}
+		}
+		PHI = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_phi_scenario_start_rule option = commonwealth } }
+				# Rewards for PHI_the_hukbalahap
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for PHI_the_ganap_party
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for PHI_the_commonwealth
+				set_politics = { ruling_party = democratic }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_phi_scenario_start_rule option = ganap } }
+				# Rewards for PHI_the_commonwealth
+				set_politics = { ruling_party = democratic }
+				# Rewards for PHI_the_hukbalahap
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for PHI_the_ganap_party
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_phi_scenario_start_rule option = hukbalahap } }
+				# Rewards for PHI_the_commonwealth
+				set_politics = { ruling_party = democratic }
+				# Rewards for PHI_the_ganap_party
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for PHI_the_hukbalahap
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+			}
+		}
+		POR = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_por_scenario_start_rule option = estado_novo } }
+				# Rewards for POR_the_popular_front
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for POR_the_estado_novo
+				set_politics = { ruling_party = neutrality }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_por_scenario_start_rule option = popular_front } }
+				# Rewards for POR_the_estado_novo
+				set_politics = { ruling_party = neutrality }
+				# Rewards for POR_the_popular_front
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+			}
+		}
+		PRC = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_prc_scenario_start_rule option = maoism } }
+				# Rewards for PRC_social_democracy
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for PRC_orthodox_marxism
+				add_popularity = { ideology = communism popularity = 0.1 }
+            add_stability = 0.05
+				# Rewards for PRC_maoism
+				set_politics = { ruling_party = communism }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_prc_scenario_start_rule option = orthodox_marxism } }
+				# Rewards for PRC_social_democracy
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for PRC_maoism
+				set_politics = { ruling_party = communism }
+				# Rewards for PRC_orthodox_marxism
+				add_popularity = { ideology = communism popularity = 0.1 }
+            add_stability = 0.05
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_prc_scenario_start_rule option = social_democracy } }
+				# Rewards for PRC_maoism
+				set_politics = { ruling_party = communism }
+				# Rewards for PRC_orthodox_marxism
+				add_popularity = { ideology = communism popularity = 0.1 }
+            add_stability = 0.05
+				# Rewards for PRC_social_democracy
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+			}
+		}
+		SWI = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_swi_scenario_start_rule option = federal_council } }
+				# Rewards for SWI_the_federal_council
+				set_politics = { ruling_party = democratic }
+			}
+		}
+		URU = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_uru_scenario_start_rule option = colorado } }
+				# Rewards for URU_the_colorado_party
+				set_politics = { ruling_party = democratic }
+			}
+		}
+		WRL = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists } }
+				# Rewards for WRL_democratic_reforms
+				set_politics = { ruling_party = democratic }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for WRL_military_dictatorship
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for WRL_cooperate_with_the_communists
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for WRL_cooperate_with_the_nationalists
+				set_politics = { ruling_party = neutrality }
+			}
+			if = {
+				limit = { has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists } }
+				# Rewards for WRL_democratic_reforms
+				set_politics = { ruling_party = democratic }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for WRL_military_dictatorship
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for WRL_cooperate_with_the_nationalists
+				set_politics = { ruling_party = neutrality }
+				# Rewards for WRL_cooperate_with_the_communists
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+			}
+		}
+		AFG = {
+			if = {
+				limit = { has_game_rule = { rule = SAH_afg_scenario_start_rule option = barakzai } }
+				# Rewards for AFG_the_barakzai_dynasty
+				set_politics = { ruling_party = neutrality }
+			}
+		}
+
+
+====== 3. PASTE THIS AT THE BOTTOM OF localisation/english/SAH_game_rules_l_english.yml ======
+ SAH_usa_scenario_start_rule: "USA Initial Scenario Start"
+ SAH_SAH_usa_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_usa_scenario_start_rule_american_caesar: "American Caesar Start"
+ SAH_SAH_usa_scenario_start_rule_fascist_menace: "America First Start"
+ SAH_SAH_usa_scenario_start_rule_communist: "Communist America Start"
+ SAH_SAH_usa_scenario_start_rule_giant_wakes: "The Giant Wakes (Historical)"
+
+ SAH_ger_scenario_start_rule: "GER Initial Scenario Start"
+ SAH_SAH_ger_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_ger_scenario_start_rule_danzig_or_war: "Historical Fascist Start"
+ SAH_SAH_ger_scenario_start_rule_return_of_kaiser: "Return of the Kaiser"
+ SAH_SAH_ger_scenario_start_rule_communist_uprising: "Communist Uprising"
+ SAH_SAH_ger_scenario_start_rule_anti_soviet_pact: "Democratic Germany Start"
+
+ SAH_sov_scenario_start_rule: "SOV Initial Scenario Start"
+ SAH_SAH_sov_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_sov_scenario_start_rule_historical_stalin: "Historical Stalin"
+ SAH_SAH_sov_scenario_start_rule_permanent_revolution: "Trotskyist Start"
+ SAH_SAH_sov_scenario_start_rule_new_economic_policy: "Bukharin Start"
+ SAH_SAH_sov_scenario_start_rule_tsarist_restored: "Tsarist Start"
+ SAH_SAH_sov_scenario_start_rule_republic: "Russian Republic Start"
+ SAH_SAH_sov_scenario_start_rule_fascist_destiny: "Russian Fascist Party Start"
+
+ SAH_eng_scenario_start_rule: "ENG Initial Scenario Start"
+ SAH_SAH_eng_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_eng_scenario_start_rule_churchill: "Churchill Government"
+ SAH_SAH_eng_scenario_start_rule_kings_party: "The King's Party"
+ SAH_SAH_eng_scenario_start_rule_mosley_fascist: "Blackshirt Start"
+ SAH_SAH_eng_scenario_start_rule_communist_britain: "Communist Britain"
+
+ SAH_fra_scenario_start_rule: "FRA Initial Scenario Start"
+ SAH_SAH_fra_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_fra_scenario_start_rule_french_commune: "French Commune Start"
+ SAH_SAH_fra_scenario_start_rule_legitimist: "Legitimist Restoration"
+ SAH_SAH_fra_scenario_start_rule_bonapartist: "Bonapartist Restoration"
+ SAH_SAH_fra_scenario_start_rule_latin_entente: "Latin Entente (Fascist)"
+
+ SAH_jap_scenario_start_rule: "JAP Initial Scenario Start"
+ SAH_SAH_jap_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_jap_scenario_start_rule_strike_south: "Historical Strike South"
+ SAH_SAH_jap_scenario_start_rule_showa_restoration: "Showa Restoration (Non-Aligned)"
+ SAH_SAH_jap_scenario_start_rule_democratic_diet: "Democratic Japan Start"
+ SAH_SAH_jap_scenario_start_rule_communist_japan: "Communist Japan Start"
+
+ SAH_ita_scenario_start_rule: "ITA Initial Scenario Start"
+ SAH_SAH_ita_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_ita_scenario_start_rule_pact_of_steel: "Pact of Steel (Historical)"
+ SAH_SAH_ita_scenario_start_rule_latin_bloc: "Italy First / Latin Bloc"
+ SAH_SAH_ita_scenario_start_rule_kingdom_of_god: "The Kingdom of God"
+ SAH_SAH_ita_scenario_start_rule_republic_of_italy: "Italian Republic Start"
+ SAH_SAH_ita_scenario_start_rule_communist_italy: "Communist Italy Start"
+
+ SAH_pol_scenario_start_rule: "POL Initial Scenario Start"
+ SAH_SAH_pol_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_pol_scenario_start_rule_april_constitution: "Sanation Government (Historical)"
+ SAH_SAH_pol_scenario_start_rule_falanga: "Falangist Poland Start"
+ SAH_SAH_pol_scenario_start_rule_comintern: "Communist Poland Start"
+ SAH_SAH_pol_scenario_start_rule_regency_council: "Monarchist Poland Start"
+
+ SAH_can_scenario_start_rule: "CAN Initial Scenario Start"
+ SAH_SAH_can_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_can_scenario_start_rule_zombies: "Historical Canadian Effort"
+ SAH_SAH_can_scenario_start_rule_fascist_canada: "National Unity Party (Fascist)"
+ SAH_SAH_can_scenario_start_rule_communist_canada: "Communist Canada Start"
+
+ SAH_ast_scenario_start_rule: "AST Initial Scenario Start"
+ SAH_SAH_ast_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_ast_scenario_start_rule_never_gallipoli_again: "Historical Australia Start"
+ SAH_SAH_ast_scenario_start_rule_australia_first: "Australia First (Fascist)"
+ SAH_SAH_ast_scenario_start_rule_communist_australia: "Communist Australia Start"
+
+ SAH_saf_scenario_start_rule: "SAF Initial Scenario Start"
+ SAH_SAH_saf_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_saf_scenario_start_rule_appeasement: "Historical South Africa"
+ SAH_SAH_saf_scenario_start_rule_ossewabrandwag: "Ossewabrandwag (Fascist)"
+ SAH_SAH_saf_scenario_start_rule_anti_colonialist: "Communist South Africa Start"
+
+ SAH_raj_scenario_start_rule: "RAJ Initial Scenario Start"
+ SAH_SAH_raj_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_raj_scenario_start_rule_provincial_elections: "Historical India Start"
+ SAH_SAH_raj_scenario_start_rule_quit_india: "Quit India Movement"
+ SAH_SAH_raj_scenario_start_rule_indian_national_army: "Indian National Army (Fascist)"
+
+ SAH_rom_scenario_start_rule: "ROM Initial Scenario Start"
+ SAH_SAH_rom_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_rom_scenario_start_rule_preserve_romania: "Historical Romania"
+ SAH_SAH_rom_scenario_start_rule_align_axis: "Iron Guard (Fascist)"
+ SAH_SAH_rom_scenario_start_rule_balkan_dominance: "Balkan Dominance (Non-Aligned)"
+
+ SAH_yug_scenario_start_rule: "YUG Initial Scenario Start"
+ SAH_SAH_yug_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_yug_scenario_start_rule_regency_council: "Historical Yugoslavia"
+ SAH_SAH_yug_scenario_start_rule_tripartite_pact: "Tripartite Pact (Fascist)"
+ SAH_SAH_yug_scenario_start_rule_communist_partisans: "Communist Yugoslavia Start"
+ SAH_SAH_yug_scenario_start_rule_western_focus: "Democratic Yugoslavia Start"
+
+ SAH_gre_scenario_start_rule: "GRE Initial Scenario Start"
+ SAH_SAH_gre_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_gre_scenario_start_rule_metaxas: "Metaxas Dictatorship (Historical)"
+ SAH_SAH_gre_scenario_start_rule_megali_idea: "Megali Idea (Fascist)"
+ SAH_SAH_gre_scenario_start_rule_venizelist: "Venizelist Start (Democratic)"
+
+ SAH_tur_scenario_start_rule: "TUR Initial Scenario Start"
+ SAH_SAH_tur_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_tur_scenario_start_rule_peace_at_home: "Historical Turkey"
+ SAH_SAH_tur_scenario_start_rule_multi_party: "Multi-Party Turkey Start"
+
+ SAH_mex_scenario_start_rule: "MEX Initial Scenario Start"
+ SAH_SAH_mex_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_mex_scenario_start_rule_prm: "Historical Mexico Start"
+ SAH_SAH_mex_scenario_start_rule_gold_shirts: "Gold Shirts Start (Fascist)"
+ SAH_SAH_mex_scenario_start_rule_hispanic_alliance: "Hispanic Alliance"
+
+ SAH_bra_scenario_start_rule: "BRA Initial Scenario Start"
+ SAH_SAH_bra_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_bra_scenario_start_rule_estado_novo: "Estado Novo (Historical)"
+ SAH_SAH_bra_scenario_start_rule_integralist: "Integralist Brazil Start (Fascist)"
+ SAH_SAH_bra_scenario_start_rule_aln_revolt: "Communist Brazil Start"
+
+ SAH_spr_scenario_start_rule: "SPR Initial Scenario Start"
+ SAH_SAH_spr_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_spr_scenario_start_rule_popular_front: "Popular Front (Historical)"
+ SAH_SAH_spr_scenario_start_rule_falange: "Nationalist Pre-Civil War"
+ SAH_SAH_spr_scenario_start_rule_anti_fascist_unity: "Communist Spain Start"
+
+ SAH_hol_scenario_start_rule: "HOL Initial Scenario Start"
+ SAH_SAH_hol_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_hol_scenario_start_rule_gateway_to_europe: "Historical Netherlands"
+ SAH_SAH_hol_scenario_start_rule_anton_mussert: "Mussert Start (Fascist)"
+
+ SAH_swe_scenario_start_rule: "SWE Initial Scenario Start"
+ SAH_SAH_swe_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_swe_scenario_start_rule_per_albin_bus: "Historical Sweden Start"
+ SAH_SAH_swe_scenario_start_rule_svea_rike: "Svea Rike (Fascist)"
+ SAH_SAH_swe_scenario_start_rule_socialist_republic: "Communist Sweden Start"
+
+ SAH_arg_scenario_start_rule: "ARG Initial Scenario Start"
+ SAH_SAH_arg_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_arg_scenario_start_rule_infamous_decade: "Historical Argentina"
+ SAH_SAH_arg_scenario_start_rule_radical_civic: "Radical Civic Union"
+ SAH_SAH_arg_scenario_start_rule_peronist: "Peronist Movement"
+
+ SAH_aus_scenario_start_rule: "AUS Initial Scenario Start"
+ SAH_SAH_aus_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_aus_scenario_start_rule_fatherland_front: "Historical Austria"
+ SAH_SAH_aus_scenario_start_rule_austrofascism: "Austrofascism"
+ SAH_SAH_aus_scenario_start_rule_social_democrats: "Social Democrats"
+
+ SAH_bel_scenario_start_rule: "BEL Initial Scenario Start"
+ SAH_SAH_bel_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_bel_scenario_start_rule_catholic_bloc: "Historical Belgium"
+ SAH_SAH_bel_scenario_start_rule_liberal_party: "Liberal Party"
+ SAH_SAH_bel_scenario_start_rule_rexist_party: "Rexist Party (Fascist)"
+
+ SAH_bul_scenario_start_rule: "BUL Initial Scenario Start"
+ SAH_SAH_bul_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_bul_scenario_start_rule_tsars_dictatorship: "Historical Tsar"
+ SAH_SAH_bul_scenario_start_rule_zveno: "Zveno (Fascist)"
+ SAH_SAH_bul_scenario_start_rule_fatherland_front: "Fatherland Front (Communist)"
+
+ SAH_chi_scenario_start_rule: "CHI Initial Scenario Start"
+ SAH_SAH_chi_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_chi_scenario_start_rule_historical: "Historical China"
+ SAH_SAH_chi_scenario_start_rule_welfare: "Welfare State"
+
+ SAH_chl_scenario_start_rule: "CHL Initial Scenario Start"
+ SAH_SAH_chl_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_chl_scenario_start_rule_popular_front: "Popular Front (History)"
+ SAH_SAH_chl_scenario_start_rule_nacistas: "Nacistas (Fascist)"
+
+ SAH_cog_scenario_start_rule: "COG Initial Scenario Start"
+ SAH_SAH_cog_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_cog_scenario_start_rule_force_publique: "Force Publique"
+ SAH_SAH_cog_scenario_start_rule_evolues: "The Evolues"
+
+ SAH_cze_scenario_start_rule: "CZE Initial Scenario Start"
+ SAH_SAH_cze_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_cze_scenario_start_rule_political_direction: "Historical Czechoslovakia"
+ SAH_SAH_cze_scenario_start_rule_fascist_direction: "Fascist Direction"
+ SAH_SAH_cze_scenario_start_rule_communist_direction: "Communist Direction"
+
+ SAH_den_scenario_start_rule: "DEN Initial Scenario Start"
+ SAH_SAH_den_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_den_scenario_start_rule_social_democrats: "Historical Denmark"
+ SAH_SAH_den_scenario_start_rule_conservative: "Conservative Party"
+
+ SAH_egy_scenario_start_rule: "EGY Initial Scenario Start"
+ SAH_SAH_egy_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_egy_scenario_start_rule_anglo_treaty: "Historical Egypt"
+ SAH_SAH_egy_scenario_start_rule_wafd_party: "Wafd Party"
+
+ SAH_est_scenario_start_rule: "EST Initial Scenario Start"
+ SAH_SAH_est_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_est_scenario_start_rule_era_of_silence: "Era of Silence"
+ SAH_SAH_est_scenario_start_rule_vaps_movement: "Vaps Movement"
+
+ SAH_eth_scenario_start_rule: "ETH Initial Scenario Start"
+ SAH_SAH_eth_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_eth_scenario_start_rule_emperor: "The Emperor"
+
+ SAH_fin_scenario_start_rule: "FIN Initial Scenario Start"
+ SAH_SAH_fin_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_fin_scenario_start_rule_finnish_model: "Historical Finland"
+ SAH_SAH_fin_scenario_start_rule_lapua_movement: "Lapua Movement (Fascist)"
+ SAH_SAH_fin_scenario_start_rule_red_guards: "Red Guards (Communist)"
+
+ SAH_hun_scenario_start_rule: "HUN Initial Scenario Start"
+ SAH_SAH_hun_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_hun_scenario_start_rule_renounce_trianon: "Historical Hungary"
+ SAH_SAH_hun_scenario_start_rule_king: "Monarchist Hungary"
+ SAH_SAH_hun_scenario_start_rule_communist: "Communist Hungary"
+ SAH_SAH_hun_scenario_start_rule_habsburg: "Habsburg Prince"
+
+ SAH_irq_scenario_start_rule: "IRQ Initial Scenario Start"
+ SAH_SAH_irq_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_irq_scenario_start_rule_hashemite: "Hashemite Kingdom"
+ SAH_SAH_irq_scenario_start_rule_golden_square: "Golden Square (Fascist)"
+
+ SAH_lat_scenario_start_rule: "LAT Initial Scenario Start"
+ SAH_SAH_lat_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_lat_scenario_start_rule_ulmainis: "Ulmanis Dictatorship"
+ SAH_SAH_lat_scenario_start_rule_perkonkrusts: "Perkonkrusts"
+
+ SAH_lit_scenario_start_rule: "LIT Initial Scenario Start"
+ SAH_SAH_lit_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_lit_scenario_start_rule_smetona: "Smetona Dictatorship"
+ SAH_SAH_lit_scenario_start_rule_iron_wolf: "Iron Wolf"
+
+ SAH_man_scenario_start_rule: "MAN Initial Scenario Start"
+ SAH_SAH_man_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_man_scenario_start_rule_obedience: "Obedience"
+ SAH_SAH_man_scenario_start_rule_assertiveness: "Assertiveness"
+ SAH_SAH_man_scenario_start_rule_democratic: "Democratic Party"
+ SAH_SAH_man_scenario_start_rule_communist: "Communist Party"
+
+ SAH_nor_scenario_start_rule: "NOR Initial Scenario Start"
+ SAH_SAH_nor_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_nor_scenario_start_rule_nygaardsvold: "Nygaardsvold Cabinet"
+ SAH_SAH_nor_scenario_start_rule_quisling: "Quisling Government (Fascist)"
+ SAH_SAH_nor_scenario_start_rule_communist: "Communist Party"
+
+ SAH_nzl_scenario_start_rule: "NZL Initial Scenario Start"
+ SAH_SAH_nzl_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_nzl_scenario_start_rule_labour: "Labour Party"
+
+ SAH_par_scenario_start_rule: "PAR Initial Scenario Start"
+ SAH_SAH_par_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_par_scenario_start_rule_febrerista: "Febrerista Revolution"
+
+ SAH_per_scenario_start_rule: "PER Initial Scenario Start"
+ SAH_SAH_per_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_per_scenario_start_rule_pahlavi: "Pahlavi Dynasty"
+ SAH_SAH_per_scenario_start_rule_tudeh: "Tudeh Party (Communist)"
+
+ SAH_phi_scenario_start_rule: "PHI Initial Scenario Start"
+ SAH_SAH_phi_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_phi_scenario_start_rule_commonwealth: "The Commonwealth"
+ SAH_SAH_phi_scenario_start_rule_ganap: "Ganap Party (Fascist)"
+ SAH_SAH_phi_scenario_start_rule_hukbalahap: "Hukbalahap (Communist)"
+
+ SAH_por_scenario_start_rule: "POR Initial Scenario Start"
+ SAH_SAH_por_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_por_scenario_start_rule_estado_novo: "Estado Novo"
+ SAH_SAH_por_scenario_start_rule_popular_front: "Popular Front"
+
+ SAH_prc_scenario_start_rule: "PRC Initial Scenario Start"
+ SAH_SAH_prc_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_prc_scenario_start_rule_maoism: "Maoism"
+ SAH_SAH_prc_scenario_start_rule_orthodox_marxism: "Orthodox Marxism"
+ SAH_SAH_prc_scenario_start_rule_social_democracy: "Social Democracy"
+
+ SAH_swi_scenario_start_rule: "SWI Initial Scenario Start"
+ SAH_SAH_swi_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_swi_scenario_start_rule_federal_council: "Federal Council"
+
+ SAH_uru_scenario_start_rule: "URU Initial Scenario Start"
+ SAH_SAH_uru_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_uru_scenario_start_rule_colorado: "Colorado Party"
+
+ SAH_wrl_scenario_start_rule: "WRL Initial Scenario Start"
+ SAH_SAH_wrl_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_wrl_scenario_start_rule_nationalists: "Cooperate with Nationalists"
+ SAH_SAH_wrl_scenario_start_rule_communists: "Cooperate with Communists"
+
+ SAH_afg_scenario_start_rule: "AFG Initial Scenario Start"
+ SAH_SAH_afg_scenario_start_rule_normal: "Normal (Not started)"
+ SAH_SAH_afg_scenario_start_rule_barakzai: "Barakzai Dynasty"
+

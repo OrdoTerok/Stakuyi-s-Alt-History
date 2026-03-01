@@ -1,0 +1,497 @@
+focus_tree = {
+    id = china_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = CHI
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = CHI_three_principles_of_the_people
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_chi_scenario_start_rule option = historical }
+				has_game_rule = { rule = SAH_chi_scenario_start_rule option = welfare }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 8
+        y = 0
+        cost = 10
+
+        ai_will_do = {
+            base = 10
+            modifier = { add = 90 is_historical_focus_on = yes }
+        }
+
+        completion_reward = {
+            add_political_power = 120
+                        custom_effect_tooltip = "Commit to Sun Yat-sen's principles: Nationalism, Democracy, and Welfare."
+                        add_ideas = CHI_three_principles_idea
+        }
+    }
+
+    focus = {
+        id = CHI_welfare
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_chi_scenario_start_rule option = welfare }
+			}
+		}
+
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 2
+        y = 1
+        cost = 10
+        prerequisite = { focus = CHI_three_principles_of_the_people }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_stability = 0.1
+                        add_political_power = 50
+                        custom_effect_tooltip = "Focus on the people's livelihood."
+        }
+    }
+
+    focus = {
+        id = CHI_rural_development
+        icon = GFX_goal_generic_production
+        x = 1
+        y = 2
+        cost = 10
+        prerequisite = { focus = CHI_welfare }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 50
+                        random_owned_controlled_state = {
+                            limit = { free_building_slots = { building = infrastructure size > 0 } }
+                            add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+                        }
+        }
+    }
+
+    focus = {
+        id = CHI_urban_welfare
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 3
+        y = 2
+        cost = 10
+        prerequisite = { focus = CHI_welfare }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+                        random_owned_controlled_state = {
+                            limit = { free_building_slots = { building = industrial_complex size > 0 } }
+                            add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+                        }
+        }
+    }
+
+    focus = {
+        id = CHI_the_welfare_state
+        icon = GFX_goal_generic_national_unity
+        x = 2
+        y = 3
+        cost = 10
+        prerequisite = { focus = CHI_rural_development }
+        prerequisite = { focus = CHI_urban_welfare }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = democratic_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = democratic is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            add_ideas = CHI_welfare_state_idea
+                        add_popularity = { ideology = democratic popularity = 0.15 }
+                        custom_effect_tooltip = "The Left-KMT gains significant influence over poverty relief programs."
+        }
+    }
+
+    focus = {
+        id = CHI_democracy
+        icon = GFX_goal_generic_political_pressure
+        x = 8
+        y = 1
+        cost = 10
+        prerequisite = { focus = CHI_three_principles_of_the_people }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 50
+                        custom_effect_tooltip = "End the period of political tutelage and prepare for a constitutional republic."
+        }
+    }
+
+    focus = {
+        id = CHI_end_political_tutelage
+        icon = GFX_goal_generic_peaceful_treaty
+        x = 8
+        y = 2
+        cost = 10
+        prerequisite = { focus = CHI_democracy }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = democratic_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = democratic is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            add_stability = 0.1
+                        add_popularity = { ideology = democratic popularity = 0.2 }
+        }
+    }
+
+    focus = {
+        id = CHI_the_legislative_yuan
+        icon = GFX_goal_generic_national_unity
+        x = 7
+        y = 3
+        cost = 10
+        prerequisite = { focus = CHI_end_political_tutelage }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = democratic_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = democratic is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = democratic elections_allowed = yes }
+                        add_political_power = 150
+                        custom_effect_tooltip = "Hold free elections and seat a diverse, democratic legislative body."
+        }
+    }
+
+    focus = {
+        id = CHI_the_executive_yuan
+        icon = GFX_goal_generic_intelligence_exchange
+        x = 9
+        y = 3
+        cost = 10
+        prerequisite = { focus = CHI_end_political_tutelage }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 100
+                        custom_effect_tooltip = "Establish civilian oversight over the executive branch and military."
+        }
+    }
+
+    focus = {
+        id = CHI_join_the_allies
+        icon = GFX_goal_generic_major_alliance
+        x = 8
+        y = 4
+        cost = 10
+        prerequisite = { focus = CHI_the_legislative_yuan }
+        prerequisite = { focus = CHI_the_executive_yuan }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "As a functioning democracy, petition to join the Allies (ENG/USA)."
+        }
+    }
+
+    focus = {
+        id = CHI_nationalism
+        icon = GFX_goal_generic_position_armies
+        x = 14
+        y = 1
+        cost = 10
+        prerequisite = { focus = CHI_three_principles_of_the_people }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 50
+                        add_stability = -0.05
+                        add_popularity = { ideology = fascism popularity = 0.1 }
+                        custom_effect_tooltip = "Harness Chinese nationalism to unite the country."
+        }
+    }
+
+    focus = {
+        id = CHI_one_china_policy
+        icon = GFX_goal_generic_suppress_resistance
+        x = 12
+        y = 2
+        cost = 10
+        mutually_exclusive = { focus = CHI_the_blue_shirts }
+        prerequisite = { focus = CHI_nationalism }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 100
+                        add_popularity = { ideology = neutrality popularity = 0.15 }
+                        custom_effect_tooltip = "Under Chiang Kai-shek, forcefully integrate the warlords."
+        }
+    }
+
+    focus = {
+        id = CHI_subjugate_the_warlords
+        icon = GFX_goal_generic_attack_allies
+        x = 12
+        y = 3
+        cost = 10
+        prerequisite = { focus = CHI_one_china_policy }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = puppet_wargoal target = GXC }
+                        create_wargoal = { type = puppet_wargoal target = YUN }
+                        create_wargoal = { type = puppet_wargoal target = XSM }
+        }
+    }
+
+    focus = {
+        id = CHI_exterminate_the_communists
+        icon = GFX_goal_generic_forceful_treaty
+        x = 12
+        y = 4
+        cost = 10
+        prerequisite = { focus = CHI_subjugate_the_warlords }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = annex_everything target = PRC }
+                        custom_effect_tooltip = "Launch the final encirclement campaign against Mao's forces."
+        }
+    }
+
+    focus = {
+        id = CHI_the_blue_shirts
+        icon = GFX_goal_generic_political_pressure
+        x = 16
+        y = 2
+        cost = 10
+        mutually_exclusive = { focus = CHI_one_china_policy }
+        prerequisite = { focus = CHI_nationalism }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = fascism elections_allowed = no }
+                        add_political_power = 150
+                        add_stability = 0.1
+                        custom_effect_tooltip = "The Blue Shirts Society seizes total control to enforce strict militarism."
+        }
+    }
+
+    focus = {
+        id = CHI_sino_german_cooperation
+        icon = GFX_goal_generic_intelligence_exchange
+        x = 16
+        y = 3
+        cost = 10
+        prerequisite = { focus = CHI_the_blue_shirts }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_army_experience = 50
+                        add_ideas = CHI_german_advisors
+                        custom_effect_tooltip = "Deepen our ties with Alexander von Falkenhausen and the German military."
+        }
+    }
+
+    focus = {
+        id = CHI_reclaim_the_century_of_humiliation
+        icon = GFX_goal_generic_demand_territory
+        x = 16
+        y = 4
+        cost = 10
+        prerequisite = { focus = CHI_sino_german_cooperation }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = annex_everything target = JAP }
+                        create_wargoal = { type = annex_everything target = ENG }
+                        custom_effect_tooltip = "Demand the return of Manchuria, Taiwan, and Hong Kong."
+        }
+    }
+
+    focus = {
+        id = CHI_the_hanyang_arsenal
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 20
+        y = 0
+        cost = 10
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_ideas = CHI_hanyang_arsenal_idea
+                        add_political_power = 50
+                        random_owned_controlled_state = {
+                            limit = { free_building_slots = { building = arms_factory size > 0 } }
+                            add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+                        }
+        }
+    }
+
+    focus = {
+        id = CHI_army_reform
+        icon = GFX_goal_generic_position_armies
+        x = 19
+        y = 1
+        cost = 10
+        prerequisite = { focus = CHI_the_hanyang_arsenal }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_army_experience = 100
+                        custom_effect_tooltip = "Remove the 'Corrupt Army Leadership' penalty."
+        }
+    }
+
+    focus = {
+        id = CHI_air_force_acquisitions
+        icon = GFX_goal_generic_build_airforce
+        x = 21
+        y = 1
+        cost = 10
+        prerequisite = { focus = CHI_the_hanyang_arsenal }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_air_experience = 50
+                        custom_effect_tooltip = "Purchase fighters from foreign powers to defend our skies."
+        }
+    }
+
+}

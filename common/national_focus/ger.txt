@@ -1,0 +1,1012 @@
+focus_tree = {
+    id = germany_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = GER
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = GER_rhineland
+        icon = GFX_goal_generic_demand_territory
+        x = 2
+        y = 0
+        cost = 10
+        
+		bypass = {
+			has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			has_game_rule = {
+				rule = SAH_ger_rhineland_start_rule
+				option = SAH_rhineland_bypass
+			}
+		}
+
+        mutually_exclusive = { focus = GER_oppose_hitler }
+        mutually_exclusive = { focus = GER_communist_uprising }
+
+        ai_will_do = {
+            base = 10
+            modifier = { add = 90 is_historical_focus_on = yes }
+        
+		modifier = {
+			factor = 0
+			OR = { SAH_is_ger_forced_democratic = yes SAH_is_ger_forced_communist = yes }
+		}
+}
+
+        completion_reward = {
+            add_political_power = 120
+                        custom_effect_tooltip = "Remilitarize the Rhineland, beginning our historical path."
+                        add_named_threat = { threat = 5 name = GER_rhineland }
+        }
+    }
+
+    focus = {
+        id = GER_anschluss
+        icon = GFX_goal_generic_national_unity
+        x = 2
+        y = 1
+        cost = 10
+        
+		bypass = {
+			has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+			has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+			has_game_rule = {
+				rule = SAH_ger_anschluss_start_rule
+				option = SAH_anschluss_bypass
+			}
+		}
+
+        prerequisite = { focus = GER_rhineland }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = annex_everything target = AUS }
+                        custom_effect_tooltip = "Annex Austria into the Greater German Reich."
+        }
+    }
+
+    focus = {
+        id = GER_demand_sudetenland
+		bypass = {
+			has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+			}
+		}
+
+        icon = GFX_goal_generic_demand_territory
+        x = 2
+        y = 2
+        cost = 10
+        prerequisite = { focus = GER_anschluss }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = annex_everything target = CZE }
+                        custom_effect_tooltip = "Demand the Sudetenland from Czechoslovakia."
+        }
+    }
+
+    focus = {
+        id = GER_fate_of_czechoslovakia
+		bypass = {
+			has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+			}
+		}
+
+        icon = GFX_goal_generic_forceful_treaty
+        x = 2
+        y = 3
+        cost = 10
+        prerequisite = { focus = GER_demand_sudetenland }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "Decide the final fate of the Czechoslovak state."
+                        add_political_power = 150
+        }
+    }
+
+    focus = {
+        id = GER_danzig_or_war
+		bypass = {
+			has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+			}
+		}
+
+        icon = GFX_goal_generic_attack_allies
+        x = 1
+        y = 4
+        cost = 10
+        mutually_exclusive = { focus = GER_befriend_poland }
+        prerequisite = { focus = GER_fate_of_czechoslovakia }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = annex_everything target = POL }
+                        custom_effect_tooltip = "Demand Danzig, or go to war with Poland."
+        }
+    }
+
+    focus = {
+        id = GER_befriend_poland
+		bypass = {
+			has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+			}
+		}
+
+        icon = GFX_goal_generic_peaceful_treaty
+        x = 3
+        y = 4
+        cost = 10
+        mutually_exclusive = { focus = GER_danzig_or_war }
+        prerequisite = { focus = GER_fate_of_czechoslovakia }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.1 }
+                        custom_effect_tooltip = "Improve relations and seek an alliance with Poland."
+        }
+    }
+
+    focus = {
+        id = GER_around_maginot
+        icon = GFX_goal_generic_position_armies
+        x = 1
+        y = 5
+        cost = 10
+        prerequisite = { focus = GER_danzig_or_war }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = annex_everything target = HOL }
+                        create_wargoal = { type = annex_everything target = BEL }
+                        create_wargoal = { type = annex_everything target = LUX }
+        }
+    }
+
+    focus = {
+        id = GER_operation_weserubung
+        icon = GFX_goal_generic_amphibious_assault
+        x = 0
+        y = 5
+        cost = 10
+        prerequisite = { focus = GER_danzig_or_war }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = annex_everything target = DEN }
+                        create_wargoal = { type = annex_everything target = NOR }
+        }
+    }
+
+    focus = {
+        id = GER_operation_barbarossa
+        icon = GFX_goal_generic_combat_terrain_snow_mountain
+        x = 2
+        y = 6
+        cost = 10
+        prerequisite = { focus = GER_around_maginot }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = annex_everything target = SOV }
+                        add_named_threat = { threat = 20 name = GER_operation_barbarossa }
+        }
+    }
+
+    focus = {
+        id = GER_the_new_order
+        icon = GFX_goal_generic_major_alliance
+        x = 2
+        y = 7
+        cost = 10
+        prerequisite = { focus = GER_operation_barbarossa }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 200
+                        custom_effect_tooltip = "Establish the New Order in Europe."
+        }
+    }
+
+    focus = {
+        id = GER_oppose_hitler
+		bypass = {
+			has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			}
+		}
+
+        icon = GFX_goal_generic_construct_military_factory
+        x = 11
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = GER_rhineland }
+        mutually_exclusive = { focus = GER_communist_uprising }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        
+		modifier = {
+			factor = 1000
+			OR = { SAH_is_ger_forced_democratic = yes SAH_is_ger_forced_communist = yes }
+		}
+}
+
+
+        completion_reward = {
+            add_political_power = 100
+                        custom_effect_tooltip = "Triggers a Civil War against the Fascists!"
+                        add_popularity = { ideology = neutrality popularity = 0.2 }
+        }
+    }
+
+    focus = {
+        id = GER_revive_the_kaiserreich
+		bypass = {
+			has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			}
+		}
+
+        icon = GFX_goal_generic_political_pressure
+        x = 9
+        y = 1
+        cost = 10
+        mutually_exclusive = { focus = GER_reestablish_free_elections }
+        prerequisite = { focus = GER_oppose_hitler }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = neutrality elections_allowed = no }
+                        add_political_power = 150
+        }
+    }
+
+    focus = {
+        id = GER_return_of_the_kaiser
+		bypass = {
+			has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+			}
+		}
+
+        icon = GFX_goal_generic_propaganda
+        x = 9
+        y = 2
+        cost = 10
+        prerequisite = { focus = GER_revive_the_kaiserreich }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_ideas = GER_kaiser_returns
+                        add_stability = 0.1
+                        custom_effect_tooltip = "Wilhelm II returns from Doorn!"
+        }
+    }
+
+    focus = {
+        id = GER_our_place_in_the_sun
+        icon = GFX_goal_generic_demand_territory
+        x = 8
+        y = 3
+        cost = 10
+        prerequisite = { focus = GER_return_of_the_kaiser }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 50
+                        custom_effect_tooltip = "Demand the return of our African colonies."
+        }
+    }
+
+    focus = {
+        id = GER_the_true_enemy
+        icon = GFX_goal_generic_attack_allies
+        x = 10
+        y = 3
+        cost = 10
+        prerequisite = { focus = GER_return_of_the_kaiser }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = GER_focus_on_the_true_enemy_of_the_world
+        icon = GFX_goal_generic_position_armies
+        x = 11
+        y = 4
+        cost = 10
+        mutually_exclusive = { focus = GER_assassinate_mussolini }
+        prerequisite = { focus = GER_the_true_enemy }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = puppet_wargoal target = ENG }
+                        custom_effect_tooltip = "Focus on defeating Great Britain."
+        }
+    }
+
+    focus = {
+        id = GER_assassinate_mussolini
+        icon = GFX_goal_generic_secret_weapon
+        x = 9
+        y = 4
+        cost = 10
+        mutually_exclusive = { focus = GER_focus_on_the_true_enemy_of_the_world }
+        prerequisite = { focus = GER_the_true_enemy }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = puppet_wargoal target = ITA }
+                        custom_effect_tooltip = "Avenge the betrayal of WW1 by removing Mussolini."
+        }
+    }
+
+    focus = {
+        id = GER_reestablish_free_elections
+		bypass = {
+			has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 13
+        y = 1
+        cost = 10
+        mutually_exclusive = { focus = GER_revive_the_kaiserreich }
+        prerequisite = { focus = GER_oppose_hitler }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = democratic_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = democratic is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = democratic elections_allowed = yes }
+                        add_political_power = 150
+        }
+    }
+
+    focus = {
+        id = GER_the_bulwark_against_bolshevism
+		bypass = {
+			has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			}
+		}
+
+        icon = GFX_goal_generic_forceful_treaty
+        x = 13
+        y = 2
+        cost = 10
+        prerequisite = { focus = GER_reestablish_free_elections }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 100
+                        custom_effect_tooltip = "Germany shall be the shield of Europe."
+        }
+    }
+
+    focus = {
+        id = GER_central_european_alliance
+		bypass = {
+			has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			}
+		}
+
+        icon = GFX_goal_generic_major_alliance
+        x = 12
+        y = 3
+        cost = 10
+        prerequisite = { focus = GER_the_bulwark_against_bolshevism }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "Invite Central European nations to a defensive pact."
+        }
+    }
+
+    focus = {
+        id = GER_the_anti_soviet_pact
+        icon = GFX_goal_generic_attack_allies
+        x = 14
+        y = 3
+        cost = 10
+        prerequisite = { focus = GER_the_bulwark_against_bolshevism }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = puppet_wargoal target = SOV }
+                        custom_effect_tooltip = "Prepare to attack the Soviet Union."
+        }
+    }
+
+    focus = {
+        id = GER_support_democracy_in_europe
+		bypass = {
+			has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			}
+		}
+
+        icon = GFX_goal_generic_political_pressure
+        x = 12
+        y = 4
+        cost = 10
+        prerequisite = { focus = GER_central_european_alliance }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = democratic_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = democratic is_major = yes }
+            }
+        
+		modifier = {
+			factor = 1000
+			SAH_is_ger_forced_democratic = yes
+		}
+}
+
+
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.15 }
+                        add_political_power = 150
+        }
+    }
+
+    focus = {
+        id = GER_communist_uprising
+		bypass = {
+			has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			}
+		}
+
+        icon = GFX_goal_generic_communism
+        x = 18
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = GER_rhineland }
+        mutually_exclusive = { focus = GER_oppose_hitler }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        
+		modifier = {
+			factor = 1000
+			SAH_is_ger_forced_communist = yes
+		}
+}
+
+
+        completion_reward = {
+            add_political_power = 100
+                        add_popularity = { ideology = communism popularity = 0.3 }
+                        custom_effect_tooltip = "Triggers a Communist Uprising against the Fascists!"
+        }
+    }
+
+    focus = {
+        id = GER_the_workers_republic
+		bypass = {
+			has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
+			}
+		}
+
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 18
+        y = 1
+        cost = 10
+        prerequisite = { focus = GER_communist_uprising }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = communism elections_allowed = no }
+                        add_political_power = 150
+        }
+    }
+
+    focus = {
+        id = GER_align_with_moscow
+        icon = GFX_goal_generic_intelligence_exchange
+        x = 17
+        y = 2
+        cost = 10
+        mutually_exclusive = { focus = GER_german_independent_socialism }
+        prerequisite = { focus = GER_the_workers_republic }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 100
+                        custom_effect_tooltip = "Seek guidance and protection from the USSR."
+        }
+    }
+
+    focus = {
+        id = GER_german_independent_socialism
+        icon = GFX_goal_generic_national_unity
+        x = 19
+        y = 2
+        cost = 10
+        mutually_exclusive = { focus = GER_align_with_moscow }
+        prerequisite = { focus = GER_the_workers_republic }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 100
+                        add_stability = 0.1
+                        custom_effect_tooltip = "Forge our own path of Socialism."
+        }
+    }
+
+    focus = {
+        id = GER_join_the_comintern
+        icon = GFX_goal_generic_major_alliance
+        x = 17
+        y = 3
+        cost = 10
+        prerequisite = { focus = GER_align_with_moscow }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "Join the Comintern faction."
+        }
+    }
+
+    focus = {
+        id = GER_spread_the_revolution_west
+        icon = GFX_goal_generic_attack_allies
+        x = 17
+        y = 4
+        cost = 10
+        prerequisite = { focus = GER_join_the_comintern }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = puppet_wargoal target = FRA }
+                        create_wargoal = { type = puppet_wargoal target = HOL }
+                        create_wargoal = { type = puppet_wargoal target = BEL }
+        }
+    }
+
+    focus = {
+        id = GER_the_european_ussr
+        icon = GFX_goal_generic_demand_territory
+        x = 19
+        y = 3
+        cost = 10
+        prerequisite = { focus = GER_german_independent_socialism }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 150
+                        custom_effect_tooltip = "We shall be the true center of European Communism."
+        }
+    }
+
+    focus = {
+        id = GER_crush_the_reactionaries
+        icon = GFX_goal_generic_suppress_resistance
+        x = 19
+        y = 4
+        cost = 10
+        prerequisite = { focus = GER_the_european_ussr }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = puppet_wargoal target = ITA }
+                        custom_effect_tooltip = "Destroy Fascism in Italy."
+        }
+    }
+
+    focus = {
+        id = GER_liberate_the_proletariat
+        icon = GFX_goal_generic_position_armies
+        x = 19
+        y = 5
+        cost = 10
+        prerequisite = { focus = GER_crush_the_reactionaries }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = puppet_wargoal target = SOV }
+                        custom_effect_tooltip = "Stalin has corrupted the revolution. We must liberate the Soviet workers!"
+        }
+    }
+
+    focus = {
+        id = GER_four_year_plan
+        icon = GFX_goal_generic_production
+        x = 6
+        y = 0
+        cost = 10
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_ideas = GER_four_year_plan
+                        add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = GER_autarky
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 5
+        y = 1
+        cost = 10
+        mutually_exclusive = { focus = GER_hermann_goring_werke }
+        prerequisite = { focus = GER_four_year_plan }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            random_owned_controlled_state = {
+                            limit = { free_building_slots = { building = industrial_complex size > 0 } }
+                            add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+                        }
+        }
+    }
+
+    focus = {
+        id = GER_hermann_goring_werke
+        icon = GFX_goal_generic_construct_military_factory
+        x = 7
+        y = 1
+        cost = 10
+        mutually_exclusive = { focus = GER_autarky }
+        prerequisite = { focus = GER_four_year_plan }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            random_owned_controlled_state = {
+                            limit = { free_building_slots = { building = arms_factory size > 0 } }
+                            add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+                        }
+        }
+    }
+
+    focus = {
+        id = GER_kdf_wagen
+        icon = GFX_goal_generic_army_motorized
+        x = 6
+        y = 2
+        cost = 10
+        prerequisite = { focus = GER_autarky focus = GER_hermann_goring_werke }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            random_owned_controlled_state = {
+                            limit = { is_core = yes }
+                            add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+                        }
+        }
+    }
+
+    focus = {
+        id = GER_extra_research_slot
+        icon = GFX_goal_generic_secret_weapon
+        x = 6
+        y = 3
+        cost = 10
+        prerequisite = { focus = GER_kdf_wagen }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_research_slot = 1
+        }
+    }
+
+    focus = {
+        id = GER_wunderwaffe
+        icon = GFX_goal_generic_secret_weapon
+        x = 6
+        y = 4
+        cost = 10
+        prerequisite = { focus = GER_extra_research_slot }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_research_bonus = {
+                            technology_category = secret_weapons
+                            bonus = 1.0
+                            uses = 2
+                        }
+        }
+    }
+
+    focus = {
+        id = GER_army_innovations
+        icon = GFX_goal_generic_build_tank
+        x = 4
+        y = 2
+        cost = 10
+        prerequisite = { focus = GER_four_year_plan }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_army_experience = 50
+        }
+    }
+
+    focus = {
+        id = GER_luftwaffe_innovations
+        icon = GFX_goal_generic_build_airforce
+        x = 3
+        y = 3
+        cost = 10
+        prerequisite = { focus = GER_army_innovations }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_air_experience = 50
+        }
+    }
+
+    focus = {
+        id = GER_naval_rearmament
+        icon = GFX_goal_generic_build_navy
+        x = 8
+        y = 2
+        cost = 10
+        prerequisite = { focus = GER_four_year_plan }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_navy_experience = 50
+        }
+    }
+
+}

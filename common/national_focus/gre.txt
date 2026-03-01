@@ -1,0 +1,164 @@
+focus_tree = {
+    id = greek_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = GRE
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = GRE_the_metaxas_dictatorship
+		bypass = {
+			has_game_rule = { rule = SAH_gre_scenario_start_rule option = metaxas }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = venizelist }
+			OR = {
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = metaxas }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = venizelist }
+			}
+		}
+
+        icon = GFX_goal_generic_suppress_resistance
+        x = 4
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = GRE_the_venizelist_movement }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                add = 90
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 120
+            set_politics = { ruling_party = neutrality }
+        }
+    }
+
+    focus = {
+        id = GRE_the_4th_of_august_regime
+		bypass = {
+			has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
+			OR = {
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 4
+        y = 1
+        cost = 10
+        prerequisite = { focus = GRE_the_metaxas_dictatorship }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_stability = 0.1
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = GRE_the_venizelist_movement
+		bypass = {
+			has_game_rule = { rule = SAH_gre_scenario_start_rule option = metaxas }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = venizelist }
+			OR = {
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = metaxas }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = venizelist }
+			}
+		}
+
+        icon = GFX_goal_generic_peaceful_treaty
+        x = 8
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = GRE_the_metaxas_dictatorship }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = democratic_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = democratic is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 50
+            set_politics = { ruling_party = democratic elections_allowed = yes }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = GRE_revive_the_megali_idea
+		bypass = {
+			has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
+			OR = {
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
+			}
+		}
+
+        icon = GFX_goal_generic_more_territorial_claims
+        x = 4
+        y = 2
+        cost = 10
+        prerequisite = { focus = GRE_the_4th_of_august_regime }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = GRE_hellenic_armed_forces
+        icon = GFX_goal_generic_position_armies
+        x = 6
+        y = 3
+        cost = 10
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_army_experience = 50
+        }
+    }
+
+}

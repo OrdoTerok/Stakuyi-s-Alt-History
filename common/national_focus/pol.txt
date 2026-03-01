@@ -1,0 +1,401 @@
+focus_tree = {
+    id = polish_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = POL
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = POL_the_castle
+		bypass = {
+			has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = falanga }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council }
+			OR = {
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = falanga }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 2
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = POL_the_morges_front }
+        mutually_exclusive = { focus = POL_the_falanga }
+        mutually_exclusive = { focus = POL_the_polish_communist_party }
+        mutually_exclusive = { focus = POL_the_regency_council }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                add = 90
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 120
+            add_popularity = { ideology = neutrality popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = POL_april_constitution
+		bypass = {
+			has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution }
+			OR = {
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution }
+			}
+		}
+
+        icon = GFX_goal_generic_political_pressure
+        x = 2
+        y = 1
+        cost = 10
+        prerequisite = { focus = POL_the_castle }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_stability = 0.1
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = POL_the_between_seas_concept
+        icon = GFX_goal_generic_major_alliance
+        x = 2
+        y = 2
+        cost = 10
+        prerequisite = { focus = POL_april_constitution }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_faction = "Miedzymorze"
+        }
+    }
+
+    focus = {
+        id = POL_the_morges_front
+		bypass = {
+			has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = falanga }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council }
+			OR = {
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = falanga }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council }
+			}
+		}
+
+        icon = GFX_goal_generic_peaceful_treaty
+        x = 6
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = POL_the_castle }
+        mutually_exclusive = { focus = POL_the_falanga }
+        mutually_exclusive = { focus = POL_the_polish_communist_party }
+        mutually_exclusive = { focus = POL_the_regency_council }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = democratic_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = democratic is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 100
+            set_politics = { ruling_party = democratic }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = POL_align_with_the_west
+        icon = GFX_goal_generic_major_alliance
+        x = 6
+        y = 1
+        cost = 10
+        prerequisite = { focus = POL_the_morges_front }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = POL_the_falanga
+		bypass = {
+			has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = falanga }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council }
+			OR = {
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = falanga }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council }
+			}
+		}
+
+        icon = GFX_goal_generic_suppress_resistance
+        x = 10
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = POL_the_castle }
+        mutually_exclusive = { focus = POL_the_morges_front }
+        mutually_exclusive = { focus = POL_the_polish_communist_party }
+        mutually_exclusive = { focus = POL_the_regency_council }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 100
+            set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = POL_align_with_the_axis
+        icon = GFX_goal_generic_major_alliance
+        x = 10
+        y = 1
+        cost = 10
+        prerequisite = { focus = POL_the_falanga }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = POL_the_polish_communist_party
+		bypass = {
+			has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = falanga }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council }
+			OR = {
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = falanga }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council }
+			}
+		}
+
+        icon = GFX_goal_generic_communism
+        x = 14
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = POL_the_castle }
+        mutually_exclusive = { focus = POL_the_morges_front }
+        mutually_exclusive = { focus = POL_the_falanga }
+        mutually_exclusive = { focus = POL_the_regency_council }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 100
+            set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = POL_align_with_the_comintern
+		bypass = {
+			has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern }
+			OR = {
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern }
+			}
+		}
+
+        icon = GFX_goal_generic_major_alliance
+        x = 14
+        y = 1
+        cost = 10
+        prerequisite = { focus = POL_the_polish_communist_party }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = POL_the_regency_council
+		bypass = {
+			has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = falanga }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council }
+			OR = {
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = falanga }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 18
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = POL_the_castle }
+        mutually_exclusive = { focus = POL_the_morges_front }
+        mutually_exclusive = { focus = POL_the_falanga }
+        mutually_exclusive = { focus = POL_the_polish_communist_party }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 100
+            add_stability = -0.1
+        }
+    }
+
+    focus = {
+        id = POL_invite_the_king
+		bypass = {
+			has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council }
+			OR = {
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council }
+			}
+		}
+
+        icon = GFX_goal_generic_political_pressure
+        x = 18
+        y = 1
+        cost = 10
+        prerequisite = { focus = POL_the_regency_council }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = neutrality elections_allowed = no }
+            add_political_power = 150
+        }
+    }
+
+    focus = {
+        id = POL_central_industrial_region
+        icon = GFX_goal_generic_production
+        x = 10
+        y = 4
+        cost = 10
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 } } add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+        }
+    }
+
+}

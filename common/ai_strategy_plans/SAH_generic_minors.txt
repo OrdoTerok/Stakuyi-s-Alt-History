@@ -1,0 +1,114 @@
+# ============================================================
+# Stakuyi's Alt History - Generic Minor Behaviors
+# ============================================================
+
+# Makes generic Fascist Minors highly aggressive towards weaker neighbors and seek out major Axis powers.
+SAH_generic_fascist_minor = {
+    enable = {
+		NOT = { SAH_is_historical_mode = yes }
+        is_major = no
+        has_government = fascism
+    }
+    abort = {
+        OR = {
+            has_government = democratic
+            has_government = communism
+            has_government = neutrality
+        }
+    }
+    
+    strategy = { type = build_army value = 25 }
+    strategy = { type = diplo_action_desire id = guarantee value = -100 }
+    strategy = { type = befriend id = GER value = 100 }
+    strategy = { type = befriend id = ITA value = 100 }
+    strategy = { type = antagonize id = SOV value = 150 }
+    strategy = { type = conquer_prov value = 50 } # Generally pushes the AI to fabricate on weak neighbors
+}
+
+# Makes generic Communist Minors fiercely loyal to the Comintern and hostile to Fascists.
+SAH_generic_communist_minor = {
+    enable = {
+		NOT = { SAH_is_historical_mode = yes }
+        is_major = no
+        has_government = communism
+    }
+    abort = {
+        OR = {
+            has_government = democratic
+            has_government = fascism
+            has_government = neutrality
+        }
+    }
+    
+    strategy = { type = diplo_action_desire id = guarantee value = -50 }
+    strategy = { type = befriend id = SOV value = 200 }
+    strategy = { type = antagonize id = GER value = 150 }
+    strategy = { type = declare_war id = GER value = 50 } # Will opportunistically join anti-fascist wars
+    strategy = { type = build_army value = 20 }
+}
+
+# Makes generic Democratic Minors play defensively and seek Allied protection.
+SAH_generic_democratic_minor = {
+    enable = {
+		NOT = { SAH_is_historical_mode = yes }
+        is_major = no
+        has_government = democratic
+    }
+    abort = {
+        OR = {
+            has_government = fascism
+            has_government = communism
+            has_government = neutrality
+        }
+    }
+    
+    strategy = { type = befriend id = ENG value = 100 }
+    strategy = { type = befriend id = USA value = 100 }
+    strategy = { type = antagonize id = GER value = 100 }
+    strategy = { type = antagonize id = SOV value = 100 }
+    strategy = { type = dont_defend_ally_borders value = -50 } # More willing to help allies
+    strategy = { type = build_building id = arms_factory value = -10 } # Lean towards civs initially
+}
+
+# Generic Neutrality Minors turtle up and try to survive
+SAH_generic_neutrality_minor = {
+    enable = {
+		NOT = { SAH_is_historical_mode = yes }
+        is_major = no
+        has_government = neutrality
+    }
+    abort = {
+        OR = {
+            has_government = fascism
+            has_government = communism
+            has_government = democratic
+        }
+    }
+    
+    strategy = { type = dont_join_wars value = 50 }
+    strategy = { type = build_building id = land_fort value = 25 }
+    strategy = { type = diplo_action_desire id = join_faction value = -100 }
+}
+
+
+# Fallback Performance Plan: Stops minor tag division bloat and cross-map pathfinding lag
+SAH_minor_performance_lock = {
+	enable = {
+		is_major = no
+		SAH_is_performance_mode_enabled = yes
+	}
+	abort = {
+		is_major = yes
+	}
+
+	# Stop minors from sending single unsupplied divisions across the ocean
+	strategy = { type = send_expeditionary_forces value = 0 }
+	
+	# Stop them from cluttering peace conferences unless directly on their border
+	strategy = { type = diplo_action_desire id = guarantee value = -100 }
+	
+	# Force minors to consolidate templates rather than having 50 different 2-width garrisons
+	strategy = { type = role_ratio id = infantry value = 100 }
+	strategy = { type = role_ratio id = motorized value = 0 }
+	strategy = { type = role_ratio id = armor value = 0 }
+}

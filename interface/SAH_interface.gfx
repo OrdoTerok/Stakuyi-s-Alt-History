@@ -1,0 +1,25 @@
+# ============================================================
+# Stakuyi's Alt History - Interface GFX Declarations
+# ============================================================
+# Add custom SpriteType entries here as art assets are
+# created.  Referencing a texture file that does not exist
+# on disk will cause the game to log a warning, so only
+# uncomment / add entries once the matching .dds file is in
+# gfx/interface/.
+# ============================================================
+
+spriteTypes = {
+
+	# --- Example entry (uncomment when the asset exists) ---
+	# SpriteType = {
+	# 	name    = "GFX_SAH_community_path_icon"
+	# 	texturefile = "gfx/interface/SAH_community_path_icon.dds"
+	# }
+
+	# --- Decision Category Icon ---
+	# SpriteType = {
+	# 	name    = "GFX_SAH_decision_cat_community"
+	# 	texturefile = "gfx/interface/decisions/SAH_decision_cat_community.dds"
+	# }
+
+}

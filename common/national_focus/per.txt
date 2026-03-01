@@ -1,0 +1,112 @@
+focus_tree = {
+    id = iranian_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = PER
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = PER_the_pahlavi_dynasty
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_per_scenario_start_rule option = pahlavi }
+				has_game_rule = { rule = SAH_per_scenario_start_rule option = tudeh }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 4
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = PER_the_tudeh_party }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                add = 90
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 120
+            set_politics = { ruling_party = neutrality }
+        }
+    }
+
+    focus = {
+        id = PER_the_tudeh_party
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_per_scenario_start_rule option = pahlavi }
+				has_game_rule = { rule = SAH_per_scenario_start_rule option = tudeh }
+			}
+		}
+
+        icon = GFX_goal_generic_communism
+        x = 8
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = PER_the_pahlavi_dynasty }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 50
+            set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = PER_trans_iranian_railway
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 4
+        y = 1
+        cost = 10
+        prerequisite = { focus = PER_the_pahlavi_dynasty }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            random_owned_controlled_state = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+        }
+    }
+
+}

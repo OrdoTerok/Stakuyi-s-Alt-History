@@ -1,0 +1,89 @@
+focus_tree = {
+    id = new_zealander_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = NZL
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = NZL_the_labour_party
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_nzl_scenario_start_rule option = labour }
+			}
+		}
+
+        icon = GFX_goal_generic_peaceful_treaty
+        x = 4
+        y = 0
+        cost = 10
+
+        ai_will_do = {
+            base = 1
+            modifier = { add = 90 is_historical_focus_on = yes }
+        }
+
+        completion_reward = {
+            add_political_power = 120
+        }
+    }
+
+    focus = {
+        id = NZL_social_security_act
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 2
+        y = 1
+        cost = 10
+        prerequisite = { focus = NZL_the_labour_party }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_stability = 0.1
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = NZL_align_with_australia
+        icon = GFX_goal_generic_major_alliance
+        x = 6
+        y = 1
+        cost = 10
+        prerequisite = { focus = NZL_the_labour_party }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = NZL_maori_war_effort
+        icon = GFX_goal_generic_position_armies
+        x = 4
+        y = 4
+        cost = 10
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_manpower = 25000
+            add_army_experience = 25
+        }
+    }
+
+}

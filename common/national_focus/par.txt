@@ -1,0 +1,71 @@
+focus_tree = {
+    id = paraguayan_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = PAR
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = PAR_the_febrerista_revolution
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_par_scenario_start_rule option = febrerista }
+			}
+		}
+
+        icon = GFX_goal_generic_suppress_resistance
+        x = 4
+        y = 0
+        cost = 10
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                add = 90
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 120
+            set_politics = { ruling_party = fascism }
+        }
+    }
+
+    focus = {
+        id = PAR_the_legacy_of_the_chaco_war
+        icon = GFX_goal_generic_position_armies
+        x = 4
+        y = 1
+        cost = 10
+        prerequisite = { focus = PAR_the_febrerista_revolution }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_army_experience = 50
+        }
+    }
+
+}

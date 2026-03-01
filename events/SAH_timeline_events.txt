@@ -1,0 +1,61 @@
+﻿
+# ============================================================
+# Stakuyi's "Timeline Shattered" Events
+# ============================================================
+
+news_event = {
+	id = SAH_timeline.1
+	title = SAH_timeline.1.t
+	desc = SAH_timeline.1.d
+	picture = GFX_report_event_gathering_crowd_2
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = SAH_timeline.1.a
+		custom_effect_tooltip = SAH_timeline_shattered_tt
+	}
+}
+
+
+# Hidden event fired 45 days after capitulation to cleanly release tags without breaking conferences
+country_event = {
+	id = SAH_timeline.2
+	hidden = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		# 1. Subject Breakaways
+		every_subject_country = {
+			limit = {
+				NOT = { has_capitulated = yes }
+				# Only break free if they weren't absorbed into the victor's faction
+				NOT = { is_in_faction_with = ROOT } 
+			}
+			random_list = {
+				30 = { free_country = yes }
+				70 = { }
+			}
+		}
+
+		# 2. Consolidated Direct-Holdings Breakaways
+		if = {
+			limit = { tag = BEL }
+			release = COG
+		}
+		if = {
+			limit = { tag = HOL }
+			release = INS
+		}
+		if = {
+			limit = { tag = POR }
+			# Ensure we just release the big ones
+			release = ANG release = MZB
+		}
+		if = {
+			limit = { tag = FRA }
+			release = MAD release = ALG release = WAF
+		}
+	}
+}

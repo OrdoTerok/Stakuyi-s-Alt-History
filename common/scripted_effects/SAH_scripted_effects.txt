@@ -1,0 +1,291 @@
+﻿# ============================================================
+# Stakuyi's Alt History - Scripted Effects
+# Prefix: SAH_ (Stakuyi's Alt History)
+# ============================================================
+# Reusable effect blocks called throughout the mod.
+# Always call these instead of duplicating raw effects so
+# that behaviour stays consistent across all events and
+# decisions.
+# ============================================================
+
+# --------------------------------------------------------
+# Mod Lifecycle
+# --------------------------------------------------------
+
+# Called once at game start via on_startup.
+# Sets the global "mod is ready" flag and fires the silent
+# initialisation event to GER so the player sees no popup.
+SAH_initialize_mod = {
+	set_global_flag = SAH_mod_initialized
+	GER = {
+		country_event = { id = SAH_init.1 days = 1 }
+	}
+}
+
+# --------------------------------------------------------
+# Community Path Management
+# --------------------------------------------------------
+
+# Activate a community-voted path.  Call this from the
+# decision or event that kicks off the chosen scenario.
+SAH_activate_community_path = {
+	set_global_flag = SAH_community_path_active
+}
+
+# Deactivate and clean up the current community path so a
+# fresh one can be started.
+SAH_deactivate_community_path = {
+	clr_global_flag = SAH_community_path_active
+	clr_global_flag = SAH_community_path_selected
+}
+
+# --------------------------------------------------------
+# DLC-Aware Political Effects
+# These wrappers apply the correct effect depending on
+# which DLCs the player has installed so that the same
+# event / decision works for everyone.
+# --------------------------------------------------------
+
+# Grant a modest political power bonus.
+SAH_grant_political_power_small = {
+	add_political_power = 25
+}
+
+SAH_grant_political_power_medium = {
+	add_political_power = 50
+}
+
+SAH_grant_political_power_large = {
+	add_political_power = 100
+}
+
+# Improve national stability.
+SAH_improve_stability_small = {
+	add_stability = 0.03
+}
+
+SAH_improve_stability_medium = {
+	add_stability = 0.05
+}
+
+# Improve war support.
+SAH_improve_war_support_small = {
+	add_war_support = 0.03
+}
+
+SAH_improve_war_support_medium = {
+	add_war_support = 0.05
+}
+
+# --------------------------------------------------------
+# DLC-Conditional Blocks
+# Add DLC-specific effects here so callers never need to
+# check has_dlc themselves.
+# --------------------------------------------------------
+
+# Example: grant an operative slot only when La Resistance
+# is active, otherwise give political power instead.
+SAH_reward_intel_or_pp = {
+	if = {
+		limit = { SAH_can_use_intel_agency = yes }
+		add_intelligence_agency_experience = 25
+	}
+	else = {
+		add_political_power = 25
+	}
+}
+
+# Example: grant supply hub construction if NSB is active,
+# otherwise improve war support.
+SAH_reward_logistics = {
+	if = {
+		limit = { SAH_can_use_supply_system = yes }
+		add_war_support = 0.03
+	}
+	else = {
+		add_war_support = 0.05
+	}
+}
+
+
+# Diplomatic Reactive Scripting Hub
+SAH_reactive_ideology_change = {
+	# ROOT is the country changing ideology
+	# Send threat opinion modifier to neighbors of different ideologies
+	every_neighbor_country = {
+		limit = {
+			SAH_is_reactive_diplomacy_enabled = yes
+			NOT = { has_government = ROOT }
+			is_subject = no
+			is_major = no
+		}
+		add_opinion_modifier = { target = ROOT modifier = SAH_ideological_threat }
+	}
+
+	# Decolonize if adopting an anti-imperial ideology
+	SAH_decolonization_effect = yes
+}
+
+SAH_reactive_war_declaration = {
+	# ROOT is the aggressor
+	# FROM is the defender
+	SAH_evaluate_world_song_effect = yes
+	add_political_power = -10
+}
+
+SAH_reactive_puppeting = {
+	# ROOT is the overlord
+	# FROM is the puppet
+	add_political_power = 25
+}
+
+SAH_reactive_faction_change = {
+	# ROOT is the joining country
+	# Add small opinion boost with faction leader (simplified)
+	# (Vanilla requires creating custom opinion modifier here as well, so we will stub it)
+}
+
+# ============================================================
+# The "World-Song" Tension System
+# Evaluates global tension and major wars to set the world phase
+# ============================================================
+SAH_evaluate_world_song_effect = {
+	# Check for "The Drums of War" (WT > 75% OR Major War)
+	if = {
+		limit = {
+			OR = {
+				threat > 0.749
+				any_country = {
+					is_major = yes
+					has_war = yes
+					any_enemy_country = { is_major = yes }
+				}
+			}
+		}
+		set_global_flag = SAH_world_song_drums_of_war
+		clr_global_flag = SAH_world_song_marching_beat
+		clr_global_flag = SAH_world_song_rising_chorus
+		clr_global_flag = SAH_world_song_quiet
+		set_variable = { global.SAH_world_song_level = 4 }
+	}
+	# Check for "The Marching Beat" (WT > 50%)
+	else_if = {
+		limit = { threat > 0.499 }
+		set_global_flag = SAH_world_song_marching_beat
+		clr_global_flag = SAH_world_song_drums_of_war
+		clr_global_flag = SAH_world_song_rising_chorus
+		clr_global_flag = SAH_world_song_quiet
+		set_variable = { global.SAH_world_song_level = 3 }
+	}
+	# Check for "The Rising Chorus" (WT > 25%)
+	else_if = {
+		limit = { threat > 0.249 }
+		set_global_flag = SAH_world_song_rising_chorus
+		clr_global_flag = SAH_world_song_drums_of_war
+		clr_global_flag = SAH_world_song_marching_beat
+		clr_global_flag = SAH_world_song_quiet
+		set_variable = { global.SAH_world_song_level = 2 }
+	}
+	# Default to "A Quiet World" (WT < 25%)
+	else = {
+		set_global_flag = SAH_world_song_quiet
+		clr_global_flag = SAH_world_song_drums_of_war
+		clr_global_flag = SAH_world_song_marching_beat
+		clr_global_flag = SAH_world_song_rising_chorus
+		set_variable = { global.SAH_world_song_level = 1 }
+	}
+}
+
+# ============================================================
+# Auto-Release Imperial Logic
+# ============================================================
+
+
+SAH_imperial_collapse_capitulation_effect = {
+	# Triggered on capitulation. ROOT is the capitulating empire.
+	if = {
+		limit = {
+			SAH_is_imperial_collapse_enabled = yes
+			NOT = { SAH_is_historical_mode = yes }
+		}
+		# Fire a hidden event in 45 days to allow peace conferences to resolve first.
+		country_event = { id = SAH_timeline.2 days = 45 }
+	}
+}
+
+SAH_decolonization_effect = {
+	# Triggered when an empire shifts to an anti-imperial ideology natively
+	if = {
+		limit = { 
+			has_government = communism 
+			is_subject = no
+			NOT = { SAH_is_historical_mode = yes }
+		}
+		
+		# Set all generic subjects free
+		every_subject_country = {
+			limit = { is_major = no }
+			free_country = yes
+		}
+		
+		# Release major colonial blocks
+		if = { limit = { tag = ENG } release = RAJ release = MAL release = EGY release = NIG }
+		if = { limit = { tag = FRA } release = ALG release = SYR release = MAD release = NGR release = WAF }
+		if = { limit = { tag = HOL } release = INS }
+		if = { limit = { tag = BEL } release = COG }
+		if = { limit = { tag = POR } release = ANG release = MZB }
+	}
+}
+
+
+# ============================================================
+# Timeline Shattering Evaluation Hub
+# ============================================================
+SAH_evaluate_shattered_timeline = {
+	if = {
+		limit = {
+			has_custom_rule = { rule = SAH_global_campaign_rule option = SAH_global_historical }
+			NOT = { has_global_flag = SAH_timeline_shattered }
+		}
+		
+		# Condition 1: Ahistorical Ideologies
+		# If UK, USA, France, or USSR are Fascist or Italy/Germany is Communist/Democratic. 
+		if = {
+			limit = {
+				OR = {
+					SOV = { OR = { has_government = fascism has_government = democratic has_government = neutrality } }
+					USA = { OR = { has_government = fascism has_government = communism has_government = neutrality } }
+					ENG = { OR = { has_government = fascism has_government = communism has_government = neutrality } }
+					FRA = { OR = { has_government = fascism has_government = communism } }
+					GER = { OR = { has_government = democratic has_government = communism } }
+					ITA = { OR = { has_government = democratic has_government = communism } }
+					JAP = { OR = { has_government = democratic has_government = communism } }
+				}
+			}
+			set_global_flag = SAH_timeline_shattered
+			news_event = { id = SAH_timeline.1 }
+		}
+
+		# Condition 2: Premature Wars 
+		# If it's before Aug 1939 and a major is at war with another major.
+		if = {
+			limit = {
+				NOT = { has_global_flag = SAH_timeline_shattered }
+				date < 1939.8.1
+				any_country = { is_major = yes has_war_with = { is_major = yes } }
+			}
+			set_global_flag = SAH_timeline_shattered
+			news_event = { id = SAH_timeline.1 }
+		}
+		
+		# Condition 3: A Major Power falls 
+		if = {
+			limit = {
+				NOT = { has_global_flag = SAH_timeline_shattered }
+				any_major_country = { has_capitulated = yes }
+			}
+			set_global_flag = SAH_timeline_shattered
+			news_event = { id = SAH_timeline.1 }
+		}
+	}
+}

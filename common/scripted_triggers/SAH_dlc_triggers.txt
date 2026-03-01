@@ -1,0 +1,105 @@
+﻿# ============================================================
+# Stakuyi's Alt History - DLC Scripted Triggers
+# Prefix: SAH_ 
+# ============================================================
+# Centralized DLC Triggers for checking expansion features.
+# Always use these instead of direct has_dlc calls.
+# ============================================================
+
+# --------------------------------------------------------
+# Core Expansion Presence Checks
+# --------------------------------------------------------
+SAH_has_tfv = { has_dlc = "Together for Victory" }
+SAH_has_dod = { has_dlc = "Death or Dishonor" }
+SAH_has_wtt = { has_dlc = "Waking the Tiger" }
+SAH_has_mtg = { has_dlc = "Man the Guns" }
+SAH_has_lar = { has_dlc = "La Resistance" }
+SAH_has_bftb = { has_dlc = "Battle for the Bosporus" }
+SAH_has_nsb = { has_dlc = "No Step Back" }
+SAH_has_bba = { has_dlc = "By Blood Alone" }
+SAH_has_aat = { has_dlc = "Arms Against Tyranny" }
+SAH_has_toa = { has_dlc = "Trial of Allegiance" }
+SAH_has_got = { has_dlc = "Götterdämmerung" }
+
+# Mod-specific new DLCs or Reworks (From previous version)
+SAH_has_east_asia_rework = { has_dlc = "No Compromise, No Surrender" }
+SAH_has_peace_rework = { has_dlc = "Peace for Our Time" }
+
+# --------------------------------------------------------
+# General Catch-All Checks
+# --------------------------------------------------------
+SAH_has_major_expansion_dlc = {
+	OR = {
+		SAH_has_got = yes
+		SAH_has_aat = yes
+		SAH_has_bba = yes
+		SAH_has_nsb = yes
+		SAH_has_lar = yes
+		SAH_has_mtg = yes
+		SAH_has_wtt = yes
+	}
+}
+
+has_advanced_tech_dlc = {
+	OR = {
+		SAH_has_got = yes
+		SAH_has_bba = yes # Plane Designer
+		SAH_has_nsb = yes # Tank Designer
+		SAH_has_mtg = yes # Ship Designer
+	}
+}
+
+# --------------------------------------------------------
+# Mechanical Feature Capabilities
+# --------------------------------------------------------
+
+# Autonomy & Puppet Mechanics (Together for Victory / Waking the Tiger / Death or Dishonor)
+SAH_can_use_autonomy = { SAH_has_tfv = yes }
+SAH_can_use_formable_nations = { SAH_has_wtt = yes }
+SAH_can_use_border_conflicts = { SAH_has_wtt = yes }
+
+# Naval & Equipment Mechanics
+SAH_can_use_naval_treaties = { SAH_has_mtg = yes }
+SAH_can_use_equipment_variants = { SAH_has_mtg = yes }
+SAH_can_use_naval_designer = { SAH_has_mtg = yes }
+SAH_can_use_tank_designer = { SAH_has_nsb = yes }
+SAH_can_use_plane_designer = { SAH_has_bba = yes }
+
+# Intelligence & Resistance
+SAH_can_use_intel_agency = { SAH_has_lar = yes }
+SAH_can_use_operatives = { SAH_has_lar = yes }
+
+# Supply & Logistics
+SAH_can_use_railway_guns = { SAH_has_nsb = yes }
+SAH_can_use_supply_system = { SAH_has_nsb = yes }
+SAH_can_use_officer_corps = { SAH_has_nsb = yes }
+
+# Air Mechanics & Embargoes
+SAH_can_use_air_wings = { SAH_has_bba = yes }
+SAH_can_use_embargoes = { SAH_has_bba = yes }
+
+# International Market & Military Industrial Organizations
+SAH_can_use_international_market = { SAH_has_aat = yes }
+SAH_can_use_military_contracts = { SAH_has_aat = yes }
+SAH_can_use_mios = { SAH_has_aat = yes }
+
+# Special Projects & Raids
+SAH_can_use_wargoal_rework = { SAH_has_got = yes }
+SAH_can_use_war_trials = { SAH_has_got = yes }
+SAH_can_use_special_projects = { SAH_has_got = yes }
+SAH_can_use_raids = { SAH_has_got = yes }
+
+# --------------------------------------------------------
+# Mod State Checks
+# --------------------------------------------------------
+SAH_mod_is_initialized = {
+	has_global_flag = SAH_mod_initialized
+}
+
+SAH_community_path_is_active = {
+	has_global_flag = SAH_community_path_active
+}
+
+SAH_no_community_path_active = {
+	NOT = { has_global_flag = SAH_community_path_active }
+}

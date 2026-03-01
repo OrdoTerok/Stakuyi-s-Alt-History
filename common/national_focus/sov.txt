@@ -1,0 +1,737 @@
+focus_tree = {
+    id = soviet_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = SOV
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = SOV_the_center
+		bypass = {
+			has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			}
+		}
+
+        icon = GFX_goal_generic_communism
+        x = 2
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = SOV_the_left_opposition }
+        mutually_exclusive = { focus = SOV_the_right_opposition }
+        mutually_exclusive = { focus = SOV_beaten_but_not_defeated }
+
+        ai_will_do = {
+            base = 10
+            modifier = { add = 90 is_historical_focus_on = yes }
+        
+		modifier = {
+			factor = 0
+			OR = { SAH_is_sov_forced_democratic = yes SAH_is_sov_forced_tsarist = yes }
+		}
+}
+
+        completion_reward = {
+            add_political_power = 120
+                        custom_effect_tooltip = "Stalin consolidates his grip on the party apparatus."
+                        add_ideas = SOV_stalin_cult_of_personality
+        }
+    }
+
+    focus = {
+        id = SOV_the_great_purge
+		bypass = {
+			has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+			}
+		}
+
+        icon = GFX_goal_generic_suppress_resistance
+        x = 2
+        y = 1
+        cost = 10
+        prerequisite = { focus = SOV_the_center }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_stability = -0.1
+                        add_political_power = 100
+                        custom_effect_tooltip = "Initiate the Great Purge to eliminate all Trotskyist and Bukharinist elements."
+        }
+    }
+
+    focus = {
+        id = SOV_lessons_of_war
+        icon = GFX_goal_generic_position_armies
+        x = 1
+        y = 2
+        cost = 10
+        prerequisite = { focus = SOV_the_great_purge }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_army_experience = 50
+                        custom_effect_tooltip = "Remove the Purged Officers penalizer from our armed forces."
+        }
+    }
+
+    focus = {
+        id = SOV_the_comintern
+        icon = GFX_goal_generic_major_alliance
+        x = 3
+        y = 2
+        cost = 10
+        prerequisite = { focus = SOV_the_great_purge }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "Solidify our leadership of the global Communist International."
+        }
+    }
+
+    focus = {
+        id = SOV_the_anti_capitalist_diplomacy
+        icon = GFX_goal_generic_attack_allies
+        x = 3
+        y = 3
+        cost = 10
+        prerequisite = { focus = SOV_the_comintern }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = puppet_wargoal target = EST }
+                        create_wargoal = { type = puppet_wargoal target = LAT }
+                        create_wargoal = { type = puppet_wargoal target = LIT }
+        }
+    }
+
+    focus = {
+        id = SOV_the_left_opposition
+		bypass = {
+			has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			}
+		}
+
+        icon = GFX_goal_generic_communism
+        x = 6
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = SOV_the_center }
+        mutually_exclusive = { focus = SOV_the_right_opposition }
+        mutually_exclusive = { focus = SOV_beaten_but_not_defeated }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 100
+                        custom_effect_tooltip = "Trotsky returns from exile to lead the Permanent Revolution."
+        }
+    }
+
+    focus = {
+        id = SOV_permanent_revolution
+		bypass = {
+			has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+			}
+		}
+
+        icon = GFX_goal_generic_attack_allies
+        x = 6
+        y = 1
+        cost = 10
+        prerequisite = { focus = SOV_the_left_opposition }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_ideas = SOV_permanent_revolution_idea
+                        add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = SOV_ignite_the_flames_in_europe
+        icon = GFX_goal_generic_forceful_treaty
+        x = 5
+        y = 2
+        cost = 10
+        prerequisite = { focus = SOV_permanent_revolution }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "Fund socialist uprisings in France and the United Kingdom."
+        }
+    }
+
+    focus = {
+        id = SOV_the_fourth_international
+        icon = GFX_goal_generic_major_alliance
+        x = 7
+        y = 2
+        cost = 10
+        prerequisite = { focus = SOV_permanent_revolution }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_faction = "The Fourth International"
+                        custom_effect_tooltip = "Create a new international to rival Stalin's corrupted Comintern."
+        }
+    }
+
+    focus = {
+        id = SOV_the_right_opposition
+		bypass = {
+			has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			}
+		}
+
+        icon = GFX_goal_generic_communism
+        x = 10
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = SOV_the_center }
+        mutually_exclusive = { focus = SOV_the_left_opposition }
+        mutually_exclusive = { focus = SOV_beaten_but_not_defeated }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 100
+                        custom_effect_tooltip = "Bukharin rallies the Old Bolsheviks to oppose Stalin's centralization."
+        }
+    }
+
+    focus = {
+        id = SOV_the_new_economic_policy
+		bypass = {
+			has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+			}
+		}
+
+        icon = GFX_goal_generic_production
+        x = 10
+        y = 1
+        cost = 10
+        prerequisite = { focus = SOV_the_right_opposition }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 100
+                        add_ideas = SOV_nep_idea
+                        custom_effect_tooltip = "Introduce market socialism to stabilize the economy."
+        }
+    }
+
+    focus = {
+        id = SOV_cooperation_with_the_democracies
+        icon = GFX_goal_generic_peaceful_treaty
+        x = 10
+        y = 2
+        cost = 10
+        prerequisite = { focus = SOV_the_new_economic_policy }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "Increase relations with Democratic nations to prevent a united capitalist front against us."
+        }
+    }
+
+    focus = {
+        id = SOV_beaten_but_not_defeated
+		bypass = {
+			has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 16
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = SOV_the_center }
+        mutually_exclusive = { focus = SOV_the_left_opposition }
+        mutually_exclusive = { focus = SOV_the_right_opposition }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 100
+                        add_stability = -0.2
+                        custom_effect_tooltip = "The White Resistance triggers a second Russian Civil War."
+                        add_popularity = { ideology = neutrality popularity = 0.2 }
+                        add_popularity = { ideology = fascism popularity = 0.1 }
+                        add_popularity = { ideology = democratic popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = SOV_the_fascist_destiny
+		bypass = {
+			has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			}
+		}
+
+        icon = GFX_goal_generic_political_pressure
+        x = 13
+        y = 1
+        cost = 10
+        mutually_exclusive = { focus = SOV_the_romanovs_restored }
+        mutually_exclusive = { focus = SOV_a_new_russia }
+        prerequisite = { focus = SOV_beaten_but_not_defeated }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = fascism elections_allowed = no }
+                        add_political_power = 150
+                        custom_effect_tooltip = "Rodzaevsky seizes control of the Russian State."
+        }
+    }
+
+    focus = {
+        id = SOV_the_russian_fascist_party
+		bypass = {
+			has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 13
+        y = 2
+        cost = 10
+        prerequisite = { focus = SOV_the_fascist_destiny }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_ideas = SOV_russian_fascism
+                        add_stability = 0.1
+        }
+    }
+
+    focus = {
+        id = SOV_alliance_with_the_axis
+        icon = GFX_goal_generic_major_alliance
+        x = 13
+        y = 3
+        cost = 10
+        prerequisite = { focus = SOV_the_russian_fascist_party }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "Seek membership in the Axis faction."
+        }
+    }
+
+    focus = {
+        id = SOV_the_romanovs_restored
+		bypass = {
+			has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 16
+        y = 1
+        cost = 10
+        mutually_exclusive = { focus = SOV_the_fascist_destiny }
+        mutually_exclusive = { focus = SOV_a_new_russia }
+        prerequisite = { focus = SOV_beaten_but_not_defeated }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        
+		modifier = {
+			factor = 1000
+			SAH_is_sov_forced_tsarist = yes
+		}
+}
+
+
+        completion_reward = {
+            set_politics = { ruling_party = neutrality elections_allowed = no }
+                        add_political_power = 150
+                        custom_effect_tooltip = "Vladimir III is crowned Tsar of all the Russias."
+        }
+    }
+
+    focus = {
+        id = SOV_the_third_rome
+        icon = GFX_goal_generic_propaganda
+        x = 15
+        y = 2
+        cost = 10
+        prerequisite = { focus = SOV_the_romanovs_restored }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 100
+                        custom_effect_tooltip = "Elevate the Orthodox Patriarchate to rule alongside the Tsar."
+        }
+    }
+
+    focus = {
+        id = SOV_reclaim_the_empire
+        icon = GFX_goal_generic_demand_territory
+        x = 17
+        y = 2
+        cost = 10
+        prerequisite = { focus = SOV_the_romanovs_restored }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = annex_everything target = FIN }
+                        create_wargoal = { type = annex_everything target = POL }
+        }
+    }
+
+    focus = {
+        id = SOV_the_slavic_brothers
+        icon = GFX_goal_generic_major_alliance
+        x = 16
+        y = 3
+        cost = 10
+        prerequisite = { focus = SOV_the_third_rome }
+        prerequisite = { focus = SOV_reclaim_the_empire }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_faction = "The Slavic Bloc"
+                        custom_effect_tooltip = "Unite the Slavic peoples under the banner of the Tsar."
+        }
+    }
+
+    focus = {
+        id = SOV_a_new_russia
+		bypass = {
+			has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			}
+		}
+
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 19
+        y = 1
+        cost = 10
+        mutually_exclusive = { focus = SOV_the_fascist_destiny }
+        mutually_exclusive = { focus = SOV_the_romanovs_restored }
+        prerequisite = { focus = SOV_beaten_but_not_defeated }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = democratic_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = democratic is_major = yes }
+            }
+        
+		modifier = {
+			factor = 1000
+			SAH_is_sov_forced_democratic = yes
+		}
+}
+
+
+        completion_reward = {
+            set_politics = { ruling_party = democratic elections_allowed = yes }
+                        add_political_power = 150
+                        custom_effect_tooltip = "A fragile Russian Republic is proclaimed."
+        }
+    }
+
+    focus = {
+        id = SOV_the_duma
+		bypass = {
+			has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+			}
+		}
+
+        icon = GFX_goal_generic_political_pressure
+        x = 19
+        y = 2
+        cost = 10
+        prerequisite = { focus = SOV_a_new_russia }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_stability = 0.15
+                        add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = SOV_the_russian_allies
+        icon = GFX_goal_generic_major_alliance
+        x = 19
+        y = 3
+        cost = 10
+        prerequisite = { focus = SOV_the_duma }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "Seek membership in the Allies (ENG)."
+        }
+    }
+
+    focus = {
+        id = SOV_the_five_year_plan
+        icon = GFX_goal_generic_production
+        x = 24
+        y = 0
+        cost = 10
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_ideas = SOV_five_year_plan_idea
+                        add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = SOV_heavy_industry
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 23
+        y = 1
+        cost = 10
+        prerequisite = { focus = SOV_the_five_year_plan }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            random_owned_controlled_state = {
+                            limit = { free_building_slots = { building = industrial_complex size > 0 } }
+                            add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
+                        }
+        }
+    }
+
+    focus = {
+        id = SOV_military_industry
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 25
+        y = 1
+        cost = 10
+        prerequisite = { focus = SOV_the_five_year_plan }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            random_owned_controlled_state = {
+                            limit = { free_building_slots = { building = arms_factory size > 0 } }
+                            add_building_construction = { type = arms_factory level = 3 instant_build = yes }
+                        }
+        }
+    }
+
+    focus = {
+        id = SOV_relocate_industry_to_the_urals
+        icon = GFX_goal_generic_suppress_resistance
+        x = 24
+        y = 2
+        cost = 10
+        prerequisite = { focus = SOV_heavy_industry }
+        prerequisite = { focus = SOV_military_industry }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "If war begins, allow shifting of western factories beyond the Ural Mountains."
+                        add_political_power = 100
+        }
+    }
+
+}

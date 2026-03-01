@@ -1,0 +1,85 @@
+focus_tree = {
+    id = swiss_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = SWI
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = SWI_the_federal_council
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_swi_scenario_start_rule option = federal_council }
+			}
+		}
+
+        icon = GFX_goal_generic_peaceful_treaty
+        x = 4
+        y = 0
+        cost = 10
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                add = 90
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = democratic_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = democratic is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 120
+            set_politics = { ruling_party = democratic }
+        }
+    }
+
+    focus = {
+        id = SWI_armed_neutrality
+        icon = GFX_goal_generic_position_armies
+        x = 2
+        y = 1
+        cost = 10
+        prerequisite = { focus = SWI_the_federal_council }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_army_experience = 50
+            add_stability = 0.1
+        }
+    }
+
+    focus = {
+        id = SWI_the_national_redoubt
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 4
+        y = 2
+        cost = 10
+        prerequisite = { focus = SWI_armed_neutrality }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            random_owned_controlled_state = { limit = { free_building_slots = { building = land_fort size > 0 } } add_building_construction = { type = land_fort level = 2 instant_build = yes } }
+        }
+    }
+
+}

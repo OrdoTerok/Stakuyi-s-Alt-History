@@ -1,0 +1,193 @@
+focus_tree = {
+    id = mexican_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = MEX
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = MEX_the_prm
+		bypass = {
+			has_game_rule = { rule = SAH_mex_scenario_start_rule option = prm }
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = gold_shirts }
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance }
+			OR = {
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = prm }
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = gold_shirts }
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 4
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = MEX_support_the_synarchists }
+
+        ai_will_do = {
+            base = 1
+            modifier = { add = 90 is_historical_focus_on = yes }
+        }
+
+        completion_reward = {
+            add_political_power = 120
+        }
+    }
+
+    focus = {
+        id = MEX_cardemismo
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 2
+        y = 1
+        cost = 10
+        prerequisite = { focus = MEX_the_prm }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_stability = 0.1
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = MEX_expropriate_foreign_oil
+        icon = GFX_goal_generic_production
+        x = 2
+        y = 2
+        cost = 10
+        prerequisite = { focus = MEX_cardemismo }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 100
+            random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 } } add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+        }
+    }
+
+    focus = {
+        id = MEX_support_the_synarchists
+		bypass = {
+			has_game_rule = { rule = SAH_mex_scenario_start_rule option = prm }
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = gold_shirts }
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance }
+			OR = {
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = prm }
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = gold_shirts }
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance }
+			}
+		}
+
+        icon = GFX_goal_generic_political_pressure
+        x = 8
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = MEX_the_prm }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 50
+            add_popularity = { ideology = fascism popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = MEX_the_gold_shirts
+		bypass = {
+			has_game_rule = { rule = SAH_mex_scenario_start_rule option = gold_shirts }
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance }
+			OR = {
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = gold_shirts }
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance }
+			}
+		}
+
+        icon = GFX_goal_generic_suppress_resistance
+        x = 8
+        y = 1
+        cost = 10
+        prerequisite = { focus = MEX_support_the_synarchists }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = fascism }
+            add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = MEX_hispanic_alliance
+		bypass = {
+			has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance }
+			OR = {
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance }
+			}
+		}
+
+        icon = GFX_goal_generic_major_alliance
+        x = 8
+        y = 2
+        cost = 10
+        prerequisite = { focus = MEX_the_gold_shirts }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_faction = "The Hispanic Alliance"
+        }
+    }
+
+}

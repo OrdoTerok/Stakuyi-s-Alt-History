@@ -1,0 +1,119 @@
+# ============================================================
+# Stakuyi's Alt History - Major Nation Specific Plans
+# ============================================================
+
+# ----------------- USA -----------------
+# Fascist/Imperialist USA
+SAH_usa_fascist_imperialist = {
+    enable = {
+		NOT = { SAH_is_historical_mode = yes } tag = USA is_fascist_imperialist_path = yes }
+    abort = { has_capitulated = yes }
+    
+    traits = { ideologue = yes }
+    
+    # Consolidate the Americas by force
+    strategy = { type = conquer_prov id = MEX value = 200 }
+    strategy = { type = conquer_prov id = CAN value = 200 }
+    strategy = { type = conquer_prov id = CUB value = 150 }
+    strategy = { type = declare_war id = CAN value = 150 }
+    strategy = { type = antagonize id = ENG value = 200 }
+    strategy = { type = befriend id = GER value = 200 }
+    strategy = { type = befriend id = ITA value = 150 }
+}
+
+# Communist USA
+SAH_usa_communist_crusade = {
+    enable = {
+		NOT = { SAH_is_historical_mode = yes } tag = USA is_suspend_the_persecution_path = yes }
+    abort = { has_capitulated = yes }
+    
+    traits = { ideologue = yes }
+    
+    strategy = { type = alliance id = SOV value = 300 }
+    strategy = { type = antagonize id = GER value = 300 }
+    strategy = { type = antagonize id = JAP value = 200 }
+    strategy = { type = prepare_for_war id = ENG value = 100 } # End European Imperialism in the Americas
+}
+
+# ----------------- UK -----------------
+# Monarchist/King's Party ENG
+SAH_eng_kings_party_restoration = {
+    enable = {
+		NOT = { SAH_is_historical_mode = yes } tag = ENG is_kings_party_path = yes }
+    abort = { has_capitulated = yes }
+
+    strategy = { type = conquer_prov id = USA value = 200 } # The great reconquest
+    strategy = { type = declare_war id = USA value = 150 }
+    strategy = { type = antagonize id = FRA value = 100 }
+    strategy = { type = befriend id = GER value = 100 } # Acknowledges historical Edward VIII sympathies
+}
+
+# Communist UK
+SAH_eng_communist_alternative = {
+    enable = {
+		NOT = { SAH_is_historical_mode = yes } tag = ENG is_the_communist_alternative_path = yes }
+    abort = { has_capitulated = yes }
+
+    strategy = { type = diplo_action_desire id = release_puppet value = 200 } # Decolonization
+    strategy = { type = alliance id = SOV value = 250 }
+    strategy = { type = antagonize id = USA value = 150 }
+    strategy = { type = declare_war id = GER value = 200 }
+}
+
+# ----------------- GERMANY -----------------
+# Imperial Germany (Kaiserreich)
+SAH_ger_kaiserreich = {
+    enable = {
+		NOT = { SAH_is_historical_mode = yes } tag = GER is_revive_the_kaiserreich_path = yes }
+    abort = { has_capitulated = yes }
+    
+    strategy = { type = antagonize id = FRA value = 200 } # Standard rivalry
+    strategy = { type = befriend id = ENG value = 100 } # Try to isolate France
+    strategy = { type = antagonize id = SOV value = 150 }
+    strategy = { type = conquer_prov id = POL value = 100 }
+    strategy = { type = befriend id = AUS value = 150 }
+}
+
+# Democratic Germany
+SAH_ger_democratic = {
+    enable = {
+		NOT = { SAH_is_historical_mode = yes } tag = GER is_reestablish_free_elections_path = yes }
+    abort = { has_capitulated = yes }
+
+    strategy = { type = befriend id = FRA value = 200 }
+    strategy = { type = befriend id = ENG value = 200 }
+    strategy = { type = antagonize id = SOV value = 300 } # Form core of European defense against USSR
+    strategy = { type = protect id = POL value = 200 }
+    strategy = { type = diplo_action_desire id = guarantee value = 100 }
+}
+
+# ----------------- FRANCE -----------------
+# Monarchist France (Any)
+SAH_fra_monarchist = {
+    enable = {
+		NOT = { SAH_is_historical_mode = yes }
+        tag = FRA 
+        OR = {
+            is_orleanist_path = yes
+            is_legitimist_path = yes
+            is_bonapartist_path = yes
+        }
+    }
+    abort = { has_capitulated = yes }
+
+    strategy = { type = antagonize id = GER value = 200 } # Inevitable clash
+    strategy = { type = antagonize id = ENG value = 100 } # The old rivalry
+    strategy = { type = conquer_prov id = BEL value = 50 } # Natural borders
+    strategy = { type = conquer_prov id = HOL value = 50 }
+}
+
+# Communist France
+SAH_fra_communist = {
+    enable = {
+		NOT = { SAH_is_historical_mode = yes } tag = FRA is_invite_communist_ministers_path = yes }
+    abort = { has_capitulated = yes }
+
+    strategy = { type = alliance id = SOV value = 250 }
+    strategy = { type = antagonize id = GER value = 300 }
+    strategy = { type = diplo_action_desire id = support_rebels value = 150 } # Fund SPR in civil war
+}

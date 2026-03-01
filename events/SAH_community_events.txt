@@ -1,0 +1,91 @@
+﻿# ============================================================
+# Stakuyi's Alt History - Community Path Events
+# Namespace: SAH_community
+# ============================================================
+# TEMPLATE FILE — copy and adapt these events for each new
+# community-suggested alternate history path.
+#
+# Naming convention:
+#   SAH_community.<path_number>   — the opening choice event
+#   SAH_community.<path_number>a  — path A follow-up
+#   SAH_community.<path_number>b  — path B follow-up
+#   SAH_community.<path_number>c  — path C follow-up
+#
+# To add a new path:
+#   1. Duplicate the block below, increment the id numbers.
+#   2. Fill in title/desc localisation keys in
+#      localisation/english/SAH_l_english.yml
+#   3. Add the decision that triggers it in
+#      common/decisions/SAH_community_decisions.txt
+# ============================================================
+
+add_namespace = SAH_community
+
+# ----------------------------------------------------------
+# SAH_community.1 — Template: "A Fork in History"
+# Replace title, desc, and option effects with real content.
+# ----------------------------------------------------------
+country_event = {
+	id = SAH_community.1
+	title = SAH_community.1.t
+	desc = SAH_community.1.d
+	picture = GFX_report_event_generic_form_government
+
+	is_triggered_only = yes
+
+	# Path A — first community option
+	option = {
+		name = SAH_community.1.a
+		ai_chance = { factor = 33 }
+
+		# Set a flag to track which branch was chosen
+		set_global_flag = SAH_path_1_branch_A
+
+		# TODO: add Path A effects here
+		# Example: add_political_power = 50
+	}
+
+	# Path B — second community option
+	option = {
+		name = SAH_community.1.b
+		ai_chance = { factor = 33 }
+
+		set_global_flag = SAH_path_1_branch_B
+
+		# TODO: add Path B effects here
+	}
+
+	# Path C — third community option
+	option = {
+		name = SAH_community.1.c
+		ai_chance = { factor = 34 }
+
+		set_global_flag = SAH_path_1_branch_C
+
+		# TODO: add Path C effects here
+	}
+}
+
+# ----------------------------------------------------------
+# SAH_community.2 — Placeholder for next community path
+# ----------------------------------------------------------
+# country_event = {
+# 	id = SAH_community.2
+# 	title = SAH_community.2.t
+# 	desc = SAH_community.2.d
+# 	picture = GFX_report_event_generic_read_write
+#
+# 	is_triggered_only = yes
+#
+# 	option = {
+# 		name = SAH_community.2.a
+# 		ai_chance = { factor = 50 }
+# 		# TODO
+# 	}
+#
+# 	option = {
+# 		name = SAH_community.2.b
+# 		ai_chance = { factor = 50 }
+# 		# TODO
+# 	}
+# }

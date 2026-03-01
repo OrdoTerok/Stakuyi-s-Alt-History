@@ -1,0 +1,67 @@
+focus_tree = {
+    id = afghan_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = AFG
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = AFG_the_barakzai_dynasty
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_afg_scenario_start_rule option = barakzai }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 4
+        y = 0
+        cost = 10
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                add = 90
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 120
+            set_politics = { ruling_party = neutrality }
+        }
+    }
+
+    focus = {
+        id = AFG_defend_the_khiayber_pass
+        icon = GFX_goal_generic_position_armies
+        x = 4
+        y = 1
+        cost = 10
+        prerequisite = { focus = AFG_the_barakzai_dynasty }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_army_experience = 50
+        }
+    }
+
+}

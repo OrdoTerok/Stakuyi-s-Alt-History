@@ -1,0 +1,2079 @@
+====== ADD THESE TO YOUR FOCUS TREES ======
+
+--- File: usa.txt ---
+Focus: id = USA_reestablish_the_gold_standard
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+		}
+
+Focus: id = USA_america_first_committee
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+		}
+
+Focus: id = USA_neutrality_to_the_end
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+		}
+
+Focus: id = USA_the_american_caesar
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+		}
+
+Focus: id = USA_america_first
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+		}
+
+Focus: id = USA_ally_with_the_silver_shirts
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+		}
+
+Focus: id = USA_corporate_statism
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+		}
+
+Focus: id = USA_voter_registration_act
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+		}
+
+Focus: id = USA_paramilitary_training
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+		}
+
+Focus: id = USA_the_national_defense_state
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+		}
+
+Focus: id = USA_the_fascist_menace
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+		}
+
+Focus: id = USA_suspend_the_persecution
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
+		}
+
+Focus: id = USA_unholy_alliance
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
+		}
+
+Focus: id = USA_democratic_socialism
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
+		}
+
+Focus: id = USA_the_peoples_republic
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
+		}
+
+Focus: id = USA_continue_the_new_deal
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			}
+		}
+
+Focus: id = USA_limited_intervention
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			}
+		}
+
+Focus: id = USA_neutrality_act
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			}
+		}
+
+Focus: id = USA_arsenal_of_democracy
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			}
+		}
+
+Focus: id = USA_war_department_expansion
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			}
+		}
+
+Focus: id = USA_selective_service_act
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			}
+		}
+
+Focus: id = USA_wpa
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			}
+		}
+
+Focus: id = USA_war_production_board
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			}
+		}
+
+Focus: id = USA_the_giant_wakes
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			}
+		}
+
+
+--- File: ger.txt ---
+Focus: id = GER_oppose_hitler
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			}
+		}
+
+Focus: id = GER_communist_uprising
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			}
+		}
+
+Focus: id = GER_rhineland
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			}
+		}
+
+Focus: id = GER_anschluss
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+			}
+		}
+
+Focus: id = GER_demand_sudetenland
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+			}
+		}
+
+Focus: id = GER_fate_of_czechoslovakia
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+			}
+		}
+
+Focus: id = GER_befriend_poland
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+			}
+		}
+
+Focus: id = GER_danzig_or_war
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+			}
+		}
+
+Focus: id = GER_reestablish_free_elections
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			}
+		}
+
+Focus: id = GER_revive_the_kaiserreich
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			}
+		}
+
+Focus: id = GER_return_of_the_kaiser
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+			}
+		}
+
+Focus: id = GER_the_workers_republic
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
+			}
+		}
+
+Focus: id = GER_the_bulwark_against_bolshevism
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			}
+		}
+
+Focus: id = GER_central_european_alliance
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			}
+		}
+
+Focus: id = GER_support_democracy_in_europe
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			}
+		}
+
+
+--- File: sov.txt ---
+Focus: id = SOV_the_left_opposition
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			}
+		}
+
+Focus: id = SOV_the_right_opposition
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			}
+		}
+
+Focus: id = SOV_beaten_but_not_defeated
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			}
+		}
+
+Focus: id = SOV_the_center
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			}
+		}
+
+Focus: id = SOV_the_great_purge
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+			}
+		}
+
+Focus: id = SOV_permanent_revolution
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+			}
+		}
+
+Focus: id = SOV_the_new_economic_policy
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+			}
+		}
+
+Focus: id = SOV_a_new_russia
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			}
+		}
+
+Focus: id = SOV_the_fascist_destiny
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			}
+		}
+
+Focus: id = SOV_the_romanovs_restored
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			}
+		}
+
+Focus: id = SOV_the_duma
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+			}
+		}
+
+Focus: id = SOV_the_russian_fascist_party
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			}
+		}
+
+
+--- File: eng.txt ---
+Focus: id = ENG_concessions_to_the_trade_unions
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+			}
+		}
+
+Focus: id = ENG_a_change_in_course
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+			}
+		}
+
+Focus: id = ENG_organize_the_blackshirts
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+			}
+		}
+
+Focus: id = ENG_steady_as_she_goes
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+			}
+		}
+
+Focus: id = ENG_reinforce_the_empire
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
+		}
+
+Focus: id = ENG_rearmament
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
+		}
+
+Focus: id = ENG_early_mobilization
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
+		}
+
+Focus: id = ENG_the_shadow_scheme
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
+		}
+
+Focus: id = ENG_appeasement_policy
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
+		}
+
+Focus: id = ENG_confront_the_dictators
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
+		}
+
+Focus: id = ENG_churchill_government
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
+		}
+
+Focus: id = ENG_the_kings_party
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+			}
+		}
+
+Focus: id = ENG_march_on_london
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+			}
+		}
+
+Focus: id = ENG_the_communist_alternative
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+			}
+		}
+
+
+--- File: fra.txt ---
+Focus: id = FRA_utilize_the_leagues
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+			}
+		}
+
+Focus: id = FRA_form_the_popular_front
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+			}
+		}
+
+Focus: id = FRA_national_bloc
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+			}
+		}
+
+Focus: id = FRA_invite_communist_ministers
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+			}
+		}
+
+Focus: id = FRA_the_french_commune
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+			}
+		}
+
+Focus: id = FRA_laissez_faire
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+			}
+		}
+
+Focus: id = FRA_repeal_the_law_of_exile
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+			}
+		}
+
+Focus: id = FRA_bonapartist_restoration
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+			}
+		}
+
+Focus: id = FRA_orleanist_restoration
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+			}
+		}
+
+Focus: id = FRA_legitimist_restoration
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+			}
+		}
+
+Focus: id = FRA_latin_entente
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+			}
+		}
+
+
+--- File: jap.txt ---
+Focus: id = JAP_support_the_kodoha_faction
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+			}
+		}
+
+Focus: id = JAP_the_unthinkable_option
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+			}
+		}
+
+Focus: id = JAP_purge_the_kodoha_faction
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+			}
+		}
+
+Focus: id = JAP_nationalize_state_shinto
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+			}
+		}
+
+Focus: id = JAP_marco_polo_bridge_incident
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+			}
+		}
+
+Focus: id = JAP_strike_south_doctrine
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+			}
+		}
+
+Focus: id = JAP_showa_restoration
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
+			}
+		}
+
+Focus: id = JAP_the_japanese_communist_party
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+			}
+		}
+
+Focus: id = JAP_restore_the_diet
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+			}
+		}
+
+
+--- File: pol.txt ---
+Focus: id = POL_the_morges_front
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = falanga }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council }
+			}
+		}
+
+Focus: id = POL_the_polish_communist_party
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = falanga }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council }
+			}
+		}
+
+Focus: id = POL_the_regency_council
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = falanga }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council }
+			}
+		}
+
+Focus: id = POL_the_falanga
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = falanga }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council }
+			}
+		}
+
+Focus: id = POL_the_castle
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = falanga }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council }
+			}
+		}
+
+Focus: id = POL_april_constitution
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution }
+			}
+		}
+
+Focus: id = POL_align_with_the_comintern
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern }
+			}
+		}
+
+Focus: id = POL_invite_the_king
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council }
+			}
+		}
+
+
+--- File: can.txt ---
+Focus: id = CAN_swastika_clubs
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
+			}
+		}
+
+Focus: id = CAN_patriation
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
+			}
+		}
+
+Focus: id = CAN_bring_the_unions_to_the_table
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
+			}
+		}
+
+Focus: id = CAN_the_british_north_america_act
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
+			}
+		}
+
+Focus: id = CAN_send_in_the_zombies
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
+			}
+		}
+
+Focus: id = CAN_national_unity_party
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
+			}
+		}
+
+Focus: id = CAN_communist_revolution
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
+			}
+		}
+
+
+--- File: ast.txt ---
+Focus: id = AST_support_the_centre_party
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = never_gallipoli_again }
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = australia_first }
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = communist_australia }
+			}
+		}
+
+Focus: id = AST_the_communist_party_of_australia
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = never_gallipoli_again }
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = australia_first }
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = communist_australia }
+			}
+		}
+
+Focus: id = AST_empower_the_workers
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = never_gallipoli_again }
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = australia_first }
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = communist_australia }
+			}
+		}
+
+Focus: id = AST_never_gallipoli_again
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = never_gallipoli_again }
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = australia_first }
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = communist_australia }
+			}
+		}
+
+Focus: id = AST_the_australia_first_movement
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = australia_first }
+			}
+		}
+
+Focus: id = AST_workers_revolution
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = communist_australia }
+			}
+		}
+
+
+--- File: saf.txt ---
+Focus: id = SAF_abandon_westminster
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_saf_scenario_start_rule option = appeasement }
+				has_game_rule = { rule = SAH_saf_scenario_start_rule option = ossewabrandwag }
+				has_game_rule = { rule = SAH_saf_scenario_start_rule option = anti_colonialist }
+			}
+		}
+
+Focus: id = SAF_support_the_policy_of_appeasement
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_saf_scenario_start_rule option = appeasement }
+				has_game_rule = { rule = SAH_saf_scenario_start_rule option = ossewabrandwag }
+				has_game_rule = { rule = SAH_saf_scenario_start_rule option = anti_colonialist }
+			}
+		}
+
+Focus: id = SAF_support_the_ossewabrandwag
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_saf_scenario_start_rule option = ossewabrandwag }
+			}
+		}
+
+Focus: id = SAF_anti_colonialist_crusade
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_saf_scenario_start_rule option = anti_colonialist }
+			}
+		}
+
+
+--- File: raj.txt ---
+Focus: id = RAJ_indian_national_congress
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = provincial_elections }
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = quit_india }
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = indian_national_army }
+			}
+		}
+
+Focus: id = RAJ_provincial_elections
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = provincial_elections }
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = quit_india }
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = indian_national_army }
+			}
+		}
+
+Focus: id = RAJ_quit_india_movement
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = quit_india }
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = indian_national_army }
+			}
+		}
+
+Focus: id = RAJ_indian_national_army
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = indian_national_army }
+			}
+		}
+
+
+--- File: rom.txt ---
+Focus: id = ROM_preserve_greater_romania
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = preserve_romania }
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = align_axis }
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = balkan_dominance }
+			}
+		}
+
+Focus: id = ROM_the_royal_dictatorship
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = align_axis }
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = balkan_dominance }
+			}
+		}
+
+Focus: id = ROM_align_axis
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = align_axis }
+			}
+		}
+
+Focus: id = ROM_the_balkan_dominance
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = balkan_dominance }
+			}
+		}
+
+
+--- File: yug.txt ---
+Focus: id = YUG_the_regency_council
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_yug_scenario_start_rule option = regency_council }
+				has_game_rule = { rule = SAH_yug_scenario_start_rule option = tripartite_pact }
+			}
+		}
+
+Focus: id = YUG_sign_the_tripartite_pact
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_yug_scenario_start_rule option = tripartite_pact }
+			}
+		}
+
+Focus: id = YUG_the_communist_partisans
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_yug_scenario_start_rule option = communist_partisans }
+			}
+		}
+
+Focus: id = YUG_western_focus
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_yug_scenario_start_rule option = western_focus }
+			}
+		}
+
+
+--- File: gre.txt ---
+Focus: id = GRE_the_venizelist_movement
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = metaxas }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = venizelist }
+			}
+		}
+
+Focus: id = GRE_the_metaxas_dictatorship
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = metaxas }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = venizelist }
+			}
+		}
+
+Focus: id = GRE_the_4th_of_august_regime
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
+			}
+		}
+
+Focus: id = GRE_revive_the_megali_idea
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
+			}
+		}
+
+
+--- File: tur.txt ---
+Focus: id = TUR_multi_party_system
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_tur_scenario_start_rule option = peace_at_home }
+				has_game_rule = { rule = SAH_tur_scenario_start_rule option = multi_party }
+			}
+		}
+
+Focus: id = TUR_peace_at_home
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_tur_scenario_start_rule option = peace_at_home }
+				has_game_rule = { rule = SAH_tur_scenario_start_rule option = multi_party }
+			}
+		}
+
+
+--- File: mex.txt ---
+Focus: id = MEX_support_the_synarchists
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = prm }
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = gold_shirts }
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance }
+			}
+		}
+
+Focus: id = MEX_the_prm
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = prm }
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = gold_shirts }
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance }
+			}
+		}
+
+Focus: id = MEX_the_gold_shirts
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = gold_shirts }
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance }
+			}
+		}
+
+Focus: id = MEX_hispanic_alliance
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance }
+			}
+		}
+
+
+--- File: bra.txt ---
+Focus: id = BRA_integralist_uprising
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt }
+			}
+		}
+
+Focus: id = BRA_the_aln_revolt
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt }
+			}
+		}
+
+Focus: id = BRA_the_1937_elections
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt }
+			}
+		}
+
+Focus: id = BRA_the_estado_novo
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt }
+			}
+		}
+
+
+--- File: spr.txt ---
+Focus: id = SPR_the_nationalist_uprising
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = popular_front }
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = falange }
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = anti_fascist_unity }
+			}
+		}
+
+Focus: id = SPR_the_popular_front
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = popular_front }
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = falange }
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = anti_fascist_unity }
+			}
+		}
+
+Focus: id = SPR_the_falange
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = falange }
+			}
+		}
+
+Focus: id = SPR_anti_fascist_unity
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = anti_fascist_unity }
+			}
+		}
+
+
+--- File: hol.txt ---
+Focus: id = HOL_the_nsb
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_hol_scenario_start_rule option = gateway_to_europe }
+				has_game_rule = { rule = SAH_hol_scenario_start_rule option = anton_mussert }
+			}
+		}
+
+Focus: id = HOL_form_the_new_government
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_hol_scenario_start_rule option = gateway_to_europe }
+				has_game_rule = { rule = SAH_hol_scenario_start_rule option = anton_mussert }
+			}
+		}
+
+Focus: id = HOL_the_gateway_to_europe
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_hol_scenario_start_rule option = gateway_to_europe }
+			}
+		}
+
+Focus: id = HOL_anton_mussert
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_hol_scenario_start_rule option = anton_mussert }
+			}
+		}
+
+
+--- File: swe.txt ---
+Focus: id = SWE_sveriges_kommunistiska_parti
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
+			}
+		}
+
+Focus: id = SWE_the_right_wing_coalition
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
+			}
+		}
+
+Focus: id = SWE_the_per_albin_bus
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
+			}
+		}
+
+Focus: id = SWE_the_svea_rike
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
+			}
+		}
+
+Focus: id = SWE_socialist_republic_of_sweden
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
+			}
+		}
+
+
+--- File: arg.txt ---
+Focus: id = ARG_the_infamous_decade
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_arg_scenario_start_rule option = infamous_decade }
+				has_game_rule = { rule = SAH_arg_scenario_start_rule option = peronist }
+			}
+		}
+
+Focus: id = ARG_the_concordancia_government
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_arg_scenario_start_rule option = infamous_decade }
+			}
+		}
+
+Focus: id = ARG_the_radical_civic_union
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_arg_scenario_start_rule option = radical_civic }
+			}
+		}
+
+Focus: id = ARG_the_peronist_movement
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_arg_scenario_start_rule option = peronist }
+			}
+		}
+
+
+--- File: aus.txt ---
+Focus: id = AUS_the_social_democrats
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_aus_scenario_start_rule option = fatherland_front }
+				has_game_rule = { rule = SAH_aus_scenario_start_rule option = austrofascism }
+				has_game_rule = { rule = SAH_aus_scenario_start_rule option = social_democrats }
+			}
+		}
+
+Focus: id = AUS_the_fatherland_front
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_aus_scenario_start_rule option = fatherland_front }
+				has_game_rule = { rule = SAH_aus_scenario_start_rule option = austrofascism }
+				has_game_rule = { rule = SAH_aus_scenario_start_rule option = social_democrats }
+			}
+		}
+
+Focus: id = AUS_austrofascism
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_aus_scenario_start_rule option = austrofascism }
+			}
+		}
+
+
+--- File: bel.txt ---
+Focus: id = BEL_the_rexist_party
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_bel_scenario_start_rule option = catholic_bloc }
+				has_game_rule = { rule = SAH_bel_scenario_start_rule option = liberal_party }
+				has_game_rule = { rule = SAH_bel_scenario_start_rule option = rexist_party }
+			}
+		}
+
+Focus: id = BEL_the_catholic_bloc
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_bel_scenario_start_rule option = catholic_bloc }
+				has_game_rule = { rule = SAH_bel_scenario_start_rule option = liberal_party }
+				has_game_rule = { rule = SAH_bel_scenario_start_rule option = rexist_party }
+			}
+		}
+
+Focus: id = BEL_the_liberal_party
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_bel_scenario_start_rule option = liberal_party }
+			}
+		}
+
+
+--- File: bul.txt ---
+Focus: id = BUL_the_fatherland_front
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_bul_scenario_start_rule option = tsars_dictatorship }
+				has_game_rule = { rule = SAH_bul_scenario_start_rule option = zveno }
+				has_game_rule = { rule = SAH_bul_scenario_start_rule option = fatherland_front }
+			}
+		}
+
+Focus: id = BUL_zveno
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_bul_scenario_start_rule option = tsars_dictatorship }
+				has_game_rule = { rule = SAH_bul_scenario_start_rule option = zveno }
+				has_game_rule = { rule = SAH_bul_scenario_start_rule option = fatherland_front }
+			}
+		}
+
+Focus: id = BUL_the_tsars_dictatorship
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_bul_scenario_start_rule option = tsars_dictatorship }
+				has_game_rule = { rule = SAH_bul_scenario_start_rule option = zveno }
+				has_game_rule = { rule = SAH_bul_scenario_start_rule option = fatherland_front }
+			}
+		}
+
+
+--- File: chi.txt ---
+Focus: id = CHI_three_principles_of_the_people
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_chi_scenario_start_rule option = historical }
+				has_game_rule = { rule = SAH_chi_scenario_start_rule option = welfare }
+			}
+		}
+
+Focus: id = CHI_welfare
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_chi_scenario_start_rule option = welfare }
+			}
+		}
+
+
+--- File: chl.txt ---
+Focus: id = CHL_the_nacistas
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_chl_scenario_start_rule option = popular_front }
+				has_game_rule = { rule = SAH_chl_scenario_start_rule option = nacistas }
+			}
+		}
+
+Focus: id = CHL_the_popular_front
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_chl_scenario_start_rule option = popular_front }
+				has_game_rule = { rule = SAH_chl_scenario_start_rule option = nacistas }
+			}
+		}
+
+
+--- File: cog.txt ---
+Focus: id = COG_the_evolues
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_cog_scenario_start_rule option = force_publique }
+				has_game_rule = { rule = SAH_cog_scenario_start_rule option = evolues }
+			}
+		}
+
+Focus: id = COG_the_force_publique
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_cog_scenario_start_rule option = force_publique }
+				has_game_rule = { rule = SAH_cog_scenario_start_rule option = evolues }
+			}
+		}
+
+
+--- File: cze.txt ---
+Focus: id = CZE_fascist_direction
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = political_direction }
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = fascist_direction }
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = communist_direction }
+			}
+		}
+
+Focus: id = CZE_communist_direction
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = political_direction }
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = fascist_direction }
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = communist_direction }
+			}
+		}
+
+Focus: id = CZE_political_direction
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = political_direction }
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = fascist_direction }
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = communist_direction }
+			}
+		}
+
+
+--- File: den.txt ---
+Focus: id = DEN_the_conservative_peoples_party
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_den_scenario_start_rule option = social_democrats }
+				has_game_rule = { rule = SAH_den_scenario_start_rule option = conservative }
+			}
+		}
+
+Focus: id = DEN_the_social_democrats
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_den_scenario_start_rule option = social_democrats }
+				has_game_rule = { rule = SAH_den_scenario_start_rule option = conservative }
+			}
+		}
+
+
+--- File: egy.txt ---
+Focus: id = EGY_the_wafd_party
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_egy_scenario_start_rule option = anglo_treaty }
+				has_game_rule = { rule = SAH_egy_scenario_start_rule option = wafd_party }
+			}
+		}
+
+Focus: id = EGY_the_anglo_egyptian_treaty
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_egy_scenario_start_rule option = anglo_treaty }
+				has_game_rule = { rule = SAH_egy_scenario_start_rule option = wafd_party }
+			}
+		}
+
+
+--- File: est.txt ---
+Focus: id = EST_the_era_of_silence
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_est_scenario_start_rule option = era_of_silence }
+			}
+		}
+
+Focus: id = EST_the_vaps_movement
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_est_scenario_start_rule option = vaps_movement }
+			}
+		}
+
+
+--- File: eth.txt ---
+Focus: id = ETH_the_emperor
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_eth_scenario_start_rule option = emperor }
+			}
+		}
+
+
+--- File: fin.txt ---
+Focus: id = FIN_the_lapua_movement
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = finnish_model }
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = lapua_movement }
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = red_guards }
+			}
+		}
+
+Focus: id = FIN_the_red_guards
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = finnish_model }
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = lapua_movement }
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = red_guards }
+			}
+		}
+
+Focus: id = FIN_the_finnish_model
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = finnish_model }
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = lapua_movement }
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = red_guards }
+			}
+		}
+
+
+--- File: hun.txt ---
+Focus: id = HUN_the_communist_party
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = renounce_trianon }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = king }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = habsburg }
+			}
+		}
+
+Focus: id = HUN_a_king_for_our_people
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = renounce_trianon }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = king }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = habsburg }
+			}
+		}
+
+Focus: id = HUN_invite_the_habsburg_prince
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = renounce_trianon }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = king }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = habsburg }
+			}
+		}
+
+Focus: id = HUN_renounce_the_treaty_of_trianon
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = renounce_trianon }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = king }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = habsburg }
+			}
+		}
+
+
+--- File: irq.txt ---
+Focus: id = IRQ_the_golden_square
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_irq_scenario_start_rule option = hashemite }
+				has_game_rule = { rule = SAH_irq_scenario_start_rule option = golden_square }
+			}
+		}
+
+Focus: id = IRQ_the_hashemite_kingdom
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_irq_scenario_start_rule option = hashemite }
+				has_game_rule = { rule = SAH_irq_scenario_start_rule option = golden_square }
+			}
+		}
+
+
+--- File: lat.txt ---
+Focus: id = LAT_the_ulmanis_dictatorship
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_lat_scenario_start_rule option = ulmainis }
+			}
+		}
+
+Focus: id = LAT_the_perkonkrusts
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_lat_scenario_start_rule option = perkonkrusts }
+			}
+		}
+
+
+--- File: lit.txt ---
+Focus: id = LIT_the_smetona_dictatorship
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_lit_scenario_start_rule option = smetona }
+			}
+		}
+
+Focus: id = LIT_the_iron_wolf
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_lit_scenario_start_rule option = iron_wolf }
+			}
+		}
+
+
+--- File: man.txt ---
+Focus: id = MAN_assertiveness
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = obedience }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = assertiveness }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = democratic }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = communist }
+			}
+		}
+
+Focus: id = MAN_the_democratic_party
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = obedience }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = assertiveness }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = democratic }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = communist }
+			}
+		}
+
+Focus: id = MAN_the_communist_party
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = obedience }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = assertiveness }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = democratic }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = communist }
+			}
+		}
+
+Focus: id = MAN_obedience
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = obedience }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = assertiveness }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = democratic }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = communist }
+			}
+		}
+
+
+--- File: nor.txt ---
+Focus: id = NOR_the_right_wing_coalition
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = nygaardsvold }
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = quisling }
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = communist }
+			}
+		}
+
+Focus: id = NOR_the_communist_party
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = nygaardsvold }
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = quisling }
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = communist }
+			}
+		}
+
+Focus: id = NOR_the_nygaardsvold_cabinet
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = nygaardsvold }
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = quisling }
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = communist }
+			}
+		}
+
+Focus: id = NOR_quisling_government
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = quisling }
+			}
+		}
+
+
+--- File: nzl.txt ---
+Focus: id = NZL_the_labour_party
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_nzl_scenario_start_rule option = labour }
+			}
+		}
+
+
+--- File: par.txt ---
+Focus: id = PAR_the_febrerista_revolution
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_par_scenario_start_rule option = febrerista }
+			}
+		}
+
+
+--- File: per.txt ---
+Focus: id = PER_the_tudeh_party
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_per_scenario_start_rule option = pahlavi }
+				has_game_rule = { rule = SAH_per_scenario_start_rule option = tudeh }
+			}
+		}
+
+Focus: id = PER_the_pahlavi_dynasty
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_per_scenario_start_rule option = pahlavi }
+				has_game_rule = { rule = SAH_per_scenario_start_rule option = tudeh }
+			}
+		}
+
+
+--- File: phi.txt ---
+Focus: id = PHI_the_hukbalahap
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = commonwealth }
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = ganap }
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = hukbalahap }
+			}
+		}
+
+Focus: id = PHI_the_ganap_party
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = commonwealth }
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = ganap }
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = hukbalahap }
+			}
+		}
+
+Focus: id = PHI_the_commonwealth
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = commonwealth }
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = ganap }
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = hukbalahap }
+			}
+		}
+
+
+--- File: por.txt ---
+Focus: id = POR_the_popular_front
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_por_scenario_start_rule option = estado_novo }
+				has_game_rule = { rule = SAH_por_scenario_start_rule option = popular_front }
+			}
+		}
+
+Focus: id = POR_the_estado_novo
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_por_scenario_start_rule option = estado_novo }
+				has_game_rule = { rule = SAH_por_scenario_start_rule option = popular_front }
+			}
+		}
+
+
+--- File: prc.txt ---
+Focus: id = PRC_social_democracy
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = maoism }
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = orthodox_marxism }
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = social_democracy }
+			}
+		}
+
+Focus: id = PRC_orthodox_marxism
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = maoism }
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = orthodox_marxism }
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = social_democracy }
+			}
+		}
+
+Focus: id = PRC_maoism
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = maoism }
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = orthodox_marxism }
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = social_democracy }
+			}
+		}
+
+
+--- File: swi.txt ---
+Focus: id = SWI_the_federal_council
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_swi_scenario_start_rule option = federal_council }
+			}
+		}
+
+
+--- File: uru.txt ---
+Focus: id = URU_the_colorado_party
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_uru_scenario_start_rule option = colorado }
+			}
+		}
+
+
+--- File: wrl.txt ---
+Focus: id = WRL_democratic_reforms
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists }
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists }
+			}
+		}
+
+Focus: id = WRL_military_dictatorship
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists }
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists }
+			}
+		}
+
+Focus: id = WRL_cooperate_with_the_communists
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists }
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists }
+			}
+		}
+
+Focus: id = WRL_cooperate_with_the_nationalists
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists }
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists }
+			}
+		}
+
+
+--- File: afg.txt ---
+Focus: id = AFG_the_barakzai_dynasty
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_afg_scenario_start_rule option = barakzai }
+			}
+		}
+

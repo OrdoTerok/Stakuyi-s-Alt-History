@@ -1,0 +1,615 @@
+focus_tree = {
+    id = japan_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = JAP
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = JAP_purge_the_kodoha_faction
+		bypass = {
+			has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+			OR = {
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+			}
+		}
+
+        icon = GFX_goal_generic_suppress_resistance
+        x = 2
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = JAP_support_the_kodoha_faction }
+        mutually_exclusive = { focus = JAP_the_unthinkable_option }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                add = 90
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 120
+                        custom_effect_tooltip = "The Toseiha faction assumes full control of the military."
+                        add_popularity = { ideology = fascism popularity = 0.15 }
+        }
+    }
+
+    focus = {
+        id = JAP_nationalize_state_shinto
+		bypass = {
+			has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+			OR = {
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+			}
+		}
+
+        icon = GFX_goal_generic_political_pressure
+        x = 2
+        y = 1
+        cost = 10
+        prerequisite = { focus = JAP_purge_the_kodoha_faction }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_ideas = JAP_state_shinto_idea
+                        add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = JAP_marco_polo_bridge_incident
+		bypass = {
+			has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+			OR = {
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+			}
+		}
+
+        icon = GFX_goal_generic_attack_allies
+        x = 2
+        y = 2
+        cost = 10
+        prerequisite = { focus = JAP_nationalize_state_shinto }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = annex_everything target = CHI }
+                        custom_effect_tooltip = "Manufacture an incident to initiate war with China."
+        }
+    }
+
+    focus = {
+        id = JAP_strike_south_doctrine
+		bypass = {
+			has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+			OR = {
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+			}
+		}
+
+        icon = GFX_goal_generic_major_alliance
+        x = 2
+        y = 3
+        cost = 10
+        prerequisite = { focus = JAP_marco_polo_bridge_incident }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = annex_everything target = HOL }
+                        create_wargoal = { type = annex_everything target = ENG }
+                        create_wargoal = { type = annex_everything target = USA }
+                        add_ideas = JAP_strike_south
+                        custom_effect_tooltip = "We must secure the resource-rich southern colonies."
+        }
+    }
+
+    focus = {
+        id = JAP_the_greater_east_asian_co_prosperity_sphere
+        icon = GFX_goal_generic_major_alliance
+        x = 2
+        y = 4
+        cost = 10
+        prerequisite = { focus = JAP_strike_south_doctrine }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_faction = "Greater East Asian Co-Prosperity Sphere"
+                        add_political_power = 150
+        }
+    }
+
+    focus = {
+        id = JAP_support_the_kodoha_faction
+		bypass = {
+			has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+			OR = {
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 6
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = JAP_purge_the_kodoha_faction }
+        mutually_exclusive = { focus = JAP_the_unthinkable_option }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 100
+                        custom_effect_tooltip = "The Kodoha faction removes the corporate and Toseiha influence."
+                        add_popularity = { ideology = neutrality popularity = 0.15 }
+        }
+    }
+
+    focus = {
+        id = JAP_showa_restoration
+		bypass = {
+			has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
+			OR = {
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 6
+        y = 1
+        cost = 10
+        prerequisite = { focus = JAP_support_the_kodoha_faction }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = neutrality elections_allowed = no }
+                        add_ideas = JAP_showa_restoration_idea
+                        add_stability = 0.1
+                        add_political_power = 150
+                        custom_effect_tooltip = "The Emperor's divine rule is fully restored."
+        }
+    }
+
+    focus = {
+        id = JAP_alliance_with_germany
+        icon = GFX_goal_generic_major_alliance
+        x = 5
+        y = 2
+        cost = 10
+        prerequisite = { focus = JAP_showa_restoration }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "Sign the Anti-Comintern Pact with Germany and prepare for war against the Soviet Union."
+        }
+    }
+
+    focus = {
+        id = JAP_strike_north_doctrine
+        icon = GFX_goal_generic_attack_allies
+        x = 7
+        y = 2
+        cost = 10
+        prerequisite = { focus = JAP_showa_restoration }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = annex_everything target = SOV }
+                        add_ideas = JAP_strike_north
+                        custom_effect_tooltip = "The true threat lies in Siberia and the spread of Communism."
+        }
+    }
+
+    focus = {
+        id = JAP_secure_the_siberian_resources
+        icon = GFX_goal_generic_demand_territory
+        x = 7
+        y = 3
+        cost = 10
+        prerequisite = { focus = JAP_strike_north_doctrine }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 100
+                        custom_effect_tooltip = "Exploit the natural resources of the Far East."
+        }
+    }
+
+    focus = {
+        id = JAP_the_unthinkable_option
+		bypass = {
+			has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+			OR = {
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+			}
+		}
+
+        icon = GFX_goal_generic_peaceful_treaty
+        x = 12
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = JAP_purge_the_kodoha_faction }
+        mutually_exclusive = { focus = JAP_support_the_kodoha_faction }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 100
+                        custom_effect_tooltip = "Re-evaluating our militaristic expansion could save the empire... or destroy it."
+                        add_popularity = { ideology = democratic popularity = 0.15 }
+                        add_popularity = { ideology = communism popularity = 0.15 }
+        }
+    }
+
+    focus = {
+        id = JAP_restore_the_diet
+		bypass = {
+			has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+			OR = {
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+			}
+		}
+
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 10
+        y = 1
+        cost = 10
+        mutually_exclusive = { focus = JAP_the_japanese_communist_party }
+        prerequisite = { focus = JAP_the_unthinkable_option }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = democratic_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = democratic is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = democratic elections_allowed = yes }
+                        add_political_power = 100
+                        custom_effect_tooltip = "Civilian government is restored to Japan."
+        }
+    }
+
+    focus = {
+        id = JAP_evacuate_manchuria
+        icon = GFX_goal_generic_peaceful_treaty
+        x = 10
+        y = 2
+        cost = 10
+        prerequisite = { focus = JAP_restore_the_diet }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "Grant independence to Manchuria and withdraw the Kwantung Army to ease tensions with China."
+                        add_stability = 0.15
+                        add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = JAP_join_the_allies
+        icon = GFX_goal_generic_major_alliance
+        x = 10
+        y = 3
+        cost = 10
+        prerequisite = { focus = JAP_evacuate_manchuria }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "Request to join the Allies (ENG/USA) as a bastion of democracy in Asia."
+        }
+    }
+
+    focus = {
+        id = JAP_the_japanese_communist_party
+		bypass = {
+			has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+			OR = {
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+			}
+		}
+
+        icon = GFX_goal_generic_communism
+        x = 14
+        y = 1
+        cost = 10
+        mutually_exclusive = { focus = JAP_restore_the_diet }
+        prerequisite = { focus = JAP_the_unthinkable_option }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = communism elections_allowed = no }
+                        add_political_power = 100
+                        add_stability = -0.1
+                        custom_effect_tooltip = "The workers rise up against the Zaibatsu and the military."
+        }
+    }
+
+    focus = {
+        id = JAP_alliance_with_the_ussr
+        icon = GFX_goal_generic_major_alliance
+        x = 14
+        y = 2
+        cost = 10
+        prerequisite = { focus = JAP_the_japanese_communist_party }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "Seek entry into the Comintern."
+                        add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = JAP_liberate_asia
+        icon = GFX_goal_generic_attack_allies
+        x = 14
+        y = 3
+        cost = 10
+        prerequisite = { focus = JAP_alliance_with_the_ussr }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = puppet_wargoal target = ENG }
+                        create_wargoal = { type = puppet_wargoal target = HOL }
+                        create_wargoal = { type = puppet_wargoal target = FRA }
+                        custom_effect_tooltip = "Declare a war of liberation against European colonial powers in Asia."
+        }
+    }
+
+    focus = {
+        id = JAP_zaibatsu_cooperation
+        icon = GFX_goal_generic_production
+        x = 18
+        y = 0
+        cost = 10
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_ideas = JAP_zaibatsu_contracts
+                        add_political_power = 50
+                        random_owned_controlled_state = {
+                            limit = { free_building_slots = { building = industrial_complex size > 0 } }
+                            add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+                        }
+        }
+    }
+
+    focus = {
+        id = JAP_yamato_class_battleships
+        icon = GFX_goal_generic_navy_battleship
+        x = 17
+        y = 1
+        cost = 10
+        prerequisite = { focus = JAP_zaibatsu_cooperation }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_navy_experience = 100
+                        add_ideas = JAP_super_heavy_battleships
+                        custom_effect_tooltip = "Design the largest capital ships ever put to sea."
+        }
+    }
+
+    focus = {
+        id = JAP_naval_aviation_doctrine
+        icon = GFX_goal_generic_build_airforce
+        x = 17
+        y = 2
+        cost = 10
+        prerequisite = { focus = JAP_yamato_class_battleships }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_air_experience = 50
+                        add_navy_experience = 50
+                        custom_effect_tooltip = "Focus primarily on carrier-based aerial supremacy."
+        }
+    }
+
+    focus = {
+        id = JAP_expansion_of_the_zero
+        icon = GFX_goal_generic_build_airforce
+        x = 19
+        y = 1
+        cost = 10
+        prerequisite = { focus = JAP_zaibatsu_cooperation }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_air_experience = 75
+                        random_owned_controlled_state = {
+                            limit = { free_building_slots = { building = arms_factory size > 0 } }
+                            add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+                        }
+                        custom_effect_tooltip = "Ramp up the production of our agile Mitsubishi A6M Zero fighters."
+        }
+    }
+
+    focus = {
+        id = JAP_spiritual_mobilization
+        icon = GFX_goal_generic_position_armies
+        x = 19
+        y = 2
+        cost = 10
+        prerequisite = { focus = JAP_expansion_of_the_zero }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_army_experience = 50
+                        add_stability = 0.1
+                        add_ideas = JAP_spiritual_mobilization_idea
+        }
+    }
+
+}

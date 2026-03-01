@@ -1,0 +1,94 @@
+focus_tree = {
+    id = lithuanian_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = LIT
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = LIT_the_smetona_dictatorship
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_lit_scenario_start_rule option = smetona }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 4
+        y = 0
+        cost = 10
+
+        ai_will_do = {
+            base = 1
+            modifier = { add = 90 is_historical_focus_on = yes }
+        }
+
+        completion_reward = {
+            add_political_power = 120
+        }
+    }
+
+    focus = {
+        id = LIT_the_iron_wolf
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_lit_scenario_start_rule option = iron_wolf }
+			}
+		}
+
+        icon = GFX_goal_generic_political_pressure
+        x = 8
+        y = 0
+        cost = 10
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 50
+            add_popularity = { ideology = fascism popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = LIT_claim_vilnius
+        icon = GFX_goal_generic_demand_territory
+        x = 4
+        y = 2
+        cost = 10
+        prerequisite = { focus = LIT_the_smetona_dictatorship }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_core_of = 191
+        }
+    }
+
+}

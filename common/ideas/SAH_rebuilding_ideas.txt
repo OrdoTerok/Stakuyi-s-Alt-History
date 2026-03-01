@@ -1,0 +1,42 @@
+﻿ideas = {
+	country = {
+		
+		# Tier 1: Divergence directly before game start (1-2 years)
+		SAH_devastating_recovery = {
+			picture = generic_disky_economy
+			allowed = { always = no } # Only added by event
+			removal_cost = -1 # Cannot be manually removed via idea screen
+			
+			modifier = {
+				political_power_factor = -0.25
+				consumer_goods_expected_value = 0.15
+				industrial_capacity_factory = -0.20
+				training_time_army_factor = 0.20
+			}
+		}
+
+		# Tier 2: Divergence 3-6 Years Ago
+		SAH_prolonged_rebuilding = {
+			picture = generic_production_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.15
+				consumer_goods_expected_value = 0.05
+				production_speed_buildings_factor = -0.10
+			}
+		}
+
+		# Tier 3: Divergence 10+ Years Ago (Almost stable)
+		SAH_stabilized_regime = {
+			picture = generic_democratic_boost
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.05
+			}
+		}
+	}
+}

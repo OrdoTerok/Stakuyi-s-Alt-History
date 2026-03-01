@@ -1,0 +1,824 @@
+focus_tree = {
+    id = french_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = FRA
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = FRA_form_the_popular_front
+		bypass = {
+			has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+			}
+		}
+
+        icon = GFX_goal_generic_political_pressure
+        x = 4
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = FRA_utilize_the_leagues }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                add = 90
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 120
+                        add_popularity = { ideology = democratic popularity = 0.1 }
+                        add_popularity = { ideology = communism popularity = 0.1 }
+                        custom_effect_tooltip = "A coalition of left-wing parties takes power."
+        }
+    }
+
+    focus = {
+        id = FRA_national_bloc
+		bypass = {
+			has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 2
+        y = 1
+        cost = 10
+        mutually_exclusive = { focus = FRA_invite_communist_ministers }
+        prerequisite = { focus = FRA_form_the_popular_front }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = democratic_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = democratic is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 150
+                        add_popularity = { ideology = democratic popularity = 0.2 }
+                        custom_effect_tooltip = "We side with mainstream Republicanism."
+        }
+    }
+
+    focus = {
+        id = FRA_defensive_strategy
+        icon = GFX_goal_generic_position_armies
+        x = 2
+        y = 2
+        cost = 10
+        prerequisite = { focus = FRA_national_bloc }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_ideas = FRA_defensive_strategy_idea
+                        add_army_experience = 20
+        }
+    }
+
+    focus = {
+        id = FRA_review_foreign_policy
+        icon = GFX_goal_generic_peaceful_treaty
+        x = 2
+        y = 3
+        cost = 10
+        prerequisite = { focus = FRA_defensive_strategy }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 100
+                        custom_effect_tooltip = "Reassess our stance on the European stage."
+        }
+    }
+
+    focus = {
+        id = FRA_little_entente
+        icon = GFX_goal_generic_major_alliance
+        x = 1
+        y = 4
+        cost = 10
+        mutually_exclusive = { focus = FRA_stresa_front }
+        prerequisite = { focus = FRA_review_foreign_policy }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "Create the French Entente with Czechoslovakia, Yugoslavia, and Romania."
+                        add_political_power = 150
+        }
+    }
+
+    focus = {
+        id = FRA_stresa_front
+        icon = GFX_goal_generic_intelligence_exchange
+        x = 3
+        y = 4
+        cost = 10
+        mutually_exclusive = { focus = FRA_little_entente }
+        prerequisite = { focus = FRA_review_foreign_policy }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "Align with Italy to contain German expansion."
+                        add_political_power = 150
+        }
+    }
+
+    focus = {
+        id = FRA_invite_communist_ministers
+		bypass = {
+			has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+			}
+		}
+
+        icon = GFX_goal_generic_communism
+        x = 6
+        y = 1
+        cost = 10
+        mutually_exclusive = { focus = FRA_national_bloc }
+        prerequisite = { focus = FRA_form_the_popular_front }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 100
+                        add_popularity = { ideology = communism popularity = 0.2 }
+                        add_stability = -0.05
+        }
+    }
+
+    focus = {
+        id = FRA_the_french_commune
+		bypass = {
+			has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+			}
+		}
+
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 6
+        y = 2
+        cost = 10
+        prerequisite = { focus = FRA_invite_communist_ministers }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = communism elections_allowed = no }
+                        add_political_power = 150
+                        custom_effect_tooltip = "France becomes a Communist state."
+        }
+    }
+
+    focus = {
+        id = FRA_loyalty_to_the_cause
+        icon = GFX_goal_generic_intelligence_exchange
+        x = 5
+        y = 3
+        cost = 10
+        mutually_exclusive = { focus = FRA_anti_fascist_coalition }
+        prerequisite = { focus = FRA_the_french_commune }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "We look to Moscow for leadership."
+                        add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = FRA_join_comintern
+        icon = GFX_goal_generic_major_alliance
+        x = 5
+        y = 4
+        cost = 10
+        prerequisite = { focus = FRA_loyalty_to_the_cause }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "France formally joins the Comintern."
+        }
+    }
+
+    focus = {
+        id = FRA_anti_fascist_coalition
+        icon = GFX_goal_generic_attack_allies
+        x = 7
+        y = 3
+        cost = 10
+        mutually_exclusive = { focus = FRA_loyalty_to_the_cause }
+        prerequisite = { focus = FRA_the_french_commune }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "We form an independent Anti-Fascist Bloc."
+                        add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = FRA_strike_at_italy
+        icon = GFX_goal_generic_attack_allies
+        x = 7
+        y = 4
+        cost = 10
+        prerequisite = { focus = FRA_anti_fascist_coalition }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = puppet_wargoal target = ITA }
+                        custom_effect_tooltip = "Dismantle Mussolini's regime."
+        }
+    }
+
+    focus = {
+        id = FRA_utilize_the_leagues
+		bypass = {
+			has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+			}
+		}
+
+        icon = GFX_goal_generic_occupy_starting_state
+        x = 12
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = FRA_form_the_popular_front }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 100
+                        add_popularity = { ideology = fascism popularity = 0.1 }
+                        add_popularity = { ideology = neutrality popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = FRA_repeal_the_law_of_exile
+		bypass = {
+			has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+			}
+		}
+
+        icon = GFX_goal_generic_political_pressure
+        x = 10
+        y = 1
+        cost = 10
+        mutually_exclusive = { focus = FRA_laissez_faire }
+        prerequisite = { focus = FRA_utilize_the_leagues }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 150
+                        custom_effect_tooltip = "The Royal families may return to France!"
+        }
+    }
+
+    focus = {
+        id = FRA_orleanist_restoration
+		bypass = {
+			has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 8
+        y = 2
+        cost = 10
+        mutually_exclusive = { focus = FRA_legitimist_restoration }
+        mutually_exclusive = { focus = FRA_bonapartist_restoration }
+        prerequisite = { focus = FRA_repeal_the_law_of_exile }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = neutrality elections_allowed = no }
+                        custom_effect_tooltip = "The Orleanist King takes the throne."
+                        add_stability = 0.1
+        }
+    }
+
+    focus = {
+        id = FRA_action_francaise
+        icon = GFX_goal_generic_suppress_resistance
+        x = 8
+        y = 3
+        cost = 10
+        prerequisite = { focus = FRA_orleanist_restoration }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 100
+                        add_popularity = { ideology = fascism popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = FRA_legitimist_restoration
+		bypass = {
+			has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+			}
+		}
+
+        icon = GFX_goal_generic_propaganda
+        x = 10
+        y = 2
+        cost = 10
+        mutually_exclusive = { focus = FRA_orleanist_restoration }
+        mutually_exclusive = { focus = FRA_bonapartist_restoration }
+        prerequisite = { focus = FRA_repeal_the_law_of_exile }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = neutrality elections_allowed = no }
+                        custom_effect_tooltip = "The Legitimist heir takes the throne."
+                        add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = FRA_spanish_alliance
+        icon = GFX_goal_generic_major_alliance
+        x = 10
+        y = 3
+        cost = 10
+        prerequisite = { focus = FRA_legitimist_restoration }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "Ally with our Bourbon cousins in Spain."
+        }
+    }
+
+    focus = {
+        id = FRA_bonapartist_restoration
+		bypass = {
+			has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+			}
+		}
+
+        icon = GFX_goal_generic_demand_territory
+        x = 12
+        y = 2
+        cost = 10
+        mutually_exclusive = { focus = FRA_orleanist_restoration }
+        mutually_exclusive = { focus = FRA_legitimist_restoration }
+        prerequisite = { focus = FRA_repeal_the_law_of_exile }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = neutrality elections_allowed = no }
+                        custom_effect_tooltip = "A Bonaparte Emperor is crowned!"
+                        add_political_power = 200
+        }
+    }
+
+    focus = {
+        id = FRA_avenge_waterloo
+        icon = GFX_goal_generic_attack_allies
+        x = 12
+        y = 3
+        cost = 10
+        prerequisite = { focus = FRA_bonapartist_restoration }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = puppet_wargoal target = ENG }
+                        custom_effect_tooltip = "Destroy the British Empire!"
+        }
+    }
+
+    focus = {
+        id = FRA_laissez_faire
+		bypass = {
+			has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+			}
+		}
+
+        icon = GFX_goal_generic_forceful_treaty
+        x = 14
+        y = 1
+        cost = 10
+        mutually_exclusive = { focus = FRA_repeal_the_law_of_exile }
+        prerequisite = { focus = FRA_utilize_the_leagues }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = fascism elections_allowed = no }
+                        add_political_power = 150
+                        custom_effect_tooltip = "The Croix de Feu takes control."
+        }
+    }
+
+    focus = {
+        id = FRA_latin_entente
+		bypass = {
+			has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+			OR = {
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+			}
+		}
+
+        icon = GFX_goal_generic_major_alliance
+        x = 14
+        y = 2
+        cost = 10
+        prerequisite = { focus = FRA_laissez_faire }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "Form the Latin Entente with Italy and Spain."
+                        add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = FRA_divide_africa
+        icon = GFX_goal_generic_position_armies
+        x = 14
+        y = 3
+        cost = 10
+        prerequisite = { focus = FRA_latin_entente }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_wargoal = { type = annex_everything target = ENG }
+                        custom_effect_tooltip = "Prepare to seize British Africa."
+        }
+    }
+
+    focus = {
+        id = FRA_rearm_france
+        icon = GFX_goal_generic_production
+        x = 19
+        y = 0
+        cost = 10
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_ideas = FRA_rearmament_campaign
+                        add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = FRA_metropolitan_industry
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 18
+        y = 1
+        cost = 10
+        prerequisite = { focus = FRA_rearm_france }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            random_owned_controlled_state = {
+                            limit = { free_building_slots = { building = industrial_complex size > 0 } is_core = yes }
+                            add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+                        }
+        }
+    }
+
+    focus = {
+        id = FRA_algerian_industry
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 20
+        y = 1
+        cost = 10
+        prerequisite = { focus = FRA_rearm_france }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            random_owned_controlled_state = {
+                            limit = { free_building_slots = { building = industrial_complex size > 0 } is_core = no }
+                            add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+                        }
+        }
+    }
+
+    focus = {
+        id = FRA_extend_the_maginot_line
+        icon = GFX_goal_generic_secret_weapon
+        x = 18
+        y = 2
+        cost = 10
+        mutually_exclusive = { focus = FRA_army_of_aggression }
+        prerequisite = { focus = FRA_metropolitan_industry }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            random_owned_controlled_state = {
+                            limit = { state = 16 } # Assuming state 16 is Nord-Pas-de-Calais or similar border
+                            add_building_construction = { type = bunker level = 2 instant_build = yes }
+                        }
+        }
+    }
+
+    focus = {
+        id = FRA_army_of_aggression
+        icon = GFX_goal_generic_army_motorized
+        x = 20
+        y = 2
+        cost = 10
+        mutually_exclusive = { focus = FRA_extend_the_maginot_line }
+        prerequisite = { focus = FRA_metropolitan_industry }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_army_experience = 50
+                        custom_effect_tooltip = "Adopt De Gaulle's motorized doctrines."
+        }
+    }
+
+    focus = {
+        id = FRA_widespread_rearmament
+        icon = GFX_goal_generic_construct_military_factory
+        x = 19
+        y = 3
+        cost = 10
+        prerequisite = { focus = FRA_extend_the_maginot_line focus = FRA_army_of_aggression }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            random_owned_controlled_state = {
+                            limit = { free_building_slots = { building = arms_factory size > 0 } }
+                            add_building_construction = { type = arms_factory level = 3 instant_build = yes }
+                        }
+        }
+    }
+
+}

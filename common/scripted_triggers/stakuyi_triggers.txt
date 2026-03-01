@@ -1,0 +1,1648 @@
+# ============================================================
+# United States Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Fascist Imperialist
+is_fascist_imperialist_path = {
+    has_completed_focus = USA_the_fascist_menace
+    has_government = fascism
+}
+
+# Checks if the AI should be the "Arsenal of Democracy"
+is_arsenal_of_democracy_path = {
+    has_completed_focus = USA_an_american_cincinnatus
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Conservative Democratic path
+is_conservative_democratic_path = {
+    has_completed_focus = USA_an_american_cincinnatus
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Non-Aligned path
+is_american_caesar_path = {
+    has_completed_focus = USA_the_american_caesar
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_suspend_the_persecution_path = {
+    has_completed_focus = USA_the_dictatorship_of_the_proletariat
+    has_government = communism
+}
+
+# ============================================================
+# United Kingdom Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Democrat
+is_steady_as_she_goes_path = {
+    has_completed_focus = ENG_steady_as_she_goes
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Monarchist path
+is_kings_party_path = {
+    has_completed_focus = ENG_the_kings_party
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_blackshirts_path = {
+    has_completed_focus = ENG_march_on_london
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_communist_alternative_path = {
+    has_completed_focus = ENG_the_communist_alternative
+    has_government = communism
+}
+
+# ============================================================
+# France Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Democrat
+is_popular_front_path = {
+    has_completed_focus = FRA_national_bloc
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_french_communist_path = {
+    has_completed_focus = FRA_the_french_commune
+    has_government = communism
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_french_fascist_path = {
+    has_completed_focus = FRA_laissez_faire
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Orleanist Monarchist path
+is_orleanist_path = {
+    has_completed_focus = FRA_orleanist_restoration
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Legitimist Monarchist path
+is_legitimist_path = {
+    has_completed_focus = FRA_orleanist_restoration
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Bonapartist Monarchist path
+is_bonapartist_path = {
+    has_completed_focus = FRA_orleanist_restoration
+    has_government = neutrality
+}
+
+# ============================================================
+# Germany Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Fascist
+is_historical_german_path = {
+    has_completed_focus = GER_befriend_poland
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Monarchist path
+is_german_monarchist_path = {
+    has_completed_focus = GER_revive_the_kaiserreich
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_german_democratic_path = {
+    has_completed_focus = GER_reestablish_free_elections
+    has_government = democratic
+}
+
+# ============================================================
+# Italy Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Fascist
+is_historical_italian_path = {
+    has_completed_focus = ITA_the_grand_council_of_fascism
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Alternate Fascist path
+is_alternate_fascist_italian_path = {
+    has_completed_focus = ITA_the_grand_council_of_fascism
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Papal State path
+is_papal_state_path = {
+    has_completed_focus = ITA_the_king_directs_the_government
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Monarchist path
+is_italian_monarchist_path = {
+    has_completed_focus = ITA_the_king_directs_the_government
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_italian_democratic_path = {
+    has_completed_focus = ITA_the_republic_of_italy
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_italian_communist_path = {
+    has_completed_focus = ITA_the_italian_communist_party
+    has_government = communism
+}
+
+# ============================================================
+# Soviet Union Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Communist (Stalin)
+is_stalinist_path = {
+    has_completed_focus = SOV_the_center
+    has_government = communism
+}
+
+# Checks if the AI should be pursuing the Left Opposition path (Trotsky)
+is_trotskyist_path = {
+    has_completed_focus = SOV_the_left_opposition
+    has_government = communism
+}
+
+# Checks if the AI should be pursuing the Right Opposition path (Bukharin)
+is_bukharinist_path = {
+    has_completed_focus = SOV_the_right_opposition
+    has_government = communism
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_russian_fascist_path = {
+    has_completed_focus = SOV_the_fascist_destiny
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Monarchist path
+is_russian_monarchist_path = {
+    has_completed_focus = SOV_the_romanovs_restored
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Theocratic path
+is_russian_theocratic_path = {
+    has_completed_focus = SOV_the_romanovs_restored
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_russian_democratic_path = {
+    has_completed_focus = SOV_a_new_russia
+    has_government = democratic
+}
+
+# ============================================================
+# Japan Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Fascist (Toseiha)
+is_toseiha_path = {
+    has_completed_focus = JAP_purge_the_kodoha_faction
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Non-Aligned path (Kodoha)
+is_kodoha_path = {
+    has_completed_focus = JAP_showa_restoration
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_japanese_democratic_path = {
+    has_completed_focus = JAP_restore_the_diet
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_japanese_communist_path = {
+    has_completed_focus = JAP_the_japanese_communist_party
+    has_government = communism
+}
+
+# ============================================================
+# Nationalist China Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned (Chiang Kai-shek)
+is_historical_chinese_path = {
+    has_completed_focus = CHI_one_china_policy
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_chinese_democratic_path = {
+    has_completed_focus = CHI_the_legislative_yuan
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_chinese_fascist_path = {
+    has_completed_focus = CHI_the_blue_shirts
+    has_government = fascism
+}
+
+# ============================================================
+# Canada Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Democrat
+is_historical_canadian_path = {
+    has_completed_focus = CAN_the_british_north_america_act
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Alternate Democratic path
+is_alternate_democratic_canadian_path = {
+    has_completed_focus = CAN_patriation
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_canadian_fascist_path = {
+    has_completed_focus = CAN_national_unity_party
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_canadian_communist_path = {
+    has_completed_focus = CAN_communist_revolution
+    has_government = communism
+}
+
+# ============================================================
+# Australia Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Democrat
+is_historical_australian_path = {
+    has_completed_focus = AST_never_gallipoli_again
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Alternate Democratic path
+is_alternate_democratic_australian_path = {
+    has_completed_focus = AST_support_the_centre_party
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_australian_fascist_path = {
+    has_completed_focus = AST_the_australia_first_movement
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_australian_communist_path = {
+    has_completed_focus = AST_workers_revolution
+    has_government = communism
+}
+
+# ============================================================
+# India Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned/Democratic
+is_historical_indian_path = {
+    has_completed_focus = RAJ_provincial_elections
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Alternate Democratic path
+is_alternate_democratic_indian_path = {
+    has_completed_focus = RAJ_indian_national_congress
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_indian_fascist_path = {
+    has_completed_focus = RAJ_indian_national_army
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_indian_communist_path = {
+    # has_completed_focus = RAJ_communist_party_of_india # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# ============================================================
+# Brazil Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_brazilian_path = {
+    has_completed_focus = BRA_the_vargas_dictatorship
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_brazilian_democratic_path = {
+    has_completed_focus = BRA_the_1937_elections
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_brazilian_fascist_path = {
+    has_completed_focus = BRA_integralist_uprising
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_brazilian_communist_path = {
+    has_completed_focus = BRA_the_aln_revolt
+    has_government = communism
+}
+
+# ============================================================
+# Poland Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_polish_path = {
+    has_completed_focus = POL_invite_the_king
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_polish_democratic_path = {
+    has_completed_focus = POL_the_morges_front
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_polish_fascist_path = {
+    has_completed_focus = POL_the_falanga
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_polish_communist_path = {
+    has_completed_focus = POL_the_polish_communist_party
+    has_government = communism
+}
+
+# Checks if the AI should be pursuing the Monarchist path
+is_polish_monarchist_path = {
+    has_completed_focus = POL_invite_the_king
+    has_government = neutrality
+}
+
+# ============================================================
+# Hungary Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Fascist
+is_historical_hungarian_path = {
+    has_completed_focus = HUN_renounce_the_treaty_of_trianon
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_hungarian_democratic_path = {
+    has_completed_focus = HUN_a_king_for_our_people
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_hungarian_communist_path = {
+    has_completed_focus = HUN_the_communist_party
+    has_government = communism
+}
+
+# Checks if the AI should be pursuing the Monarchist path (Habsburg)
+is_hungarian_habsburg_path = {
+    has_completed_focus = HUN_invite_the_habsburg_prince
+    has_government = neutrality
+}
+
+# ============================================================
+# Romania Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned/Fascist
+is_historical_romanian_path = {
+    has_completed_focus = ROM_the_royal_dictatorship
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_romanian_democratic_path = {
+    has_completed_focus = ROM_the_royal_dictatorship
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path (Iron Guard)
+is_romanian_fascist_path = {
+    has_completed_focus = ROM_align_axis
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_romanian_communist_path = {
+    # has_completed_focus = ROM_the_communist_party # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# ============================================================
+# Czechoslovakia Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Democrat
+is_historical_czechoslovak_path = {
+    has_completed_focus = CZE_political_direction
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_czechoslovak_fascist_path = {
+    has_completed_focus = CZE_fascist_direction
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_czechoslovak_communist_path = {
+    has_completed_focus = CZE_communist_direction
+    has_government = communism
+}
+
+# ============================================================
+# Finland Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_finnish_path = {
+    has_completed_focus = FIN_the_finnish_model
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_finnish_democratic_path = {
+    has_completed_focus = FIN_the_nordic_model
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_finnish_fascist_path = {
+    has_completed_focus = FIN_the_greater_finland
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_finnish_communist_path = {
+    has_completed_focus = FIN_the_red_guards
+    has_government = communism
+}
+
+# ============================================================
+# Sweden Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Democrat
+is_historical_swedish_path = {
+    has_completed_focus = SWE_the_per_albin_bus
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Alternate Democratic path
+is_alternate_democratic_swedish_path = {
+    has_completed_focus = SWE_the_right_wing_coalition
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_swedish_fascist_path = {
+    has_completed_focus = SWE_the_svea_rike
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_swedish_communist_path = {
+    has_completed_focus = SWE_socialist_republic_of_sweden
+    has_government = communism
+}
+
+# Checks if the AI should be pursuing the Monarchist path
+is_swedish_monarchist_path = {
+    # has_completed_focus = SWE_the_kings_dictatorship # TODO: Path omitted during generation
+    has_government = neutrality
+}
+
+# ============================================================
+# Norway Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Democrat
+is_historical_norwegian_path = {
+    has_completed_focus = NOR_the_nygaardsvold_cabinet
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Alternate Democratic path
+is_alternate_democratic_norwegian_path = {
+    has_completed_focus = NOR_the_right_wing_coalition
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_norwegian_fascist_path = {
+    has_completed_focus = NOR_quisling_government
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_norwegian_communist_path = {
+    has_completed_focus = NOR_peoples_republic_of_norway
+    has_government = communism
+}
+
+# ============================================================
+# Netherlands Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Democrat
+is_historical_dutch_path = {
+    has_completed_focus = HOL_form_the_new_government
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Alternate Democratic path
+is_alternate_democratic_dutch_path = {
+    has_completed_focus = HOL_form_the_new_government
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_dutch_fascist_path = {
+    has_completed_focus = HOL_anton_mussert
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_dutch_communist_path = {
+    # has_completed_focus = HOL_the_communist_party # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# Checks if the AI should be pursuing the Monarchist path
+is_dutch_monarchist_path = {
+    # has_completed_focus = HOL_the_queens_government # TODO: Path omitted during generation
+    has_government = neutrality
+}
+
+# ============================================================
+# Belgium Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Democrat
+is_historical_belgian_path = {
+    has_completed_focus = BEL_the_catholic_bloc
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Alternate Democratic path
+is_alternate_democratic_belgian_path = {
+    has_completed_focus = BEL_the_catholic_bloc
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path (Rexism)
+is_belgian_fascist_path = {
+    has_completed_focus = BEL_leon_degrelle
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_belgian_communist_path = {
+    # has_completed_focus = BEL_the_communist_party # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# Checks if the AI should be pursuing the Monarchist path
+is_belgian_monarchist_path = {
+    # has_completed_focus = BEL_the_kings_prerogative # TODO: Path omitted during generation
+    has_government = neutrality
+}
+
+# ============================================================
+# Greece Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned/Fascist
+is_historical_greek_path = {
+    has_completed_focus = GRE_the_metaxas_dictatorship
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_greek_democratic_path = {
+    has_completed_focus = GRE_the_venizelist_movement
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_greek_fascist_path = {
+    # has_completed_focus = GRE_the_national_youth_organisation # TODO: Path omitted during generation
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_greek_communist_path = {
+    # has_completed_focus = GRE_the_communist_party # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# Checks if the AI should be pursuing the Monarchist path
+is_greek_monarchist_path = {
+    has_completed_focus = GRE_the_metaxas_dictatorship
+    has_government = neutrality
+}
+
+# ============================================================
+# Turkey Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_turkish_path = {
+    has_completed_focus = TUR_peace_at_home
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_turkish_democratic_path = {
+    has_completed_focus = TUR_multi_party_system
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_turkish_fascist_path = {
+    # has_completed_focus = TUR_fatherland_first # TODO: Path omitted during generation
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_turkish_communist_path = {
+    # has_completed_focus = TUR_the_balkan_socialist_republic # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# Checks if the AI should be pursuing the Ottoman Restoration path
+is_ottoman_restoration_path = {
+    has_completed_focus = TUR_peace_at_home
+    has_government = neutrality
+}
+
+# ============================================================
+# South Africa Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Democrat
+is_historical_south_african_path = {
+    has_completed_focus = SAF_support_the_policy_of_appeasement
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Alternate Democratic path
+is_alternate_democratic_south_african_path = {
+    has_completed_focus = SAF_abandon_westminster
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_south_african_fascist_path = {
+    has_completed_focus = SAF_support_the_ossewabrandwag
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_south_african_communist_path = {
+    has_completed_focus = SAF_anti_colonialist_crusade
+    has_government = communism
+}
+
+# ============================================================
+# Mexico Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned/Democratic
+is_historical_mexican_path = {
+    has_completed_focus = MEX_the_prm
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path (Synarchism)
+is_mexican_fascist_path = {
+    has_completed_focus = MEX_the_gold_shirts
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_mexican_communist_path = {
+    # has_completed_focus = MEX_support_the_left # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# Checks if the AI should be pursuing the Catholic/Cristero path
+is_mexican_catholic_path = {
+    # has_completed_focus = MEX_the_cristeros # TODO: Path omitted during generation
+    has_government = neutrality
+}
+
+# ============================================================
+# Argentina Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_argentine_path = {
+    has_completed_focus = ARG_the_concordancia_government
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_argentine_democratic_path = {
+    has_completed_focus = ARG_the_radical_civic_union
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_argentine_fascist_path = {
+    has_completed_focus = ARG_the_peronist_movement
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_argentine_communist_path = {
+    # has_completed_focus = ARG_the_communist_party # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# ============================================================
+# Chile Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Democrat
+is_historical_chilean_path = {
+    has_completed_focus = CHL_pedro_aguirre_cerda
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_chilean_fascist_path = {
+    has_completed_focus = CHL_the_seguro_obrero_massacre
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_chilean_communist_path = {
+    # has_completed_focus = CHL_the_communist_party # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# Checks if the AI should be pursuing the Non-Aligned path
+is_chilean_non_aligned_path = {
+    # has_completed_focus = CHL_the_military_junta # TODO: Path omitted during generation
+    has_government = neutrality
+}
+
+# ============================================================
+# Spain Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Nationalist (Franco)
+is_historical_spanish_nationalist_path = {
+    has_completed_focus = SPR_the_nationalist_uprising
+    has_government = fascism
+}
+
+# Checks if the AI should be behaving like a Historical Republican
+is_historical_spanish_republican_path = {
+    has_completed_focus = SPR_the_popular_front
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Carlist path
+is_spanish_carlist_path = {
+    # has_completed_focus = SPR_the_carlist_uprising # TODO: Path omitted during generation
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Anarchist path
+is_spanish_anarchist_path = {
+    # has_completed_focus = SPR_the_anarchist_uprising # TODO: Path omitted during generation
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Communist path (POUM/Stalinist)
+is_spanish_communist_path = {
+    has_completed_focus = SPR_the_popular_front
+    has_government = communism
+}
+
+# ============================================================
+# Portugal Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_portuguese_path = {
+    has_completed_focus = POR_the_estado_novo
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_portuguese_democratic_path = {
+    has_completed_focus = POR_the_popular_front
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_portuguese_fascist_path = {
+    # has_completed_focus = POR_national_syndicalism # TODO: Path omitted during generation
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_portuguese_communist_path = {
+    has_completed_focus = POR_the_popular_front
+    has_government = communism
+}
+
+# Checks if the AI should be pursuing the Monarchist path
+is_portuguese_monarchist_path = {
+    has_completed_focus = POR_the_estado_novo
+    has_government = neutrality
+}
+
+# ============================================================
+# Austria Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned/Fascist
+is_historical_austrian_path = {
+    has_completed_focus = AUS_austrofascism
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_austrian_democratic_path = {
+    has_completed_focus = AUS_the_social_democrats
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_austrian_communist_path = {
+    # has_completed_focus = AUS_the_communist_party # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# Checks if the AI should be pursuing the Monarchist path (Habsburg)
+is_austrian_habsburg_path = {
+    has_completed_focus = AUS_the_fatherland_front
+    has_government = neutrality
+}
+
+# ============================================================
+# Philippines Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Democrat
+is_historical_philippine_path = {
+    has_completed_focus = PHI_the_commonwealth
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_philippine_fascist_path = {
+    has_completed_focus = PHI_the_ganap_party
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path (Hukbalahap)
+is_philippine_communist_path = {
+    has_completed_focus = PHI_the_hukbalahap
+    has_government = communism
+}
+
+# Checks if the AI should be pursuing the Non-Aligned path
+is_philippine_non_aligned_path = {
+    # has_completed_focus = PHI_the_sakdalistas # TODO: Path omitted during generation
+    has_government = neutrality
+}
+
+# ============================================================
+# Communist China Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Communist (Mao)
+is_historical_prc_path = {
+    has_completed_focus = PRC_maoism
+    has_government = communism
+}
+
+# Checks if the AI should be pursuing the Alternate Communist path (Wang Ming)
+is_alternate_communist_prc_path = {
+    has_completed_focus = PRC_maoism
+    has_government = communism
+}
+
+# Checks if the AI should be pursuing the Social Democratic path
+is_prc_social_democratic_path = {
+    has_completed_focus = PRC_social_democracy
+    has_government = democratic
+}
+
+# ============================================================
+# Belgian Congo Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned (Colonial Administration)
+is_historical_cog_path = {
+    has_completed_focus = COG_the_force_publique
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path (Independence)
+is_cog_democratic_path = {
+    has_completed_focus = COG_the_evolues
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_cog_fascist_path = {
+    # has_completed_focus = COG_the_white_mercenaries # TODO: Path omitted during generation
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path (Lumumbism)
+is_cog_communist_path = {
+    # has_completed_focus = COG_the_mnc # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# ============================================================
+# Iran Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_iranian_path = {
+    has_completed_focus = PER_the_pahlavi_dynasty
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_iranian_democratic_path = {
+    # has_completed_focus = PER_the_majlis # TODO: Path omitted during generation
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_iranian_fascist_path = {
+    # has_completed_focus = PER_the_sumka # TODO: Path omitted during generation
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_iranian_communist_path = {
+    has_completed_focus = PER_the_tudeh_party
+    has_government = communism
+}
+
+# ============================================================
+# Iraq Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_iraqi_path = {
+    has_completed_focus = IRQ_the_hashemite_kingdom
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_iraqi_democratic_path = {
+    # has_completed_focus = IRQ_the_parliament # TODO: Path omitted during generation
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path (Golden Square)
+is_iraqi_fascist_path = {
+    has_completed_focus = IRQ_the_golden_square
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_iraqi_communist_path = {
+    # has_completed_focus = IRQ_the_iraqi_communist_party # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# ============================================================
+# Egypt Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_egyptian_path = {
+    has_completed_focus = EGY_the_anglo_egyptian_treaty
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_egyptian_democratic_path = {
+    has_completed_focus = EGY_the_wafd_party
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_egyptian_fascist_path = {
+    # has_completed_focus = EGY_young_egypt # TODO: Path omitted during generation
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_egyptian_communist_path = {
+    # has_completed_focus = EGY_the_communist_party # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# ============================================================
+# Paraguay Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_paraguayan_path = {
+    has_completed_focus = PAR_the_febrerista_revolution
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_paraguayan_democratic_path = {
+    # has_completed_focus = PAR_the_liberal_party # TODO: Path omitted during generation
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_paraguayan_fascist_path = {
+    has_completed_focus = PAR_the_febrerista_revolution
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_paraguayan_communist_path = {
+    # has_completed_focus = PAR_the_communist_party # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# ============================================================
+# Uruguay Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_uruguayan_path = {
+    has_completed_focus = URU_the_colorado_party
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_uruguayan_democratic_path = {
+    has_completed_focus = URU_the_colorado_party
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_uruguayan_fascist_path = {
+    # has_completed_focus = URU_the_fascist_party # TODO: Path omitted during generation
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_uruguayan_communist_path = {
+    # has_completed_focus = URU_the_communist_party # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# ============================================================
+# Denmark Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_danish_path = {
+    has_completed_focus = DEN_the_conservative_peoples_party
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_danish_democratic_path = {
+    # has_completed_focus = DEN_the_conservative_people_party # TODO: Path omitted during generation
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_danish_fascist_path = {
+    has_completed_focus = DEN_march_on_copenhagen
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_danish_communist_path = {
+    # has_completed_focus = DEN_the_communist_party # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# ============================================================
+# Ethiopia Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_ethiopian_path = {
+    has_completed_focus = ETH_the_emperor
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_ethiopian_democratic_path = {
+    # has_completed_focus = ETH_the_democratic_party # TODO: Path omitted during generation
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_ethiopian_fascist_path = {
+    # has_completed_focus = ETH_the_fascist_party # TODO: Path omitted during generation
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_ethiopian_communist_path = {
+    # has_completed_focus = ETH_the_communist_party # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# ============================================================
+# Switzerland Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_swiss_path = {
+    has_completed_focus = SWI_the_federal_council
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_swiss_democratic_path = {
+    has_completed_focus = SWI_the_federal_council
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_swiss_fascist_path = {
+    # has_completed_focus = SWI_the_national_front # TODO: Path omitted during generation
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_swiss_communist_path = {
+    # has_completed_focus = SWI_the_communist_party # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# ============================================================
+# Estonia Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_estonian_path = {
+    has_completed_focus = EST_the_era_of_silence
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_estonian_democratic_path = {
+    # has_completed_focus = EST_the_democratic_party # TODO: Path omitted during generation
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_estonian_fascist_path = {
+    has_completed_focus = EST_the_vaps_movement
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_estonian_communist_path = {
+    # has_completed_focus = EST_the_communist_party # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# ============================================================
+# Latvia Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_latvian_path = {
+    has_completed_focus = LAT_the_ulmanis_dictatorship
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_latvian_democratic_path = {
+    # has_completed_focus = LAT_the_democratic_party # TODO: Path omitted during generation
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_latvian_fascist_path = {
+    has_completed_focus = LAT_the_perkonkrusts
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_latvian_communist_path = {
+    # has_completed_focus = LAT_the_communist_party # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# ============================================================
+# Lithuania Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_lithuanian_path = {
+    has_completed_focus = LIT_the_smetona_dictatorship
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_lithuanian_democratic_path = {
+    # has_completed_focus = LIT_the_christian_democratic_party # TODO: Path omitted during generation
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_lithuanian_fascist_path = {
+    has_completed_focus = LIT_the_iron_wolf
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_lithuanian_communist_path = {
+    # has_completed_focus = LIT_the_communist_party # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# ============================================================
+# Warlords Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_warlords_path = {
+    has_completed_focus = WRL_cooperate_with_the_nationalists
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_warlords_democratic_path = {
+    has_completed_focus = WRL_democratic_reforms
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_warlords_fascist_path = {
+    has_completed_focus = WRL_military_dictatorship
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_warlords_communist_path = {
+    has_completed_focus = WRL_cooperate_with_the_communists
+    has_government = communism
+}
+
+# ============================================================
+# Manchukuo Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_manchukuoan_path = {
+    has_completed_focus = MAN_assertiveness
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_manchukuoan_democratic_path = {
+    has_completed_focus = MAN_the_democratic_party
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_manchukuoan_fascist_path = {
+    has_completed_focus = MAN_obedience
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_manchukuoan_communist_path = {
+    has_completed_focus = MAN_the_communist_party
+    has_government = communism
+}
+
+# ============================================================
+# Bulgaria Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_bulgarian_path = {
+    has_completed_focus = BUL_the_tsars_dictatorship
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_bulgarian_democratic_path = {
+    # has_completed_focus = BUL_the_democratic_party # TODO: Path omitted during generation
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_bulgarian_fascist_path = {
+    has_completed_focus = BUL_zveno
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_bulgarian_communist_path = {
+    has_completed_focus = BUL_the_fatherland_front
+    has_government = communism
+}
+
+# ============================================================
+# New Zealand Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Democratic
+is_historical_new_zealander_path = {
+    has_completed_focus = NZL_the_labour_party
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Non-Aligned path
+is_new_zealander_non_aligned_path = {
+    # has_completed_focus = NZL_the_governors_prerogative # TODO: Path omitted during generation
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_new_zealander_fascist_path = {
+    # has_completed_focus = NZL_the_new_zealand_legion # TODO: Path omitted during generation
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_new_zealander_communist_path = {
+    # has_completed_focus = NZL_the_communist_party # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# ============================================================
+# Yugoslavia Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_yugoslavian_path = {
+    has_completed_focus = YUG_end_the_regency
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_yugoslavian_democratic_path = {
+    # has_completed_focus = YUG_the_democratic_opposition # TODO: Path omitted during generation
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_yugoslavian_fascist_path = {
+    has_completed_focus = YUG_sign_the_tripartite_pact
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_yugoslavian_communist_path = {
+    has_completed_focus = YUG_the_communist_partisans
+    has_government = communism
+}
+
+# ============================================================
+# Afghanistan Path Triggers
+# ============================================================
+
+# Checks if the AI should be behaving like a Historical Non-Aligned
+is_historical_afghan_path = {
+    has_completed_focus = AFG_the_barakzai_dynasty
+    has_government = neutrality
+}
+
+# Checks if the AI should be pursuing the Democratic path
+is_afghan_democratic_path = {
+    # has_completed_focus = AFG_democratic_reforms # TODO: Path omitted during generation
+    has_government = democratic
+}
+
+# Checks if the AI should be pursuing the Fascist path
+is_afghan_fascist_path = {
+    # has_completed_focus = AFG_afghan_nationalism # TODO: Path omitted during generation
+    has_government = fascism
+}
+
+# Checks if the AI should be pursuing the Communist path
+is_afghan_communist_path = {
+    # has_completed_focus = AFG_the_communist_party # TODO: Path omitted during generation
+    has_government = communism
+}
+
+# ============================================================
+# Break-Free Factions / Releasables Path Triggers
+# ============================================================
+
+# ------------------------------------------------------------
+# Specific Core Releasables / Civil War Tags
+# ------------------------------------------------------------
+
+# Nationalist Spain (Fascist/Non-Aligned)
+is_nationalist_spain_path = {
+    tag = SPA
+    OR = {
+        has_government = fascism
+        has_government = neutrality
+    }
+}
+
+# Vichy France (Fascist)
+is_vichy_france_path = {
+    tag = VIC
+    has_government = fascism
+}
+
+# Free France (Democratic)
+is_free_france_path = {
+    OR = {
+        tag = FRA
+        original_tag = FRA
+    }
+    has_government = democratic
+    has_global_flag = fra_capitulated_flag # Safe fallback check
+}
+
+# Independent Croatia (Ustashe / Fascist)
+is_croatia_fascist_path = {
+    tag = CRO
+    has_government = fascism
+}
+
+# Independent Slovakia (Fascist)
+is_slovakia_fascist_path = {
+    tag = SLO
+    has_government = fascism
+}
+
+# Ukraine (Generic Breakaway)
+is_ukraine_breakaway_path = {
+    tag = UKR
+}
+
+# ------------------------------------------------------------
+# Original Tag Inheritance (Dynamic Civil Wars)
+# ------------------------------------------------------------
+# These triggers allow a civil war tag to identify its path 
+# based on purely being in a civil war under a specific ideology.
+# They inherit focuses from the parent via base game mechanics,
+# so they just need the ideology check as a tie-breaker.
+
+is_generic_fascist_civil_war_path = {
+    is_subject = no
+    has_government = fascism
+    has_civil_war = yes
+}
+
+is_generic_communist_civil_war_path = {
+    is_subject = no
+    has_government = communism
+    has_civil_war = yes
+}
+
+is_generic_democratic_civil_war_path = {
+    is_subject = no
+    has_government = democratic
+    has_civil_war = yes
+}
+
+is_generic_neutrality_civil_war_path = {
+    is_subject = no
+    has_government = neutrality
+    has_civil_war = yes
+}
+
+# ------------------------------------------------------------
+# Generic Ideology Fallback (For any random releasable)
+# ------------------------------------------------------------
+# If a minor colony, puppet or breakaway is released, this determines 
+# its basic behavior strictly off its government.
+
+is_generic_releasable_fascist_path = {
+    is_major = no
+    has_government = fascism
+    NOT = { has_civil_war = yes }
+    NOT = { has_focus_tree = default } # Only applies if we're not running a major tree
+}
+
+is_generic_releasable_communist_path = {
+    is_major = no
+    has_government = communism
+    NOT = { has_civil_war = yes }
+    NOT = { has_focus_tree = default }
+}
+
+is_generic_releasable_democratic_path = {
+    is_major = no
+    has_government = democratic
+    NOT = { has_civil_war = yes }
+    NOT = { has_focus_tree = default }
+}
+
+is_generic_releasable_neutral_path = {
+    is_major = no
+    has_government = neutrality
+    NOT = { has_civil_war = yes }
+    NOT = { has_focus_tree = default }
+}
+
+
+# ============================================================
+# "World-Song" Tension Triggers
+# ============================================================
+SAH_is_quiet_world = {
+	has_global_flag = SAH_world_song_quiet
+}
+
+SAH_is_rising_chorus = {
+	has_global_flag = SAH_world_song_rising_chorus
+}
+
+SAH_is_marching_beat = {
+	has_global_flag = SAH_world_song_marching_beat
+}
+
+SAH_is_drums_of_war = {
+	has_global_flag = SAH_world_song_drums_of_war
+}
+
+# Useful compound trigger for escalated tension
+SAH_is_tensions_high = {
+	OR = {
+		has_global_flag = SAH_world_song_marching_beat
+		has_global_flag = SAH_world_song_drums_of_war
+	}
+}
+
+# ============================================================
+# Custom Game Rule Checks
+# Helper checks to easily hook game rules into focuses & AI weights
+# ============================================================
+
+SAH_is_chaos_mode = {
+	has_custom_rule = { rule = SAH_global_campaign_rule option = SAH_global_ahistorical_chaos }
+}
+
+SAH_is_historical_mode = {
+	has_custom_rule = { rule = SAH_global_campaign_rule option = SAH_global_historical }
+	NOT = { has_global_flag = SAH_timeline_shattered }
+}
+
+# Override Checks
+SAH_is_ger_forced_democratic = { has_custom_rule = { rule = SAH_ger_behavior_rule option = SAH_ger_democratic } }
+SAH_is_ger_forced_communist = { has_custom_rule = { rule = SAH_ger_behavior_rule option = SAH_ger_communist } }
+SAH_is_usa_forced_communist = { has_custom_rule = { rule = SAH_usa_behavior_rule option = SAH_usa_communist } }
+SAH_is_usa_forced_fascist = { has_custom_rule = { rule = SAH_usa_behavior_rule option = SAH_usa_fascist } }
+SAH_is_sov_forced_tsarist = { has_custom_rule = { rule = SAH_sov_behavior_rule option = SAH_sov_tsarist } }
+SAH_is_sov_forced_democratic = { has_custom_rule = { rule = SAH_sov_behavior_rule option = SAH_sov_democratic } }
+
+SAH_is_reactive_diplomacy_enabled = {
+	NOT = { has_custom_rule = { rule = SAH_reactive_diplomacy_rule option = SAH_reactive_off } }
+}
+SAH_is_imperial_collapse_enabled = {
+	NOT = { has_custom_rule = { rule = SAH_imperial_collapse_rule option = SAH_imperial_collapse_off } }
+}
+
+SAH_is_performance_mode_enabled = {
+	has_custom_rule = { rule = SAH_performance_mode_rule option = SAH_performance_on }
+}

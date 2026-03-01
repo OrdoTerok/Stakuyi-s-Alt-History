@@ -1,0 +1,177 @@
+focus_tree = {
+    id = yugoslavian_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = YUG
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = YUG_the_regency_council
+		bypass = {
+			has_game_rule = { rule = SAH_yug_scenario_start_rule option = regency_council }
+				has_game_rule = { rule = SAH_yug_scenario_start_rule option = tripartite_pact }
+			OR = {
+				has_game_rule = { rule = SAH_yug_scenario_start_rule option = regency_council }
+				has_game_rule = { rule = SAH_yug_scenario_start_rule option = tripartite_pact }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 4
+        y = 0
+        cost = 10
+
+        ai_will_do = {
+            base = 1
+            modifier = { add = 90 is_historical_focus_on = yes }
+        }
+
+        completion_reward = {
+            add_political_power = 120
+        }
+    }
+
+    focus = {
+        id = YUG_end_the_regency
+        icon = GFX_goal_generic_peaceful_treaty
+        x = 2
+        y = 1
+        cost = 10
+        prerequisite = { focus = YUG_the_regency_council }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            add_stability = 0.1
+            set_politics = { ruling_party = neutrality }
+        }
+    }
+
+    focus = {
+        id = YUG_sign_the_tripartite_pact
+		bypass = {
+			has_game_rule = { rule = SAH_yug_scenario_start_rule option = tripartite_pact }
+			OR = {
+				has_game_rule = { rule = SAH_yug_scenario_start_rule option = tripartite_pact }
+			}
+		}
+
+        icon = GFX_goal_generic_major_alliance
+        x = 6
+        y = 1
+        cost = 10
+        prerequisite = { focus = YUG_the_regency_council }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = fascism }
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = YUG_the_communist_partisans
+		bypass = {
+			has_game_rule = { rule = SAH_yug_scenario_start_rule option = communist_partisans }
+			OR = {
+				has_game_rule = { rule = SAH_yug_scenario_start_rule option = communist_partisans }
+			}
+		}
+
+        icon = GFX_goal_generic_communism
+        x = 10
+        y = 0
+        cost = 10
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = communism }
+            add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = YUG_western_focus
+		bypass = {
+			has_game_rule = { rule = SAH_yug_scenario_start_rule option = western_focus }
+			OR = {
+				has_game_rule = { rule = SAH_yug_scenario_start_rule option = western_focus }
+			}
+		}
+
+        icon = GFX_goal_generic_production
+        x = 6
+        y = 4
+        cost = 10
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 } } add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+        }
+    }
+
+}

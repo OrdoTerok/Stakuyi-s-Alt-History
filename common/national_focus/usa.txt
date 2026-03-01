@@ -1,0 +1,1455 @@
+focus_tree = {
+    id = usa_focus
+    
+    country = {
+        factor = 0
+        
+        modifier = {
+            add = 10
+            tag = USA
+        }
+    }
+    
+    default = no
+
+    # ============================================================
+    # Political Path Entry Focuses
+    # ============================================================
+
+    focus = {
+        id = USA_continue_the_new_deal
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			}
+		}
+
+        icon = GFX_goal_generic_political_pressure
+        x = 5
+        y = 0
+        cost = 10
+        
+                ai_will_do = {
+            base = 10
+            modifier = {
+                add = 90
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = democratic_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = democratic is_major = yes }
+            }
+        }
+
+        
+        completion_reward = {
+
+            add_political_power = 150
+            add_popularity = { ideology = democratic popularity = 0.1 }
+            custom_effect_tooltip = "Sets us firmly on the historical New Deal path."
+        }
+    }
+
+    focus = {
+        id = USA_reestablish_the_gold_standard
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+		}
+
+        icon = GFX_goal_generic_demand_territory
+        x = 1
+        y = 0
+        cost = 10
+        
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        }
+
+        
+        completion_reward = {
+
+            add_political_power = 120
+            add_popularity = { ideology = neutrality popularity = 0.1 }
+            custom_effect_tooltip = "Sets us on the Conservative / Alt-History path."
+        }
+    }
+
+    focus = {
+        id = USA_america_first
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+		}
+
+        icon = GFX_goal_generic_national_pride
+        x = 9
+        y = 0
+        cost = 10
+        
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+        
+        completion_reward = {
+
+            add_political_power = 120
+            add_popularity = { ideology = fascism popularity = 0.1 }
+            custom_effect_tooltip = "Initiates the Silver Shirt mobilization."
+        }
+    }
+
+    focus = {
+        id = USA_suspend_the_persecution
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
+		}
+
+        icon = GFX_goal_generic_secret_weapon
+        x = 13
+        y = 0
+        cost = 10
+        
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        
+		modifier = {
+			factor = 1000
+			SAH_is_usa_forced_communist = yes
+		}
+}
+
+        
+        completion_reward = {
+
+            add_political_power = 120
+            add_popularity = { ideology = communism popularity = 0.1 }
+            custom_effect_tooltip = "Embraces Communist ideologies."
+        }
+    }
+
+    # ============================================================
+    # Historical Democratic Path
+    # ============================================================
+
+    focus = {
+        id = USA_wpa
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			}
+		}
+
+        icon = GFX_goal_generic_construct_infrastructure
+        prerequisite = { focus = USA_continue_the_new_deal }
+        x = 3
+        y = 1
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_arsenal_of_democracy_path = yes } }
+        completion_reward = {
+
+            add_political_power = 50
+            random_owned_controlled_state = {
+                limit = { free_building_slots = { building = industrial_complex size > 0 } }
+                add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+            }
+        }
+    }
+
+    focus = {
+        id = USA_war_department_expansion
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			}
+		}
+
+        icon = GFX_goal_generic_army_motorized
+        prerequisite = { focus = USA_continue_the_new_deal }
+        x = 5
+        y = 1
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_arsenal_of_democracy_path = yes } }
+        completion_reward = {
+
+            add_political_power = 50
+            add_army_experience = 20
+            random_owned_controlled_state = {
+                limit = { free_building_slots = { building = arms_factory size > 0 } }
+                add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+            }
+        }
+    }
+
+    focus = {
+        id = USA_neutrality_act
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			}
+		}
+
+        icon = GFX_goal_generic_political_pressure
+        prerequisite = { focus = USA_continue_the_new_deal }
+        mutually_exclusive = { focus = USA_limited_intervention }
+        x = 7
+        y = 1
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_arsenal_of_democracy_path = yes is_historical_focus_on = yes } }
+        completion_reward = {
+
+            add_political_power = 120
+            add_ideas = neutrality_idea
+            custom_effect_tooltip = "Strengthens our neutrality."
+        }
+    }
+
+    focus = {
+        id = USA_limited_intervention
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			}
+		}
+
+        icon = GFX_goal_generic_forceful_treaty
+        prerequisite = { focus = USA_continue_the_new_deal }
+        mutually_exclusive = { focus = USA_neutrality_act }
+        x = 9
+        y = 1
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_arsenal_of_democracy_path = yes is_historical_focus_on = no } }
+        completion_reward = {
+
+            add_political_power = 120
+            add_named_threat = { threat = 5 name = USA_limited_intervention }
+            custom_effect_tooltip = "We will intervene where necessary."
+        }
+    }
+
+    focus = {
+        id = USA_war_production_board
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			}
+		}
+
+        icon = GFX_goal_generic_production
+        prerequisite = { focus = USA_wpa }
+        x = 3
+        y = 2
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_arsenal_of_democracy_path = yes } }
+        completion_reward = {
+
+            add_political_power = 50
+            add_ideas = USA_war_production_board
+            custom_effect_tooltip = "Greatly increases production efficiency."
+        }
+    }
+
+    focus = {
+        id = USA_selective_service_act
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			}
+		}
+
+        icon = GFX_goal_generic_construct_military
+        prerequisite = { focus = USA_war_department_expansion }
+        x = 5
+        y = 2
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_arsenal_of_democracy_path = yes } }
+        completion_reward = {
+
+            add_political_power = 50
+            add_ideas = USA_selective_service_idea
+            custom_effect_tooltip = "Increases our available manpower."
+        }
+    }
+
+    focus = {
+        id = USA_arsenal_of_democracy
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			}
+		}
+
+        icon = GFX_goal_generic_allies_build_infrastructure
+        prerequisite = { focus = USA_neutrality_act }
+        prerequisite = { focus = USA_limited_intervention }
+        x = 7
+        y = 2
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_arsenal_of_democracy_path = yes } }
+        completion_reward = {
+
+            add_political_power = 150
+            add_ideas = USA_arsenal_of_democracy
+            custom_effect_tooltip = "We are the Arsenal of Democracy!"
+        }
+    }
+
+    focus = {
+        id = USA_the_giant_wakes
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			}
+		}
+
+        icon = GFX_goal_continuous_air_production
+        prerequisite = { focus = USA_war_production_board }
+        prerequisite = { focus = USA_selective_service_act }
+        prerequisite = { focus = USA_arsenal_of_democracy }
+        x = 5
+        y = 3
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_arsenal_of_democracy_path = yes } }
+        completion_reward = {
+
+            add_political_power = 150
+            remove_ideas = USA_great_depression
+            custom_effect_tooltip = "The Great Depression is finally over."
+        }
+    }
+
+    focus = {
+        id = USA_destroyers_for_bases
+        icon = GFX_goal_generic_navy_battleship
+        prerequisite = { focus = USA_the_giant_wakes }
+        x = 5
+        y = 4
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_arsenal_of_democracy_path = yes } }
+        completion_reward = {
+
+            add_political_power = 50
+            if = {
+                limit = { ENG = { exists = yes } }
+                ENG = { add_equipment_to_stockpile = { type = convoy amount = 50 } }
+            }
+            custom_effect_tooltip = "We send older ships in exchange for base rights."
+        }
+    }
+    
+    focus = {
+        id = USA_lend_lease_act
+        icon = GFX_goal_generic_trade
+        prerequisite = { focus = USA_destroyers_for_bases }
+        x = 5
+        y = 5
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_arsenal_of_democracy_path = yes } }
+        completion_reward = {
+
+            add_political_power = 100
+            custom_effect_tooltip = "Unlocks major lend-lease decisions."
+        }
+    }
+
+    focus = {
+        id = USA_war_plan_black
+        icon = GFX_goal_generic_territory_or_war
+        prerequisite = { focus = USA_lend_lease_act }
+        x = 4
+        y = 6
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_arsenal_of_democracy_path = yes } }
+        completion_reward = {
+
+            add_political_power = 50
+            create_wargoal = { type = puppet_wargoal target = GER }
+            custom_effect_tooltip = "Prepare for war against Germany."
+        }
+    }
+
+    focus = {
+        id = USA_war_plan_orange
+        icon = GFX_goal_generic_attack_allies
+        prerequisite = { focus = USA_lend_lease_act }
+        x = 6
+        y = 6
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_arsenal_of_democracy_path = yes } }
+        completion_reward = {
+
+            add_political_power = 50
+            create_wargoal = { type = puppet_wargoal target = JAP }
+            custom_effect_tooltip = "Prepare for war against Japan."
+        }
+    }
+
+    focus = {
+        id = USA_the_united_nations
+        icon = GFX_goal_generic_major_alliance
+        prerequisite = { focus = USA_war_plan_black }
+        prerequisite = { focus = USA_war_plan_orange }
+        x = 5
+        y = 7
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_arsenal_of_democracy_path = yes } }
+        completion_reward = {
+
+            add_political_power = 200
+            custom_effect_tooltip = "Spearheads the creation of the United Nations."
+        }
+    }
+
+    # ============================================================
+    # Conservative / MacArthur Path
+    # ============================================================
+
+    focus = {
+        id = USA_america_first_committee
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+		}
+
+        icon = GFX_goal_generic_major_alliance
+        prerequisite = { focus = USA_reestablish_the_gold_standard }
+        x = 1
+        y = 1
+        cost = 10
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        }
+
+        completion_reward = {
+
+            add_political_power = 100
+            add_popularity = { ideology = neutrality popularity = 0.1 }
+        }
+    }
+    
+    focus = {
+        id = USA_deregulate_industry
+        icon = GFX_goal_generic_construct_infrastructure
+        prerequisite = { focus = USA_reestablish_the_gold_standard }
+        x = -1
+        y = 1
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_conservative_democratic_path = yes } }
+        completion_reward = {
+
+            random_owned_controlled_state = {
+                limit = { free_building_slots = { building = industrial_complex size > 0 } }
+                add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
+            }
+        }
+    }
+    
+    focus = {
+        id = USA_expand_the_national_guard
+        icon = GFX_goal_generic_construct_military
+        prerequisite = { focus = USA_reestablish_the_gold_standard }
+        x = 3
+        y = 1
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_conservative_democratic_path = yes } }
+        completion_reward = {
+
+            add_army_experience = 50
+            custom_effect_tooltip = "Expands stateside defense forces."
+        }
+    }
+
+    focus = {
+        id = USA_the_american_caesar
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+		}
+
+        icon = GFX_goal_generic_more_territorial_claims
+        prerequisite = { focus = USA_america_first_committee }
+        mutually_exclusive = { focus = USA_neutrality_to_the_end }
+        x = 0
+        y = 3
+        cost = 10
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        }
+
+        completion_reward = {
+
+            add_political_power = 150
+            set_politics = { ruling_party = neutrality elections_allowed = no }
+            custom_effect_tooltip = "MacArthur becomes the strongman of America."
+        }
+    }
+
+    focus = {
+        id = USA_the_macarthur_dictatorship
+        icon = GFX_goal_generic_political_pressure
+        prerequisite = { focus = USA_the_american_caesar }
+        x = -1
+        y = 4
+        cost = 10
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        }
+
+        completion_reward = {
+
+            add_political_power = 200
+            add_popularity = { ideology = neutrality popularity = 0.2 }
+            custom_effect_tooltip = "Full dictatorial powers to MacArthur."
+        }
+    }
+
+    focus = {
+        id = USA_military_governorates
+        icon = GFX_goal_generic_construct_military
+        prerequisite = { focus = USA_the_macarthur_dictatorship }
+        prerequisite = { focus = USA_deregulate_industry }
+        x = -2
+        y = 5
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_american_caesar_path = yes } }
+        completion_reward = {
+
+            add_political_power = 100
+            add_ideas = USA_military_governorates
+            custom_effect_tooltip = "Enforces stability through military rule."
+        }
+    }
+
+    focus = {
+        id = USA_imperial_presidency
+        icon = GFX_goal_generic_national_pride
+        prerequisite = { focus = USA_the_macarthur_dictatorship }
+        x = 0
+        y = 5
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_american_caesar_path = yes } }
+        completion_reward = {
+
+            add_political_power = 150
+            custom_effect_tooltip = "Solidifies the Imperial Presidency."
+        }
+    }
+    
+    focus = {
+        id = USA_the_new_american_empire
+        icon = GFX_goal_generic_attack_allies
+        prerequisite = { focus = USA_military_governorates }
+        prerequisite = { focus = USA_imperial_presidency }
+        x = -1
+        y = 6
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_american_caesar_path = yes } }
+        completion_reward = {
+
+            add_political_power = 200
+            custom_effect_tooltip = "A new empire rises in the Americas."
+        }
+    }
+    
+    focus = {
+        id = USA_subjugate_canada
+        icon = GFX_goal_generic_territory_or_war
+        prerequisite = { focus = USA_the_new_american_empire }
+        x = -2
+        y = 7
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_american_caesar_path = yes } }
+        completion_reward = {
+
+            create_wargoal = { type = puppet_wargoal target = CAN }
+        }
+    }
+    
+    focus = {
+        id = USA_secure_the_pacific
+        icon = GFX_goal_generic_navy_cruiser
+        prerequisite = { focus = USA_the_new_american_empire }
+        x = 0
+        y = 7
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_american_caesar_path = yes } }
+        completion_reward = {
+
+            create_wargoal = { type = puppet_wargoal target = JAP }
+        }
+    }
+
+    focus = {
+        id = USA_an_american_cincinnatus
+        icon = GFX_goal_generic_forceful_treaty
+        prerequisite = { focus = USA_the_american_caesar }
+        mutually_exclusive = { focus = USA_the_macarthur_dictatorship }
+        x = 1
+        y = 4
+        cost = 10
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = democratic_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = democratic is_major = yes }
+            }
+        }
+
+        completion_reward = {
+
+            add_political_power = 150
+            set_politics = { ruling_party = democratic elections_allowed = yes }
+            custom_effect_tooltip = "MacArthur steps down, restoring democracy."
+        }
+    }
+
+    focus = {
+        id = USA_neutrality_to_the_end
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+		}
+
+        icon = GFX_goal_generic_political_pressure
+        prerequisite = { focus = USA_america_first_committee }
+        mutually_exclusive = { focus = USA_the_american_caesar }
+        x = 2
+        y = 3
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_conservative_democratic_path = yes } }
+        completion_reward = {
+
+            add_political_power = 150
+            add_ideas = USA_strict_neutrality
+            custom_effect_tooltip = "We shall remain isolated permanently."
+        }
+    }
+    
+    focus = {
+        id = USA_fortify_the_coasts
+        icon = GFX_goal_generic_construct_civ_factory
+        prerequisite = { focus = USA_expand_the_national_guard }
+        x = 4
+        y = 3
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_conservative_democratic_path = yes } }
+        completion_reward = {
+
+            random_owned_controlled_state = {
+                limit = { is_coastal = yes }
+                add_building_construction = { type = coastal_bunker level = 2 instant_build = yes }
+            }
+        }
+    }
+
+    focus = {
+        id = USA_hemispheric_defense
+        icon = GFX_goal_generic_navy_battleship
+        prerequisite = { focus = USA_neutrality_to_the_end }
+        prerequisite = { focus = USA_fortify_the_coasts }
+        x = 3
+        y = 4
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_conservative_democratic_path = yes } }
+        completion_reward = {
+
+            add_political_power = 100
+            custom_effect_tooltip = "Guarantees all neutral nations in the Americas."
+        }
+    }
+    
+    focus = {
+        id = USA_the_monroe_doctrine_enforced
+        icon = GFX_goal_generic_secret_weapon
+        prerequisite = { focus = USA_hemispheric_defense }
+        x = 3
+        y = 5
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_conservative_democratic_path = yes } }
+        completion_reward = {
+
+            create_wargoal = { type = puppet_wargoal target = MEX }
+            custom_effect_tooltip = "Enforce the Monroe Doctrine by force if needed."
+        }
+    }
+    
+    focus = {
+        id = USA_intervene_in_mexico
+        icon = GFX_goal_generic_attack_allies
+        prerequisite = { focus = USA_the_monroe_doctrine_enforced }
+        x = 2
+        y = 6
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_conservative_democratic_path = yes } }
+        completion_reward = {
+
+            create_wargoal = { type = puppet_wargoal target = MEX }
+        }
+    }
+    
+    focus = {
+        id = USA_fortress_america
+        icon = GFX_goal_generic_more_territorial_claims
+        prerequisite = { focus = USA_the_monroe_doctrine_enforced }
+        x = 4
+        y = 6
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_conservative_democratic_path = yes } }
+        completion_reward = {
+
+            add_political_power = 150
+            add_ideas = USA_fortress_america
+        }
+    }
+
+    # ============================================================
+    # Expanded Fascist Path ("Expanding Build Path")
+    # ============================================================
+
+    focus = {
+        id = USA_paramilitary_training
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+		}
+
+        icon = GFX_goal_generic_army_motorized
+        prerequisite = { focus = USA_america_first }
+        x = 7
+        y = 1
+        cost = 10
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+        completion_reward = {
+
+            add_army_experience = 50
+            add_popularity = { ideology = fascism popularity = 0.1 }
+        }
+    }
+    
+    focus = {
+        id = USA_corporate_statism
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+		}
+
+        icon = GFX_goal_generic_production
+        prerequisite = { focus = USA_america_first }
+        x = 8
+        y = 1
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_fascist_imperialist_path = yes } }
+        completion_reward = {
+
+            random_owned_controlled_state = {
+                limit = { free_building_slots = { building = industrial_complex size > 0 } }
+                add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
+            }
+        }
+    }
+    
+    focus = {
+        id = USA_ally_with_the_silver_shirts
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+		}
+
+        icon = GFX_goal_generic_national_pride
+        prerequisite = { focus = USA_america_first }
+        x = 10
+        y = 1
+        cost = 10
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+        completion_reward = {
+
+            add_political_power = 100
+            add_popularity = { ideology = fascism popularity = 0.15 }
+        }
+    }
+
+    focus = {
+        id = USA_honor_the_confederacy
+        icon = GFX_goal_generic_territory_or_war
+        prerequisite = { focus = USA_america_first }
+        x = 11
+        y = 1
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_fascist_imperialist_path = yes } }
+        completion_reward = {
+
+            add_political_power = 120
+            custom_effect_tooltip = "We look to our past for strength."
+        }
+    }
+
+    focus = {
+        id = USA_the_national_defense_state
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+		}
+
+        icon = GFX_goal_generic_construct_military
+        prerequisite = { focus = USA_paramilitary_training }
+        x = 7
+        y = 2
+        cost = 10
+        ai_will_do = { base = 1 modifier = { add = 50 is_fascist_imperialist_path = yes } }
+        completion_reward = {
+
+            set_rule = { can_declare_war_without_wargoal_when_in_war = yes }
+            custom_effect_tooltip = "The State is organized completely around national defense."
+        }
+    }
+
+    focus = {
+        id = USA_voter_registration_act
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+		}
+
+        icon = GFX_goal_generic_political_pressure
+        prerequisite = { focus = USA_ally_with_the_silver_shirts }
+        prerequisite = { focus = USA_corporate_statism }
+        x = 9
+        y = 2
+        cost = 10
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+        completion_reward = {
+
+            add_political_power = 100
+            add_popularity = { ideology = fascism popularity = 0.2 }
+        }
+    }
+
+    focus = {
+        id = USA_the_fascist_menace
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+		}
+
+        icon = GFX_goal_generic_more_territorial_claims
+        prerequisite = { focus = USA_voter_registration_act }
+        prerequisite = { focus = USA_the_national_defense_state }
+        x = 8
+        y = 3
+        cost = 10
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        
+		modifier = {
+			factor = 1000
+			SAH_is_usa_forced_fascist = yes
+		}
+}
+
+        completion_reward = {
+
+            set_politics = { ruling_party = fascism elections_allowed = no }
+            custom_effect_tooltip = "Fascism officially takes control of the US."
+        }
+    }
+
+    # Fascist Foreign Policy
+    focus = {
+        id = USA_manifest_destiny_realized
+        icon = GFX_goal_generic_territory_or_war
+        prerequisite = { focus = USA_the_fascist_menace }
+        x = 7
+        y = 4
+        cost = 10
+        ai_will_do = { base = 1 }
+        completion_reward = {
+
+            add_political_power = 200
+            create_wargoal = { type = annex_everything target = MEX }
+            create_wargoal = { type = annex_everything target = CAN }
+        }
+    }
+
+    focus = {
+        id = USA_the_asian_threat
+        icon = GFX_goal_generic_attack_allies
+        prerequisite = { focus = USA_the_fascist_menace }
+        x = 8
+        y = 4
+        cost = 10
+        ai_will_do = { base = 1 }
+        completion_reward = {
+
+            create_wargoal = { type = puppet_wargoal target = JAP }
+        }
+    }
+
+    focus = {
+        id = USA_the_european_allies
+        icon = GFX_goal_generic_major_alliance
+        prerequisite = { focus = USA_the_fascist_menace }
+        x = 9
+        y = 4
+        cost = 10
+        ai_will_do = { base = 1 }
+        completion_reward = {
+
+            add_political_power = 100
+            custom_effect_tooltip = "Allying with the old empires of Europe."
+        }
+    }
+
+    # ============================================================
+    # Expanded Communist Path
+    # ============================================================
+
+    focus = {
+        id = USA_worker_cooperatives
+        icon = GFX_goal_generic_construct_civ_factory
+        prerequisite = { focus = USA_suspend_the_persecution }
+        x = 11
+        y = 1
+        cost = 10
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+        completion_reward = {
+
+            add_political_power = 50
+            add_popularity = { ideology = communism popularity = 0.1 }
+            random_owned_controlled_state = {
+                limit = { free_building_slots = { building = industrial_complex size > 0 } }
+                add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+            }
+        }
+    }
+
+    focus = {
+        id = USA_the_red_army_of_america
+        icon = GFX_goal_generic_construct_military
+        prerequisite = { focus = USA_suspend_the_persecution }
+        x = 15
+        y = 1
+        cost = 10
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+        completion_reward = {
+
+            add_army_experience = 50
+            add_popularity = { ideology = communism popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = USA_unholy_alliance
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
+		}
+
+        icon = GFX_goal_generic_political_pressure
+        prerequisite = { focus = USA_suspend_the_persecution }
+        mutually_exclusive = { focus = USA_democratic_socialism }
+        x = 12
+        y = 1
+        cost = 10
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+        completion_reward = {
+
+            add_political_power = 100
+            add_popularity = { ideology = communism popularity = 0.15 }
+        }
+    }
+
+    focus = {
+        id = USA_democratic_socialism
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
+		}
+
+        icon = GFX_goal_generic_forceful_treaty
+        prerequisite = { focus = USA_suspend_the_persecution }
+        mutually_exclusive = { focus = USA_unholy_alliance }
+        x = 14
+        y = 1
+        cost = 10
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+        completion_reward = {
+
+            add_political_power = 150
+            add_popularity = { ideology = communism popularity = 0.2 }
+        }
+    }
+
+    focus = {
+        id = USA_the_dictatorship_of_the_proletariat
+        icon = GFX_goal_generic_political_pressure
+        prerequisite = { focus = USA_unholy_alliance }
+        x = 12
+        y = 2
+        cost = 10
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+        completion_reward = {
+
+            set_politics = { ruling_party = communism elections_allowed = no }
+            custom_effect_tooltip = "The Proletariat assumes full control."
+        }
+    }
+
+    focus = {
+        id = USA_marxist_leninism
+        icon = GFX_goal_generic_major_alliance
+        prerequisite = { focus = USA_the_dictatorship_of_the_proletariat }
+        x = 12
+        y = 3
+        cost = 10
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+        completion_reward = {
+
+            add_political_power = 100
+            add_popularity = { ideology = communism popularity = 0.15 }
+            custom_effect_tooltip = "Align ourselves fully with Moscow."
+        }
+    }
+
+    focus = {
+        id = USA_the_peoples_republic
+		bypass = {
+			has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
+		}
+
+        icon = GFX_goal_generic_political_pressure
+        prerequisite = { focus = USA_democratic_socialism }
+        x = 14
+        y = 2
+        cost = 10
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+        completion_reward = {
+
+            set_politics = { ruling_party = communism elections_allowed = no }
+            custom_effect_tooltip = "The Republic falls, the People's Republic rises."
+        }
+    }
+
+    focus = {
+        id = USA_american_socialism
+        icon = GFX_goal_generic_more_territorial_claims
+        prerequisite = { focus = USA_the_peoples_republic }
+        x = 14
+        y = 3
+        cost = 10
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+        completion_reward = {
+
+            add_political_power = 100
+            add_popularity = { ideology = communism popularity = 0.15 }
+            custom_effect_tooltip = "Develop socialism suited for American realities."
+        }
+    }
+
+    # Communist Foreign Policy
+    focus = {
+        id = USA_shatter_the_empires
+        icon = GFX_goal_generic_territory_or_war
+        prerequisite = { focus = USA_marxist_leninism }
+        prerequisite = { focus = USA_american_socialism }
+        x = 12
+        y = 4
+        cost = 10
+        ai_will_do = { base = 1 }
+        completion_reward = {
+
+            create_wargoal = { type = puppet_wargoal target = ENG }
+            create_wargoal = { type = puppet_wargoal target = FRA }
+        }
+    }
+
+    focus = {
+        id = USA_liberate_the_americas
+        icon = GFX_goal_generic_attack_allies
+        prerequisite = { focus = USA_marxist_leninism }
+        prerequisite = { focus = USA_american_socialism }
+        x = 13
+        y = 4
+        cost = 10
+        ai_will_do = { base = 1 }
+        completion_reward = {
+
+            custom_effect_tooltip = "Brings revolution to all American nations."
+        }
+    }
+
+    focus = {
+        id = USA_the_grand_revolution
+        icon = GFX_goal_generic_major_alliance
+        prerequisite = { focus = USA_marxist_leninism }
+        prerequisite = { focus = USA_american_socialism }
+        x = 14
+        y = 4
+        cost = 10
+        ai_will_do = { base = 1 }
+        completion_reward = {
+
+            add_political_power = 300
+            custom_effect_tooltip = "A global communist revolution!"
+        }
+    }
+
+}

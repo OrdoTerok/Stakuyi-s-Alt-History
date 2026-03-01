@@ -1,0 +1,146 @@
+focus_tree = {
+    id = portuguese_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = POR
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = POR_the_estado_novo
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_por_scenario_start_rule option = estado_novo }
+				has_game_rule = { rule = SAH_por_scenario_start_rule option = popular_front }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 4
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = POR_the_popular_front }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                add = 90
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 120
+            set_politics = { ruling_party = neutrality }
+        }
+    }
+
+    focus = {
+        id = POR_salazar_dictatorship
+        icon = GFX_goal_generic_political_pressure
+        x = 4
+        y = 1
+        cost = 10
+        prerequisite = { focus = POR_the_estado_novo }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_stability = 0.1
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = POR_support_nationalist_spain
+        icon = GFX_goal_generic_major_alliance
+        x = 4
+        y = 2
+        cost = 10
+        prerequisite = { focus = POR_salazar_dictatorship }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = POR_the_popular_front
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_por_scenario_start_rule option = estado_novo }
+				has_game_rule = { rule = SAH_por_scenario_start_rule option = popular_front }
+			}
+		}
+
+        icon = GFX_goal_generic_communism
+        x = 8
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = POR_the_estado_novo }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 50
+            set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = POR_colonial_integration
+        icon = GFX_goal_generic_production
+        x = 6
+        y = 4
+        cost = 10
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            random_owned_controlled_state = { limit = { free_building_slots = { building = civilian_factory size > 0 } } add_building_construction = { type = civilian_factory level = 2 instant_build = yes } }
+        }
+    }
+
+}

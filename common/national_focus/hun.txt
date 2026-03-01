@@ -1,0 +1,225 @@
+focus_tree = {
+    id = hungarian_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = HUN
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = HUN_renounce_the_treaty_of_trianon
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = renounce_trianon }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = king }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = habsburg }
+			}
+		}
+
+        icon = GFX_goal_generic_demand_territory
+        x = 2
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = HUN_a_king_for_our_people }
+        mutually_exclusive = { focus = HUN_the_communist_party }
+        mutually_exclusive = { focus = HUN_invite_the_habsburg_prince }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                add = 90
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 120
+            add_popularity = { ideology = fascism popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = HUN_join_the_axis
+        icon = GFX_goal_generic_major_alliance
+        x = 2
+        y = 1
+        cost = 10
+        prerequisite = { focus = HUN_renounce_the_treaty_of_trianon }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = HUN_a_king_for_our_people
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = renounce_trianon }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = king }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = habsburg }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 6
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = HUN_renounce_the_treaty_of_trianon }
+        mutually_exclusive = { focus = HUN_the_communist_party }
+        mutually_exclusive = { focus = HUN_invite_the_habsburg_prince }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = democratic_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = democratic is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = democratic elections_allowed = yes }
+        }
+    }
+
+    focus = {
+        id = HUN_the_communist_party
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = renounce_trianon }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = king }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = habsburg }
+			}
+		}
+
+        icon = GFX_goal_generic_communism
+        x = 10
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = HUN_renounce_the_treaty_of_trianon }
+        mutually_exclusive = { focus = HUN_a_king_for_our_people }
+        mutually_exclusive = { focus = HUN_invite_the_habsburg_prince }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = communism elections_allowed = no }
+        }
+    }
+
+    focus = {
+        id = HUN_invite_the_habsburg_prince
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = renounce_trianon }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = king }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = habsburg }
+			}
+		}
+
+        icon = GFX_goal_generic_political_pressure
+        x = 14
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = HUN_renounce_the_treaty_of_trianon }
+        mutually_exclusive = { focus = HUN_a_king_for_our_people }
+        mutually_exclusive = { focus = HUN_the_communist_party }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = HUN_proclaim_the_restoration_of_austria_hungary
+        icon = GFX_goal_generic_demand_territory
+        x = 14
+        y = 1
+        cost = 10
+        prerequisite = { focus = HUN_invite_the_habsburg_prince }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            set_cosmetic_tag = AUH
+            add_political_power = 150
+        }
+    }
+
+    focus = {
+        id = HUN_secret_rearmament
+        icon = GFX_goal_generic_build_tank
+        x = 8
+        y = 4
+        cost = 10
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_army_experience = 50
+        }
+    }
+
+}

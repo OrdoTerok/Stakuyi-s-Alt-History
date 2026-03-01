@@ -1,0 +1,68 @@
+focus_tree = {
+    id = uruguayan_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = URU
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = URU_the_colorado_party
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_uru_scenario_start_rule option = colorado }
+			}
+		}
+
+        icon = GFX_goal_generic_peaceful_treaty
+        x = 4
+        y = 0
+        cost = 10
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                add = 90
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = democratic_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = democratic is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 120
+            set_politics = { ruling_party = democratic }
+        }
+    }
+
+    focus = {
+        id = URU_switzerland_of_america
+        icon = GFX_goal_generic_national_unity
+        x = 4
+        y = 1
+        cost = 10
+        prerequisite = { focus = URU_the_colorado_party }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_stability = 0.15
+            add_political_power = 50
+        }
+    }
+
+}

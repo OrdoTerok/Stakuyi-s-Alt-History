@@ -1,0 +1,16 @@
+﻿﻿l_english:
+ SAH_rebuilding_category: "National Rebuilding"
+ SAH_rebuilding_category_desc: "Our nation is recovering from the scars of our recent political upheaval. We must dedicate time and resources to stabilize the government and rebuild the economy."
+ 
+ SAH_devastating_recovery: "Devastating Recovery"
+ SAH_devastating_recovery_desc: "We have only recently emerged from a brutal internal conflict. The economy is in ruins, the military is disorganized, and the people are restless."
+ 
+ SAH_prolonged_rebuilding: "Prolonged Rebuilding"
+ SAH_prolonged_rebuilding_desc: "The scars of the past are slowly fading, but our industry and political apparatus still suffer from the lingering effects of our tumultuous history."
+ 
+ SAH_stabilized_regime: "Stabilized Regime"
+ SAH_stabilized_regime_desc: "Order has mostly been restored, though a few factions still grumble in the shadows. Soon, the nation will be fully united under our banner."
+ 
+ SAH_rebuild_tier_1_to_2: "Initiate Major Reconstruction"
+ SAH_rebuild_tier_2_to_3: "Transition to Civil Administration"
+ SAH_rebuild_tier_3_to_none: "Declare National Unity"

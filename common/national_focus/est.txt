@@ -1,0 +1,94 @@
+focus_tree = {
+    id = estonian_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = EST
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = EST_the_era_of_silence
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_est_scenario_start_rule option = era_of_silence }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 4
+        y = 0
+        cost = 10
+
+        ai_will_do = {
+            base = 1
+            modifier = { add = 90 is_historical_focus_on = yes }
+        }
+
+        completion_reward = {
+            add_political_power = 120
+        }
+    }
+
+    focus = {
+        id = EST_the_vaps_movement
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_est_scenario_start_rule option = vaps_movement }
+			}
+		}
+
+        icon = GFX_goal_generic_political_pressure
+        x = 8
+        y = 0
+        cost = 10
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 50
+            add_popularity = { ideology = fascism popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = EST_finnish_estonian_defense_pact
+        icon = GFX_goal_generic_major_alliance
+        x = 4
+        y = 2
+        cost = 10
+        prerequisite = { focus = EST_the_era_of_silence }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_faction = "The Finno-Ugric Defense Pact"
+        }
+    }
+
+}

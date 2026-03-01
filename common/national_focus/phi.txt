@@ -1,0 +1,178 @@
+focus_tree = {
+    id = philippine_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = PHI
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = PHI_the_commonwealth
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = commonwealth }
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = ganap }
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = hukbalahap }
+			}
+		}
+
+        icon = GFX_goal_generic_peaceful_treaty
+        x = 4
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = PHI_the_ganap_party }
+        mutually_exclusive = { focus = PHI_the_hukbalahap }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                add = 90
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = democratic_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = democratic is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 120
+            set_politics = { ruling_party = democratic }
+        }
+    }
+
+    focus = {
+        id = PHI_the_ganap_party
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = commonwealth }
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = ganap }
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = hukbalahap }
+			}
+		}
+
+        icon = GFX_goal_generic_suppress_resistance
+        x = 8
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = PHI_the_commonwealth }
+        mutually_exclusive = { focus = PHI_the_hukbalahap }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 50
+            set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = PHI_the_hukbalahap
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = commonwealth }
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = ganap }
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = hukbalahap }
+			}
+		}
+
+        icon = GFX_goal_generic_communism
+        x = 0
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = PHI_the_commonwealth }
+        mutually_exclusive = { focus = PHI_the_ganap_party }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 50
+            set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = PHI_defend_the_philippines
+        icon = GFX_goal_generic_position_armies
+        x = 4
+        y = 1
+        cost = 10
+        prerequisite = { focus = PHI_the_commonwealth }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_army_experience = 50
+            add_stability = 0.1
+        }
+    }
+
+    focus = {
+        id = PHI_philippine_scouts
+        icon = GFX_goal_generic_army_equipment
+        x = 6
+        y = 3
+        cost = 10
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_manpower = 10000
+        }
+    }
+
+}

@@ -1,0 +1,67 @@
+﻿
+add_namespace = SAH_victory
+
+# ============================================================
+# Stakuyi's Cinematic Win Conditions - Final Events
+# ============================================================
+
+country_event = {
+	id = SAH_victory.1
+	title = SAH_victory.1.t
+	desc = SAH_victory.1.d
+	picture = GFX_report_event_world_map
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = SAH_victory.1.a # "A new era begins!"
+		custom_effect_tooltip = SAH_victory_tt
+		add_political_power = 1000
+		add_stability = 0.50
+		add_war_support = 0.50
+	}
+	option = {
+		name = SAH_victory.1.b # "The campaign isn't over yet."
+	}
+}
+
+country_event = {
+	id = SAH_victory.2
+	title = SAH_victory.2.t
+	desc = SAH_victory.2.d
+	picture = GFX_report_event_gathering_crowd_2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = SAH_victory.2.a
+		custom_effect_tooltip = SAH_victory_tt
+		add_political_power = 1000
+		add_stability = 0.50
+		add_war_support = 0.50
+	}
+}
+
+country_event = {
+	id = SAH_victory.3
+	title = SAH_victory.3.t
+	desc = SAH_victory.3.d
+	picture = GFX_report_event_globe_peace
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = SAH_victory.3.a
+		custom_effect_tooltip = SAH_victory_tt
+		add_political_power = 1000
+		add_stability = 0.50
+		add_war_support = 0.50
+	}
+}
+
+country_event = { id = SAH_victory.4 title = SAH_victory.4.t desc = SAH_victory.4.d picture = GFX_report_event_gathering_crowd_2 is_triggered_only = yes option = { name = SAH_victory_generic.a custom_effect_tooltip = SAH_victory_tt add_political_power = 1000 add_stability = 0.5 } }
+country_event = { id = SAH_victory.5 title = SAH_victory.5.t desc = SAH_victory.5.d picture = GFX_report_event_gathering_crowd_2 is_triggered_only = yes option = { name = SAH_victory_generic.a custom_effect_tooltip = SAH_victory_tt add_political_power = 1000 add_stability = 0.5 } }
+country_event = { id = SAH_victory.6 title = SAH_victory.6.t desc = SAH_victory.6.d picture = GFX_report_event_gathering_crowd_2 is_triggered_only = yes option = { name = SAH_victory_generic.a custom_effect_tooltip = SAH_victory_tt add_political_power = 1000 add_stability = 0.5 } }
+country_event = { id = SAH_victory.7 title = SAH_victory.7.t desc = SAH_victory.7.d picture = GFX_report_event_gathering_crowd_2 is_triggered_only = yes option = { name = SAH_victory_generic.a custom_effect_tooltip = SAH_victory_tt add_political_power = 1000 add_stability = 0.5 } }
+country_event = { id = SAH_victory.8 title = SAH_victory.8.t desc = SAH_victory.8.d picture = GFX_report_event_gathering_crowd_2 is_triggered_only = yes option = { name = SAH_victory_generic.a custom_effect_tooltip = SAH_victory_tt add_political_power = 1000 add_stability = 0.5 } }
+country_event = { id = SAH_victory.9 title = SAH_victory.9.t desc = SAH_victory.9.d picture = GFX_report_event_gathering_crowd_2 is_triggered_only = yes option = { name = SAH_victory_generic.a custom_effect_tooltip = SAH_victory_tt add_political_power = 1000 add_stability = 0.5 } }

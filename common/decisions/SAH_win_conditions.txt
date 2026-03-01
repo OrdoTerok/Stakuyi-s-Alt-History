@@ -1,0 +1,193 @@
+﻿SAH_stakuyi_win_conditions_category = {
+	icon = generic_research
+	allowed = {
+		always = yes
+	}
+}
+
+SAH_stakuyi_win_conditions = {
+
+	# 1. Ideological Hegemony (All Majors Share Your Ideology)
+	SAH_win_ideological_hegemony = {
+		icon = generic_propaganda
+		
+		allowed = {
+			is_major = yes
+		}
+		
+		available = {
+			all_major_country = {
+				has_government = ROOT
+			}
+		}
+		
+		visible = {
+			NOT = { has_global_flag = SAH_victory_achieved }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			set_global_flag = SAH_victory_achieved
+			country_event = { id = SAH_victory.1 }
+		}
+	}
+
+	# 2. Continental Supremacy (Your faction controls almost all of your continent)
+	SAH_win_continental_supremacy = {
+		icon = generic_army_motorized
+		
+		allowed = {
+			always = yes
+		}
+		
+		available = {
+			is_faction_leader = yes
+			any_state = {
+				# Basic check to ensure massive factory control as a proxy for continental dominance
+				# Can be expanded to specific continents later
+				ROOT = { num_of_military_factories > 300 }
+				ROOT = { num_of_civilian_factories > 200 }
+			}
+			NOT = { has_war = yes }
+		}
+		
+		visible = {
+			NOT = { has_global_flag = SAH_victory_achieved }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			set_global_flag = SAH_victory_achieved
+			country_event = { id = SAH_victory.2 }
+		}
+	}
+
+	# 3. The Architect of Peace (World Tension < 10, no major wars, late game)
+	SAH_win_architect_of_peace = {
+		icon = generic_peaceful_treaty
+		
+		allowed = {
+			always = yes
+		}
+		
+		available = {
+			SAH_is_quiet_world = yes
+			date > 1945.1.1
+			all_major_country = { NOT = { has_war = yes } }
+		}
+		
+		visible = {
+			NOT = { has_global_flag = SAH_victory_achieved }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			set_global_flag = SAH_victory_achieved
+			country_event = { id = SAH_victory.3 }
+		}
+	}
+
+	# ==================================
+	# Path-Specific Cinematic Endings
+	# ==================================
+
+	# Germany - Democratic
+	SAH_win_ger_democratic = {
+		icon = generic_focus_national_resolve
+		allowed = { tag = GER }
+		visible = { has_government = democratic NOT = { has_global_flag = SAH_victory_achieved } }
+		available = {
+			NOT = { has_war = yes }
+			all_neighbor_country = { has_government = democratic }
+			OR = {
+				SOV = { has_government = democratic }
+				SOV = { exists = no }
+			}
+		}
+		cost = 100
+		fire_only_once = yes
+		complete_effect = { set_global_flag = SAH_victory_achieved country_event = { id = SAH_victory.4 } }
+	}
+
+	# Germany - Communist
+	SAH_win_ger_communist = {
+		icon = generic_communism
+		allowed = { tag = GER }
+		visible = { has_government = communism NOT = { has_global_flag = SAH_victory_achieved } }
+		available = {
+			NOT = { has_war = yes }
+			FRA = { OR = { has_government = communism is_subject_of = ROOT exists = no } }
+			ITA = { OR = { has_government = communism is_subject_of = ROOT exists = no } }
+		}
+		cost = 100
+		fire_only_once = yes
+		complete_effect = { set_global_flag = SAH_victory_achieved country_event = { id = SAH_victory.5 } }
+	}
+
+	# USA - Communist
+	SAH_win_usa_communist = {
+		icon = generic_communism
+		allowed = { tag = USA }
+		visible = { has_government = communism NOT = { has_global_flag = SAH_victory_achieved } }
+		available = {
+			NOT = { has_war = yes }
+			is_faction_leader = yes
+			any_other_country = { is_major = yes has_government = communism is_in_faction_with = USA }
+		}
+		cost = 100
+		fire_only_once = yes
+		complete_effect = { set_global_flag = SAH_victory_achieved country_event = { id = SAH_victory.6 } }
+	}
+
+	# USA - Fascist
+	SAH_win_usa_fascist = {
+		icon = generic_fascism
+		allowed = { tag = USA }
+		visible = { has_government = fascism NOT = { has_global_flag = SAH_victory_achieved } }
+		available = {
+			NOT = { has_war = yes }
+			ROOT = { controls_state = 285 } # Ottawa
+			ROOT = { controls_state = 415 } # Mexico City
+		}
+		cost = 100
+		fire_only_once = yes
+		complete_effect = { set_global_flag = SAH_victory_achieved country_event = { id = SAH_victory.7 } }
+	}
+
+	# Soviet - Tsarist
+	SAH_win_sov_tsarist = {
+		icon = generic_focus_national_resolve
+		allowed = { tag = SOV }
+		visible = { has_government = neutrality NOT = { has_global_flag = SAH_victory_achieved } }
+		available = {
+			NOT = { has_war = yes }
+			ROOT = { controls_state = 341 } # Istanbul
+			ROOT = { controls_state = 10 } # Warsaw
+		}
+		cost = 100
+		fire_only_once = yes
+		complete_effect = { set_global_flag = SAH_victory_achieved country_event = { id = SAH_victory.8 } }
+	}
+
+	# Soviet - Democratic
+	SAH_win_sov_democratic = {
+		icon = generic_democracy
+		allowed = { tag = SOV }
+		visible = { has_government = democratic NOT = { has_global_flag = SAH_victory_achieved } }
+		available = {
+			NOT = { has_war = yes }
+			is_in_faction_with = ENG
+			GER = { OR = { has_government = democratic exists = no } }
+		}
+		cost = 100
+		fire_only_once = yes
+		complete_effect = { set_global_flag = SAH_victory_achieved country_event = { id = SAH_victory.9 } }
+	}
+
+}

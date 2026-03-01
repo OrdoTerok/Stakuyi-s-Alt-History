@@ -1,0 +1,167 @@
+﻿decisions = {
+SAH_rebuilding_category = {
+
+	
+
+	SAH_rebuild_tier_1_to_2 = {
+
+		icon = generic_rebuild
+
+		
+
+		allowed = {
+
+			has_idea = SAH_devastating_recovery
+
+		}
+
+		available = {
+
+			has_political_power > 100
+
+		}
+
+		
+
+		visible = {
+
+			has_idea = SAH_devastating_recovery
+
+		}
+
+		
+
+		cost = 100
+
+		days_remove = 90
+
+		
+
+		complete_effect = {
+
+			remove_ideas = SAH_devastating_recovery
+
+			add_ideas = SAH_prolonged_rebuilding
+
+			add_political_power = 25 # Small refund for finishing
+
+		}
+
+		
+
+		ai_will_do = {
+
+			base = 100
+
+		}
+
+	}
+
+
+
+	SAH_rebuild_tier_2_to_3 = {
+
+		icon = generic_rebuild
+
+		
+
+		allowed = {
+
+			has_idea = SAH_prolonged_rebuilding
+
+		}
+
+		available = {
+
+			has_political_power > 75
+
+		}
+
+		
+
+		visible = {
+
+			has_idea = SAH_prolonged_rebuilding
+
+		}
+
+		
+
+		cost = 75
+
+		days_remove = 60
+
+		
+
+		complete_effect = {
+
+			remove_ideas = SAH_prolonged_rebuilding
+
+			add_ideas = SAH_stabilized_regime
+
+		}
+
+		
+
+		ai_will_do = {
+
+			base = 100
+
+		}
+
+	}
+
+
+
+	SAH_rebuild_tier_3_to_none = {
+
+		icon = generic_rebuild
+
+		
+
+		allowed = {
+
+			has_idea = SAH_stabilized_regime
+
+		}
+
+		available = {
+
+			has_political_power > 50
+
+		}
+
+		
+
+		visible = {
+
+			has_idea = SAH_stabilized_regime
+
+		}
+
+		
+
+		cost = 50
+
+		days_remove = 30
+
+		
+
+		complete_effect = {
+
+			remove_ideas = SAH_stabilized_regime
+
+		}
+
+		
+
+		ai_will_do = {
+
+			base = 100
+
+		}
+
+	}
+
+}
+}

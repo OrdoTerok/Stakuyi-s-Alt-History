@@ -1,0 +1,59 @@
+# ============================================================
+# Stakuyi's Alt History - Regional Strategies
+# ============================================================
+
+# South American Isolationism - Stops WW2 from spilling into the Amazon unless highly ahistorical.
+SAH_americas_isolation = {
+    enable = {
+		NOT = { SAH_is_historical_mode = yes }
+        is_subject = no
+        is_major = no
+        capital_scope = { is_on_continent = south_america }
+        has_government = neutrality 
+    }
+    abort = {
+        OR = {
+            has_war = yes
+            NOT = { has_government = neutrality }
+            is_in_faction_with = USA
+        }
+    }
+
+    strategy = { type = dont_join_wars value = 200 }
+    strategy = { type = diplo_action_desire id = join_faction value = -200 }
+    strategy = { type = befriend id = USA value = 50 }
+}
+
+# The Nordic Turtle - Scandinavia tries to survive the Soviet/German onslaught
+SAH_nordic_defensive_posture = {
+    enable = {
+		NOT = { SAH_is_historical_mode = yes }
+        OR = { tag = SWE tag = NOR tag = FIN tag = DEN }
+        has_war = no
+        has_government = democratic
+    }
+    abort = {
+        has_war = yes
+    }
+
+    strategy = { type = build_building id = land_fort value = 50 }
+    strategy = { type = protect id = FIN value = 50 } # Scandinavians secretly desire to protect Finland
+    strategy = { type = befriend id = ENG value = 100 }
+}
+
+# Middle Eastern Pragmatism
+SAH_middle_east_pragmatism = {
+    enable = {
+		NOT = { SAH_is_historical_mode = yes }
+        OR = { tag = IRQ tag = TUR tag = PER tag = AFG tag = SAU tag = OMA tag = YEM }
+        has_war = no
+        is_major = no
+    }
+    abort = {
+        has_war = yes
+    }
+    
+    strategy = { type = diplo_action_desire id = guarantee value = -100 }
+    # Extremely opportunistic towards weaker neighbors
+    strategy = { type = antagonize id = SOV value = -50 } # Don't poke the bear
+}

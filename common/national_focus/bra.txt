@@ -1,0 +1,233 @@
+focus_tree = {
+    id = brazilian_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = BRA
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = BRA_the_estado_novo
+		bypass = {
+			has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt }
+			OR = {
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 2
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = BRA_the_1937_elections }
+        mutually_exclusive = { focus = BRA_integralist_uprising }
+        mutually_exclusive = { focus = BRA_the_aln_revolt }
+
+        ai_will_do = {
+            base = 1
+            modifier = { add = 90 is_historical_focus_on = yes }
+        }
+
+        completion_reward = {
+            add_political_power = 120
+        }
+    }
+
+    focus = {
+        id = BRA_the_vargas_dictatorship
+        icon = GFX_goal_generic_political_pressure
+        x = 2
+        y = 1
+        cost = 10
+        prerequisite = { focus = BRA_the_estado_novo }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = neutrality elections_allowed = no }
+            add_stability = 0.1
+        }
+    }
+
+    focus = {
+        id = BRA_the_1937_elections
+		bypass = {
+			has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt }
+			OR = {
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt }
+			}
+		}
+
+        icon = GFX_goal_generic_peaceful_treaty
+        x = 6
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = BRA_the_estado_novo }
+        mutually_exclusive = { focus = BRA_integralist_uprising }
+        mutually_exclusive = { focus = BRA_the_aln_revolt }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = democratic_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = democratic is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = democratic elections_allowed = yes }
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = BRA_integralist_uprising
+		bypass = {
+			has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt }
+			OR = {
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt }
+			}
+		}
+
+        icon = GFX_goal_generic_suppress_resistance
+        x = 10
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = BRA_the_estado_novo }
+        mutually_exclusive = { focus = BRA_the_1937_elections }
+        mutually_exclusive = { focus = BRA_the_aln_revolt }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = BRA_the_aln_revolt
+		bypass = {
+			has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt }
+			OR = {
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt }
+			}
+		}
+
+        icon = GFX_goal_generic_communism
+        x = 14
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = BRA_the_estado_novo }
+        mutually_exclusive = { focus = BRA_the_1937_elections }
+        mutually_exclusive = { focus = BRA_integralist_uprising }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = BRA_the_coffee_valorization_program
+        icon = GFX_goal_generic_production
+        x = 8
+        y = 4
+        cost = 10
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 50
+            random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 } } add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+        }
+    }
+
+}

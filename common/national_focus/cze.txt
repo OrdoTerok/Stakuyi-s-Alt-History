@@ -1,0 +1,179 @@
+focus_tree = {
+    id = czechoslovak_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = CZE
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = CZE_political_direction
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = political_direction }
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = fascist_direction }
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = communist_direction }
+			}
+		}
+
+        icon = GFX_goal_generic_political_pressure
+        x = 2
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = CZE_fascist_direction }
+        mutually_exclusive = { focus = CZE_communist_direction }
+
+        ai_will_do = {
+            base = 1
+            modifier = { add = 90 is_historical_focus_on = yes }
+        }
+
+        completion_reward = {
+            add_political_power = 120
+        }
+    }
+
+    focus = {
+        id = CZE_trust_in_the_west
+        icon = GFX_goal_generic_peaceful_treaty
+        x = 1
+        y = 1
+        cost = 10
+        prerequisite = { focus = CZE_political_direction }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = CZE_little_entente
+        icon = GFX_goal_generic_major_alliance
+        x = 3
+        y = 1
+        cost = 10
+        prerequisite = { focus = CZE_political_direction }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_faction = "The Little Entente"
+        }
+    }
+
+    focus = {
+        id = CZE_fascist_direction
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = political_direction }
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = fascist_direction }
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = communist_direction }
+			}
+		}
+
+        icon = GFX_goal_generic_suppress_resistance
+        x = 6
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = CZE_political_direction }
+        mutually_exclusive = { focus = CZE_communist_direction }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = CZE_communist_direction
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = political_direction }
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = fascist_direction }
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = communist_direction }
+			}
+		}
+
+        icon = GFX_goal_generic_communism
+        x = 10
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = CZE_political_direction }
+        mutually_exclusive = { focus = CZE_fascist_direction }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = CZE_skoda_works
+        icon = GFX_goal_generic_production
+        x = 6
+        y = 3
+        cost = 10
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 } } add_building_construction = { type = arms_factory level = 2 instant_build = yes } }
+        }
+    }
+
+}

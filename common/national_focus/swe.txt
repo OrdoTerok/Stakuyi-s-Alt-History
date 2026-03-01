@@ -1,0 +1,255 @@
+focus_tree = {
+    id = swedish_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = SWE
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = SWE_the_per_albin_bus
+		bypass = {
+			has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
+			OR = {
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 2
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = SWE_the_right_wing_coalition }
+        mutually_exclusive = { focus = SWE_sveriges_kommunistiska_parti }
+
+        ai_will_do = {
+            base = 1
+            modifier = { add = 90 is_historical_focus_on = yes }
+        }
+
+        completion_reward = {
+            add_political_power = 120
+        }
+    }
+
+    focus = {
+        id = SWE_the_welfare_state
+        icon = GFX_goal_generic_peaceful_treaty
+        x = 2
+        y = 1
+        cost = 10
+        prerequisite = { focus = SWE_the_per_albin_bus }
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_stability = 0.1
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = SWE_the_right_wing_coalition
+		bypass = {
+			has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
+			OR = {
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
+			}
+		}
+
+        icon = GFX_goal_generic_political_pressure
+        x = 6
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = SWE_the_per_albin_bus }
+        mutually_exclusive = { focus = SWE_sveriges_kommunistiska_parti }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 50
+            add_popularity = { ideology = fascism popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = SWE_the_svea_rike
+		bypass = {
+			has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
+			OR = {
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
+			}
+		}
+
+        icon = GFX_goal_generic_suppress_resistance
+        x = 6
+        y = 1
+        cost = 10
+        prerequisite = { focus = SWE_the_right_wing_coalition }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = fascism }
+            add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = SWE_sveriges_kommunistiska_parti
+		bypass = {
+			has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
+			OR = {
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
+			}
+		}
+
+        icon = GFX_goal_generic_communism
+        x = 10
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = SWE_the_per_albin_bus }
+        mutually_exclusive = { focus = SWE_the_right_wing_coalition }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = SWE_socialist_republic_of_sweden
+		bypass = {
+			has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
+			OR = {
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
+			}
+		}
+
+        icon = GFX_goal_generic_attack_allies
+        x = 10
+        y = 1
+        cost = 10
+        prerequisite = { focus = SWE_sveriges_kommunistiska_parti }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+
+        completion_reward = {
+            set_politics = { ruling_party = communism }
+            add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = SWE_the_nordic_defence_council
+        icon = GFX_goal_generic_major_alliance
+        x = 6
+        y = 4
+        cost = 10
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            create_faction = "The Nordic Defence Council"
+        }
+    }
+
+}

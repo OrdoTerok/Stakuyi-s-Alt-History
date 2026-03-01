@@ -1,0 +1,210 @@
+focus_tree = {
+    id = warlords_focus
+
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 10
+            # Common tags for Chinese Warlords
+            OR = {
+                tag = GXC
+                tag = YUN
+                tag = SHX
+                tag = XSM
+                tag = SIK
+            }
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = WRL_cooperate_with_the_nationalists
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists }
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists }
+			}
+		}
+
+        icon = GFX_goal_generic_national_unity
+        x = 4
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = WRL_democratic_reforms }
+        mutually_exclusive = { focus = WRL_military_dictatorship }
+        mutually_exclusive = { focus = WRL_cooperate_with_the_communists }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                add = 90
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = neutrality_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = neutrality is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 120
+            set_politics = { ruling_party = neutrality }
+        }
+    }
+
+    focus = {
+        id = WRL_democratic_reforms
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists }
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists }
+			}
+		}
+
+        icon = GFX_goal_generic_peaceful_treaty
+        x = 8
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = WRL_cooperate_with_the_nationalists }
+        mutually_exclusive = { focus = WRL_military_dictatorship }
+        mutually_exclusive = { focus = WRL_cooperate_with_the_communists }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = democratic_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = democratic is_major = yes }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 50
+            set_politics = { ruling_party = democratic }
+            add_popularity = { ideology = democratic popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = WRL_military_dictatorship
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists }
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists }
+			}
+		}
+
+        icon = GFX_goal_generic_suppress_resistance
+        x = 12
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = WRL_cooperate_with_the_nationalists }
+        mutually_exclusive = { focus = WRL_democratic_reforms }
+        mutually_exclusive = { focus = WRL_cooperate_with_the_communists }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = fascism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = fascism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = communism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 50
+            set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = WRL_cooperate_with_the_communists
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists }
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists }
+			}
+		}
+
+        icon = GFX_goal_generic_communism
+        x = 0
+        y = 0
+        cost = 10
+        mutually_exclusive = { focus = WRL_cooperate_with_the_nationalists }
+        mutually_exclusive = { focus = WRL_democratic_reforms }
+        mutually_exclusive = { focus = WRL_military_dictatorship }
+
+                ai_will_do = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1.25
+                has_idea_with_trait = communism_minister
+            }
+            modifier = {
+                factor = 2.0
+                any_neighbor_country = { has_government = communism is_major = yes }
+            }
+            modifier = {
+                factor = 1.5
+                any_neighbor_country = { has_government = fascism }
+            }
+        }
+
+
+        completion_reward = {
+            add_political_power = 50
+            set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+        }
+    }
+
+    focus = {
+        id = WRL_warlord_army
+        icon = GFX_goal_generic_position_armies
+        x = 6
+        y = 2
+        cost = 10
+
+        ai_will_do = {
+            base = 1
+        }
+
+        completion_reward = {
+            add_army_experience = 50
+            add_manpower = 10000
+        }
+    }
+
+}

@@ -1,0 +1,11 @@
+﻿
+ideas = {
+	hidden_ideas = {
+		SAH_overextended_military_debuff = {
+			hidden = yes
+			modifier = {
+				training_time_factor = 5.0 # +500% training time, effectively stops production
+			}
+		}
+	}
+}

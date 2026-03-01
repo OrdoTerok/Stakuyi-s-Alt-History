@@ -1,0 +1,55 @@
+﻿﻿l_english:
+ SAH_stakuyi_win_conditions_category: "Cinematic Campaign Objectives"
+ SAH_stakuyi_win_conditions_category_desc: "These represent massive overarching goals for Stakuyi's campaigns. Completing one will trigger a 'Win Condition' narrative sequence to satisfyingly conclude a recording."
+ 
+ SAH_win_ideological_hegemony: "Sponsor Ideological Hegemony"
+ SAH_win_ideological_hegemony_desc: "Our ideology has triumphed. Evict all competing ideas from the halls of power across every major nation on earth."
+ 
+ SAH_win_continental_supremacy: "Assert Continental Supremacy"
+ SAH_win_continental_supremacy_desc: "We stand as the unchallenged hegemon of our sphere, controlling an unimaginably vast military-industrial complex."
+ 
+ SAH_win_architect_of_peace: "The Architect of Peace"
+ SAH_win_architect_of_peace_desc: "The world has finally seen reason. The Great Powers lay down their arms and a quiet world sets in."
+ 
+ SAH_victory.1.t: "The Grand Hegemony"
+ SAH_victory.1.d: "Through blood, diplomacy, and sheer iron will, our philosophical worldview has captured the globe. Every great power on Earth now bows to our specific brand of governance. The campaign is a complete success."
+ SAH_victory.1.a: "A new era begins!"
+ SAH_victory.1.b: "The campaign isn't over yet."
+ 
+ SAH_victory.2.t: "An Unchallenged Superpower"
+ SAH_victory.2.d: "We are the masters of the known world. Our factories belch smoke day and night, and our armies sit unchallenged from all borders. No coalition on Earth could dare stand against our might."
+ SAH_victory.2.a: "Victory is assured."
+ 
+ SAH_victory.3.t: "A Quiet World Returns"
+ SAH_victory.3.d: "The rifles have gone silent. The guns of the great powers are finally being melted down for scrap. We have shepherded the world out of its darkest timeline and back into the light of peace."
+ SAH_victory.3.a: "And so the world spins on."
+ 
+ SAH_victory_tt: "This marks a §GStakuyi Narrative Victory§!. The main goal of the campaign has been achieved."
+
+ SAH_win_ger_democratic: "The European Bulwark"
+ SAH_win_ger_democratic_desc: "We must unite the European continent under democratic ideals and ensure the fascist and communist threats are permanently neutralized."
+ SAH_win_ger_communist: "The Crimson Continent"
+ SAH_win_ger_communist_desc: "Germany must export the revolution. France, Italy, and the rest of Europe must fly the red flag."
+ SAH_win_usa_communist: "Arsenal of the Revolution"
+ SAH_win_usa_communist_desc: "We must lead the global proletariat to victory, forming a global red hegemony alongside at least one other major power."
+ SAH_win_usa_fascist: "Manifest Destiny Realized"
+ SAH_win_usa_fascist_desc: "We must ensure total domination over the Americas, extending our direct territorial control to both Ottawa and Mexico City."
+ SAH_win_sov_tsarist: "The Third Rome Revived"
+ SAH_win_sov_tsarist_desc: "The Tsar must restore the empire's historical ambitions, pushing our direct borders down into Warsaw and Constantinople."
+ SAH_win_sov_democratic: "A Free Russia"
+ SAH_win_sov_democratic_desc: "We must cement our new democracy by aligning with the British Allies and ensuring the absolute destruction of German fascism."
+ 
+ SAH_victory_generic.a: "The finale of our story."
+ 
+ SAH_victory.4.t: "The European Bulwark"
+ SAH_victory.4.d: "Germany led the way into darkness, and now it leads the way into the light. With the Soviet Union pacified and the continent singing the tune of democracy, our republic stands as the impenetrable bulwark of freedom."
+ SAH_victory.5.t: "The Crimson Continent"
+ SAH_victory.5.d: "The workers of Europe have been united under the banner of the German revolution. Toppling the bourgeois democracies of France and Italy, the old powers have been swept away. A new, red order rules the continent."
+ SAH_victory.6.t: "Arsenal of the Revolution"
+ SAH_victory.6.d: "The chains of capital are broken. The United States has weaponized its immense industrial apparatus not for the barons of Wall Street, but for the global proletariat. As the vanguard of the world revolution, we stand victorious."
+ SAH_victory.7.t: "The American Caesar"
+ SAH_victory.7.d: "Manifest Destiny has reached its final form. Looking outward upon a ruined world, the North American continent stands isolated, pure, and absolutely subservient to our central authority. America truly comes first."
+ SAH_victory.8.t: "The Third Rome Revived"
+ SAH_victory.8.d: "The Bolshevik nightmare was but a temporary stain on the tapestry of Russian history. The Tsar sits secure upon the throne, and with Constantinople and Eastern Europe bowing to Moscow, the legacy of the Romanovs is eternal."
+ SAH_victory.9.t: "The Russian Spring"
+ SAH_victory.9.d: "Throwing off the yoke of the Tsar and the Dictator alike, the Russian people have finally earned their seat at the table of free nations. Fighting shoulder-to-shoulder with the Allies, our fragile democracy has forged an era of real peace."

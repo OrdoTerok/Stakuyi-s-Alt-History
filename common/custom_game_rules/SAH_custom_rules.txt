@@ -1,0 +1,488 @@
+﻿# --- AUTO-GENERATED SCENARIO RULES ---
+custom_game_rule = {
+	name = SAH_usa_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_usa_scenario_start_rule_normal }
+	option = { name = american_caesar text = SAH_SAH_usa_scenario_start_rule_american_caesar }
+	option = { name = fascist_menace text = SAH_SAH_usa_scenario_start_rule_fascist_menace }
+	option = { name = communist text = SAH_SAH_usa_scenario_start_rule_communist }
+	option = { name = giant_wakes text = SAH_SAH_usa_scenario_start_rule_giant_wakes }
+}
+
+custom_game_rule = {
+	name = SAH_ger_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_ger_scenario_start_rule_normal }
+	option = { name = danzig_or_war text = SAH_SAH_ger_scenario_start_rule_danzig_or_war }
+	option = { name = return_of_kaiser text = SAH_SAH_ger_scenario_start_rule_return_of_kaiser }
+	option = { name = communist_uprising text = SAH_SAH_ger_scenario_start_rule_communist_uprising }
+	option = { name = anti_soviet_pact text = SAH_SAH_ger_scenario_start_rule_anti_soviet_pact }
+}
+
+custom_game_rule = {
+	name = SAH_sov_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_sov_scenario_start_rule_normal }
+	option = { name = historical_stalin text = SAH_SAH_sov_scenario_start_rule_historical_stalin }
+	option = { name = permanent_revolution text = SAH_SAH_sov_scenario_start_rule_permanent_revolution }
+	option = { name = new_economic_policy text = SAH_SAH_sov_scenario_start_rule_new_economic_policy }
+	option = { name = tsarist_restored text = SAH_SAH_sov_scenario_start_rule_tsarist_restored }
+	option = { name = republic text = SAH_SAH_sov_scenario_start_rule_republic }
+	option = { name = fascist_destiny text = SAH_SAH_sov_scenario_start_rule_fascist_destiny }
+}
+
+custom_game_rule = {
+	name = SAH_eng_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_eng_scenario_start_rule_normal }
+	option = { name = churchill text = SAH_SAH_eng_scenario_start_rule_churchill }
+	option = { name = kings_party text = SAH_SAH_eng_scenario_start_rule_kings_party }
+	option = { name = mosley_fascist text = SAH_SAH_eng_scenario_start_rule_mosley_fascist }
+	option = { name = communist_britain text = SAH_SAH_eng_scenario_start_rule_communist_britain }
+}
+
+custom_game_rule = {
+	name = SAH_fra_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_fra_scenario_start_rule_normal }
+	option = { name = french_commune text = SAH_SAH_fra_scenario_start_rule_french_commune }
+	option = { name = legitimist text = SAH_SAH_fra_scenario_start_rule_legitimist }
+	option = { name = bonapartist text = SAH_SAH_fra_scenario_start_rule_bonapartist }
+	option = { name = latin_entente text = SAH_SAH_fra_scenario_start_rule_latin_entente }
+}
+
+custom_game_rule = {
+	name = SAH_jap_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_jap_scenario_start_rule_normal }
+	option = { name = strike_south text = SAH_SAH_jap_scenario_start_rule_strike_south }
+	option = { name = showa_restoration text = SAH_SAH_jap_scenario_start_rule_showa_restoration }
+	option = { name = democratic_diet text = SAH_SAH_jap_scenario_start_rule_democratic_diet }
+	option = { name = communist_japan text = SAH_SAH_jap_scenario_start_rule_communist_japan }
+}
+
+custom_game_rule = {
+	name = SAH_ita_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_ita_scenario_start_rule_normal }
+	option = { name = pact_of_steel text = SAH_SAH_ita_scenario_start_rule_pact_of_steel }
+	option = { name = latin_bloc text = SAH_SAH_ita_scenario_start_rule_latin_bloc }
+	option = { name = kingdom_of_god text = SAH_SAH_ita_scenario_start_rule_kingdom_of_god }
+	option = { name = republic_of_italy text = SAH_SAH_ita_scenario_start_rule_republic_of_italy }
+	option = { name = communist_italy text = SAH_SAH_ita_scenario_start_rule_communist_italy }
+}
+
+custom_game_rule = {
+	name = SAH_pol_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_pol_scenario_start_rule_normal }
+	option = { name = april_constitution text = SAH_SAH_pol_scenario_start_rule_april_constitution }
+	option = { name = falanga text = SAH_SAH_pol_scenario_start_rule_falanga }
+	option = { name = comintern text = SAH_SAH_pol_scenario_start_rule_comintern }
+	option = { name = regency_council text = SAH_SAH_pol_scenario_start_rule_regency_council }
+}
+
+custom_game_rule = {
+	name = SAH_can_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_can_scenario_start_rule_normal }
+	option = { name = zombies text = SAH_SAH_can_scenario_start_rule_zombies }
+	option = { name = fascist_canada text = SAH_SAH_can_scenario_start_rule_fascist_canada }
+	option = { name = communist_canada text = SAH_SAH_can_scenario_start_rule_communist_canada }
+}
+
+custom_game_rule = {
+	name = SAH_ast_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_ast_scenario_start_rule_normal }
+	option = { name = never_gallipoli_again text = SAH_SAH_ast_scenario_start_rule_never_gallipoli_again }
+	option = { name = australia_first text = SAH_SAH_ast_scenario_start_rule_australia_first }
+	option = { name = communist_australia text = SAH_SAH_ast_scenario_start_rule_communist_australia }
+}
+
+custom_game_rule = {
+	name = SAH_saf_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_saf_scenario_start_rule_normal }
+	option = { name = appeasement text = SAH_SAH_saf_scenario_start_rule_appeasement }
+	option = { name = ossewabrandwag text = SAH_SAH_saf_scenario_start_rule_ossewabrandwag }
+	option = { name = anti_colonialist text = SAH_SAH_saf_scenario_start_rule_anti_colonialist }
+}
+
+custom_game_rule = {
+	name = SAH_raj_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_raj_scenario_start_rule_normal }
+	option = { name = provincial_elections text = SAH_SAH_raj_scenario_start_rule_provincial_elections }
+	option = { name = quit_india text = SAH_SAH_raj_scenario_start_rule_quit_india }
+	option = { name = indian_national_army text = SAH_SAH_raj_scenario_start_rule_indian_national_army }
+}
+
+custom_game_rule = {
+	name = SAH_rom_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_rom_scenario_start_rule_normal }
+	option = { name = preserve_romania text = SAH_SAH_rom_scenario_start_rule_preserve_romania }
+	option = { name = align_axis text = SAH_SAH_rom_scenario_start_rule_align_axis }
+	option = { name = balkan_dominance text = SAH_SAH_rom_scenario_start_rule_balkan_dominance }
+}
+
+custom_game_rule = {
+	name = SAH_yug_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_yug_scenario_start_rule_normal }
+	option = { name = regency_council text = SAH_SAH_yug_scenario_start_rule_regency_council }
+	option = { name = tripartite_pact text = SAH_SAH_yug_scenario_start_rule_tripartite_pact }
+	option = { name = communist_partisans text = SAH_SAH_yug_scenario_start_rule_communist_partisans }
+	option = { name = western_focus text = SAH_SAH_yug_scenario_start_rule_western_focus }
+}
+
+custom_game_rule = {
+	name = SAH_gre_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_gre_scenario_start_rule_normal }
+	option = { name = metaxas text = SAH_SAH_gre_scenario_start_rule_metaxas }
+	option = { name = megali_idea text = SAH_SAH_gre_scenario_start_rule_megali_idea }
+	option = { name = venizelist text = SAH_SAH_gre_scenario_start_rule_venizelist }
+}
+
+custom_game_rule = {
+	name = SAH_tur_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_tur_scenario_start_rule_normal }
+	option = { name = peace_at_home text = SAH_SAH_tur_scenario_start_rule_peace_at_home }
+	option = { name = multi_party text = SAH_SAH_tur_scenario_start_rule_multi_party }
+}
+
+custom_game_rule = {
+	name = SAH_mex_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_mex_scenario_start_rule_normal }
+	option = { name = prm text = SAH_SAH_mex_scenario_start_rule_prm }
+	option = { name = gold_shirts text = SAH_SAH_mex_scenario_start_rule_gold_shirts }
+	option = { name = hispanic_alliance text = SAH_SAH_mex_scenario_start_rule_hispanic_alliance }
+}
+
+custom_game_rule = {
+	name = SAH_bra_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_bra_scenario_start_rule_normal }
+	option = { name = estado_novo text = SAH_SAH_bra_scenario_start_rule_estado_novo }
+	option = { name = integralist text = SAH_SAH_bra_scenario_start_rule_integralist }
+	option = { name = aln_revolt text = SAH_SAH_bra_scenario_start_rule_aln_revolt }
+}
+
+custom_game_rule = {
+	name = SAH_spr_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_spr_scenario_start_rule_normal }
+	option = { name = popular_front text = SAH_SAH_spr_scenario_start_rule_popular_front }
+	option = { name = falange text = SAH_SAH_spr_scenario_start_rule_falange }
+	option = { name = anti_fascist_unity text = SAH_SAH_spr_scenario_start_rule_anti_fascist_unity }
+}
+
+custom_game_rule = {
+	name = SAH_hol_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_hol_scenario_start_rule_normal }
+	option = { name = gateway_to_europe text = SAH_SAH_hol_scenario_start_rule_gateway_to_europe }
+	option = { name = anton_mussert text = SAH_SAH_hol_scenario_start_rule_anton_mussert }
+}
+
+custom_game_rule = {
+	name = SAH_swe_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_swe_scenario_start_rule_normal }
+	option = { name = per_albin_bus text = SAH_SAH_swe_scenario_start_rule_per_albin_bus }
+	option = { name = svea_rike text = SAH_SAH_swe_scenario_start_rule_svea_rike }
+	option = { name = socialist_republic text = SAH_SAH_swe_scenario_start_rule_socialist_republic }
+}
+
+custom_game_rule = {
+	name = SAH_arg_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_arg_scenario_start_rule_normal }
+	option = { name = infamous_decade text = SAH_SAH_arg_scenario_start_rule_infamous_decade }
+	option = { name = radical_civic text = SAH_SAH_arg_scenario_start_rule_radical_civic }
+	option = { name = peronist text = SAH_SAH_arg_scenario_start_rule_peronist }
+}
+
+custom_game_rule = {
+	name = SAH_aus_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_aus_scenario_start_rule_normal }
+	option = { name = fatherland_front text = SAH_SAH_aus_scenario_start_rule_fatherland_front }
+	option = { name = austrofascism text = SAH_SAH_aus_scenario_start_rule_austrofascism }
+	option = { name = social_democrats text = SAH_SAH_aus_scenario_start_rule_social_democrats }
+}
+
+custom_game_rule = {
+	name = SAH_bel_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_bel_scenario_start_rule_normal }
+	option = { name = catholic_bloc text = SAH_SAH_bel_scenario_start_rule_catholic_bloc }
+	option = { name = liberal_party text = SAH_SAH_bel_scenario_start_rule_liberal_party }
+	option = { name = rexist_party text = SAH_SAH_bel_scenario_start_rule_rexist_party }
+}
+
+custom_game_rule = {
+	name = SAH_bul_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_bul_scenario_start_rule_normal }
+	option = { name = tsars_dictatorship text = SAH_SAH_bul_scenario_start_rule_tsars_dictatorship }
+	option = { name = zveno text = SAH_SAH_bul_scenario_start_rule_zveno }
+	option = { name = fatherland_front text = SAH_SAH_bul_scenario_start_rule_fatherland_front }
+}
+
+custom_game_rule = {
+	name = SAH_chi_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_chi_scenario_start_rule_normal }
+	option = { name = historical text = SAH_SAH_chi_scenario_start_rule_historical }
+	option = { name = welfare text = SAH_SAH_chi_scenario_start_rule_welfare }
+}
+
+custom_game_rule = {
+	name = SAH_chl_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_chl_scenario_start_rule_normal }
+	option = { name = popular_front text = SAH_SAH_chl_scenario_start_rule_popular_front }
+	option = { name = nacistas text = SAH_SAH_chl_scenario_start_rule_nacistas }
+}
+
+custom_game_rule = {
+	name = SAH_cog_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_cog_scenario_start_rule_normal }
+	option = { name = force_publique text = SAH_SAH_cog_scenario_start_rule_force_publique }
+	option = { name = evolues text = SAH_SAH_cog_scenario_start_rule_evolues }
+}
+
+custom_game_rule = {
+	name = SAH_cze_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_cze_scenario_start_rule_normal }
+	option = { name = political_direction text = SAH_SAH_cze_scenario_start_rule_political_direction }
+	option = { name = fascist_direction text = SAH_SAH_cze_scenario_start_rule_fascist_direction }
+	option = { name = communist_direction text = SAH_SAH_cze_scenario_start_rule_communist_direction }
+}
+
+custom_game_rule = {
+	name = SAH_den_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_den_scenario_start_rule_normal }
+	option = { name = social_democrats text = SAH_SAH_den_scenario_start_rule_social_democrats }
+	option = { name = conservative text = SAH_SAH_den_scenario_start_rule_conservative }
+}
+
+custom_game_rule = {
+	name = SAH_egy_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_egy_scenario_start_rule_normal }
+	option = { name = anglo_treaty text = SAH_SAH_egy_scenario_start_rule_anglo_treaty }
+	option = { name = wafd_party text = SAH_SAH_egy_scenario_start_rule_wafd_party }
+}
+
+custom_game_rule = {
+	name = SAH_est_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_est_scenario_start_rule_normal }
+	option = { name = era_of_silence text = SAH_SAH_est_scenario_start_rule_era_of_silence }
+	option = { name = vaps_movement text = SAH_SAH_est_scenario_start_rule_vaps_movement }
+}
+
+custom_game_rule = {
+	name = SAH_eth_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_eth_scenario_start_rule_normal }
+	option = { name = emperor text = SAH_SAH_eth_scenario_start_rule_emperor }
+}
+
+custom_game_rule = {
+	name = SAH_fin_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_fin_scenario_start_rule_normal }
+	option = { name = finnish_model text = SAH_SAH_fin_scenario_start_rule_finnish_model }
+	option = { name = lapua_movement text = SAH_SAH_fin_scenario_start_rule_lapua_movement }
+	option = { name = red_guards text = SAH_SAH_fin_scenario_start_rule_red_guards }
+}
+
+custom_game_rule = {
+	name = SAH_hun_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_hun_scenario_start_rule_normal }
+	option = { name = renounce_trianon text = SAH_SAH_hun_scenario_start_rule_renounce_trianon }
+	option = { name = king text = SAH_SAH_hun_scenario_start_rule_king }
+	option = { name = communist text = SAH_SAH_hun_scenario_start_rule_communist }
+	option = { name = habsburg text = SAH_SAH_hun_scenario_start_rule_habsburg }
+}
+
+custom_game_rule = {
+	name = SAH_irq_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_irq_scenario_start_rule_normal }
+	option = { name = hashemite text = SAH_SAH_irq_scenario_start_rule_hashemite }
+	option = { name = golden_square text = SAH_SAH_irq_scenario_start_rule_golden_square }
+}
+
+custom_game_rule = {
+	name = SAH_lat_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_lat_scenario_start_rule_normal }
+	option = { name = ulmainis text = SAH_SAH_lat_scenario_start_rule_ulmainis }
+	option = { name = perkonkrusts text = SAH_SAH_lat_scenario_start_rule_perkonkrusts }
+}
+
+custom_game_rule = {
+	name = SAH_lit_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_lit_scenario_start_rule_normal }
+	option = { name = smetona text = SAH_SAH_lit_scenario_start_rule_smetona }
+	option = { name = iron_wolf text = SAH_SAH_lit_scenario_start_rule_iron_wolf }
+}
+
+custom_game_rule = {
+	name = SAH_man_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_man_scenario_start_rule_normal }
+	option = { name = obedience text = SAH_SAH_man_scenario_start_rule_obedience }
+	option = { name = assertiveness text = SAH_SAH_man_scenario_start_rule_assertiveness }
+	option = { name = democratic text = SAH_SAH_man_scenario_start_rule_democratic }
+	option = { name = communist text = SAH_SAH_man_scenario_start_rule_communist }
+}
+
+custom_game_rule = {
+	name = SAH_nor_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_nor_scenario_start_rule_normal }
+	option = { name = nygaardsvold text = SAH_SAH_nor_scenario_start_rule_nygaardsvold }
+	option = { name = quisling text = SAH_SAH_nor_scenario_start_rule_quisling }
+	option = { name = communist text = SAH_SAH_nor_scenario_start_rule_communist }
+}
+
+custom_game_rule = {
+	name = SAH_nzl_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_nzl_scenario_start_rule_normal }
+	option = { name = labour text = SAH_SAH_nzl_scenario_start_rule_labour }
+}
+
+custom_game_rule = {
+	name = SAH_par_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_par_scenario_start_rule_normal }
+	option = { name = febrerista text = SAH_SAH_par_scenario_start_rule_febrerista }
+}
+
+custom_game_rule = {
+	name = SAH_per_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_per_scenario_start_rule_normal }
+	option = { name = pahlavi text = SAH_SAH_per_scenario_start_rule_pahlavi }
+	option = { name = tudeh text = SAH_SAH_per_scenario_start_rule_tudeh }
+}
+
+custom_game_rule = {
+	name = SAH_phi_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_phi_scenario_start_rule_normal }
+	option = { name = commonwealth text = SAH_SAH_phi_scenario_start_rule_commonwealth }
+	option = { name = ganap text = SAH_SAH_phi_scenario_start_rule_ganap }
+	option = { name = hukbalahap text = SAH_SAH_phi_scenario_start_rule_hukbalahap }
+}
+
+custom_game_rule = {
+	name = SAH_por_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_por_scenario_start_rule_normal }
+	option = { name = estado_novo text = SAH_SAH_por_scenario_start_rule_estado_novo }
+	option = { name = popular_front text = SAH_SAH_por_scenario_start_rule_popular_front }
+}
+
+custom_game_rule = {
+	name = SAH_prc_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_prc_scenario_start_rule_normal }
+	option = { name = maoism text = SAH_SAH_prc_scenario_start_rule_maoism }
+	option = { name = orthodox_marxism text = SAH_SAH_prc_scenario_start_rule_orthodox_marxism }
+	option = { name = social_democracy text = SAH_SAH_prc_scenario_start_rule_social_democracy }
+}
+
+custom_game_rule = {
+	name = SAH_swi_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_swi_scenario_start_rule_normal }
+	option = { name = federal_council text = SAH_SAH_swi_scenario_start_rule_federal_council }
+}
+
+custom_game_rule = {
+	name = SAH_uru_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_uru_scenario_start_rule_normal }
+	option = { name = colorado text = SAH_SAH_uru_scenario_start_rule_colorado }
+}
+
+custom_game_rule = {
+	name = SAH_wrl_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_wrl_scenario_start_rule_normal }
+	option = { name = nationalists text = SAH_SAH_wrl_scenario_start_rule_nationalists }
+	option = { name = communists text = SAH_SAH_wrl_scenario_start_rule_communists }
+}
+
+custom_game_rule = {
+	name = SAH_afg_scenario_start_rule
+	group = SAH_GAME_RULES_GROUP
+	default = normal_start
+	option = { name = normal_start text = SAH_SAH_afg_scenario_start_rule_normal }
+	option = { name = barakzai text = SAH_SAH_afg_scenario_start_rule_barakzai }
+}
