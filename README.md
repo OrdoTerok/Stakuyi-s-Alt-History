@@ -57,13 +57,7 @@ If you modify or expand focus trees in common/national_focus/, you must re-run t
 
 ---
 
-## Version History
-
-| Version | Notes |
-|---------|-------|
-| 0.1.0 | Initial Playtest Framework  50-Nation Auto-Scenario Lobby setup, 3-Tier Rebuilding State framework, automated bypass injections. |
-
 ## Credits
 
-- **Mod design & scripting**: Stakuyi community project
+- **Mod design & scripting**: OrdoTerok
 - **HOI4 version target**: 1.14.x
