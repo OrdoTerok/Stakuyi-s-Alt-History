@@ -17,6 +17,12 @@ focus_tree = {
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_cze_scenario_start_rule option = communist_direction }
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = fascist_direction }
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = political_direction }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = communist_direction }
 				has_game_rule = { rule = SAH_cze_scenario_start_rule option = political_direction }
 				has_game_rule = { rule = SAH_cze_scenario_start_rule option = fascist_direction }
 			}
@@ -84,6 +90,12 @@ focus_tree = {
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_cze_scenario_start_rule option = communist_direction }
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = fascist_direction }
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = political_direction }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = communist_direction }
 				has_game_rule = { rule = SAH_cze_scenario_start_rule option = political_direction }
 				has_game_rule = { rule = SAH_cze_scenario_start_rule option = fascist_direction }
 			}
@@ -131,6 +143,12 @@ focus_tree = {
     focus = {
         id = CZE_communist_direction
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = communist_direction }
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = fascist_direction }
+				has_game_rule = { rule = SAH_cze_scenario_start_rule option = political_direction }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_cze_scenario_start_rule option = communist_direction }

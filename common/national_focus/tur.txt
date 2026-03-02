@@ -19,6 +19,11 @@ focus_tree = {
 				has_game_rule = { rule = SAH_tur_scenario_start_rule option = multi_party }
 				has_game_rule = { rule = SAH_tur_scenario_start_rule option = peace_at_home }
 			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_tur_scenario_start_rule option = multi_party }
+				has_game_rule = { rule = SAH_tur_scenario_start_rule option = peace_at_home }
+			}
 			has_game_rule = { rule = SAH_tur_scenario_start_rule option = peace_at_home }
 				has_game_rule = { rule = SAH_tur_scenario_start_rule option = multi_party }
 			OR = {
@@ -64,6 +69,11 @@ focus_tree = {
 				has_game_rule = { rule = SAH_tur_scenario_start_rule option = multi_party }
 				has_game_rule = { rule = SAH_tur_scenario_start_rule option = peace_at_home }
 			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_tur_scenario_start_rule option = multi_party }
+				has_game_rule = { rule = SAH_tur_scenario_start_rule option = peace_at_home }
+			}
 			has_game_rule = { rule = SAH_tur_scenario_start_rule option = peace_at_home }
 				has_game_rule = { rule = SAH_tur_scenario_start_rule option = multi_party }
 			OR = {
@@ -103,6 +113,14 @@ focus_tree = {
 
     focus = {
         id = TUR_the_balkan_pact
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_tur_scenario_start_rule option = multi_party }
+				has_game_rule = { rule = SAH_tur_scenario_start_rule option = peace_at_home }
+			}
+		}
+
         icon = GFX_goal_generic_major_alliance
         x = 4
         y = 1
@@ -120,6 +138,14 @@ focus_tree = {
 
     focus = {
         id = TUR_the_saadabad_pact
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_tur_scenario_start_rule option = multi_party }
+				has_game_rule = { rule = SAH_tur_scenario_start_rule option = peace_at_home }
+			}
+		}
+
         icon = GFX_goal_generic_more_territorial_claims
         x = 4
         y = 2

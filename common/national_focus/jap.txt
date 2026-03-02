@@ -16,6 +16,13 @@ focus_tree = {
 		bypass = {
 			OR = {
 				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+			}
+			OR = {
+				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
@@ -75,6 +82,10 @@ focus_tree = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
 			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+			}
 			has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
 			OR = {
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
@@ -104,6 +115,10 @@ focus_tree = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
 			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+			}
 			has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
 			OR = {
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
@@ -129,6 +144,10 @@ focus_tree = {
     focus = {
         id = JAP_strike_south_doctrine
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
@@ -179,6 +198,13 @@ focus_tree = {
     focus = {
         id = JAP_support_the_kodoha_faction
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
@@ -232,6 +258,10 @@ focus_tree = {
     focus = {
         id = JAP_showa_restoration
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
@@ -333,6 +363,13 @@ focus_tree = {
 		bypass = {
 			OR = {
 				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+			}
+			OR = {
+				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
@@ -389,6 +426,11 @@ focus_tree = {
     focus = {
         id = JAP_restore_the_diet
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
@@ -472,6 +514,11 @@ focus_tree = {
     focus = {
         id = JAP_the_japanese_communist_party
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
@@ -564,6 +611,13 @@ focus_tree = {
 		bypass = {
 			OR = {
 				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+			}
+			OR = {
+				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
@@ -593,6 +647,13 @@ focus_tree = {
     focus = {
         id = JAP_yamato_class_battleships
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
@@ -643,6 +704,13 @@ focus_tree = {
 		bypass = {
 			OR = {
 				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+			}
+			OR = {
+				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
@@ -673,6 +741,13 @@ focus_tree = {
     focus = {
         id = JAP_spiritual_mobilization
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet }
+				has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration }

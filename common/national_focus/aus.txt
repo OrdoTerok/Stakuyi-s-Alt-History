@@ -17,6 +17,12 @@ focus_tree = {
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_aus_scenario_start_rule option = fatherland_front }
+				has_game_rule = { rule = SAH_aus_scenario_start_rule option = social_democrats }
+				has_game_rule = { rule = SAH_aus_scenario_start_rule option = austrofascism }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_aus_scenario_start_rule option = fatherland_front }
 				has_game_rule = { rule = SAH_aus_scenario_start_rule option = austrofascism }
 				has_game_rule = { rule = SAH_aus_scenario_start_rule option = social_democrats }
 			}
@@ -64,6 +70,10 @@ focus_tree = {
 				has_game_rule = { rule = SAH_aus_scenario_start_rule option = austrofascism }
 			}
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_aus_scenario_start_rule option = austrofascism }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_aus_scenario_start_rule option = austrofascism }
 			}
 		}
@@ -104,6 +114,12 @@ focus_tree = {
     focus = {
         id = AUS_the_social_democrats
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_aus_scenario_start_rule option = fatherland_front }
+				has_game_rule = { rule = SAH_aus_scenario_start_rule option = social_democrats }
+				has_game_rule = { rule = SAH_aus_scenario_start_rule option = austrofascism }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_aus_scenario_start_rule option = fatherland_front }

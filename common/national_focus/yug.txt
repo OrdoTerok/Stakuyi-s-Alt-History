@@ -19,6 +19,11 @@ focus_tree = {
 				has_game_rule = { rule = SAH_yug_scenario_start_rule option = tripartite_pact }
 				has_game_rule = { rule = SAH_yug_scenario_start_rule option = regency_council }
 			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_yug_scenario_start_rule option = tripartite_pact }
+				has_game_rule = { rule = SAH_yug_scenario_start_rule option = regency_council }
+			}
 			has_game_rule = { rule = SAH_yug_scenario_start_rule option = regency_council }
 				has_game_rule = { rule = SAH_yug_scenario_start_rule option = tripartite_pact }
 			OR = {
@@ -80,6 +85,10 @@ focus_tree = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_yug_scenario_start_rule option = tripartite_pact }
 			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_yug_scenario_start_rule option = tripartite_pact }
+			}
 			has_game_rule = { rule = SAH_yug_scenario_start_rule option = tripartite_pact }
 			OR = {
 				has_game_rule = { rule = SAH_yug_scenario_start_rule option = tripartite_pact }
@@ -126,6 +135,10 @@ focus_tree = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_yug_scenario_start_rule option = communist_partisans }
 			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_yug_scenario_start_rule option = communist_partisans }
+			}
 			has_game_rule = { rule = SAH_yug_scenario_start_rule option = communist_partisans }
 			OR = {
 				has_game_rule = { rule = SAH_yug_scenario_start_rule option = communist_partisans }
@@ -167,6 +180,13 @@ focus_tree = {
     focus = {
         id = YUG_western_focus
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_yug_scenario_start_rule option = communist_partisans }
+				has_game_rule = { rule = SAH_yug_scenario_start_rule option = tripartite_pact }
+				has_game_rule = { rule = SAH_yug_scenario_start_rule option = western_focus }
+				has_game_rule = { rule = SAH_yug_scenario_start_rule option = regency_council }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_yug_scenario_start_rule option = western_focus }

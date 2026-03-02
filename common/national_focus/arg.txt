@@ -16,6 +16,11 @@ focus_tree = {
 		bypass = {
 			OR = {
 				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_arg_scenario_start_rule option = infamous_decade }
+				has_game_rule = { rule = SAH_arg_scenario_start_rule option = peronist }
+			}
+			OR = {
+				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_arg_scenario_start_rule option = peronist }
 				has_game_rule = { rule = SAH_arg_scenario_start_rule option = infamous_decade }
 			}
@@ -43,6 +48,10 @@ focus_tree = {
     focus = {
         id = ARG_the_concordancia_government
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_arg_scenario_start_rule option = infamous_decade }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_arg_scenario_start_rule option = infamous_decade }
@@ -89,6 +98,10 @@ focus_tree = {
 				has_game_rule = { rule = SAH_arg_scenario_start_rule option = radical_civic }
 			}
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_arg_scenario_start_rule option = radical_civic }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_arg_scenario_start_rule option = radical_civic }
 			}
 		}
@@ -124,6 +137,10 @@ focus_tree = {
     focus = {
         id = ARG_the_peronist_movement
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_arg_scenario_start_rule option = peronist }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_arg_scenario_start_rule option = peronist }

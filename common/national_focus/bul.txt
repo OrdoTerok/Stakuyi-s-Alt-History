@@ -16,6 +16,12 @@ focus_tree = {
 		bypass = {
 			OR = {
 				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_bul_scenario_start_rule option = fatherland_front }
+				has_game_rule = { rule = SAH_bul_scenario_start_rule option = tsars_dictatorship }
+				has_game_rule = { rule = SAH_bul_scenario_start_rule option = zveno }
+			}
+			OR = {
+				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_bul_scenario_start_rule option = zveno }
 				has_game_rule = { rule = SAH_bul_scenario_start_rule option = fatherland_front }
 				has_game_rule = { rule = SAH_bul_scenario_start_rule option = tsars_dictatorship }
@@ -60,6 +66,12 @@ focus_tree = {
     focus = {
         id = BUL_zveno
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_bul_scenario_start_rule option = fatherland_front }
+				has_game_rule = { rule = SAH_bul_scenario_start_rule option = tsars_dictatorship }
+				has_game_rule = { rule = SAH_bul_scenario_start_rule option = zveno }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_bul_scenario_start_rule option = zveno }
@@ -111,6 +123,12 @@ focus_tree = {
     focus = {
         id = BUL_the_fatherland_front
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_bul_scenario_start_rule option = fatherland_front }
+				has_game_rule = { rule = SAH_bul_scenario_start_rule option = tsars_dictatorship }
+				has_game_rule = { rule = SAH_bul_scenario_start_rule option = zveno }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_bul_scenario_start_rule option = zveno }

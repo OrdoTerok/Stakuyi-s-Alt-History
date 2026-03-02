@@ -213,6 +213,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "POL": {
         "rule_name": "SAH_pol_scenario_start_rule",
+        "industrial_targets": ["POL_central_industrial_region"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "april_constitution": {
@@ -239,6 +240,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "CAN": {
         "rule_name": "SAH_can_scenario_start_rule",
+        "industrial_targets": ["CAN_defense_of_canada_regulations"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "zombies": {
@@ -260,6 +262,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "AST": {
         "rule_name": "SAH_ast_scenario_start_rule",
+        "industrial_targets": ["AST_standardize_rail_gauge"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "never_gallipoli_again": {
@@ -281,6 +284,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "SAF": {
         "rule_name": "SAH_saf_scenario_start_rule",
+        "industrial_targets": ["SAF_expand_the_gold_mining_industry"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "appeasement": {
@@ -302,6 +306,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "RAJ": {
         "rule_name": "SAH_raj_scenario_start_rule",
+        "industrial_targets": ["RAJ_expand_the_railway_network"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "provincial_elections": {
@@ -323,6 +328,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "ROM": {
         "rule_name": "SAH_rom_scenario_start_rule",
+        "industrial_targets": ["ROM_expand_the_oil_industry"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "preserve_romania": {
@@ -344,6 +350,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "YUG": {
         "rule_name": "SAH_yug_scenario_start_rule",
+        "industrial_targets": ["YUG_western_focus"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "regency_council": {
@@ -370,6 +377,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "GRE": {
         "rule_name": "SAH_gre_scenario_start_rule",
+        "industrial_targets": ["GRE_hellenic_armed_forces"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "metaxas": {
@@ -391,6 +399,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "TUR": {
         "rule_name": "SAH_tur_scenario_start_rule",
+        "industrial_targets": ["TUR_the_saadabad_pact"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "peace_at_home": {
@@ -407,6 +416,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "MEX": {
         "rule_name": "SAH_mex_scenario_start_rule",
+        "industrial_targets": ["MEX_hispanic_alliance"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "prm": {
@@ -428,6 +438,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "BRA": {
         "rule_name": "SAH_bra_scenario_start_rule",
+        "industrial_targets": ["BRA_the_coffee_valorization_program"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "estado_novo": {
@@ -449,6 +460,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "SPR": {
         "rule_name": "SAH_spr_scenario_start_rule",
+        "industrial_targets": ["SPR_rebuild_the_nation"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "popular_front": {
@@ -470,6 +482,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "HOL": {
         "rule_name": "SAH_hol_scenario_start_rule",
+        "industrial_targets": ["HOL_invest_in_the_east_indies"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "gateway_to_europe": {
@@ -486,6 +499,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "SWE": {
         "rule_name": "SAH_swe_scenario_start_rule",
+        "industrial_targets": ["SWE_the_nordic_defence_council"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "per_albin_bus": {

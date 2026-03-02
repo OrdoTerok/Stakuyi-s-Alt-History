@@ -16,6 +16,15 @@ focus_tree = {
 		bypass = {
 			OR = {
 				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+			}
+			OR = {
+				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
@@ -67,6 +76,10 @@ focus_tree = {
     focus = {
         id = SOV_the_great_purge
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
@@ -153,6 +166,15 @@ focus_tree = {
 		bypass = {
 			OR = {
 				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+			}
+			OR = {
+				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
@@ -197,6 +219,10 @@ focus_tree = {
     focus = {
         id = SOV_permanent_revolution
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
@@ -263,6 +289,15 @@ focus_tree = {
 		bypass = {
 			OR = {
 				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+			}
+			OR = {
+				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
@@ -311,6 +346,10 @@ focus_tree = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
 			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+			}
 			has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
 			OR = {
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
@@ -354,6 +393,15 @@ focus_tree = {
     focus = {
         id = SOV_beaten_but_not_defeated
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
@@ -427,6 +475,12 @@ focus_tree = {
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
 			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+			}
 			has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
@@ -480,6 +534,10 @@ focus_tree = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
 			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+			}
 			has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
 			OR = {
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
@@ -522,6 +580,12 @@ focus_tree = {
     focus = {
         id = SOV_the_romanovs_restored
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
@@ -639,6 +703,12 @@ focus_tree = {
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
 			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+			}
 			has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
@@ -693,6 +763,10 @@ focus_tree = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
 			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+			}
 			has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
 			OR = {
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
@@ -737,6 +811,15 @@ focus_tree = {
 		bypass = {
 			OR = {
 				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+			}
+			OR = {
+				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
@@ -764,6 +847,15 @@ focus_tree = {
     focus = {
         id = SOV_heavy_industry
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
@@ -798,6 +890,15 @@ focus_tree = {
 		bypass = {
 			OR = {
 				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+			}
+			OR = {
+				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
@@ -828,6 +929,15 @@ focus_tree = {
     focus = {
         id = SOV_relocate_industry_to_the_urals
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored }
+				has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin }

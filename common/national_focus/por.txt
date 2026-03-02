@@ -16,6 +16,11 @@ focus_tree = {
 		bypass = {
 			OR = {
 				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_por_scenario_start_rule option = estado_novo }
+				has_game_rule = { rule = SAH_por_scenario_start_rule option = popular_front }
+			}
+			OR = {
+				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_por_scenario_start_rule option = popular_front }
 				has_game_rule = { rule = SAH_por_scenario_start_rule option = estado_novo }
 			}
@@ -92,6 +97,11 @@ focus_tree = {
     focus = {
         id = POR_the_popular_front
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_por_scenario_start_rule option = estado_novo }
+				has_game_rule = { rule = SAH_por_scenario_start_rule option = popular_front }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_por_scenario_start_rule option = popular_front }

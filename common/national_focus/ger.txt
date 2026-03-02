@@ -21,6 +21,13 @@ focus_tree = {
 		bypass = {
 			OR = {
 				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+			}
+			OR = {
+				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
@@ -72,6 +79,10 @@ focus_tree = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
 			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+			}
 			has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
 			has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
 			has_game_rule = {
@@ -95,6 +106,10 @@ focus_tree = {
     focus = {
         id = GER_demand_sudetenland
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
@@ -128,6 +143,10 @@ focus_tree = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
 			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+			}
 			has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
 			OR = {
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
@@ -153,6 +172,10 @@ focus_tree = {
     focus = {
         id = GER_danzig_or_war
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
@@ -183,6 +206,10 @@ focus_tree = {
     focus = {
         id = GER_befriend_poland
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
@@ -305,6 +332,13 @@ focus_tree = {
 		bypass = {
 			OR = {
 				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+			}
+			OR = {
+				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
@@ -363,6 +397,11 @@ focus_tree = {
 		bypass = {
 			OR = {
 				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+			}
+			OR = {
+				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
 			}
@@ -407,6 +446,10 @@ focus_tree = {
     focus = {
         id = GER_return_of_the_kaiser
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
@@ -512,6 +555,11 @@ focus_tree = {
 		bypass = {
 			OR = {
 				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+			}
+			OR = {
+				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
 			}
@@ -560,6 +608,10 @@ focus_tree = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
 			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			}
 			has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
 			OR = {
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
@@ -585,6 +637,10 @@ focus_tree = {
     focus = {
         id = GER_central_european_alliance
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
@@ -635,6 +691,10 @@ focus_tree = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
 			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+			}
 			has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
 			OR = {
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
@@ -678,6 +738,13 @@ focus_tree = {
     focus = {
         id = GER_communist_uprising
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
@@ -740,6 +807,10 @@ focus_tree = {
     focus = {
         id = GER_the_workers_republic
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
@@ -917,6 +988,13 @@ focus_tree = {
 		bypass = {
 			OR = {
 				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+			}
+			OR = {
+				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
@@ -942,6 +1020,13 @@ focus_tree = {
     focus = {
         id = GER_autarky
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
@@ -975,6 +1060,13 @@ focus_tree = {
 		bypass = {
 			OR = {
 				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+			}
+			OR = {
+				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
@@ -1004,6 +1096,13 @@ focus_tree = {
     focus = {
         id = GER_kdf_wagen
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising }
+				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }
+			}
 			OR = {
 				has_start_date > 1939.08.14
 				has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser }

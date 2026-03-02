@@ -19,6 +19,10 @@ focus_tree = {
 				has_game_rule = { rule = SAH_uru_scenario_start_rule option = colorado }
 			}
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_uru_scenario_start_rule option = colorado }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_uru_scenario_start_rule option = colorado }
 			}
 		}
