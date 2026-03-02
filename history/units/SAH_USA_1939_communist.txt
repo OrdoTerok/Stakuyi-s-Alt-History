@@ -1,2 +1,564 @@
-### 1939 Alternative OOB for USA (communist) ###
-# Add division_template, division, navy, and air movements/placements here.
+### 1939 Alternative OOB for USA (Communist) ###
+# Using standard vanilla templates
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1st Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2nd Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3rd Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "7th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "8th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "9th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "10th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "11th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "13th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "14th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "15th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "16th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "17th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "18th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "19th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "20th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "21st Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "22nd Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "23rd Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "24th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "25th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "26th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "27th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "28th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "29th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "30th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "31st Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "32nd Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "33rd Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "34th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "35th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "36th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "37th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "38th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "39th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "40th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "41st Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "42nd Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "43rd Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "44th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "45th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "46th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "47th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "48th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "49th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "50th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "51st Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "52nd Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "53rd Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "54th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "55th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "56th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "57th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "58th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "59th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "60th Red Guard Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1st People's Armored Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2nd People's Armored Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3rd People's Armored Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4th People's Armored Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+	# --- Cavalry / Garrison ---
+	division = {
+		name = "1st Worker's Militia (Cav)"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "2nd Worker's Militia (Cav)"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "3rd Worker's Militia (Cav)"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "4th Worker's Militia (Cav)"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "5th Worker's Militia (Cav)"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "6th Worker's Militia (Cav)"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "7th Worker's Militia (Cav)"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "8th Worker's Militia (Cav)"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "9th Worker's Militia (Cav)"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "10th Worker's Militia (Cav)"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "11th Worker's Militia (Cav)"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "12th Worker's Militia (Cav)"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "13th Worker's Militia (Cav)"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "14th Worker's Militia (Cav)"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "15th Worker's Militia (Cav)"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+}

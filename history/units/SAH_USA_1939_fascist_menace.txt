@@ -1,2 +1,431 @@
-### 1939 Alternative OOB for USA (fascist_menace) ###
-# Add division_template, division, navy, and air movements/placements here.
+### 1939 Alternative OOB for USA (Fascist Menace) ###
+# Using standard vanilla templates
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1st Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2nd Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3rd Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "7th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "8th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "9th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "10th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "11th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "13th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "14th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "15th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "16th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "17th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "18th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "19th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "20th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "21st Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "22nd Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "23rd Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "24th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "25th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "26th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "27th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "28th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "29th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "30th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "31st Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "32nd Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "33rd Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "34th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "35th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "36th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "37th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "38th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "39th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "40th Silver Shirt Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1st Patriot Armored Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2nd Patriot Armored Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3rd Patriot Armored Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4th Patriot Armored Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "5th Patriot Armored Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "6th Patriot Armored Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "7th Patriot Armored Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "8th Patriot Armored Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "9th Patriot Armored Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "10th Patriot Armored Division"
+		location = 9647 # Placeholder Province ID
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+	# --- Cavalry / Garrison ---
+	division = {
+		name = "1st State Security Cavalry"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "2nd State Security Cavalry"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "3rd State Security Cavalry"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "4th State Security Cavalry"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "5th State Security Cavalry"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "6th State Security Cavalry"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "7th State Security Cavalry"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "8th State Security Cavalry"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "9th State Security Cavalry"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "10th State Security Cavalry"
+		location = 9647 # Placeholder Province ID
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+}

@@ -1,2 +1,472 @@
-### 1939 Alternative OOB for USA (american_caesar) ###
-# Add division_template, division, navy, and air movements/placements here.
+### 1939 Alternative OOB for USA (American Caesar) ###
+# Using standard vanilla templates ('Infantry Division', 'Armor Division', 'Cavalry Division')
+
+units = {
+	# --- Loyal Infantry Corps ---
+	division = {
+		name = "1th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "5th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "6th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "7th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "8th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "9th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "10th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "11th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "12th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "13th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "14th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "15th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "16th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "17th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "18th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "19th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "20th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "21th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "22th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "23th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "24th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "25th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "26th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "27th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "28th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "29th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "30th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "31th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "32th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "33th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "34th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "35th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "36th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "37th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "38th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "39th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "40th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "41th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "42th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "43th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "44th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "45th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "46th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "47th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "48th 'Loyalist' Infantry Division"
+		location = 9647 # Placeholder Province ID (e.g., Eastern US)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+	# --- MacArthur's Armor Spearhead ---
+	division = {
+		name = "1th 'MacArthur' Armored Division"
+		location = 9647
+		division_template = "Armor Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "2th 'MacArthur' Armored Division"
+		location = 9647
+		division_template = "Armor Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "3th 'MacArthur' Armored Division"
+		location = 9647
+		division_template = "Armor Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "4th 'MacArthur' Armored Division"
+		location = 9647
+		division_template = "Armor Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "5th 'MacArthur' Armored Division"
+		location = 9647
+		division_template = "Armor Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "6th 'MacArthur' Armored Division"
+		location = 9647
+		division_template = "Armor Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+
+	# --- Internal Suppression Cavalry ---
+	division = {
+		name = "1th Internal Security Cavalry"
+		location = 9647
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2th Internal Security Cavalry"
+		location = 9647
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3th Internal Security Cavalry"
+		location = 9647
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4th Internal Security Cavalry"
+		location = 9647
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5th Internal Security Cavalry"
+		location = 9647
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6th Internal Security Cavalry"
+		location = 9647
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7th Internal Security Cavalry"
+		location = 9647
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "8th Internal Security Cavalry"
+		location = 9647
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9th Internal Security Cavalry"
+		location = 9647
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "10th Internal Security Cavalry"
+		location = 9647
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "11th Internal Security Cavalry"
+		location = 9647
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "12th Internal Security Cavalry"
+		location = 9647
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+}
