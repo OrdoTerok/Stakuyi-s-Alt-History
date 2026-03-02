@@ -1,0 +1,2 @@
+### 1939 Alternative OOB for FRA (legitimist) ###
+# Add division_template, division, navy, and air movements/placements here.

@@ -1,0 +1,2 @@
+### 1939 Alternative OOB for CZE (fascist_direction) ###
+# Add division_template, division, navy, and air movements/placements here.

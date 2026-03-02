@@ -1,0 +1,2 @@
+### 1939 Alternative OOB for POL (april_constitution) ###
+# Add division_template, division, navy, and air movements/placements here.

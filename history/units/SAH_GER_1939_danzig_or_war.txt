@@ -1,0 +1,2 @@
+### 1939 Alternative OOB for GER (danzig_or_war) ###
+# Add division_template, division, navy, and air movements/placements here.

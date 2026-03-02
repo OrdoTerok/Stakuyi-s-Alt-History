@@ -1,0 +1,2 @@
+### 1939 Alternative OOB for MEX (hispanic_alliance) ###
+# Add division_template, division, navy, and air movements/placements here.

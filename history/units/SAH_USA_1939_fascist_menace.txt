@@ -1,0 +1,2 @@
+### 1939 Alternative OOB for USA (fascist_menace) ###
+# Add division_template, division, navy, and air movements/placements here.

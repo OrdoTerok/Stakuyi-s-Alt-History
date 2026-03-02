@@ -1,0 +1,2 @@
+### 1939 Alternative OOB for GER (communist_uprising) ###
+# Add division_template, division, navy, and air movements/placements here.

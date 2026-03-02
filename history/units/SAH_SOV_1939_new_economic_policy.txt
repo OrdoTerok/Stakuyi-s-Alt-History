@@ -1,0 +1,2 @@
+### 1939 Alternative OOB for SOV (new_economic_policy) ###
+# Add division_template, division, navy, and air movements/placements here.

@@ -1,0 +1,2 @@
+### 1939 Alternative OOB for ITA (republic_of_italy) ###
+# Add division_template, division, navy, and air movements/placements here.
