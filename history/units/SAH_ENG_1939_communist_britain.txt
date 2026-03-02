@@ -1,2 +1,487 @@
-### 1939 Alternative OOB for ENG (communist_britain) ###
-# Add division_template, division, navy, and air movements/placements here.
+### 1939 Alternative OOB for ENG (Communist Britain) ###
+# Using standard vanilla-like templates for UK
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1st People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "2nd People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "3rd People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "4th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "5th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "6th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "7th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "8th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "9th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "10th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "11th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "12th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "13th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "14th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "15th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "16th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "17th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "18th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "19th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "20th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "21st People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "22nd People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "23rd People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "24th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "25th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "26th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "27th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "28th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "29th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "30th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "31st People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "32nd People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "33rd People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "34th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "35th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "36th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "37th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "38th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "39th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "40th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "41st People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "42nd People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "43rd People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "44th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "45th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "46th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "47th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "48th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "49th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "50th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "51st People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "52nd People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "53rd People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "54th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "55th People's Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1st Trade Worker's Armor"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2nd Trade Worker's Armor"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3rd Trade Worker's Armor"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+	# --- Cavalry / Garrison ---
+	division = {
+		name = "1st Militia Cavalry"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2nd Militia Cavalry"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3rd Militia Cavalry"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4th Militia Cavalry"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5th Militia Cavalry"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6th Militia Cavalry"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7th Militia Cavalry"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "8th Militia Cavalry"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9th Militia Cavalry"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "10th Militia Cavalry"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+}

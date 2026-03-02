@@ -1,2 +1,410 @@
-### 1939 Alternative OOB for ENG (churchill) ###
-# Add division_template, division, navy, and air movements/placements here.
+### 1939 Alternative OOB for ENG (Early Churchill) ###
+# Using standard vanilla-like templates for UK
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1st Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "2nd Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "3rd Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "4th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "5th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "6th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "7th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "8th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "9th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "10th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "11th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "12th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "13th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "14th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "15th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "16th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "17th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "18th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "19th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "20th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "21st Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "22nd Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "23rd Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "24th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "25th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "26th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "27th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "28th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "29th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "30th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "31st Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "32nd Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "33rd Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "34th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "35th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "36th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "37th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "38th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "39th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "40th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "41st Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "42nd Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "43rd Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "44th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "45th Infantry Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1st Armoured Division"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2nd Armoured Division"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3rd Armoured Division"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4th Armoured Division"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "5th Armoured Division"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "6th Armoured Division"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "7th Armoured Division"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "8th Armoured Division"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+	# --- Cavalry / Garrison ---
+	division = {
+		name = "1st Cavalry Division"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2nd Cavalry Division"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3rd Cavalry Division"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4th Cavalry Division"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+}
