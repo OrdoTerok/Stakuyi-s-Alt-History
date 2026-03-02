@@ -1602,7 +1602,11 @@ DATE_GATED_REWARDS = [
     "spawn_unit",
     "add_offsite_building",
     "create_fleet",
-    "create_ship"
+    "create_ship",
+    "add_research_slot",
+    "add_research_bonus",
+    "add_doctrine_cost_reduction",
+    "set_technology"
 ]
 
 def clean_rewards(reward_block: str) -> str:
