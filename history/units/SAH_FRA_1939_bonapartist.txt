@@ -1,2 +1,536 @@
-### 1939 Alternative OOB for FRA (bonapartist) ###
-# Add division_template, division, navy, and air movements/placements here.
+### 1939 Alternative OOB for FRA (Bonapartist) ###
+# Using standard vanilla-like templates for France
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1re Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "7e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "8e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "9e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "10e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "11e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "13e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "14e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "15e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "16e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "17e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "18e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "19e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "20e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "21e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "22e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "23e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "24e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "25e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "26e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "27e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "28e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "29e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "30e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "31e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "32e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "33e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "34e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "35e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "36e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "37e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "38e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "39e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "40e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "41e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "42e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "43e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "44e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "45e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "46e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "47e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "48e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "49e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "50e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "51e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "52e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "53e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "54e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "55e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "56e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "57e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "58e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "59e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "60e Division Imperiale"
+		location = 11623 # Placeholder Province ID (e.g., Paris Region)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1re Division Cuirassee Imperiale"
+		location = 11623
+		division_template = "Division Blindee" # Using fallback ascii name
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2e Division Cuirassee Imperiale"
+		location = 11623
+		division_template = "Division Blindee" # Using fallback ascii name
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3e Division Cuirassee Imperiale"
+		location = 11623
+		division_template = "Division Blindee" # Using fallback ascii name
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4e Division Cuirassee Imperiale"
+		location = 11623
+		division_template = "Division Blindee" # Using fallback ascii name
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "5e Division Cuirassee Imperiale"
+		location = 11623
+		division_template = "Division Blindee" # Using fallback ascii name
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "6e Division Cuirassee Imperiale"
+		location = 11623
+		division_template = "Division Blindee" # Using fallback ascii name
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "7e Division Cuirassee Imperiale"
+		location = 11623
+		division_template = "Division Blindee" # Using fallback ascii name
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "8e Division Cuirassee Imperiale"
+		location = 11623
+		division_template = "Division Blindee" # Using fallback ascii name
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "9e Division Cuirassee Imperiale"
+		location = 11623
+		division_template = "Division Blindee" # Using fallback ascii name
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "10e Division Cuirassee Imperiale"
+		location = 11623
+		division_template = "Division Blindee" # Using fallback ascii name
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+	# --- Cavalry / Garrison ---
+	division = {
+		name = "1re Cavalerie Imperiale"
+		location = 11623
+		division_template = "Division de Cavalerie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2e Cavalerie Imperiale"
+		location = 11623
+		division_template = "Division de Cavalerie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3e Cavalerie Imperiale"
+		location = 11623
+		division_template = "Division de Cavalerie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4e Cavalerie Imperiale"
+		location = 11623
+		division_template = "Division de Cavalerie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5e Cavalerie Imperiale"
+		location = 11623
+		division_template = "Division de Cavalerie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+}
