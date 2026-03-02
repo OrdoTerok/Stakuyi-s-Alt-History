@@ -15,6 +15,12 @@ focus_tree = {
         id = BEL_the_catholic_bloc
 		bypass = {
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_bel_scenario_start_rule option = liberal_party }
+				has_game_rule = { rule = SAH_bel_scenario_start_rule option = rexist_party }
+				has_game_rule = { rule = SAH_bel_scenario_start_rule option = catholic_bloc }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_bel_scenario_start_rule option = catholic_bloc }
 				has_game_rule = { rule = SAH_bel_scenario_start_rule option = liberal_party }
 				has_game_rule = { rule = SAH_bel_scenario_start_rule option = rexist_party }
@@ -54,6 +60,10 @@ focus_tree = {
         id = BEL_the_liberal_party
 		bypass = {
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_bel_scenario_start_rule option = liberal_party }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_bel_scenario_start_rule option = liberal_party }
 			}
 		}
@@ -77,6 +87,12 @@ focus_tree = {
     focus = {
         id = BEL_the_rexist_party
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_bel_scenario_start_rule option = liberal_party }
+				has_game_rule = { rule = SAH_bel_scenario_start_rule option = rexist_party }
+				has_game_rule = { rule = SAH_bel_scenario_start_rule option = catholic_bloc }
+			}
 			OR = {
 				has_game_rule = { rule = SAH_bel_scenario_start_rule option = catholic_bloc }
 				has_game_rule = { rule = SAH_bel_scenario_start_rule option = liberal_party }

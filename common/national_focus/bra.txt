@@ -14,6 +14,12 @@ focus_tree = {
     focus = {
         id = BRA_the_estado_novo
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo }
+			}
 			has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo }
 				has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist }
 				has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt }
@@ -76,6 +82,12 @@ focus_tree = {
     focus = {
         id = BRA_the_1937_elections
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo }
+			}
 			has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo }
 				has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist }
 				has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt }
@@ -120,6 +132,12 @@ focus_tree = {
     focus = {
         id = BRA_integralist_uprising
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo }
+			}
 			has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo }
 				has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist }
 				has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt }
@@ -168,6 +186,12 @@ focus_tree = {
     focus = {
         id = BRA_the_aln_revolt
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist }
+				has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo }
+			}
 			has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo }
 				has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist }
 				has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt }

@@ -15,6 +15,11 @@ focus_tree = {
         id = EGY_the_anglo_egyptian_treaty
 		bypass = {
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_egy_scenario_start_rule option = anglo_treaty }
+				has_game_rule = { rule = SAH_egy_scenario_start_rule option = wafd_party }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_egy_scenario_start_rule option = anglo_treaty }
 				has_game_rule = { rule = SAH_egy_scenario_start_rule option = wafd_party }
 			}
@@ -52,6 +57,11 @@ focus_tree = {
     focus = {
         id = EGY_the_wafd_party
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_egy_scenario_start_rule option = anglo_treaty }
+				has_game_rule = { rule = SAH_egy_scenario_start_rule option = wafd_party }
+			}
 			OR = {
 				has_game_rule = { rule = SAH_egy_scenario_start_rule option = anglo_treaty }
 				has_game_rule = { rule = SAH_egy_scenario_start_rule option = wafd_party }

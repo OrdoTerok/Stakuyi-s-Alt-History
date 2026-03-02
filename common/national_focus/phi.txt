@@ -15,6 +15,12 @@ focus_tree = {
         id = PHI_the_commonwealth
 		bypass = {
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = ganap }
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = commonwealth }
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = hukbalahap }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_phi_scenario_start_rule option = commonwealth }
 				has_game_rule = { rule = SAH_phi_scenario_start_rule option = ganap }
 				has_game_rule = { rule = SAH_phi_scenario_start_rule option = hukbalahap }
@@ -54,6 +60,12 @@ focus_tree = {
     focus = {
         id = PHI_the_ganap_party
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = ganap }
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = commonwealth }
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = hukbalahap }
+			}
 			OR = {
 				has_game_rule = { rule = SAH_phi_scenario_start_rule option = commonwealth }
 				has_game_rule = { rule = SAH_phi_scenario_start_rule option = ganap }
@@ -99,6 +111,12 @@ focus_tree = {
     focus = {
         id = PHI_the_hukbalahap
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = ganap }
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = commonwealth }
+				has_game_rule = { rule = SAH_phi_scenario_start_rule option = hukbalahap }
+			}
 			OR = {
 				has_game_rule = { rule = SAH_phi_scenario_start_rule option = commonwealth }
 				has_game_rule = { rule = SAH_phi_scenario_start_rule option = ganap }

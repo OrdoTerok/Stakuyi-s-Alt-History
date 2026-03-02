@@ -15,6 +15,13 @@ focus_tree = {
         id = HUN_renounce_the_treaty_of_trianon
 		bypass = {
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = habsburg }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = king }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = renounce_trianon }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_hun_scenario_start_rule option = renounce_trianon }
 				has_game_rule = { rule = SAH_hun_scenario_start_rule option = king }
 				has_game_rule = { rule = SAH_hun_scenario_start_rule option = communist }
@@ -78,6 +85,13 @@ focus_tree = {
         id = HUN_a_king_for_our_people
 		bypass = {
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = habsburg }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = king }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = renounce_trianon }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_hun_scenario_start_rule option = renounce_trianon }
 				has_game_rule = { rule = SAH_hun_scenario_start_rule option = king }
 				has_game_rule = { rule = SAH_hun_scenario_start_rule option = communist }
@@ -118,6 +132,13 @@ focus_tree = {
     focus = {
         id = HUN_the_communist_party
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = habsburg }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = king }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = renounce_trianon }
+			}
 			OR = {
 				has_game_rule = { rule = SAH_hun_scenario_start_rule option = renounce_trianon }
 				has_game_rule = { rule = SAH_hun_scenario_start_rule option = king }
@@ -163,6 +184,13 @@ focus_tree = {
     focus = {
         id = HUN_invite_the_habsburg_prince
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = habsburg }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = king }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = renounce_trianon }
+			}
 			OR = {
 				has_game_rule = { rule = SAH_hun_scenario_start_rule option = renounce_trianon }
 				has_game_rule = { rule = SAH_hun_scenario_start_rule option = king }

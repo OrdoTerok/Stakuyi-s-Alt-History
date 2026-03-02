@@ -15,6 +15,10 @@ focus_tree = {
         id = SWI_the_federal_council
 		bypass = {
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_swi_scenario_start_rule option = federal_council }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_swi_scenario_start_rule option = federal_council }
 			}
 		}

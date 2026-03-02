@@ -14,6 +14,12 @@ focus_tree = {
     focus = {
         id = AST_never_gallipoli_again
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = communist_australia }
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = never_gallipoli_again }
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = australia_first }
+			}
 			has_game_rule = { rule = SAH_ast_scenario_start_rule option = never_gallipoli_again }
 				has_game_rule = { rule = SAH_ast_scenario_start_rule option = australia_first }
 				has_game_rule = { rule = SAH_ast_scenario_start_rule option = communist_australia }
@@ -45,6 +51,12 @@ focus_tree = {
     focus = {
         id = AST_support_the_centre_party
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = communist_australia }
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = never_gallipoli_again }
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = australia_first }
+			}
 			has_game_rule = { rule = SAH_ast_scenario_start_rule option = never_gallipoli_again }
 				has_game_rule = { rule = SAH_ast_scenario_start_rule option = australia_first }
 				has_game_rule = { rule = SAH_ast_scenario_start_rule option = communist_australia }
@@ -76,6 +88,12 @@ focus_tree = {
     focus = {
         id = AST_empower_the_workers
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = communist_australia }
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = never_gallipoli_again }
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = australia_first }
+			}
 			has_game_rule = { rule = SAH_ast_scenario_start_rule option = never_gallipoli_again }
 				has_game_rule = { rule = SAH_ast_scenario_start_rule option = australia_first }
 				has_game_rule = { rule = SAH_ast_scenario_start_rule option = communist_australia }
@@ -123,6 +141,10 @@ focus_tree = {
     focus = {
         id = AST_the_australia_first_movement
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = australia_first }
+			}
 			has_game_rule = { rule = SAH_ast_scenario_start_rule option = australia_first }
 			OR = {
 				has_game_rule = { rule = SAH_ast_scenario_start_rule option = australia_first }
@@ -165,6 +187,12 @@ focus_tree = {
     focus = {
         id = AST_the_communist_party_of_australia
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = communist_australia }
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = never_gallipoli_again }
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = australia_first }
+			}
 			has_game_rule = { rule = SAH_ast_scenario_start_rule option = never_gallipoli_again }
 				has_game_rule = { rule = SAH_ast_scenario_start_rule option = australia_first }
 				has_game_rule = { rule = SAH_ast_scenario_start_rule option = communist_australia }
@@ -212,6 +240,10 @@ focus_tree = {
     focus = {
         id = AST_workers_revolution
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_ast_scenario_start_rule option = communist_australia }
+			}
 			has_game_rule = { rule = SAH_ast_scenario_start_rule option = communist_australia }
 			OR = {
 				has_game_rule = { rule = SAH_ast_scenario_start_rule option = communist_australia }

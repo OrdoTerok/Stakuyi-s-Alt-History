@@ -14,6 +14,13 @@ focus_tree = {
     focus = {
         id = FRA_form_the_popular_front
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+			}
 			has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
 				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
 				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
@@ -64,6 +71,10 @@ focus_tree = {
     focus = {
         id = FRA_national_bloc
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+			}
 			has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
 			OR = {
 				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
@@ -178,6 +189,10 @@ focus_tree = {
     focus = {
         id = FRA_invite_communist_ministers
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+			}
 			has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
 			OR = {
 				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
@@ -222,6 +237,10 @@ focus_tree = {
     focus = {
         id = FRA_the_french_commune
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+			}
 			has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
 			OR = {
 				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
@@ -338,6 +357,13 @@ focus_tree = {
     focus = {
         id = FRA_utilize_the_leagues
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+			}
 			has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
 				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
 				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
@@ -387,6 +413,12 @@ focus_tree = {
     focus = {
         id = FRA_repeal_the_law_of_exile
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+			}
 			has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
 				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
 				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
@@ -417,6 +449,11 @@ focus_tree = {
     focus = {
         id = FRA_orleanist_restoration
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+			}
 			has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
 				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
 			OR = {
@@ -495,6 +532,11 @@ focus_tree = {
     focus = {
         id = FRA_legitimist_restoration
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+			}
 			has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
 				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
 			OR = {
@@ -555,6 +597,11 @@ focus_tree = {
     focus = {
         id = FRA_bonapartist_restoration
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+			}
 			has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
 				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
 			OR = {
@@ -616,6 +663,12 @@ focus_tree = {
     focus = {
         id = FRA_laissez_faire
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+			}
 			has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
 				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
 				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
@@ -664,6 +717,10 @@ focus_tree = {
     focus = {
         id = FRA_latin_entente
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+			}
 			has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
 			OR = {
 				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
@@ -706,6 +763,16 @@ focus_tree = {
 
     focus = {
         id = FRA_rearm_france
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+			}
+		}
+
         icon = GFX_goal_generic_production
         x = 19
         y = 0
@@ -723,6 +790,16 @@ focus_tree = {
 
     focus = {
         id = FRA_metropolitan_industry
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+			}
+		}
+
         icon = GFX_goal_generic_construct_civ_factory
         x = 18
         y = 1
@@ -763,6 +840,16 @@ focus_tree = {
 
     focus = {
         id = FRA_extend_the_maginot_line
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+			}
+		}
+
         icon = GFX_goal_generic_secret_weapon
         x = 18
         y = 2
@@ -784,6 +871,16 @@ focus_tree = {
 
     focus = {
         id = FRA_army_of_aggression
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+			}
+		}
+
         icon = GFX_goal_generic_army_motorized
         x = 20
         y = 2
@@ -803,6 +900,16 @@ focus_tree = {
 
     focus = {
         id = FRA_widespread_rearmament
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente }
+				has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune }
+			}
+		}
+
         icon = GFX_goal_generic_construct_military_factory
         x = 19
         y = 3

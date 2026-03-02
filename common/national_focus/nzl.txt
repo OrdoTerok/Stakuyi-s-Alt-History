@@ -15,6 +15,10 @@ focus_tree = {
         id = NZL_the_labour_party
 		bypass = {
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_nzl_scenario_start_rule option = labour }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_nzl_scenario_start_rule option = labour }
 			}
 		}

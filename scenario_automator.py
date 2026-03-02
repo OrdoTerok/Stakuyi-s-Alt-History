@@ -10,6 +10,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     "USA": {
         "rule_name": "SAH_usa_scenario_start_rule",
         "group_name": "SAH_GAME_RULES_GROUP",
+        "industrial_targets": ["USA_arsenal_of_democracy", "USA_war_plan_orange"],
         "starts": {
             "american_caesar": {
                 "target_focus": "USA_the_american_caesar",
@@ -36,6 +37,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     "GER": {
         "rule_name": "SAH_ger_scenario_start_rule",
         "group_name": "SAH_GAME_RULES_GROUP",
+        "industrial_targets": ["GER_kdf_wagen", "GER_army_innovations_2"],
         "starts": {
             "danzig_or_war": {
                 "target_focus": "GER_danzig_or_war",
@@ -62,6 +64,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     "SOV": {
         "rule_name": "SAH_sov_scenario_start_rule",
         "group_name": "SAH_GAME_RULES_GROUP",
+        "industrial_targets": ["SOV_relocate_industry_to_the_urals"],
         "starts": {
             "historical_stalin": {
                 "target_focus": "SOV_the_great_purge",
@@ -98,6 +101,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     "ENG": {
         "rule_name": "SAH_eng_scenario_start_rule",
         "group_name": "SAH_GAME_RULES_GROUP",
+        "industrial_targets": ["ENG_general_rearmament"],
         "starts": {
             "churchill": {
                 "target_focus": "ENG_churchill_government",
@@ -124,6 +128,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     "FRA": {
         "rule_name": "SAH_fra_scenario_start_rule",
         "group_name": "SAH_GAME_RULES_GROUP",
+        "industrial_targets": ["FRA_widespread_rearmament", "FRA_extend_the_maginot_line"],
         "starts": {
             "french_commune": {
                 "target_focus": "FRA_the_french_commune",
@@ -150,6 +155,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     "JAP": {
         "rule_name": "SAH_jap_scenario_start_rule",
         "group_name": "SAH_GAME_RULES_GROUP",
+        "industrial_targets": ["JAP_yamato_class_battleships", "JAP_spiritual_mobilization"],
         "starts": {
             "strike_south": {
                 "target_focus": "JAP_strike_south_doctrine",
@@ -176,6 +182,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     "ITA": {
         "rule_name": "SAH_ita_scenario_start_rule",
         "group_name": "SAH_GAME_RULES_GROUP",
+        "industrial_targets": ["ITA_expand_the_regia_marina", "ITA_expand_the_regia_aeronautica"],
         "starts": {
             "pact_of_steel": {
                 "target_focus": "ITA_solidify_the_pact_of_steel",

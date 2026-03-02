@@ -15,6 +15,11 @@ focus_tree = {
         id = PER_the_pahlavi_dynasty
 		bypass = {
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_per_scenario_start_rule option = tudeh }
+				has_game_rule = { rule = SAH_per_scenario_start_rule option = pahlavi }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_per_scenario_start_rule option = pahlavi }
 				has_game_rule = { rule = SAH_per_scenario_start_rule option = tudeh }
 			}
@@ -52,6 +57,11 @@ focus_tree = {
     focus = {
         id = PER_the_tudeh_party
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_per_scenario_start_rule option = tudeh }
+				has_game_rule = { rule = SAH_per_scenario_start_rule option = pahlavi }
+			}
 			OR = {
 				has_game_rule = { rule = SAH_per_scenario_start_rule option = pahlavi }
 				has_game_rule = { rule = SAH_per_scenario_start_rule option = tudeh }

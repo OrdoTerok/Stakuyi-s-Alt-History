@@ -14,6 +14,12 @@ focus_tree = {
     focus = {
         id = SAF_support_the_policy_of_appeasement
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_saf_scenario_start_rule option = appeasement }
+				has_game_rule = { rule = SAH_saf_scenario_start_rule option = anti_colonialist }
+				has_game_rule = { rule = SAH_saf_scenario_start_rule option = ossewabrandwag }
+			}
 			has_game_rule = { rule = SAH_saf_scenario_start_rule option = appeasement }
 				has_game_rule = { rule = SAH_saf_scenario_start_rule option = ossewabrandwag }
 				has_game_rule = { rule = SAH_saf_scenario_start_rule option = anti_colonialist }
@@ -43,6 +49,12 @@ focus_tree = {
     focus = {
         id = SAF_abandon_westminster
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_saf_scenario_start_rule option = appeasement }
+				has_game_rule = { rule = SAH_saf_scenario_start_rule option = anti_colonialist }
+				has_game_rule = { rule = SAH_saf_scenario_start_rule option = ossewabrandwag }
+			}
 			has_game_rule = { rule = SAH_saf_scenario_start_rule option = appeasement }
 				has_game_rule = { rule = SAH_saf_scenario_start_rule option = ossewabrandwag }
 				has_game_rule = { rule = SAH_saf_scenario_start_rule option = anti_colonialist }
@@ -72,6 +84,10 @@ focus_tree = {
     focus = {
         id = SAF_support_the_ossewabrandwag
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_saf_scenario_start_rule option = ossewabrandwag }
+			}
 			has_game_rule = { rule = SAH_saf_scenario_start_rule option = ossewabrandwag }
 			OR = {
 				has_game_rule = { rule = SAH_saf_scenario_start_rule option = ossewabrandwag }
@@ -114,6 +130,10 @@ focus_tree = {
     focus = {
         id = SAF_anti_colonialist_crusade
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_saf_scenario_start_rule option = anti_colonialist }
+			}
 			has_game_rule = { rule = SAH_saf_scenario_start_rule option = anti_colonialist }
 			OR = {
 				has_game_rule = { rule = SAH_saf_scenario_start_rule option = anti_colonialist }

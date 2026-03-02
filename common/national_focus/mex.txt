@@ -14,6 +14,12 @@ focus_tree = {
     focus = {
         id = MEX_the_prm
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance }
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = gold_shirts }
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = prm }
+			}
 			has_game_rule = { rule = SAH_mex_scenario_start_rule option = prm }
 				has_game_rule = { rule = SAH_mex_scenario_start_rule option = gold_shirts }
 				has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance }
@@ -79,6 +85,12 @@ focus_tree = {
     focus = {
         id = MEX_support_the_synarchists
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance }
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = gold_shirts }
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = prm }
+			}
 			has_game_rule = { rule = SAH_mex_scenario_start_rule option = prm }
 				has_game_rule = { rule = SAH_mex_scenario_start_rule option = gold_shirts }
 				has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance }
@@ -125,6 +137,11 @@ focus_tree = {
     focus = {
         id = MEX_the_gold_shirts
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance }
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = gold_shirts }
+			}
 			has_game_rule = { rule = SAH_mex_scenario_start_rule option = gold_shirts }
 				has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance }
 			OR = {
@@ -169,6 +186,10 @@ focus_tree = {
     focus = {
         id = MEX_hispanic_alliance
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance }
+			}
 			has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance }
 			OR = {
 				has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance }
