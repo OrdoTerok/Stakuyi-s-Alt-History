@@ -1,2 +1,711 @@
-### 1939 Alternative OOB for SOV (new_economic_policy) ###
-# Add division_template, division, navy, and air movements/placements here.
+### 1939 Alternative OOB for SOV (Bukharin/NEP) ###
+# Using standard vanilla-like templates for SOV
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "7 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "8 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "9 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "10 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "11 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "13 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "14 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "15 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "16 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "17 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "18 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "19 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "20 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "21 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "22 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "23 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "24 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "25 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "26 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "27 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "28 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "29 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "30 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "31 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "32 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "33 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "34 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "35 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "36 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "37 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "38 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "39 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "40 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "41 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "42 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "43 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "44 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "45 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "46 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "47 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "48 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "49 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "50 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "51 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "52 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "53 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "54 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "55 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "56 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "57 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "58 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "59 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "60 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "61 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "62 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "63 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "64 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "65 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "66 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "67 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "68 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "69 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "70 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "71 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "72 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "73 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "74 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "75 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "76 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "77 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "78 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "79 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "80 Republic Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1 State Tank Div."
+		location = 219
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2 State Tank Div."
+		location = 219
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3 State Tank Div."
+		location = 219
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4 State Tank Div."
+		location = 219
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "5 State Tank Div."
+		location = 219
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "6 State Tank Div."
+		location = 219
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "7 State Tank Div."
+		location = 219
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "8 State Tank Div."
+		location = 219
+		division_template = "Armor Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+	# --- Cavalry / Garrison ---
+	division = {
+		name = "1 Militia Guard"
+		location = 219
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2 Militia Guard"
+		location = 219
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3 Militia Guard"
+		location = 219
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4 Militia Guard"
+		location = 219
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5 Militia Guard"
+		location = 219
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6 Militia Guard"
+		location = 219
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7 Militia Guard"
+		location = 219
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "8 Militia Guard"
+		location = 219
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9 Militia Guard"
+		location = 219
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "10 Militia Guard"
+		location = 219
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "11 Militia Guard"
+		location = 219
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "12 Militia Guard"
+		location = 219
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+}

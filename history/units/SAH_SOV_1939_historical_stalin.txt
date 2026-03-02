@@ -1,2 +1,886 @@
-### 1939 Alternative OOB for SOV (historical_stalin) ###
-# Add division_template, division, navy, and air movements/placements here.
+### 1939 Alternative OOB for SOV (Historical Stalin) ###
+# Using standard vanilla-like templates for SOV
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "7 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "8 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "9 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "10 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "11 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "13 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "14 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "15 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "16 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "17 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "18 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "19 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "20 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "21 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "22 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "23 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "24 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "25 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "26 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "27 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "28 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "29 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "30 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "31 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "32 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "33 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "34 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "35 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "36 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "37 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "38 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "39 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "40 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "41 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "42 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "43 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "44 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "45 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "46 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "47 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "48 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "49 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "50 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "51 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "52 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "53 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "54 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "55 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "56 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "57 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "58 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "59 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "60 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "61 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "62 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "63 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "64 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "65 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "66 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "67 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "68 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "69 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "70 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "71 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "72 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "73 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "74 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "75 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "76 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "77 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "78 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "79 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "80 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "81 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "82 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "83 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "84 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "85 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "86 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "87 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "88 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "89 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "90 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "91 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "92 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "93 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "94 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "95 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "96 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "97 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "98 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "99 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "100 Strelkovaya Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1 Tankovaya Div."
+		location = 219
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2 Tankovaya Div."
+		location = 219
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3 Tankovaya Div."
+		location = 219
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4 Tankovaya Div."
+		location = 219
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "5 Tankovaya Div."
+		location = 219
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "6 Tankovaya Div."
+		location = 219
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "7 Tankovaya Div."
+		location = 219
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "8 Tankovaya Div."
+		location = 219
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "9 Tankovaya Div."
+		location = 219
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "10 Tankovaya Div."
+		location = 219
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+	# --- Cavalry / Garrison ---
+	division = {
+		name = "1 Kavalericheskaya Div."
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2 Kavalericheskaya Div."
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3 Kavalericheskaya Div."
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4 Kavalericheskaya Div."
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5 Kavalericheskaya Div."
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6 Kavalericheskaya Div."
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7 Kavalericheskaya Div."
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "8 Kavalericheskaya Div."
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9 Kavalericheskaya Div."
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "10 Kavalericheskaya Div."
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "11 Kavalericheskaya Div."
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "12 Kavalericheskaya Div."
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "13 Kavalericheskaya Div."
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "14 Kavalericheskaya Div."
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "15 Kavalericheskaya Div."
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+}

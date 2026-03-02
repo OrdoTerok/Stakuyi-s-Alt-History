@@ -1,2 +1,823 @@
-### 1939 Alternative OOB for SOV (permanent_revolution) ###
-# Add division_template, division, navy, and air movements/placements here.
+### 1939 Alternative OOB for SOV (Trotskyist) ###
+# Using standard vanilla-like templates for SOV
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "7 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "8 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "9 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "10 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "11 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "13 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "14 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "15 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "16 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "17 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "18 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "19 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "20 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "21 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "22 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "23 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "24 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "25 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "26 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "27 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "28 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "29 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "30 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "31 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "32 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "33 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "34 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "35 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "36 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "37 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "38 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "39 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "40 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "41 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "42 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "43 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "44 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "45 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "46 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "47 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "48 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "49 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "50 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "51 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "52 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "53 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "54 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "55 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "56 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "57 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "58 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "59 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "60 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "61 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "62 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "63 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "64 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "65 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "66 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "67 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "68 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "69 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "70 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "71 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "72 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "73 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "74 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "75 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "76 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "77 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "78 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "79 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "80 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "81 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "82 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "83 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "84 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "85 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "86 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "87 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "88 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "89 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "90 Red Army Vanguard"
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1 Revolutionary Armor"
+		location = 219
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2 Revolutionary Armor"
+		location = 219
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3 Revolutionary Armor"
+		location = 219
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4 Revolutionary Armor"
+		location = 219
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "5 Revolutionary Armor"
+		location = 219
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "6 Revolutionary Armor"
+		location = 219
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+	# --- Cavalry / Garrison ---
+	division = {
+		name = "1 Red Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2 Red Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3 Red Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4 Red Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5 Red Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6 Red Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7 Red Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "8 Red Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9 Red Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "10 Red Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "11 Red Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "12 Red Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "13 Red Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "14 Red Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "15 Red Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "16 Red Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "17 Red Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "18 Red Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "19 Red Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "20 Red Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+}

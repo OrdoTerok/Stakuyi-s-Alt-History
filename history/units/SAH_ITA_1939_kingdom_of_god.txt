@@ -1,2 +1,326 @@
-### 1939 Alternative OOB for ITA (kingdom_of_god) ###
-# Add division_template, division, navy, and air movements/placements here.
+### 1939 Alternative OOB for ITA (Papal State) ###
+# Using standard vanilla-like templates for ITA
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "7 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "8 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "9 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "10 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "11 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "13 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "14 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "15 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "16 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "17 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "18 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "19 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "20 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "21 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "22 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "23 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "24 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "25 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "26 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "27 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "28 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "29 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "30 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "31 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "32 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "33 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "34 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "35 Swiss Guard Inf."
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1 Crusader Armor"
+		location = 2
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2 Crusader Armor"
+		location = 2
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+	# --- Cavalry / Garrison ---
+	division = {
+		name = "1 Holy See Cavalry"
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2 Holy See Cavalry"
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3 Holy See Cavalry"
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4 Holy See Cavalry"
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5 Holy See Cavalry"
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6 Holy See Cavalry"
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7 Holy See Cavalry"
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "8 Holy See Cavalry"
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+}

@@ -1,2 +1,368 @@
-### 1939 Alternative OOB for ITA (latin_bloc) ###
-# Add division_template, division, navy, and air movements/placements here.
+### 1939 Alternative OOB for ITA (Latin Bloc / Stresa) ###
+# Using standard vanilla-like templates for ITA
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "7 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "8 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "9 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "10 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "11 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "13 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "14 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "15 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "16 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "17 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "18 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "19 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "20 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "21 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "22 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "23 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "24 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "25 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "26 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "27 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "28 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "29 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "30 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "31 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "32 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "33 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "34 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "35 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "36 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "37 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "38 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "39 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "40 Divisione Alpini"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1 Divisione Blindata"
+		location = 2
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2 Divisione Blindata"
+		location = 2
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3 Divisione Blindata"
+		location = 2
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4 Divisione Blindata"
+		location = 2
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "5 Divisione Blindata"
+		location = 2
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+	# --- Cavalry / Garrison ---
+	division = {
+		name = "1 Guardia Veloce"
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2 Guardia Veloce"
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3 Guardia Veloce"
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4 Guardia Veloce"
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5 Guardia Veloce"
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6 Guardia Veloce"
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+}
