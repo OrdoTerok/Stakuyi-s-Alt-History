@@ -1780,17 +1780,27 @@ def generate():
             event_payload += f"\t\t\tif = {{\n\t\t\t\tlimit = {{ has_game_rule = {{ rule = {rule_name} option = {opt_key} }} }}\n"
             
             # Inject filtered rewards directly
+            final_ideology = None
             for f_id in chain:
                 raw_reward = all_focuses[f_id]['reward_block']
+                
+                # Extract ideology
+                matches = re.findall(r"set_politics\s*=\s*\{\s*ruling_party\s*=\s*(\w+)", raw_reward)
+                if matches:
+                    final_ideology = matches[-1]
+                
                 clean = clean_rewards(raw_reward)
                 # Strip leading/trailing braces from clean block
                 clean = clean.strip()
                 if clean.startswith('{'): clean = clean[1:]
                 if clean.endswith('}'): clean = clean[:-1]
-                
+
                 if clean.strip():
                     event_payload += f"\t\t\t\t# Rewards for {f_id}\n\t\t\t\t{clean.strip()}\n"
-
+            
+            if final_ideology:
+                event_payload += f"\t\t\t\t# Balance pie chart against 1939 setup\n"
+                event_payload += f"\t\t\t\tset_popularities = {{\n\t\t\t\t\t{final_ideology} = 100\n\t\t\t\t}}\n"
 
             # --- TIER LOGIC ---
             if 'historical' not in opt_key.lower() and 'infamous_decade' not in opt_key.lower() and 'catholic_bloc' not in opt_key.lower() and 'fatherland_front' not in opt_key.lower():

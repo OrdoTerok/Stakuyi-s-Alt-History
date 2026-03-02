@@ -505,6 +505,10 @@ custom_game_rule = {
 				add_ideas = USA_strict_neutrality
 				# Rewards for USA_the_american_caesar
 				set_politics = { ruling_party = neutrality elections_allowed = no }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -526,6 +530,10 @@ custom_game_rule = {
             }
 				# Rewards for USA_the_fascist_menace
 				set_politics = { ruling_party = fascism elections_allowed = no }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -540,6 +548,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist } }
 				# Rewards for USA_the_peoples_republic
 				set_politics = { ruling_party = communism elections_allowed = no }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -552,15 +564,6 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes } }
-				# Rewards for USA_war_department_expansion
-				random_owned_controlled_state = {
-                limit = { free_building_slots = { building = arms_factory size > 0 } }
-						if = { limit = { date < 1938.1.1 }
-                add_building_construction = { type = arms_factory level = 2 instant_build = yes }
-						}
-            }
-				# Rewards for USA_selective_service_act
-				add_ideas = USA_selective_service_idea
 				# Rewards for USA_wpa
 				random_owned_controlled_state = {
                 limit = { free_building_slots = { building = industrial_complex size > 0 } }
@@ -574,6 +577,15 @@ custom_game_rule = {
 				add_ideas = neutrality_idea
 				# Rewards for USA_arsenal_of_democracy
 				add_ideas = USA_arsenal_of_democracy
+				# Rewards for USA_war_department_expansion
+				random_owned_controlled_state = {
+                limit = { free_building_slots = { building = arms_factory size > 0 } }
+						if = { limit = { date < 1938.1.1 }
+                add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+						}
+            }
+				# Rewards for USA_selective_service_act
+				add_ideas = USA_selective_service_idea
 				# Rewards for USA_the_giant_wakes
 				remove_ideas = USA_great_depression
 				# Rebuilding State Tier logic
@@ -609,6 +621,10 @@ custom_game_rule = {
 				# Rewards for GER_return_of_the_kaiser
 				add_ideas = GER_kaiser_returns
                         add_stability = 0.1
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -623,6 +639,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising } }
 				# Rewards for GER_the_workers_republic
 				set_politics = { ruling_party = communism elections_allowed = no }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -639,6 +659,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = neutrality elections_allowed = no }
 				# Rewards for GER_reestablish_free_elections
 				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					democratic = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -702,12 +726,16 @@ custom_game_rule = {
 				add_ideas = SOV_stalin_cult_of_personality
 				# Rewards for SOV_beaten_but_not_defeated
 				add_stability = -0.2
-				# Rewards for SOV_a_new_russia
-				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for SOV_the_fascist_destiny
 				set_politics = { ruling_party = fascism elections_allowed = no }
+				# Rewards for SOV_a_new_russia
+				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for SOV_the_romanovs_restored
 				set_politics = { ruling_party = neutrality elections_allowed = no }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -732,6 +760,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for SOV_the_duma
 				add_stability = 0.15
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					democratic = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -748,15 +780,19 @@ custom_game_rule = {
 				add_ideas = SOV_stalin_cult_of_personality
 				# Rewards for SOV_beaten_but_not_defeated
 				add_stability = -0.2
-				# Rewards for SOV_a_new_russia
-				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for SOV_the_romanovs_restored
 				set_politics = { ruling_party = neutrality elections_allowed = no }
+				# Rewards for SOV_a_new_russia
+				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for SOV_the_fascist_destiny
 				set_politics = { ruling_party = fascism elections_allowed = no }
 				# Rewards for SOV_the_russian_fascist_party
 				add_ideas = SOV_russian_fascism
                         add_stability = 0.1
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -773,8 +809,6 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill } }
 				# Rewards for ENG_rearmament
 				add_ideas = ENG_rearmament_idea
-				# Rewards for ENG_early_mobilization
-				add_ideas = early_mobilization
 				# Rewards for ENG_the_shadow_scheme
 				random_owned_controlled_state = {
                 limit = { free_building_slots = { building = industrial_complex size > 0 } }
@@ -782,6 +816,8 @@ custom_game_rule = {
                 add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
 						}
             }
+				# Rewards for ENG_early_mobilization
+				add_ideas = early_mobilization
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -796,6 +832,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party } }
 				# Rewards for ENG_the_kings_party
 				set_politics = { ruling_party = neutrality elections_allowed = no }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -810,6 +850,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist } }
 				# Rewards for ENG_march_on_london
 				set_politics = { ruling_party = fascism elections_allowed = no }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -824,6 +868,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain } }
 				# Rewards for ENG_the_communist_alternative
 				set_politics = { ruling_party = communism elections_allowed = no }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -842,6 +890,10 @@ custom_game_rule = {
 				add_stability = -0.05
 				# Rewards for FRA_the_french_commune
 				set_politics = { ruling_party = communism elections_allowed = no }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -856,13 +908,17 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist } }
 				# Rewards for FRA_laissez_faire
 				set_politics = { ruling_party = fascism elections_allowed = no }
+				# Rewards for FRA_bonapartist_restoration
+				set_politics = { ruling_party = neutrality elections_allowed = no }
 				# Rewards for FRA_orleanist_restoration
 				set_politics = { ruling_party = neutrality elections_allowed = no }
                         add_stability = 0.1
-				# Rewards for FRA_bonapartist_restoration
-				set_politics = { ruling_party = neutrality elections_allowed = no }
 				# Rewards for FRA_legitimist_restoration
 				set_politics = { ruling_party = neutrality elections_allowed = no }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -884,6 +940,10 @@ custom_game_rule = {
                         add_stability = 0.1
 				# Rewards for FRA_bonapartist_restoration
 				set_politics = { ruling_party = neutrality elections_allowed = no }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -898,6 +958,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente } }
 				# Rewards for FRA_laissez_faire
 				set_politics = { ruling_party = fascism elections_allowed = no }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -932,6 +996,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = neutrality elections_allowed = no }
                         add_ideas = JAP_showa_restoration_idea
                         add_stability = 0.1
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -949,6 +1017,10 @@ custom_game_rule = {
                         add_stability = -0.1
 				# Rewards for JAP_restore_the_diet
 				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					democratic = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -966,6 +1038,10 @@ custom_game_rule = {
 				# Rewards for JAP_the_japanese_communist_party
 				set_politics = { ruling_party = communism elections_allowed = no }
                         add_stability = -0.1
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1042,16 +1118,20 @@ custom_game_rule = {
 		POL = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution } }
-				# Rewards for POL_the_falanga
-				set_politics = { ruling_party = fascism }
 				# Rewards for POL_the_polish_communist_party
 				set_politics = { ruling_party = communism }
 				# Rewards for POL_the_regency_council
 				add_stability = -0.1
+				# Rewards for POL_the_falanga
+				set_politics = { ruling_party = fascism }
 				# Rewards for POL_the_morges_front
 				set_politics = { ruling_party = democratic }
 				# Rewards for POL_april_constitution
 				add_stability = 0.1
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					democratic = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1072,6 +1152,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = democratic }
 				# Rewards for POL_the_falanga
 				set_politics = { ruling_party = fascism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1084,14 +1168,18 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern } }
-				# Rewards for POL_the_falanga
-				set_politics = { ruling_party = fascism }
 				# Rewards for POL_the_regency_council
 				add_stability = -0.1
+				# Rewards for POL_the_falanga
+				set_politics = { ruling_party = fascism }
 				# Rewards for POL_the_morges_front
 				set_politics = { ruling_party = democratic }
 				# Rewards for POL_the_polish_communist_party
 				set_politics = { ruling_party = communism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1104,16 +1192,20 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council } }
-				# Rewards for POL_the_falanga
-				set_politics = { ruling_party = fascism }
 				# Rewards for POL_the_polish_communist_party
 				set_politics = { ruling_party = communism }
+				# Rewards for POL_the_falanga
+				set_politics = { ruling_party = fascism }
 				# Rewards for POL_the_morges_front
 				set_politics = { ruling_party = democratic }
 				# Rewards for POL_the_regency_council
 				add_stability = -0.1
 				# Rewards for POL_invite_the_king
 				set_politics = { ruling_party = neutrality elections_allowed = no }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1148,6 +1240,10 @@ custom_game_rule = {
 				add_autonomy_ratio = { value = 0.5 }
 				# Rewards for CAN_national_unity_party
 				set_politics = { ruling_party = fascism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1164,6 +1260,10 @@ custom_game_rule = {
 				add_autonomy_ratio = { value = 0.5 }
 				# Rewards for CAN_communist_revolution
 				set_politics = { ruling_party = communism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1196,6 +1296,10 @@ custom_game_rule = {
 				add_autonomy_ratio = { value = 0.5 }
 				# Rewards for AST_the_australia_first_movement
 				set_politics = { ruling_party = fascism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1212,6 +1316,10 @@ custom_game_rule = {
 				add_autonomy_ratio = { value = 0.5 }
 				# Rewards for AST_workers_revolution
 				set_politics = { ruling_party = communism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1244,6 +1352,10 @@ custom_game_rule = {
 				add_autonomy_ratio = { value = 0.5 }
 				# Rewards for SAF_support_the_ossewabrandwag
 				set_politics = { ruling_party = fascism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1260,6 +1372,10 @@ custom_game_rule = {
 				add_autonomy_ratio = { value = 0.5 }
 				# Rewards for SAF_anti_colonialist_crusade
 				set_politics = { ruling_party = communism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1310,6 +1426,10 @@ custom_game_rule = {
 				add_stability = -0.05
 				# Rewards for RAJ_indian_national_army
 				set_politics = { ruling_party = fascism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1338,6 +1458,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_rom_scenario_start_rule option = align_axis } }
 				# Rewards for ROM_the_royal_dictatorship
 				set_politics = { ruling_party = neutrality }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1354,6 +1478,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = neutrality }
 				# Rewards for ROM_the_balkan_dominance
 				create_faction = "The Balkan Entente"
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1382,6 +1510,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_yug_scenario_start_rule option = tripartite_pact } }
 				# Rewards for YUG_sign_the_tripartite_pact
 				set_politics = { ruling_party = fascism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1396,6 +1528,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_yug_scenario_start_rule option = communist_partisans } }
 				# Rewards for YUG_the_communist_partisans
 				set_politics = { ruling_party = communism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1430,6 +1566,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for GRE_the_metaxas_dictatorship
 				set_politics = { ruling_party = neutrality }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1448,6 +1588,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = neutrality }
 				# Rewards for GRE_the_4th_of_august_regime
 				add_stability = 0.1
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1464,6 +1608,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = neutrality }
 				# Rewards for GRE_the_venizelist_movement
 				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					democratic = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1482,6 +1630,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for TUR_peace_at_home
 				set_politics = { ruling_party = neutrality }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1498,6 +1650,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = neutrality }
 				# Rewards for TUR_multi_party_system
 				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					democratic = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1526,6 +1682,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_mex_scenario_start_rule option = gold_shirts } }
 				# Rewards for MEX_the_gold_shirts
 				set_politics = { ruling_party = fascism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1542,6 +1702,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = fascism }
 				# Rewards for MEX_hispanic_alliance
 				create_faction = "The Hispanic Alliance"
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1556,12 +1720,16 @@ custom_game_rule = {
 		BRA = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo } }
-				# Rewards for BRA_the_aln_revolt
-				set_politics = { ruling_party = communism }
 				# Rewards for BRA_integralist_uprising
 				set_politics = { ruling_party = fascism }
 				# Rewards for BRA_the_1937_elections
 				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Rewards for BRA_the_aln_revolt
+				set_politics = { ruling_party = communism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1574,12 +1742,16 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist } }
-				# Rewards for BRA_the_aln_revolt
-				set_politics = { ruling_party = communism }
 				# Rewards for BRA_the_1937_elections
 				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Rewards for BRA_the_aln_revolt
+				set_politics = { ruling_party = communism }
 				# Rewards for BRA_integralist_uprising
 				set_politics = { ruling_party = fascism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1598,6 +1770,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for BRA_the_aln_revolt
 				set_politics = { ruling_party = communism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1616,6 +1792,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = fascism }
 				# Rewards for SPR_the_popular_front
 				set_politics = { ruling_party = communism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1634,6 +1814,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = fascism }
 				# Rewards for SPR_the_falange
 				add_stability = 0.1
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1650,6 +1834,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = fascism }
 				# Rewards for SPR_the_popular_front
 				set_politics = { ruling_party = communism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1666,6 +1854,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_hol_scenario_start_rule option = gateway_to_europe } }
 				# Rewards for HOL_form_the_new_government
 				set_politics = { ruling_party = democratic }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					democratic = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1682,6 +1874,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = democratic }
 				# Rewards for HOL_anton_mussert
 				set_politics = { ruling_party = fascism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1710,6 +1906,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike } }
 				# Rewards for SWE_the_svea_rike
 				set_politics = { ruling_party = fascism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1724,6 +1924,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic } }
 				# Rewards for SWE_socialist_republic_of_sweden
 				set_politics = { ruling_party = communism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1741,6 +1945,10 @@ custom_game_rule = {
 				# Rewards for ARG_the_concordancia_government
 				set_politics = { ruling_party = neutrality }
             add_stability = -0.05
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_arg_scenario_start_rule option = radical_civic } }
@@ -1758,6 +1966,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_arg_scenario_start_rule option = peronist } }
 				# Rewards for ARG_the_peronist_movement
 				set_politics = { ruling_party = fascism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1774,6 +1986,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_aus_scenario_start_rule option = fatherland_front } }
 				# Rewards for AUS_the_fatherland_front
 				set_politics = { ruling_party = neutrality }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_aus_scenario_start_rule option = austrofascism } }
@@ -1781,6 +1997,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = neutrality }
 				# Rewards for AUS_austrofascism
 				set_politics = { ruling_party = fascism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1795,6 +2015,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_aus_scenario_start_rule option = social_democrats } }
 				# Rewards for AUS_the_fatherland_front
 				set_politics = { ruling_party = neutrality }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1811,6 +2035,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_bel_scenario_start_rule option = catholic_bloc } }
 				# Rewards for BEL_the_catholic_bloc
 				set_politics = { ruling_party = democratic }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					democratic = 100
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_bel_scenario_start_rule option = liberal_party } }
@@ -1818,6 +2046,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = democratic }
 				# Rewards for BEL_the_liberal_party
 				add_stability = 0.1
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					democratic = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1832,6 +2064,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_bel_scenario_start_rule option = rexist_party } }
 				# Rewards for BEL_the_catholic_bloc
 				set_politics = { ruling_party = democratic }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					democratic = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1846,12 +2082,16 @@ custom_game_rule = {
 		BUL = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_bul_scenario_start_rule option = tsars_dictatorship } }
-				# Rewards for BUL_the_fatherland_front
-				set_politics = { ruling_party = communism }
 				# Rewards for BUL_zveno
 				set_politics = { ruling_party = fascism }
+				# Rewards for BUL_the_fatherland_front
+				set_politics = { ruling_party = communism }
 				# Rewards for BUL_the_tsars_dictatorship
 				set_politics = { ruling_party = neutrality }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1870,6 +2110,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = neutrality }
 				# Rewards for BUL_zveno
 				set_politics = { ruling_party = fascism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1888,6 +2132,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = neutrality }
 				# Rewards for BUL_the_fatherland_front
 				set_politics = { ruling_party = communism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 			}
 		}
 		CHI = {
@@ -1946,6 +2194,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for COG_the_force_publique
 				set_politics = { ruling_party = neutrality }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1962,6 +2214,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = neutrality }
 				# Rewards for COG_the_evolues
 				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					democratic = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1976,10 +2232,14 @@ custom_game_rule = {
 		CZE = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_cze_scenario_start_rule option = political_direction } }
-				# Rewards for CZE_communist_direction
-				set_politics = { ruling_party = communism }
 				# Rewards for CZE_fascist_direction
 				set_politics = { ruling_party = fascism }
+				# Rewards for CZE_communist_direction
+				set_politics = { ruling_party = communism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1996,6 +2256,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = communism }
 				# Rewards for CZE_fascist_direction
 				set_politics = { ruling_party = fascism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2012,6 +2276,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = fascism }
 				# Rewards for CZE_communist_direction
 				set_politics = { ruling_party = communism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2056,6 +2324,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for EGY_the_anglo_egyptian_treaty
 				set_politics = { ruling_party = neutrality }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2072,6 +2344,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = neutrality }
 				# Rewards for EGY_the_wafd_party
 				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					democratic = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2114,6 +2390,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_eth_scenario_start_rule option = emperor } }
 				# Rewards for ETH_the_emperor
 				set_politics = { ruling_party = neutrality }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2166,10 +2446,14 @@ custom_game_rule = {
 		HUN = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_hun_scenario_start_rule option = renounce_trianon } }
-				# Rewards for HUN_a_king_for_our_people
-				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for HUN_the_communist_party
 				set_politics = { ruling_party = communism elections_allowed = no }
+				# Rewards for HUN_a_king_for_our_people
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					democratic = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2186,6 +2470,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = communism elections_allowed = no }
 				# Rewards for HUN_a_king_for_our_people
 				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					democratic = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2202,6 +2490,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for HUN_the_communist_party
 				set_politics = { ruling_party = communism elections_allowed = no }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2214,10 +2506,14 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_hun_scenario_start_rule option = habsburg } }
-				# Rewards for HUN_a_king_for_our_people
-				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for HUN_the_communist_party
 				set_politics = { ruling_party = communism elections_allowed = no }
+				# Rewards for HUN_a_king_for_our_people
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					democratic = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2236,6 +2532,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = fascism }
 				# Rewards for IRQ_the_hashemite_kingdom
 				set_politics = { ruling_party = neutrality }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2252,6 +2552,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = neutrality }
 				# Rewards for IRQ_the_golden_square
 				set_politics = { ruling_party = fascism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2318,14 +2622,18 @@ custom_game_rule = {
 		MAN = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_man_scenario_start_rule option = obedience } }
-				# Rewards for MAN_the_democratic_party
-				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for MAN_assertiveness
 				set_politics = { ruling_party = neutrality }
+				# Rewards for MAN_the_democratic_party
+				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for MAN_the_communist_party
 				set_politics = { ruling_party = communism }
 				# Rewards for MAN_obedience
 				set_politics = { ruling_party = fascism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2346,6 +2654,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = communism }
 				# Rewards for MAN_assertiveness
 				set_politics = { ruling_party = neutrality }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2358,14 +2670,18 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_man_scenario_start_rule option = democratic } }
+				# Rewards for MAN_assertiveness
+				set_politics = { ruling_party = neutrality }
 				# Rewards for MAN_obedience
 				set_politics = { ruling_party = fascism }
 				# Rewards for MAN_the_communist_party
 				set_politics = { ruling_party = communism }
-				# Rewards for MAN_assertiveness
-				set_politics = { ruling_party = neutrality }
 				# Rewards for MAN_the_democratic_party
 				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					democratic = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2378,14 +2694,18 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_man_scenario_start_rule option = communist } }
+				# Rewards for MAN_assertiveness
+				set_politics = { ruling_party = neutrality }
 				# Rewards for MAN_obedience
 				set_politics = { ruling_party = fascism }
 				# Rewards for MAN_the_democratic_party
 				set_politics = { ruling_party = democratic elections_allowed = yes }
-				# Rewards for MAN_assertiveness
-				set_politics = { ruling_party = neutrality }
 				# Rewards for MAN_the_communist_party
 				set_politics = { ruling_party = communism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2414,6 +2734,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_nor_scenario_start_rule option = quisling } }
 				# Rewards for NOR_quisling_government
 				set_politics = { ruling_party = fascism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2456,6 +2780,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_par_scenario_start_rule option = febrerista } }
 				# Rewards for PAR_the_febrerista_revolution
 				set_politics = { ruling_party = fascism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2474,6 +2802,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = communism }
 				# Rewards for PER_the_pahlavi_dynasty
 				set_politics = { ruling_party = neutrality }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2490,6 +2822,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = neutrality }
 				# Rewards for PER_the_tudeh_party
 				set_politics = { ruling_party = communism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2510,6 +2846,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = communism }
 				# Rewards for PHI_the_commonwealth
 				set_politics = { ruling_party = democratic }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					democratic = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2522,12 +2862,16 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_phi_scenario_start_rule option = ganap } }
-				# Rewards for PHI_the_hukbalahap
-				set_politics = { ruling_party = communism }
 				# Rewards for PHI_the_commonwealth
 				set_politics = { ruling_party = democratic }
+				# Rewards for PHI_the_hukbalahap
+				set_politics = { ruling_party = communism }
 				# Rewards for PHI_the_ganap_party
 				set_politics = { ruling_party = fascism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					fascism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2540,12 +2884,16 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_phi_scenario_start_rule option = hukbalahap } }
-				# Rewards for PHI_the_ganap_party
-				set_politics = { ruling_party = fascism }
 				# Rewards for PHI_the_commonwealth
 				set_politics = { ruling_party = democratic }
+				# Rewards for PHI_the_ganap_party
+				set_politics = { ruling_party = fascism }
 				# Rewards for PHI_the_hukbalahap
 				set_politics = { ruling_party = communism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2564,6 +2912,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = communism }
 				# Rewards for POR_the_estado_novo
 				set_politics = { ruling_party = neutrality }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2580,6 +2932,10 @@ custom_game_rule = {
 				set_politics = { ruling_party = neutrality }
 				# Rewards for POR_the_popular_front
 				set_politics = { ruling_party = communism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2600,6 +2956,10 @@ custom_game_rule = {
 				add_stability = 0.05
 				# Rewards for PRC_maoism
 				set_politics = { ruling_party = communism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2612,12 +2972,16 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_prc_scenario_start_rule option = orthodox_marxism } }
-				# Rewards for PRC_social_democracy
-				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for PRC_maoism
 				set_politics = { ruling_party = communism }
+				# Rewards for PRC_social_democracy
+				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for PRC_orthodox_marxism
 				add_stability = 0.05
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					democratic = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2636,6 +3000,10 @@ custom_game_rule = {
 				add_stability = 0.05
 				# Rewards for PRC_social_democracy
 				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					democratic = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2652,6 +3020,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_swi_scenario_start_rule option = federal_council } }
 				# Rewards for SWI_the_federal_council
 				set_politics = { ruling_party = democratic }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					democratic = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2668,6 +3040,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_uru_scenario_start_rule option = colorado } }
 				# Rewards for URU_the_colorado_party
 				set_politics = { ruling_party = democratic }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					democratic = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2682,14 +3058,18 @@ custom_game_rule = {
 		WRL = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists } }
-				# Rewards for WRL_cooperate_with_the_communists
-				set_politics = { ruling_party = communism }
 				# Rewards for WRL_military_dictatorship
 				set_politics = { ruling_party = fascism }
 				# Rewards for WRL_democratic_reforms
 				set_politics = { ruling_party = democratic }
+				# Rewards for WRL_cooperate_with_the_communists
+				set_politics = { ruling_party = communism }
 				# Rewards for WRL_cooperate_with_the_nationalists
 				set_politics = { ruling_party = neutrality }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2702,14 +3082,18 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists } }
-				# Rewards for WRL_cooperate_with_the_nationalists
-				set_politics = { ruling_party = neutrality }
 				# Rewards for WRL_military_dictatorship
 				set_politics = { ruling_party = fascism }
+				# Rewards for WRL_cooperate_with_the_nationalists
+				set_politics = { ruling_party = neutrality }
 				# Rewards for WRL_democratic_reforms
 				set_politics = { ruling_party = democratic }
 				# Rewards for WRL_cooperate_with_the_communists
 				set_politics = { ruling_party = communism }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					communism = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2726,6 +3110,10 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_afg_scenario_start_rule option = barakzai } }
 				# Rewards for AFG_the_barakzai_dynasty
 				set_politics = { ruling_party = neutrality }
+				# Balance pie chart against 1939 setup
+				set_popularities = {
+					neutrality = 100
+				}
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
