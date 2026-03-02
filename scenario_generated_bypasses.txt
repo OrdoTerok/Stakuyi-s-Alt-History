@@ -41,6 +41,22 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
+Focus: id = USA_paramilitary_training
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+		}
+
+Focus: id = USA_the_national_defense_state
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+		}
+
 Focus: id = USA_corporate_statism
 Add this block right underneath cost/x/y:
 		bypass = {
@@ -58,22 +74,6 @@ Add this block right underneath cost/x/y:
 		}
 
 Focus: id = USA_voter_registration_act
-Add this block right underneath cost/x/y:
-		bypass = {
-			OR = {
-				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
-			}
-		}
-
-Focus: id = USA_paramilitary_training
-Add this block right underneath cost/x/y:
-		bypass = {
-			OR = {
-				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
-			}
-		}
-
-Focus: id = USA_the_national_defense_state
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -129,15 +129,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = USA_wpa
-Add this block right underneath cost/x/y:
-		bypass = {
-			OR = {
-				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
-			}
-		}
-
-Focus: id = USA_war_production_board
+Focus: id = USA_limited_intervention
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -153,7 +145,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = USA_limited_intervention
+Focus: id = USA_arsenal_of_democracy
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -161,7 +153,15 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = USA_arsenal_of_democracy
+Focus: id = USA_wpa
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			}
+		}
+
+Focus: id = USA_war_production_board
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -681,7 +681,7 @@ Add this block right underneath cost/x/y:
 
 
 --- File: jap.txt ---
-Focus: id = JAP_support_the_kodoha_faction
+Focus: id = JAP_the_unthinkable_option
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -692,7 +692,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = JAP_the_unthinkable_option
+Focus: id = JAP_support_the_kodoha_faction
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -766,7 +766,7 @@ Add this block right underneath cost/x/y:
 
 
 --- File: pol.txt ---
-Focus: id = POL_the_falanga
+Focus: id = POL_the_polish_communist_party
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -788,7 +788,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = POL_the_polish_communist_party
+Focus: id = POL_the_falanga
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -847,16 +847,6 @@ Add this block right underneath cost/x/y:
 
 
 --- File: can.txt ---
-Focus: id = CAN_swastika_clubs
-Add this block right underneath cost/x/y:
-		bypass = {
-			OR = {
-				has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
-				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
-				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
-			}
-		}
-
 Focus: id = CAN_bring_the_unions_to_the_table
 Add this block right underneath cost/x/y:
 		bypass = {
@@ -868,6 +858,16 @@ Add this block right underneath cost/x/y:
 		}
 
 Focus: id = CAN_patriation
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
+			}
+		}
+
+Focus: id = CAN_swastika_clubs
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -923,7 +923,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = AST_the_communist_party_of_australia
+Focus: id = AST_empower_the_workers
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -933,7 +933,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = AST_empower_the_workers
+Focus: id = AST_the_communist_party_of_australia
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -1699,17 +1699,6 @@ Add this block right underneath cost/x/y:
 
 
 --- File: hun.txt ---
-Focus: id = HUN_the_communist_party
-Add this block right underneath cost/x/y:
-		bypass = {
-			OR = {
-				has_game_rule = { rule = SAH_hun_scenario_start_rule option = renounce_trianon }
-				has_game_rule = { rule = SAH_hun_scenario_start_rule option = king }
-				has_game_rule = { rule = SAH_hun_scenario_start_rule option = communist }
-				has_game_rule = { rule = SAH_hun_scenario_start_rule option = habsburg }
-			}
-		}
-
 Focus: id = HUN_a_king_for_our_people
 Add this block right underneath cost/x/y:
 		bypass = {
@@ -1722,6 +1711,17 @@ Add this block right underneath cost/x/y:
 		}
 
 Focus: id = HUN_invite_the_habsburg_prince
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = renounce_trianon }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = king }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_hun_scenario_start_rule option = habsburg }
+			}
+		}
+
+Focus: id = HUN_the_communist_party
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -1812,7 +1812,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = MAN_the_communist_party
+Focus: id = MAN_the_democratic_party
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -1823,7 +1823,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = MAN_the_democratic_party
+Focus: id = MAN_the_communist_party
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -1847,7 +1847,7 @@ Add this block right underneath cost/x/y:
 
 
 --- File: nor.txt ---
-Focus: id = NOR_the_right_wing_coalition
+Focus: id = NOR_the_communist_party
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -1857,7 +1857,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = NOR_the_communist_party
+Focus: id = NOR_the_right_wing_coalition
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -1927,7 +1927,7 @@ Add this block right underneath cost/x/y:
 
 
 --- File: phi.txt ---
-Focus: id = PHI_the_ganap_party
+Focus: id = PHI_the_hukbalahap
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -1937,7 +1937,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = PHI_the_hukbalahap
+Focus: id = PHI_the_ganap_party
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -2031,7 +2031,7 @@ Add this block right underneath cost/x/y:
 
 
 --- File: wrl.txt ---
-Focus: id = WRL_military_dictatorship
+Focus: id = WRL_democratic_reforms
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -2040,7 +2040,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = WRL_democratic_reforms
+Focus: id = WRL_military_dictatorship
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {

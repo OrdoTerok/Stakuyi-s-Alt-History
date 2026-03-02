@@ -1593,28 +1593,67 @@ FILTERED_REWARDS = [
     "create_wargoal"
 ]
 
+# Rewards that should only be granted in 1936 to prevent double-dipping in 1939
+DATE_GATED_REWARDS = [
+    "add_building_construction",
+    "add_extra_state_shared_building_slots",
+    "create_unit",
+    "load_oob",
+    "spawn_unit",
+    "add_offsite_building",
+    "create_fleet",
+    "create_ship"
+]
+
 def clean_rewards(reward_block: str) -> str:
-    """Removes 'fluff' and conflicting event rewards so day 1 scenarios aren't overpowered/buggy."""
+    """Removes 'fluff' and conflicting event rewards, and dynamically date-gates physical unit/factory spawns."""
     if not reward_block: return ""
     lines = reward_block.split('\n')
     out: list[str] = []
+    
     skip_depth = 0
+    wrap_depths = []
+    current_depth = 0
     
     for line in lines:
         # Are we currently skipping a block?
+        opens = line.count('{')
+        closes = line.count('}')
+        
         if skip_depth > 0:
-            skip_depth += line.count('{')
-            skip_depth -= line.count('}')
+            skip_depth += opens
+            skip_depth -= closes
+            current_depth += opens - closes
             continue
             
         # If any filtered keyword is in the line, we start skipping
         if any(keyword in line for keyword in FILTERED_REWARDS):
-            if '{' in line:
-                skip_depth += line.count('{')
-                skip_depth -= line.count('}')
+            if opens > closes:
+                skip_depth = opens - closes
+            continue
+            
+        # If any date-gated keyword is in the line, we wrap it in a 1936-only check
+        date_gated = any(keyword in line for keyword in DATE_GATED_REWARDS)
+        
+        if date_gated:
+            out.append("\t\t\t\t\t\tif = { limit = { date < 1938.1.1 }")
+            if opens > closes:
+                wrap_depths.append(current_depth)
+                out.append(line)
+            else:
+                out.append(line)
+                out.append("\t\t\t\t\t\t}")
+            
+            current_depth += opens - closes
             continue
             
         out.append(line)
+        current_depth += opens - closes
+        
+        if wrap_depths and current_depth == wrap_depths[-1]:
+            out.append("\t\t\t\t\t\t}")
+            wrap_depths.pop()
+            
     return '\n'.join(out)
 
 def read_all_focuses(mod_path: str = ".") -> Dict[str, Dict[str, Any]]:
