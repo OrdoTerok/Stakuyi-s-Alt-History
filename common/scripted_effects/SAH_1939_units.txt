@@ -4,790 +4,1204 @@ SAH_adjust_1939_units = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_USA_1939_american_caesar"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_USA_1939_fascist_menace"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_USA_1939_communist"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_USA_1939_giant_wakes"
 			}
 		}
 		GER = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_ger_scenario_start_rule option = danzig_or_war } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_GER_1939_danzig_or_war"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_GER_1939_return_of_kaiser"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_GER_1939_communist_uprising"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_GER_1939_anti_soviet_pact"
 			}
 		}
 		SOV = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_sov_scenario_start_rule option = historical_stalin } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_SOV_1939_historical_stalin"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_SOV_1939_permanent_revolution"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_SOV_1939_new_economic_policy"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_SOV_1939_tsarist_restored"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_SOV_1939_republic"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_SOV_1939_fascist_destiny"
 			}
 		}
 		ENG = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_ENG_1939_churchill"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_ENG_1939_kings_party"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_ENG_1939_mosley_fascist"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_ENG_1939_communist_britain"
 			}
 		}
 		FRA = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_fra_scenario_start_rule option = french_commune } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_FRA_1939_french_commune"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_FRA_1939_legitimist"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_FRA_1939_bonapartist"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_FRA_1939_latin_entente"
 			}
 		}
 		JAP = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_jap_scenario_start_rule option = strike_south } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_JAP_1939_strike_south"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_JAP_1939_showa_restoration"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_JAP_1939_democratic_diet"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_JAP_1939_communist_japan"
 			}
 		}
 		ITA = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_ita_scenario_start_rule option = pact_of_steel } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_ITA_1939_pact_of_steel"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_ita_scenario_start_rule option = latin_bloc } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_ITA_1939_latin_bloc"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_ita_scenario_start_rule option = kingdom_of_god } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_ITA_1939_kingdom_of_god"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_ita_scenario_start_rule option = republic_of_italy } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_ITA_1939_republic_of_italy"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_ita_scenario_start_rule option = communist_italy } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_ITA_1939_communist_italy"
 			}
 		}
 		POL = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_POL_1939_april_constitution"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_pol_scenario_start_rule option = falanga } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_POL_1939_falanga"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_POL_1939_comintern"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_POL_1939_regency_council"
 			}
 		}
 		CAN = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_CAN_1939_zombies"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_CAN_1939_fascist_canada"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_CAN_1939_communist_canada"
 			}
 		}
 		AST = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_ast_scenario_start_rule option = never_gallipoli_again } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_AST_1939_never_gallipoli_again"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_ast_scenario_start_rule option = australia_first } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_AST_1939_australia_first"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_ast_scenario_start_rule option = communist_australia } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_AST_1939_communist_australia"
 			}
 		}
 		SAF = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_saf_scenario_start_rule option = appeasement } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_SAF_1939_appeasement"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_saf_scenario_start_rule option = ossewabrandwag } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_SAF_1939_ossewabrandwag"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_saf_scenario_start_rule option = anti_colonialist } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_SAF_1939_anti_colonialist"
 			}
 		}
 		RAJ = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_raj_scenario_start_rule option = provincial_elections } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_RAJ_1939_provincial_elections"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_raj_scenario_start_rule option = quit_india } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_RAJ_1939_quit_india"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_raj_scenario_start_rule option = indian_national_army } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_RAJ_1939_indian_national_army"
 			}
 		}
 		ROM = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_rom_scenario_start_rule option = preserve_romania } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_ROM_1939_preserve_romania"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_rom_scenario_start_rule option = align_axis } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_ROM_1939_align_axis"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_rom_scenario_start_rule option = balkan_dominance } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_ROM_1939_balkan_dominance"
 			}
 		}
 		YUG = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_yug_scenario_start_rule option = regency_council } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_YUG_1939_regency_council"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_yug_scenario_start_rule option = tripartite_pact } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_YUG_1939_tripartite_pact"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_yug_scenario_start_rule option = communist_partisans } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_YUG_1939_communist_partisans"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_yug_scenario_start_rule option = western_focus } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_YUG_1939_western_focus"
 			}
 		}
 		GRE = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_gre_scenario_start_rule option = metaxas } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_GRE_1939_metaxas"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_GRE_1939_megali_idea"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_gre_scenario_start_rule option = venizelist } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_GRE_1939_venizelist"
 			}
 		}
 		TUR = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_tur_scenario_start_rule option = peace_at_home } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_TUR_1939_peace_at_home"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_tur_scenario_start_rule option = multi_party } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_TUR_1939_multi_party"
 			}
 		}
 		MEX = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_mex_scenario_start_rule option = prm } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_MEX_1939_prm"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_mex_scenario_start_rule option = gold_shirts } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_MEX_1939_gold_shirts"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_MEX_1939_hispanic_alliance"
 			}
 		}
 		BRA = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_BRA_1939_estado_novo"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_BRA_1939_integralist"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_BRA_1939_aln_revolt"
 			}
 		}
 		SPR = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_spr_scenario_start_rule option = popular_front } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_SPR_1939_popular_front"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_spr_scenario_start_rule option = falange } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_SPR_1939_falange"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_spr_scenario_start_rule option = anti_fascist_unity } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_SPR_1939_anti_fascist_unity"
 			}
 		}
 		HOL = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_hol_scenario_start_rule option = gateway_to_europe } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_HOL_1939_gateway_to_europe"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_hol_scenario_start_rule option = anton_mussert } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_HOL_1939_anton_mussert"
 			}
 		}
 		SWE = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_SWE_1939_per_albin_bus"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_SWE_1939_svea_rike"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_SWE_1939_socialist_republic"
 			}
 		}
 		ARG = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_arg_scenario_start_rule option = infamous_decade } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_ARG_1939_infamous_decade"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_arg_scenario_start_rule option = radical_civic } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_ARG_1939_radical_civic"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_arg_scenario_start_rule option = peronist } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_ARG_1939_peronist"
 			}
 		}
 		AUS = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_aus_scenario_start_rule option = fatherland_front } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_AUS_1939_fatherland_front"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_aus_scenario_start_rule option = austrofascism } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_AUS_1939_austrofascism"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_aus_scenario_start_rule option = social_democrats } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_AUS_1939_social_democrats"
 			}
 		}
 		BEL = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_bel_scenario_start_rule option = catholic_bloc } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_BEL_1939_catholic_bloc"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_bel_scenario_start_rule option = liberal_party } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_BEL_1939_liberal_party"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_bel_scenario_start_rule option = rexist_party } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_BEL_1939_rexist_party"
 			}
 		}
 		BUL = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_bul_scenario_start_rule option = tsars_dictatorship } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_BUL_1939_tsars_dictatorship"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_bul_scenario_start_rule option = zveno } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_BUL_1939_zveno"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_bul_scenario_start_rule option = fatherland_front } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_BUL_1939_fatherland_front"
 			}
 		}
 		CHI = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_chi_scenario_start_rule option = historical } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_CHI_1939_historical"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_chi_scenario_start_rule option = welfare } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_CHI_1939_welfare"
 			}
 		}
 		CHL = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_chl_scenario_start_rule option = popular_front } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_CHL_1939_popular_front"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_chl_scenario_start_rule option = nacistas } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_CHL_1939_nacistas"
 			}
 		}
 		COG = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_cog_scenario_start_rule option = force_publique } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_COG_1939_force_publique"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_cog_scenario_start_rule option = evolues } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_COG_1939_evolues"
 			}
 		}
 		CZE = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_cze_scenario_start_rule option = political_direction } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_CZE_1939_political_direction"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_cze_scenario_start_rule option = fascist_direction } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_CZE_1939_fascist_direction"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_cze_scenario_start_rule option = communist_direction } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_CZE_1939_communist_direction"
 			}
 		}
 		DEN = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_den_scenario_start_rule option = social_democrats } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_DEN_1939_social_democrats"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_den_scenario_start_rule option = conservative } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_DEN_1939_conservative"
 			}
 		}
 		EGY = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_egy_scenario_start_rule option = anglo_treaty } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_EGY_1939_anglo_treaty"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_egy_scenario_start_rule option = wafd_party } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_EGY_1939_wafd_party"
 			}
 		}
 		EST = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_est_scenario_start_rule option = era_of_silence } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_EST_1939_era_of_silence"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_est_scenario_start_rule option = vaps_movement } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_EST_1939_vaps_movement"
 			}
 		}
 		ETH = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_eth_scenario_start_rule option = emperor } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_ETH_1939_emperor"
 			}
 		}
 		FIN = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_fin_scenario_start_rule option = finnish_model } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_FIN_1939_finnish_model"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_fin_scenario_start_rule option = lapua_movement } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_FIN_1939_lapua_movement"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_fin_scenario_start_rule option = red_guards } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_FIN_1939_red_guards"
 			}
 		}
 		HUN = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_hun_scenario_start_rule option = renounce_trianon } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_HUN_1939_renounce_trianon"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_hun_scenario_start_rule option = king } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_HUN_1939_king"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_hun_scenario_start_rule option = communist } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_HUN_1939_communist"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_hun_scenario_start_rule option = habsburg } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_HUN_1939_habsburg"
 			}
 		}
 		IRQ = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_irq_scenario_start_rule option = hashemite } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_IRQ_1939_hashemite"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_irq_scenario_start_rule option = golden_square } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_IRQ_1939_golden_square"
 			}
 		}
 		LAT = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_lat_scenario_start_rule option = ulmainis } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_LAT_1939_ulmainis"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_lat_scenario_start_rule option = perkonkrusts } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_LAT_1939_perkonkrusts"
 			}
 		}
 		LIT = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_lit_scenario_start_rule option = smetona } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_LIT_1939_smetona"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_lit_scenario_start_rule option = iron_wolf } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_LIT_1939_iron_wolf"
 			}
 		}
 		MAN = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_man_scenario_start_rule option = obedience } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_MAN_1939_obedience"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_man_scenario_start_rule option = assertiveness } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_MAN_1939_assertiveness"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_man_scenario_start_rule option = democratic } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_MAN_1939_democratic"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_man_scenario_start_rule option = communist } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_MAN_1939_communist"
 			}
 		}
 		NOR = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_nor_scenario_start_rule option = nygaardsvold } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_NOR_1939_nygaardsvold"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_nor_scenario_start_rule option = quisling } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_NOR_1939_quisling"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_nor_scenario_start_rule option = communist } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_NOR_1939_communist"
 			}
 		}
 		NZL = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_nzl_scenario_start_rule option = labour } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_NZL_1939_labour"
 			}
 		}
 		PAR = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_par_scenario_start_rule option = febrerista } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_PAR_1939_febrerista"
 			}
 		}
 		PER = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_per_scenario_start_rule option = pahlavi } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_PER_1939_pahlavi"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_per_scenario_start_rule option = tudeh } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_PER_1939_tudeh"
 			}
 		}
 		PHI = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_phi_scenario_start_rule option = commonwealth } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_PHI_1939_commonwealth"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_phi_scenario_start_rule option = ganap } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_PHI_1939_ganap"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_phi_scenario_start_rule option = hukbalahap } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_PHI_1939_hukbalahap"
 			}
 		}
 		POR = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_por_scenario_start_rule option = estado_novo } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_POR_1939_estado_novo"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_por_scenario_start_rule option = popular_front } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_POR_1939_popular_front"
 			}
 		}
 		PRC = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_prc_scenario_start_rule option = maoism } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_PRC_1939_maoism"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_prc_scenario_start_rule option = orthodox_marxism } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_PRC_1939_orthodox_marxism"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_prc_scenario_start_rule option = social_democracy } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_PRC_1939_social_democracy"
 			}
 		}
 		SWI = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_swi_scenario_start_rule option = federal_council } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_SWI_1939_federal_council"
 			}
 		}
 		URU = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_uru_scenario_start_rule option = colorado } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_URU_1939_colorado"
 			}
 		}
 		WRL = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_WRL_1939_nationalists"
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_WRL_1939_communists"
 			}
 		}
 		AFG = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_afg_scenario_start_rule option = barakzai } }
 				# Remove invalid historical units and spawn alt-history placeholder OOB if necessary.
-				# (Not implemented in script. Replace with custom OOB loads or generic spawning) 
+				# Remove this comment block and utilize logic such as:
+				# every_unit = { set_location = PREV.capital }
+				# OR
+				# load_oob = "SAH_AFG_1939_barakzai"
 			}
 		}
 	}
