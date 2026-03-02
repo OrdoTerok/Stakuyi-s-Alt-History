@@ -1588,29 +1588,29 @@ is_generic_releasable_neutral_path = {
 
 
 # ============================================================
-# "World-Song" Tension Triggers
+# "Global Escalation" Tension Triggers
 # ============================================================
-SAH_is_quiet_world = {
-	has_global_flag = SAH_world_song_quiet
+SAH_is_peaceful_world = {
+	has_global_flag = SAH_global_escalation_peaceful
 }
 
-SAH_is_rising_chorus = {
-	has_global_flag = SAH_world_song_rising_chorus
+SAH_is_simmering_tensions = {
+	has_global_flag = SAH_global_escalation_simmering_tensions
 }
 
-SAH_is_marching_beat = {
-	has_global_flag = SAH_world_song_marching_beat
+SAH_is_mobilization_phase = {
+	has_global_flag = SAH_global_escalation_mobilization_phase
 }
 
-SAH_is_drums_of_war = {
-	has_global_flag = SAH_world_song_drums_of_war
+SAH_is_brink_of_war = {
+	has_global_flag = SAH_global_escalation_brink_of_war
 }
 
 # Useful compound trigger for escalated tension
 SAH_is_tensions_high = {
 	OR = {
-		has_global_flag = SAH_world_song_marching_beat
-		has_global_flag = SAH_world_song_drums_of_war
+		has_global_flag = SAH_global_escalation_mobilization_phase
+		has_global_flag = SAH_global_escalation_brink_of_war
 	}
 }
 

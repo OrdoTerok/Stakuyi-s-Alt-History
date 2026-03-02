@@ -75,7 +75,7 @@ SAH_stakuyi_win_conditions = {
 		}
 		
 		available = {
-			SAH_is_quiet_world = yes
+			SAH_is_peaceful_world = yes
 			date > 1945.1.1
 			all_major_country = { NOT = { has_war = yes } }
 		}

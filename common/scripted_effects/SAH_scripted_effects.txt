@@ -129,7 +129,7 @@ SAH_reactive_ideology_change = {
 SAH_reactive_war_declaration = {
 	# ROOT is the aggressor
 	# FROM is the defender
-	SAH_evaluate_world_song_effect = yes
+	SAH_evaluate_global_escalation_effect = yes
 	add_political_power = -10
 }
 
@@ -146,10 +146,10 @@ SAH_reactive_faction_change = {
 }
 
 # ============================================================
-# The "World-Song" Tension System
+# The "Global Escalation" Tension System
 # Evaluates global tension and major wars to set the world phase
 # ============================================================
-SAH_evaluate_world_song_effect = {
+SAH_evaluate_global_escalation_effect = {
 	# Check for "The Drums of War" (WT > 75% OR Major War)
 	if = {
 		limit = {
@@ -162,37 +162,37 @@ SAH_evaluate_world_song_effect = {
 				}
 			}
 		}
-		set_global_flag = SAH_world_song_drums_of_war
-		clr_global_flag = SAH_world_song_marching_beat
-		clr_global_flag = SAH_world_song_rising_chorus
-		clr_global_flag = SAH_world_song_quiet
-		set_variable = { global.SAH_world_song_level = 4 }
+		set_global_flag = SAH_global_escalation_brink_of_war
+		clr_global_flag = SAH_global_escalation_mobilization_phase
+		clr_global_flag = SAH_global_escalation_simmering_tensions
+		clr_global_flag = SAH_global_escalation_peaceful
+		set_variable = { global.SAH_global_escalation_level = 4 }
 	}
 	# Check for "The Marching Beat" (WT > 50%)
 	else_if = {
 		limit = { threat > 0.499 }
-		set_global_flag = SAH_world_song_marching_beat
-		clr_global_flag = SAH_world_song_drums_of_war
-		clr_global_flag = SAH_world_song_rising_chorus
-		clr_global_flag = SAH_world_song_quiet
-		set_variable = { global.SAH_world_song_level = 3 }
+		set_global_flag = SAH_global_escalation_mobilization_phase
+		clr_global_flag = SAH_global_escalation_brink_of_war
+		clr_global_flag = SAH_global_escalation_simmering_tensions
+		clr_global_flag = SAH_global_escalation_peaceful
+		set_variable = { global.SAH_global_escalation_level = 3 }
 	}
 	# Check for "The Rising Chorus" (WT > 25%)
 	else_if = {
 		limit = { threat > 0.249 }
-		set_global_flag = SAH_world_song_rising_chorus
-		clr_global_flag = SAH_world_song_drums_of_war
-		clr_global_flag = SAH_world_song_marching_beat
-		clr_global_flag = SAH_world_song_quiet
-		set_variable = { global.SAH_world_song_level = 2 }
+		set_global_flag = SAH_global_escalation_simmering_tensions
+		clr_global_flag = SAH_global_escalation_brink_of_war
+		clr_global_flag = SAH_global_escalation_mobilization_phase
+		clr_global_flag = SAH_global_escalation_peaceful
+		set_variable = { global.SAH_global_escalation_level = 2 }
 	}
 	# Default to "A Quiet World" (WT < 25%)
 	else = {
-		set_global_flag = SAH_world_song_quiet
-		clr_global_flag = SAH_world_song_drums_of_war
-		clr_global_flag = SAH_world_song_marching_beat
-		clr_global_flag = SAH_world_song_rising_chorus
-		set_variable = { global.SAH_world_song_level = 1 }
+		set_global_flag = SAH_global_escalation_peaceful
+		clr_global_flag = SAH_global_escalation_brink_of_war
+		clr_global_flag = SAH_global_escalation_mobilization_phase
+		clr_global_flag = SAH_global_escalation_simmering_tensions
+		set_variable = { global.SAH_global_escalation_level = 1 }
 	}
 }
 
