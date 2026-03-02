@@ -16,7 +16,10 @@ country_event = {
 
 	immediate = {
 
-		SAH_adjust_1939_units = yes
+		if = {
+					limit = { date > 1938.1.1 }
+					SAH_adjust_1939_units = yes
+				}
 
 # --- AUTO-GENERATED SCENARIO STARTS ---
 		USA = {

@@ -1683,7 +1683,7 @@ def generate():
     all_focuses = read_all_focuses()
     
     # 1. Output string for SAH_init_events.txt
-    event_payload = "\t\tSAH_adjust_1939_units = yes\n\n\t\t# --- AUTO-GENERATED SCENARIO STARTS ---\n"
+    event_payload = "\t\tif = { limit = { date > 1938.1.1 }\n\t\t\tSAH_adjust_1939_units = yes\n\t\t}\n\n\t\t# --- AUTO-GENERATED SCENARIO STARTS ---\n"
     
     # 2. Output string for the Game Rules
     rules_payload = "\n# --- AUTO-GENERATED SCENARIO RULES ---\n"
@@ -1729,6 +1729,30 @@ def generate():
                 
                 if clean.strip():
                     event_payload += f"\t\t\t\t# Rewards for {f_id}\n\t\t\t\t{clean.strip()}\n"
+
+
+            # --- TIER LOGIC ---
+            if 'historical' not in opt_key.lower() and 'infamous_decade' not in opt_key.lower() and 'catholic_bloc' not in opt_key.lower() and 'fatherland_front' not in opt_key.lower():
+                tier = config.get('tier', 2)
+                event_payload += "\t\t\t\t# Rebuilding State Tier logic\n"
+                
+                # 1936
+                event_payload += "\t\t\t\tif = {\n\t\t\t\t\tlimit = { date < 1938.1.1 }\n"
+                if tier == 1:
+                    event_payload += "\t\t\t\t\tadd_ideas = SAH_devastating_recovery\n"
+                elif tier == 2:
+                    event_payload += "\t\t\t\t\tadd_ideas = SAH_prolonged_rebuilding\n"
+                elif tier == 3:
+                    event_payload += "\t\t\t\t\tadd_ideas = SAH_stabilized_regime\n"
+                event_payload += "\t\t\t\t}\n"
+                
+                # 1939 (Degrades by 1)
+                event_payload += "\t\t\t\tif = {\n\t\t\t\t\tlimit = { date > 1938.1.1 }\n"
+                if tier == 1:
+                    event_payload += "\t\t\t\t\tadd_ideas = SAH_prolonged_rebuilding\n"
+                elif tier == 2:
+                    event_payload += "\t\t\t\t\tadd_ideas = SAH_stabilized_regime\n"
+                event_payload += "\t\t\t\t}\n"
 
             event_payload += "\t\t\t}\n"
 
