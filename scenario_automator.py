@@ -1683,7 +1683,7 @@ def generate():
     all_focuses = read_all_focuses()
     
     # 1. Output string for SAH_init_events.txt
-    event_payload = "\t\t# --- AUTO-GENERATED SCENARIO STARTS ---\n"
+    event_payload = "\t\tSAH_adjust_1939_units = yes\n\n\t\t# --- AUTO-GENERATED SCENARIO STARTS ---\n"
     
     # 2. Output string for the Game Rules
     rules_payload = "\n# --- AUTO-GENERATED SCENARIO RULES ---\n"
