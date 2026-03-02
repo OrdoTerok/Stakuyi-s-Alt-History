@@ -1590,7 +1590,9 @@ FILTERED_REWARDS = [
     "country_event",
     "news_event",
     "declare_war",
-    "create_wargoal"
+    "create_wargoal",
+    "add_popularity",
+    "add_equipment_to_stockpile"
 ]
 
 # Rewards that should only be granted in 1936 to prevent double-dipping in 1939
