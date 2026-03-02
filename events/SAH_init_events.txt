@@ -15,6 +15,9 @@ country_event = {
 	hidden = yes
 
 	immediate = {
+
+		SAH_adjust_1939_units = yes
+
 # --- AUTO-GENERATED SCENARIO STARTS ---
 		USA = {
 			if = {
