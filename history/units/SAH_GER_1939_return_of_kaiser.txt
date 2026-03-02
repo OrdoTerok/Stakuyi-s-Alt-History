@@ -1,2 +1,494 @@
-### 1939 Alternative OOB for GER (return_of_kaiser) ###
-# Add division_template, division, navy, and air movements/placements here.
+### 1939 Alternative OOB for GER (Return of the Kaiser) ###
+# Using standard vanilla-like templates for Germany
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "5. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "6. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "7. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "8. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "9. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "10. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "11. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "12. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "13. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "14. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "15. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "16. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "17. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "18. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "19. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "20. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "21. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "22. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "23. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "24. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "25. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "26. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "27. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "28. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "29. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "30. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "31. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "32. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "33. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "34. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "35. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "36. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "37. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "38. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "39. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "40. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "41. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "42. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "43. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "44. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "45. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "46. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "47. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "48. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "49. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "50. Kaiserliche Infanterie"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1. Kaiserliche Panzer"
+		location = 6486
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "2. Kaiserliche Panzer"
+		location = 6486
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "3. Kaiserliche Panzer"
+		location = 6486
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "4. Kaiserliche Panzer"
+		location = 6486
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+
+	# --- Cavalry / Garrison ---
+	division = {
+		name = "1. Husaren-Regiment"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2. Husaren-Regiment"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3. Husaren-Regiment"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4. Husaren-Regiment"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5. Husaren-Regiment"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6. Husaren-Regiment"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "7. Husaren-Regiment"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "8. Husaren-Regiment"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "9. Husaren-Regiment"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "10. Husaren-Regiment"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "11. Husaren-Regiment"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12. Husaren-Regiment"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "13. Husaren-Regiment"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "14. Husaren-Regiment"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "15. Husaren-Regiment"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+}

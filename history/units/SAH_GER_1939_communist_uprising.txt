@@ -1,2 +1,662 @@
-### 1939 Alternative OOB for GER (communist_uprising) ###
-# Add division_template, division, navy, and air movements/placements here.
+### 1939 Alternative OOB for GER (Communist Uprising) ###
+# Using standard vanilla-like templates for Germany
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "5. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "6. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "7. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "8. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "9. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "10. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "11. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "12. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "13. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "14. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "15. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "16. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "17. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "18. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "19. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "20. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "21. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "22. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "23. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "24. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "25. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "26. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "27. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "28. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "29. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "30. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "31. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "32. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "33. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "34. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "35. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "36. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "37. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "38. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "39. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "40. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "41. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "42. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "43. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "44. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "45. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "46. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "47. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "48. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "49. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "50. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "51. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "52. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "53. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "54. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "55. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "56. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "57. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "58. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "59. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "60. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "61. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "62. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "63. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "64. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "65. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "66. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "67. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "68. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "69. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "70. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "71. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "72. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "73. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "74. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "75. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "76. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "77. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "78. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "79. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "80. Rote Garde Division"
+		location = 6486 # Placeholder Province ID (e.g., Berlin Region)
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1. Volkspanzer-Division"
+		location = 6486
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "2. Volkspanzer-Division"
+		location = 6486
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "3. Volkspanzer-Division"
+		location = 6486
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+
+	# --- Cavalry / Garrison ---
+	division = {
+		name = "1. Arbeitermiliz"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2. Arbeitermiliz"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3. Arbeitermiliz"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4. Arbeitermiliz"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5. Arbeitermiliz"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6. Arbeitermiliz"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "7. Arbeitermiliz"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "8. Arbeitermiliz"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "9. Arbeitermiliz"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "10. Arbeitermiliz"
+		location = 6486
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+}
