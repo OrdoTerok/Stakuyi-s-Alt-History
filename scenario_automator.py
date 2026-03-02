@@ -1586,18 +1586,34 @@ FILTERED_REWARDS = [
     "add_command_power",
     "custom_effect_tooltip",
     "add_named_threat",
-    "start_civil_war"
+    "start_civil_war",
+    "country_event",
+    "news_event",
+    "declare_war",
+    "create_wargoal"
 ]
 
 def clean_rewards(reward_block: str) -> str:
-    """Removes 'fluff' rewards so day 1 scenarios aren't overpowered."""
+    """Removes 'fluff' and conflicting event rewards so day 1 scenarios aren't overpowered/buggy."""
     if not reward_block: return ""
     lines = reward_block.split('\n')
     out: list[str] = []
+    skip_depth = 0
+    
     for line in lines:
-        # If any filtered keyword is in the line, we skip it
-        if any(keyword in line for keyword in FILTERED_REWARDS):
+        # Are we currently skipping a block?
+        if skip_depth > 0:
+            skip_depth += line.count('{')
+            skip_depth -= line.count('}')
             continue
+            
+        # If any filtered keyword is in the line, we start skipping
+        if any(keyword in line for keyword in FILTERED_REWARDS):
+            if '{' in line:
+                skip_depth += line.count('{')
+                skip_depth -= line.count('}')
+            continue
+            
         out.append(line)
     return '\n'.join(out)
 

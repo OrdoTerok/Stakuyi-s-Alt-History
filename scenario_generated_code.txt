@@ -523,19 +523,17 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace } }
 				# Rewards for USA_america_first
 				add_popularity = { ideology = fascism popularity = 0.1 }
-				# Rewards for USA_ally_with_the_silver_shirts
-				add_popularity = { ideology = fascism popularity = 0.15 }
 				# Rewards for USA_corporate_statism
 				random_owned_controlled_state = {
                 limit = { free_building_slots = { building = industrial_complex size > 0 } }
                 add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
             }
+				# Rewards for USA_ally_with_the_silver_shirts
+				add_popularity = { ideology = fascism popularity = 0.15 }
 				# Rewards for USA_voter_registration_act
 				add_popularity = { ideology = fascism popularity = 0.2 }
 				# Rewards for USA_paramilitary_training
 				add_popularity = { ideology = fascism popularity = 0.1 }
-				# Rewards for USA_the_national_defense_state
-				set_rule = { can_declare_war_without_wargoal_when_in_war = yes }
 				# Rewards for USA_the_fascist_menace
 				set_politics = { ruling_party = fascism elections_allowed = no }
 				# Rebuilding State Tier logic
@@ -610,14 +608,8 @@ custom_game_rule = {
 				add_popularity = { ideology = neutrality popularity = 0.2 }
 				# Rewards for GER_communist_uprising
 				add_popularity = { ideology = communism popularity = 0.3 }
-				# Rewards for GER_anschluss
-				create_wargoal = { type = annex_everything target = AUS }
-				# Rewards for GER_demand_sudetenland
-				create_wargoal = { type = annex_everything target = CZE }
 				# Rewards for GER_befriend_poland
 				add_popularity = { ideology = fascism popularity = 0.1 }
-				# Rewards for GER_danzig_or_war
-				create_wargoal = { type = annex_everything target = POL }
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -707,13 +699,13 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution } }
-				# Rewards for SOV_the_center
-				add_ideas = SOV_stalin_cult_of_personality
 				# Rewards for SOV_beaten_but_not_defeated
 				add_stability = -0.2
                         add_popularity = { ideology = neutrality popularity = 0.2 }
                         add_popularity = { ideology = fascism popularity = 0.1 }
                         add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for SOV_the_center
+				add_ideas = SOV_stalin_cult_of_personality
 				# Rewards for SOV_permanent_revolution
 				add_ideas = SOV_permanent_revolution_idea
 				# Rebuilding State Tier logic
@@ -728,13 +720,13 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy } }
-				# Rewards for SOV_the_center
-				add_ideas = SOV_stalin_cult_of_personality
 				# Rewards for SOV_beaten_but_not_defeated
 				add_stability = -0.2
                         add_popularity = { ideology = neutrality popularity = 0.2 }
                         add_popularity = { ideology = fascism popularity = 0.1 }
                         add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for SOV_the_center
+				add_ideas = SOV_stalin_cult_of_personality
 				# Rewards for SOV_the_new_economic_policy
 				add_ideas = SOV_nep_idea
 				# Rebuilding State Tier logic
@@ -756,10 +748,10 @@ custom_game_rule = {
                         add_popularity = { ideology = neutrality popularity = 0.2 }
                         add_popularity = { ideology = fascism popularity = 0.1 }
                         add_popularity = { ideology = democratic popularity = 0.1 }
-				# Rewards for SOV_a_new_russia
-				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for SOV_the_fascist_destiny
 				set_politics = { ruling_party = fascism elections_allowed = no }
+				# Rewards for SOV_a_new_russia
+				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for SOV_the_romanovs_restored
 				set_politics = { ruling_party = neutrality elections_allowed = no }
 				# Rebuilding State Tier logic
@@ -808,10 +800,10 @@ custom_game_rule = {
                         add_popularity = { ideology = neutrality popularity = 0.2 }
                         add_popularity = { ideology = fascism popularity = 0.1 }
                         add_popularity = { ideology = democratic popularity = 0.1 }
-				# Rewards for SOV_a_new_russia
-				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for SOV_the_romanovs_restored
 				set_politics = { ruling_party = neutrality elections_allowed = no }
+				# Rewards for SOV_a_new_russia
+				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for SOV_the_fascist_destiny
 				set_politics = { ruling_party = fascism elections_allowed = no }
 				# Rewards for SOV_the_russian_fascist_party
@@ -831,12 +823,12 @@ custom_game_rule = {
 		ENG = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill } }
+				# Rewards for ENG_a_change_in_course
+				add_popularity = { ideology = neutrality popularity = 0.1 }
 				# Rewards for ENG_organize_the_blackshirts
 				add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for ENG_concessions_to_the_trade_unions
 				add_popularity = { ideology = communism popularity = 0.1 }
-				# Rewards for ENG_a_change_in_course
-				add_popularity = { ideology = neutrality popularity = 0.1 }
 				# Rewards for ENG_steady_as_she_goes
 				add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for ENG_rearmament
@@ -882,12 +874,12 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist } }
+				# Rewards for ENG_a_change_in_course
+				add_popularity = { ideology = neutrality popularity = 0.1 }
 				# Rewards for ENG_steady_as_she_goes
 				add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for ENG_concessions_to_the_trade_unions
 				add_popularity = { ideology = communism popularity = 0.1 }
-				# Rewards for ENG_a_change_in_course
-				add_popularity = { ideology = neutrality popularity = 0.1 }
 				# Rewards for ENG_organize_the_blackshirts
 				add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for ENG_march_on_london
@@ -904,12 +896,12 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain } }
+				# Rewards for ENG_a_change_in_course
+				add_popularity = { ideology = neutrality popularity = 0.1 }
 				# Rewards for ENG_steady_as_she_goes
 				add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for ENG_organize_the_blackshirts
 				add_popularity = { ideology = fascism popularity = 0.1 }
-				# Rewards for ENG_a_change_in_course
-				add_popularity = { ideology = neutrality popularity = 0.1 }
 				# Rewards for ENG_concessions_to_the_trade_unions
 				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for ENG_the_communist_alternative
@@ -1038,13 +1030,8 @@ custom_game_rule = {
 				add_popularity = { ideology = fascism popularity = 0.15 }
 				# Rewards for JAP_nationalize_state_shinto
 				add_ideas = JAP_state_shinto_idea
-				# Rewards for JAP_marco_polo_bridge_incident
-				create_wargoal = { type = annex_everything target = CHI }
 				# Rewards for JAP_strike_south_doctrine
-				create_wargoal = { type = annex_everything target = HOL }
-                        create_wargoal = { type = annex_everything target = ENG }
-                        create_wargoal = { type = annex_everything target = USA }
-                        add_ideas = JAP_strike_south
+				add_ideas = JAP_strike_south
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1192,17 +1179,17 @@ custom_game_rule = {
 		POL = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution } }
-				# Rewards for POL_the_morges_front
-				set_politics = { ruling_party = democratic }
-            add_popularity = { ideology = democratic popularity = 0.1 }
-				# Rewards for POL_the_polish_communist_party
-				set_politics = { ruling_party = communism }
-            add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for POL_the_falanga
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for POL_the_regency_council
 				add_stability = -0.1
+				# Rewards for POL_the_polish_communist_party
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for POL_the_morges_front
+				set_politics = { ruling_party = democratic }
+            add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for POL_the_castle
 				add_popularity = { ideology = neutrality popularity = 0.1 }
 				# Rewards for POL_april_constitution
@@ -1219,16 +1206,16 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_pol_scenario_start_rule option = falanga } }
-				# Rewards for POL_the_morges_front
-				set_politics = { ruling_party = democratic }
-            add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for POL_the_castle
+				add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rewards for POL_the_regency_council
+				add_stability = -0.1
 				# Rewards for POL_the_polish_communist_party
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
-				# Rewards for POL_the_regency_council
-				add_stability = -0.1
-				# Rewards for POL_the_castle
-				add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rewards for POL_the_morges_front
+				set_politics = { ruling_party = democratic }
+            add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for POL_the_falanga
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
@@ -1244,16 +1231,16 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern } }
-				# Rewards for POL_the_morges_front
-				set_politics = { ruling_party = democratic }
-            add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for POL_the_castle
+				add_popularity = { ideology = neutrality popularity = 0.1 }
 				# Rewards for POL_the_falanga
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for POL_the_regency_council
 				add_stability = -0.1
-				# Rewards for POL_the_castle
-				add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rewards for POL_the_morges_front
+				set_politics = { ruling_party = democratic }
+            add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for POL_the_polish_communist_party
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
@@ -1269,17 +1256,17 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council } }
-				# Rewards for POL_the_morges_front
-				set_politics = { ruling_party = democratic }
-            add_popularity = { ideology = democratic popularity = 0.1 }
-				# Rewards for POL_the_polish_communist_party
-				set_politics = { ruling_party = communism }
-            add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for POL_the_castle
+				add_popularity = { ideology = neutrality popularity = 0.1 }
 				# Rewards for POL_the_falanga
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
-				# Rewards for POL_the_castle
-				add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rewards for POL_the_polish_communist_party
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for POL_the_morges_front
+				set_politics = { ruling_party = democratic }
+            add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for POL_the_regency_council
 				add_stability = -0.1
 				# Rewards for POL_invite_the_king
@@ -1298,12 +1285,12 @@ custom_game_rule = {
 		CAN = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies } }
-				# Rewards for CAN_patriation
-				add_autonomy_ratio = { value = 0.5 }
-				# Rewards for CAN_bring_the_unions_to_the_table
-				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for CAN_swastika_clubs
 				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for CAN_bring_the_unions_to_the_table
+				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for CAN_patriation
+				add_autonomy_ratio = { value = 0.5 }
 				# Rewards for CAN_send_in_the_zombies
 				add_manpower = 50000
 				# Rebuilding State Tier logic
@@ -1318,10 +1305,10 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada } }
-				# Rewards for CAN_patriation
-				add_autonomy_ratio = { value = 0.5 }
 				# Rewards for CAN_bring_the_unions_to_the_table
 				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for CAN_patriation
+				add_autonomy_ratio = { value = 0.5 }
 				# Rewards for CAN_swastika_clubs
 				add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for CAN_national_unity_party
@@ -1338,10 +1325,10 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada } }
-				# Rewards for CAN_patriation
-				add_autonomy_ratio = { value = 0.5 }
 				# Rewards for CAN_swastika_clubs
 				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for CAN_patriation
+				add_autonomy_ratio = { value = 0.5 }
 				# Rewards for CAN_bring_the_unions_to_the_table
 				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for CAN_communist_revolution
@@ -1360,12 +1347,12 @@ custom_game_rule = {
 		AST = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_ast_scenario_start_rule option = never_gallipoli_again } }
-				# Rewards for AST_empower_the_workers
-				add_popularity = { ideology = fascism popularity = 0.1 }
-				# Rewards for AST_the_communist_party_of_australia
-				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for AST_support_the_centre_party
 				add_autonomy_ratio = { value = 0.5 }
+				# Rewards for AST_the_communist_party_of_australia
+				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for AST_empower_the_workers
+				add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1378,10 +1365,10 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_ast_scenario_start_rule option = australia_first } }
-				# Rewards for AST_the_communist_party_of_australia
-				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for AST_support_the_centre_party
 				add_autonomy_ratio = { value = 0.5 }
+				# Rewards for AST_the_communist_party_of_australia
+				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for AST_empower_the_workers
 				add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for AST_the_australia_first_movement
@@ -1398,10 +1385,10 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_ast_scenario_start_rule option = communist_australia } }
-				# Rewards for AST_empower_the_workers
-				add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for AST_support_the_centre_party
 				add_autonomy_ratio = { value = 0.5 }
+				# Rewards for AST_empower_the_workers
+				add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for AST_the_communist_party_of_australia
 				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for AST_workers_revolution
@@ -1762,14 +1749,14 @@ custom_game_rule = {
 		BRA = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo } }
-				# Rewards for BRA_integralist_uprising
-				set_politics = { ruling_party = fascism }
-            add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for BRA_the_1937_elections
+				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for BRA_the_aln_revolt
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
-				# Rewards for BRA_the_1937_elections
-				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Rewards for BRA_integralist_uprising
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -1782,11 +1769,11 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist } }
+				# Rewards for BRA_the_1937_elections
+				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for BRA_the_aln_revolt
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
-				# Rewards for BRA_the_1937_elections
-				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for BRA_integralist_uprising
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
@@ -1802,11 +1789,11 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt } }
+				# Rewards for BRA_the_1937_elections
+				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for BRA_integralist_uprising
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
-				# Rewards for BRA_the_1937_elections
-				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for BRA_the_aln_revolt
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
@@ -1915,10 +1902,10 @@ custom_game_rule = {
 		SWE = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus } }
-				# Rewards for SWE_sveriges_kommunistiska_parti
-				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for SWE_the_right_wing_coalition
 				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for SWE_sveriges_kommunistiska_parti
+				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2111,11 +2098,11 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_bul_scenario_start_rule option = zveno } }
-				# Rewards for BUL_the_tsars_dictatorship
-				set_politics = { ruling_party = neutrality }
 				# Rewards for BUL_the_fatherland_front
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for BUL_the_tsars_dictatorship
+				set_politics = { ruling_party = neutrality }
 				# Rewards for BUL_zveno
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
@@ -2131,11 +2118,11 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_bul_scenario_start_rule option = fatherland_front } }
-				# Rewards for BUL_the_tsars_dictatorship
-				set_politics = { ruling_party = neutrality }
 				# Rewards for BUL_zveno
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for BUL_the_tsars_dictatorship
+				set_politics = { ruling_party = neutrality }
 				# Rewards for BUL_the_fatherland_front
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
@@ -2233,12 +2220,12 @@ custom_game_rule = {
 		CZE = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_cze_scenario_start_rule option = political_direction } }
-				# Rewards for CZE_communist_direction
-				set_politics = { ruling_party = communism }
-            add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for CZE_fascist_direction
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for CZE_communist_direction
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2399,10 +2386,10 @@ custom_game_rule = {
 		FIN = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_fin_scenario_start_rule option = finnish_model } }
-				# Rewards for FIN_the_red_guards
-				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for FIN_the_lapua_movement
 				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for FIN_the_red_guards
+				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2617,12 +2604,12 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_man_scenario_start_rule option = obedience } }
 				# Rewards for MAN_assertiveness
 				set_politics = { ruling_party = neutrality }
-				# Rewards for MAN_the_democratic_party
-				set_politics = { ruling_party = democratic elections_allowed = yes }
-            add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for MAN_the_communist_party
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for MAN_the_democratic_party
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+            add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for MAN_obedience
 				set_politics = { ruling_party = fascism }
 				# Rebuilding State Tier logic
@@ -2637,14 +2624,14 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_man_scenario_start_rule option = assertiveness } }
+				# Rewards for MAN_obedience
+				set_politics = { ruling_party = fascism }
 				# Rewards for MAN_the_democratic_party
 				set_politics = { ruling_party = democratic elections_allowed = yes }
             add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for MAN_the_communist_party
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
-				# Rewards for MAN_obedience
-				set_politics = { ruling_party = fascism }
 				# Rewards for MAN_assertiveness
 				set_politics = { ruling_party = neutrality }
 				# Rebuilding State Tier logic
@@ -2683,11 +2670,11 @@ custom_game_rule = {
 				limit = { has_game_rule = { rule = SAH_man_scenario_start_rule option = communist } }
 				# Rewards for MAN_assertiveness
 				set_politics = { ruling_party = neutrality }
+				# Rewards for MAN_obedience
+				set_politics = { ruling_party = fascism }
 				# Rewards for MAN_the_democratic_party
 				set_politics = { ruling_party = democratic elections_allowed = yes }
             add_popularity = { ideology = democratic popularity = 0.1 }
-				# Rewards for MAN_obedience
-				set_politics = { ruling_party = fascism }
 				# Rewards for MAN_the_communist_party
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
@@ -2705,10 +2692,10 @@ custom_game_rule = {
 		NOR = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_nor_scenario_start_rule option = nygaardsvold } }
-				# Rewards for NOR_the_communist_party
-				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for NOR_the_right_wing_coalition
 				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for NOR_the_communist_party
+				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rebuilding State Tier logic
 				if = {
 					limit = { date < 1938.1.1 }
@@ -2843,11 +2830,11 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_phi_scenario_start_rule option = ganap } }
+				# Rewards for PHI_the_commonwealth
+				set_politics = { ruling_party = democratic }
 				# Rewards for PHI_the_hukbalahap
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
-				# Rewards for PHI_the_commonwealth
-				set_politics = { ruling_party = democratic }
 				# Rewards for PHI_the_ganap_party
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
@@ -2941,11 +2928,11 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_prc_scenario_start_rule option = orthodox_marxism } }
+				# Rewards for PRC_maoism
+				set_politics = { ruling_party = communism }
 				# Rewards for PRC_social_democracy
 				set_politics = { ruling_party = democratic elections_allowed = yes }
             add_popularity = { ideology = democratic popularity = 0.1 }
-				# Rewards for PRC_maoism
-				set_politics = { ruling_party = communism }
 				# Rewards for PRC_orthodox_marxism
 				add_popularity = { ideology = communism popularity = 0.1 }
             add_stability = 0.05
@@ -3015,15 +3002,15 @@ custom_game_rule = {
 		WRL = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists } }
+				# Rewards for WRL_military_dictatorship
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for WRL_democratic_reforms
 				set_politics = { ruling_party = democratic }
             add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for WRL_cooperate_with_the_communists
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
-				# Rewards for WRL_military_dictatorship
-				set_politics = { ruling_party = fascism }
-            add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for WRL_cooperate_with_the_nationalists
 				set_politics = { ruling_party = neutrality }
 				# Rebuilding State Tier logic
@@ -3038,14 +3025,14 @@ custom_game_rule = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists } }
+				# Rewards for WRL_military_dictatorship
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for WRL_democratic_reforms
 				set_politics = { ruling_party = democratic }
             add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for WRL_cooperate_with_the_nationalists
 				set_politics = { ruling_party = neutrality }
-				# Rewards for WRL_military_dictatorship
-				set_politics = { ruling_party = fascism }
-            add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for WRL_cooperate_with_the_communists
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }

@@ -15,13 +15,12 @@ country_event = {
 	hidden = yes
 
 	immediate = {
+		if = { limit = { date > 1938.1.1 }
+			SAH_adjust_1939_units = yes
+			SAH_purge_1939_ideas = yes
+		}
 
-		if = {
-					limit = { date > 1938.1.1 }
-					SAH_adjust_1939_units = yes
-				}
-
-# --- AUTO-GENERATED SCENARIO STARTS ---
+		# --- AUTO-GENERATED SCENARIO STARTS ---
 		USA = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar } }
@@ -33,26 +32,42 @@ country_event = {
 				add_ideas = USA_strict_neutrality
 				# Rewards for USA_the_american_caesar
 				set_politics = { ruling_party = neutrality elections_allowed = no }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace } }
 				# Rewards for USA_america_first
 				add_popularity = { ideology = fascism popularity = 0.1 }
-				# Rewards for USA_ally_with_the_silver_shirts
-				add_popularity = { ideology = fascism popularity = 0.15 }
 				# Rewards for USA_corporate_statism
 				random_owned_controlled_state = {
                 limit = { free_building_slots = { building = industrial_complex size > 0 } }
                 add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
             }
+				# Rewards for USA_ally_with_the_silver_shirts
+				add_popularity = { ideology = fascism popularity = 0.15 }
 				# Rewards for USA_voter_registration_act
 				add_popularity = { ideology = fascism popularity = 0.2 }
 				# Rewards for USA_paramilitary_training
 				add_popularity = { ideology = fascism popularity = 0.1 }
-				# Rewards for USA_the_national_defense_state
-				set_rule = { can_declare_war_without_wargoal_when_in_war = yes }
 				# Rewards for USA_the_fascist_menace
 				set_politics = { ruling_party = fascism elections_allowed = no }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist } }
@@ -64,11 +79,27 @@ country_event = {
 				add_popularity = { ideology = communism popularity = 0.2 }
 				# Rewards for USA_the_peoples_republic
 				set_politics = { ruling_party = communism elections_allowed = no }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes } }
 				# Rewards for USA_continue_the_new_deal
 				add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for USA_wpa
+				random_owned_controlled_state = {
+                limit = { free_building_slots = { building = industrial_complex size > 0 } }
+                add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+            }
+				# Rewards for USA_war_production_board
+				add_ideas = USA_war_production_board
 				# Rewards for USA_neutrality_act
 				add_ideas = neutrality_idea
 				# Rewards for USA_arsenal_of_democracy
@@ -80,15 +111,17 @@ country_event = {
             }
 				# Rewards for USA_selective_service_act
 				add_ideas = USA_selective_service_idea
-				# Rewards for USA_wpa
-				random_owned_controlled_state = {
-                limit = { free_building_slots = { building = industrial_complex size > 0 } }
-                add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
-            }
-				# Rewards for USA_war_production_board
-				add_ideas = USA_war_production_board
 				# Rewards for USA_the_giant_wakes
 				remove_ideas = USA_great_depression
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		GER = {
@@ -98,14 +131,17 @@ country_event = {
 				add_popularity = { ideology = neutrality popularity = 0.2 }
 				# Rewards for GER_communist_uprising
 				add_popularity = { ideology = communism popularity = 0.3 }
-				# Rewards for GER_anschluss
-				create_wargoal = { type = annex_everything target = AUS }
-				# Rewards for GER_demand_sudetenland
-				create_wargoal = { type = annex_everything target = CZE }
 				# Rewards for GER_befriend_poland
 				add_popularity = { ideology = fascism popularity = 0.1 }
-				# Rewards for GER_danzig_or_war
-				create_wargoal = { type = annex_everything target = POL }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_ger_scenario_start_rule option = return_of_kaiser } }
@@ -120,6 +156,15 @@ country_event = {
 				# Rewards for GER_return_of_the_kaiser
 				add_ideas = GER_kaiser_returns
                         add_stability = 0.1
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_ger_scenario_start_rule option = communist_uprising } }
@@ -129,6 +174,15 @@ country_event = {
 				add_popularity = { ideology = communism popularity = 0.3 }
 				# Rewards for GER_the_workers_republic
 				set_politics = { ruling_party = communism elections_allowed = no }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_ger_scenario_start_rule option = anti_soviet_pact } }
@@ -142,6 +196,15 @@ country_event = {
 				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for GER_support_democracy_in_europe
 				add_popularity = { ideology = democratic popularity = 0.15 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		SOV = {
@@ -159,27 +222,45 @@ country_event = {
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_sov_scenario_start_rule option = permanent_revolution } }
-				# Rewards for SOV_the_center
-				add_ideas = SOV_stalin_cult_of_personality
 				# Rewards for SOV_beaten_but_not_defeated
 				add_stability = -0.2
                         add_popularity = { ideology = neutrality popularity = 0.2 }
                         add_popularity = { ideology = fascism popularity = 0.1 }
                         add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for SOV_the_center
+				add_ideas = SOV_stalin_cult_of_personality
 				# Rewards for SOV_permanent_revolution
 				add_ideas = SOV_permanent_revolution_idea
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_sov_scenario_start_rule option = new_economic_policy } }
-				# Rewards for SOV_the_center
-				add_ideas = SOV_stalin_cult_of_personality
 				# Rewards for SOV_beaten_but_not_defeated
 				add_stability = -0.2
                         add_popularity = { ideology = neutrality popularity = 0.2 }
                         add_popularity = { ideology = fascism popularity = 0.1 }
                         add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for SOV_the_center
+				add_ideas = SOV_stalin_cult_of_personality
 				# Rewards for SOV_the_new_economic_policy
 				add_ideas = SOV_nep_idea
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_sov_scenario_start_rule option = tsarist_restored } }
@@ -190,12 +271,21 @@ country_event = {
                         add_popularity = { ideology = neutrality popularity = 0.2 }
                         add_popularity = { ideology = fascism popularity = 0.1 }
                         add_popularity = { ideology = democratic popularity = 0.1 }
-				# Rewards for SOV_a_new_russia
-				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for SOV_the_fascist_destiny
 				set_politics = { ruling_party = fascism elections_allowed = no }
+				# Rewards for SOV_a_new_russia
+				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for SOV_the_romanovs_restored
 				set_politics = { ruling_party = neutrality elections_allowed = no }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_sov_scenario_start_rule option = republic } }
@@ -214,6 +304,15 @@ country_event = {
 				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for SOV_the_duma
 				add_stability = 0.15
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_sov_scenario_start_rule option = fascist_destiny } }
@@ -224,76 +323,121 @@ country_event = {
                         add_popularity = { ideology = neutrality popularity = 0.2 }
                         add_popularity = { ideology = fascism popularity = 0.1 }
                         add_popularity = { ideology = democratic popularity = 0.1 }
-				# Rewards for SOV_a_new_russia
-				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for SOV_the_romanovs_restored
 				set_politics = { ruling_party = neutrality elections_allowed = no }
+				# Rewards for SOV_a_new_russia
+				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for SOV_the_fascist_destiny
 				set_politics = { ruling_party = fascism elections_allowed = no }
 				# Rewards for SOV_the_russian_fascist_party
 				add_ideas = SOV_russian_fascism
                         add_stability = 0.1
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		ENG = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill } }
-				# Rewards for ENG_concessions_to_the_trade_unions
-				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for ENG_a_change_in_course
 				add_popularity = { ideology = neutrality popularity = 0.1 }
 				# Rewards for ENG_organize_the_blackshirts
 				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for ENG_concessions_to_the_trade_unions
+				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for ENG_steady_as_she_goes
 				add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for ENG_rearmament
 				add_ideas = ENG_rearmament_idea
-				# Rewards for ENG_early_mobilization
-				add_ideas = early_mobilization
 				# Rewards for ENG_the_shadow_scheme
 				random_owned_controlled_state = {
                 limit = { free_building_slots = { building = industrial_complex size > 0 } }
                 add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
             }
+				# Rewards for ENG_early_mobilization
+				add_ideas = early_mobilization
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party } }
-				# Rewards for ENG_concessions_to_the_trade_unions
-				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for ENG_steady_as_she_goes
 				add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for ENG_organize_the_blackshirts
 				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for ENG_concessions_to_the_trade_unions
+				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for ENG_a_change_in_course
 				add_popularity = { ideology = neutrality popularity = 0.1 }
 				# Rewards for ENG_the_kings_party
 				set_politics = { ruling_party = neutrality elections_allowed = no }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist } }
-				# Rewards for ENG_concessions_to_the_trade_unions
-				add_popularity = { ideology = communism popularity = 0.1 }
-				# Rewards for ENG_steady_as_she_goes
-				add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for ENG_a_change_in_course
 				add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rewards for ENG_steady_as_she_goes
+				add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for ENG_concessions_to_the_trade_unions
+				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for ENG_organize_the_blackshirts
 				add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for ENG_march_on_london
 				set_politics = { ruling_party = fascism elections_allowed = no }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain } }
+				# Rewards for ENG_a_change_in_course
+				add_popularity = { ideology = neutrality popularity = 0.1 }
 				# Rewards for ENG_steady_as_she_goes
 				add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for ENG_organize_the_blackshirts
 				add_popularity = { ideology = fascism popularity = 0.1 }
-				# Rewards for ENG_a_change_in_course
-				add_popularity = { ideology = neutrality popularity = 0.1 }
 				# Rewards for ENG_concessions_to_the_trade_unions
 				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for ENG_the_communist_alternative
 				set_politics = { ruling_party = communism elections_allowed = no }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		FRA = {
@@ -312,6 +456,15 @@ country_event = {
                         add_stability = -0.05
 				# Rewards for FRA_the_french_commune
 				set_politics = { ruling_party = communism elections_allowed = no }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_fra_scenario_start_rule option = legitimist } }
@@ -323,13 +476,22 @@ country_event = {
                         add_popularity = { ideology = neutrality popularity = 0.1 }
 				# Rewards for FRA_laissez_faire
 				set_politics = { ruling_party = fascism elections_allowed = no }
-				# Rewards for FRA_bonapartist_restoration
-				set_politics = { ruling_party = neutrality elections_allowed = no }
 				# Rewards for FRA_orleanist_restoration
 				set_politics = { ruling_party = neutrality elections_allowed = no }
                         add_stability = 0.1
+				# Rewards for FRA_bonapartist_restoration
+				set_politics = { ruling_party = neutrality elections_allowed = no }
 				# Rewards for FRA_legitimist_restoration
 				set_politics = { ruling_party = neutrality elections_allowed = no }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_fra_scenario_start_rule option = bonapartist } }
@@ -341,13 +503,22 @@ country_event = {
                         add_popularity = { ideology = neutrality popularity = 0.1 }
 				# Rewards for FRA_laissez_faire
 				set_politics = { ruling_party = fascism elections_allowed = no }
-				# Rewards for FRA_legitimist_restoration
-				set_politics = { ruling_party = neutrality elections_allowed = no }
 				# Rewards for FRA_orleanist_restoration
 				set_politics = { ruling_party = neutrality elections_allowed = no }
                         add_stability = 0.1
+				# Rewards for FRA_legitimist_restoration
+				set_politics = { ruling_party = neutrality elections_allowed = no }
 				# Rewards for FRA_bonapartist_restoration
 				set_politics = { ruling_party = neutrality elections_allowed = no }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_fra_scenario_start_rule option = latin_entente } }
@@ -359,6 +530,15 @@ country_event = {
                         add_popularity = { ideology = neutrality popularity = 0.1 }
 				# Rewards for FRA_laissez_faire
 				set_politics = { ruling_party = fascism elections_allowed = no }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		JAP = {
@@ -373,13 +553,17 @@ country_event = {
 				add_popularity = { ideology = fascism popularity = 0.15 }
 				# Rewards for JAP_nationalize_state_shinto
 				add_ideas = JAP_state_shinto_idea
-				# Rewards for JAP_marco_polo_bridge_incident
-				create_wargoal = { type = annex_everything target = CHI }
 				# Rewards for JAP_strike_south_doctrine
-				create_wargoal = { type = annex_everything target = HOL }
-                        create_wargoal = { type = annex_everything target = ENG }
-                        create_wargoal = { type = annex_everything target = USA }
-                        add_ideas = JAP_strike_south
+				add_ideas = JAP_strike_south
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_jap_scenario_start_rule option = showa_restoration } }
@@ -394,13 +578,22 @@ country_event = {
 				set_politics = { ruling_party = neutrality elections_allowed = no }
                         add_ideas = JAP_showa_restoration_idea
                         add_stability = 0.1
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_jap_scenario_start_rule option = democratic_diet } }
-				# Rewards for JAP_purge_the_kodoha_faction
-				add_popularity = { ideology = fascism popularity = 0.15 }
 				# Rewards for JAP_support_the_kodoha_faction
 				add_popularity = { ideology = neutrality popularity = 0.15 }
+				# Rewards for JAP_purge_the_kodoha_faction
+				add_popularity = { ideology = fascism popularity = 0.15 }
 				# Rewards for JAP_the_unthinkable_option
 				add_popularity = { ideology = democratic popularity = 0.15 }
                         add_popularity = { ideology = communism popularity = 0.15 }
@@ -409,13 +602,22 @@ country_event = {
                         add_stability = -0.1
 				# Rewards for JAP_restore_the_diet
 				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_jap_scenario_start_rule option = communist_japan } }
-				# Rewards for JAP_purge_the_kodoha_faction
-				add_popularity = { ideology = fascism popularity = 0.15 }
 				# Rewards for JAP_support_the_kodoha_faction
 				add_popularity = { ideology = neutrality popularity = 0.15 }
+				# Rewards for JAP_purge_the_kodoha_faction
+				add_popularity = { ideology = fascism popularity = 0.15 }
 				# Rewards for JAP_the_unthinkable_option
 				add_popularity = { ideology = democratic popularity = 0.15 }
                         add_popularity = { ideology = communism popularity = 0.15 }
@@ -424,93 +626,183 @@ country_event = {
 				# Rewards for JAP_the_japanese_communist_party
 				set_politics = { ruling_party = communism elections_allowed = no }
                         add_stability = -0.1
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		ITA = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_ita_scenario_start_rule option = pact_of_steel } }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_ita_scenario_start_rule option = latin_bloc } }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_ita_scenario_start_rule option = kingdom_of_god } }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_ita_scenario_start_rule option = republic_of_italy } }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_ita_scenario_start_rule option = communist_italy } }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		POL = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution } }
-				# Rewards for POL_the_morges_front
-				set_politics = { ruling_party = democratic }
-            add_popularity = { ideology = democratic popularity = 0.1 }
-				# Rewards for POL_the_polish_communist_party
-				set_politics = { ruling_party = communism }
-            add_popularity = { ideology = communism popularity = 0.1 }
-				# Rewards for POL_the_regency_council
-				add_stability = -0.1
 				# Rewards for POL_the_falanga
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for POL_the_regency_council
+				add_stability = -0.1
+				# Rewards for POL_the_polish_communist_party
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for POL_the_morges_front
+				set_politics = { ruling_party = democratic }
+            add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for POL_the_castle
 				add_popularity = { ideology = neutrality popularity = 0.1 }
 				# Rewards for POL_april_constitution
 				add_stability = 0.1
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_pol_scenario_start_rule option = falanga } }
-				# Rewards for POL_the_morges_front
-				set_politics = { ruling_party = democratic }
-            add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rewards for POL_the_castle
+				add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rewards for POL_the_regency_council
+				add_stability = -0.1
 				# Rewards for POL_the_polish_communist_party
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
-				# Rewards for POL_the_regency_council
-				add_stability = -0.1
-				# Rewards for POL_the_castle
-				add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rewards for POL_the_morges_front
+				set_politics = { ruling_party = democratic }
+            add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for POL_the_falanga
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern } }
-				# Rewards for POL_the_morges_front
-				set_politics = { ruling_party = democratic }
-            add_popularity = { ideology = democratic popularity = 0.1 }
-				# Rewards for POL_the_regency_council
-				add_stability = -0.1
 				# Rewards for POL_the_castle
 				add_popularity = { ideology = neutrality popularity = 0.1 }
 				# Rewards for POL_the_falanga
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for POL_the_regency_council
+				add_stability = -0.1
+				# Rewards for POL_the_morges_front
+				set_politics = { ruling_party = democratic }
+            add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for POL_the_polish_communist_party
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council } }
-				# Rewards for POL_the_morges_front
-				set_politics = { ruling_party = democratic }
-            add_popularity = { ideology = democratic popularity = 0.1 }
-				# Rewards for POL_the_polish_communist_party
-				set_politics = { ruling_party = communism }
-            add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for POL_the_castle
 				add_popularity = { ideology = neutrality popularity = 0.1 }
 				# Rewards for POL_the_falanga
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for POL_the_polish_communist_party
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for POL_the_morges_front
+				set_politics = { ruling_party = democratic }
+            add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for POL_the_regency_council
 				add_stability = -0.1
 				# Rewards for POL_invite_the_king
 				set_politics = { ruling_party = neutrality elections_allowed = no }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		CAN = {
@@ -518,12 +810,21 @@ country_event = {
 				limit = { has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies } }
 				# Rewards for CAN_swastika_clubs
 				add_popularity = { ideology = fascism popularity = 0.1 }
-				# Rewards for CAN_patriation
-				add_autonomy_ratio = { value = 0.5 }
 				# Rewards for CAN_bring_the_unions_to_the_table
 				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for CAN_patriation
+				add_autonomy_ratio = { value = 0.5 }
 				# Rewards for CAN_send_in_the_zombies
 				add_manpower = 50000
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada } }
@@ -535,6 +836,15 @@ country_event = {
 				add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for CAN_national_unity_party
 				set_politics = { ruling_party = fascism }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada } }
@@ -546,6 +856,15 @@ country_event = {
 				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for CAN_communist_revolution
 				set_politics = { ruling_party = communism }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		AST = {
@@ -557,6 +876,15 @@ country_event = {
 				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for AST_empower_the_workers
 				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_ast_scenario_start_rule option = australia_first } }
@@ -568,6 +896,15 @@ country_event = {
 				add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for AST_the_australia_first_movement
 				set_politics = { ruling_party = fascism }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_ast_scenario_start_rule option = communist_australia } }
@@ -579,6 +916,15 @@ country_event = {
 				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for AST_workers_revolution
 				set_politics = { ruling_party = communism }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		SAF = {
@@ -586,6 +932,15 @@ country_event = {
 				limit = { has_game_rule = { rule = SAH_saf_scenario_start_rule option = appeasement } }
 				# Rewards for SAF_abandon_westminster
 				add_autonomy_ratio = { value = 0.5 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_saf_scenario_start_rule option = ossewabrandwag } }
@@ -594,6 +949,15 @@ country_event = {
 				# Rewards for SAF_support_the_ossewabrandwag
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.2 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_saf_scenario_start_rule option = anti_colonialist } }
@@ -602,6 +966,15 @@ country_event = {
 				# Rewards for SAF_anti_colonialist_crusade
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.2 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		RAJ = {
@@ -609,6 +982,15 @@ country_event = {
 				limit = { has_game_rule = { rule = SAH_raj_scenario_start_rule option = provincial_elections } }
 				# Rewards for RAJ_indian_national_congress
 				add_autonomy_ratio = { value = 0.5 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_raj_scenario_start_rule option = quit_india } }
@@ -616,6 +998,15 @@ country_event = {
 				add_autonomy_ratio = { value = 0.5 }
 				# Rewards for RAJ_quit_india_movement
 				add_stability = -0.05
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_raj_scenario_start_rule option = indian_national_army } }
@@ -626,11 +1017,29 @@ country_event = {
 				# Rewards for RAJ_indian_national_army
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.2 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		ROM = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_rom_scenario_start_rule option = preserve_romania } }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_rom_scenario_start_rule option = align_axis } }
@@ -638,6 +1047,15 @@ country_event = {
 				set_politics = { ruling_party = neutrality }
 				# Rewards for ROM_align_axis
 				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_rom_scenario_start_rule option = balkan_dominance } }
@@ -645,26 +1063,71 @@ country_event = {
 				set_politics = { ruling_party = neutrality }
 				# Rewards for ROM_the_balkan_dominance
 				create_faction = "The Balkan Entente"
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		YUG = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_yug_scenario_start_rule option = regency_council } }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_yug_scenario_start_rule option = tripartite_pact } }
 				# Rewards for YUG_sign_the_tripartite_pact
 				set_politics = { ruling_party = fascism }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_yug_scenario_start_rule option = communist_partisans } }
 				# Rewards for YUG_the_communist_partisans
 				set_politics = { ruling_party = communism }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_yug_scenario_start_rule option = western_focus } }
 				# Rewards for YUG_western_focus
 				random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 } } add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		GRE = {
@@ -675,6 +1138,15 @@ country_event = {
             add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for GRE_the_metaxas_dictatorship
 				set_politics = { ruling_party = neutrality }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea } }
@@ -685,6 +1157,15 @@ country_event = {
 				set_politics = { ruling_party = neutrality }
 				# Rewards for GRE_the_4th_of_august_regime
 				add_stability = 0.1
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_gre_scenario_start_rule option = venizelist } }
@@ -693,6 +1174,15 @@ country_event = {
 				# Rewards for GRE_the_venizelist_movement
 				set_politics = { ruling_party = democratic elections_allowed = yes }
             add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		TUR = {
@@ -702,6 +1192,15 @@ country_event = {
 				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for TUR_peace_at_home
 				set_politics = { ruling_party = neutrality }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_tur_scenario_start_rule option = multi_party } }
@@ -709,6 +1208,15 @@ country_event = {
 				set_politics = { ruling_party = neutrality }
 				# Rewards for TUR_multi_party_system
 				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		MEX = {
@@ -716,6 +1224,15 @@ country_event = {
 				limit = { has_game_rule = { rule = SAH_mex_scenario_start_rule option = prm } }
 				# Rewards for MEX_support_the_synarchists
 				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_mex_scenario_start_rule option = gold_shirts } }
@@ -723,6 +1240,15 @@ country_event = {
 				add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for MEX_the_gold_shirts
 				set_politics = { ruling_party = fascism }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_mex_scenario_start_rule option = hispanic_alliance } }
@@ -732,41 +1258,77 @@ country_event = {
 				set_politics = { ruling_party = fascism }
 				# Rewards for MEX_hispanic_alliance
 				create_faction = "The Hispanic Alliance"
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		BRA = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_bra_scenario_start_rule option = estado_novo } }
-				# Rewards for BRA_integralist_uprising
-				set_politics = { ruling_party = fascism }
-            add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for BRA_the_1937_elections
+				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for BRA_the_aln_revolt
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
-				# Rewards for BRA_the_1937_elections
-				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Rewards for BRA_integralist_uprising
+				set_politics = { ruling_party = fascism }
+            add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_bra_scenario_start_rule option = integralist } }
+				# Rewards for BRA_the_1937_elections
+				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for BRA_the_aln_revolt
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
-				# Rewards for BRA_the_1937_elections
-				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for BRA_integralist_uprising
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_bra_scenario_start_rule option = aln_revolt } }
+				# Rewards for BRA_the_1937_elections
+				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for BRA_integralist_uprising
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
-				# Rewards for BRA_the_1937_elections
-				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for BRA_the_aln_revolt
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		SPR = {
@@ -776,6 +1338,15 @@ country_event = {
 				set_politics = { ruling_party = fascism }
 				# Rewards for SPR_the_popular_front
 				set_politics = { ruling_party = communism }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_spr_scenario_start_rule option = falange } }
@@ -786,6 +1357,15 @@ country_event = {
 				# Rewards for SPR_the_falange
 				add_stability = 0.1
             add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_spr_scenario_start_rule option = anti_fascist_unity } }
@@ -795,6 +1375,15 @@ country_event = {
 				set_politics = { ruling_party = communism }
 				# Rewards for SPR_anti_fascist_unity
 				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		HOL = {
@@ -804,6 +1393,15 @@ country_event = {
 				add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for HOL_form_the_new_government
 				set_politics = { ruling_party = democratic }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_hol_scenario_start_rule option = anton_mussert } }
@@ -813,15 +1411,33 @@ country_event = {
 				add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for HOL_anton_mussert
 				set_politics = { ruling_party = fascism }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		SWE = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus } }
-				# Rewards for SWE_sveriges_kommunistiska_parti
-				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for SWE_the_right_wing_coalition
 				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for SWE_sveriges_kommunistiska_parti
+				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike } }
@@ -831,6 +1447,15 @@ country_event = {
 				add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for SWE_the_svea_rike
 				set_politics = { ruling_party = fascism }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic } }
@@ -840,6 +1465,15 @@ country_event = {
 				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for SWE_socialist_republic_of_sweden
 				set_politics = { ruling_party = communism }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		ARG = {
@@ -853,11 +1487,29 @@ country_event = {
 				limit = { has_game_rule = { rule = SAH_arg_scenario_start_rule option = radical_civic } }
 				# Rewards for ARG_the_radical_civic_union
 				add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_arg_scenario_start_rule option = peronist } }
 				# Rewards for ARG_the_peronist_movement
 				set_politics = { ruling_party = fascism }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		AUS = {
@@ -876,6 +1528,15 @@ country_event = {
 				set_politics = { ruling_party = neutrality }
 				# Rewards for AUS_austrofascism
 				set_politics = { ruling_party = fascism }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_aus_scenario_start_rule option = social_democrats } }
@@ -883,6 +1544,15 @@ country_event = {
 				set_politics = { ruling_party = neutrality }
 				# Rewards for AUS_the_social_democrats
 				add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		BEL = {
@@ -901,6 +1571,15 @@ country_event = {
 				set_politics = { ruling_party = democratic }
 				# Rewards for BEL_the_liberal_party
 				add_stability = 0.1
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_devastating_recovery
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_bel_scenario_start_rule option = rexist_party } }
@@ -908,6 +1587,15 @@ country_event = {
 				set_politics = { ruling_party = democratic }
 				# Rewards for BEL_the_rexist_party
 				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_devastating_recovery
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
 			}
 		}
 		BUL = {
@@ -921,6 +1609,15 @@ country_event = {
             add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for BUL_the_tsars_dictatorship
 				set_politics = { ruling_party = neutrality }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_bul_scenario_start_rule option = zveno } }
@@ -932,6 +1629,15 @@ country_event = {
 				# Rewards for BUL_zveno
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_bul_scenario_start_rule option = fatherland_front } }
@@ -957,6 +1663,15 @@ country_event = {
 				add_ideas = CHI_three_principles_idea
 				# Rewards for CHI_welfare
 				add_stability = 0.1
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		CHL = {
@@ -964,11 +1679,29 @@ country_event = {
 				limit = { has_game_rule = { rule = SAH_chl_scenario_start_rule option = popular_front } }
 				# Rewards for CHL_the_nacistas
 				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_chl_scenario_start_rule option = nacistas } }
 				# Rewards for CHL_the_nacistas
 				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		COG = {
@@ -979,6 +1712,15 @@ country_event = {
             add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for COG_the_force_publique
 				set_politics = { ruling_party = neutrality }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_cog_scenario_start_rule option = evolues } }
@@ -987,6 +1729,15 @@ country_event = {
 				# Rewards for COG_the_evolues
 				set_politics = { ruling_party = democratic elections_allowed = yes }
             add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		CZE = {
@@ -998,6 +1749,15 @@ country_event = {
 				# Rewards for CZE_communist_direction
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_cze_scenario_start_rule option = fascist_direction } }
@@ -1007,6 +1767,15 @@ country_event = {
 				# Rewards for CZE_fascist_direction
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_cze_scenario_start_rule option = communist_direction } }
@@ -1016,6 +1785,15 @@ country_event = {
 				# Rewards for CZE_communist_direction
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		DEN = {
@@ -1023,11 +1801,29 @@ country_event = {
 				limit = { has_game_rule = { rule = SAH_den_scenario_start_rule option = social_democrats } }
 				# Rewards for DEN_the_conservative_peoples_party
 				add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_den_scenario_start_rule option = conservative } }
 				# Rewards for DEN_the_conservative_peoples_party
 				add_popularity = { ideology = neutrality popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		EGY = {
@@ -1038,6 +1834,15 @@ country_event = {
             add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for EGY_the_anglo_egyptian_treaty
 				set_politics = { ruling_party = neutrality }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_egy_scenario_start_rule option = wafd_party } }
@@ -1046,16 +1851,43 @@ country_event = {
 				# Rewards for EGY_the_wafd_party
 				set_politics = { ruling_party = democratic elections_allowed = yes }
             add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		EST = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_est_scenario_start_rule option = era_of_silence } }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_est_scenario_start_rule option = vaps_movement } }
 				# Rewards for EST_the_vaps_movement
 				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		ETH = {
@@ -1063,6 +1895,15 @@ country_event = {
 				limit = { has_game_rule = { rule = SAH_eth_scenario_start_rule option = emperor } }
 				# Rewards for ETH_the_emperor
 				set_politics = { ruling_party = neutrality }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		FIN = {
@@ -1072,6 +1913,15 @@ country_event = {
 				add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for FIN_the_red_guards
 				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_fin_scenario_start_rule option = lapua_movement } }
@@ -1079,6 +1929,15 @@ country_event = {
 				add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for FIN_the_lapua_movement
 				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_fin_scenario_start_rule option = red_guards } }
@@ -1086,6 +1945,15 @@ country_event = {
 				add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for FIN_the_red_guards
 				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		HUN = {
@@ -1097,33 +1965,69 @@ country_event = {
 				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for HUN_renounce_the_treaty_of_trianon
 				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_hun_scenario_start_rule option = king } }
-				# Rewards for HUN_the_communist_party
-				set_politics = { ruling_party = communism elections_allowed = no }
 				# Rewards for HUN_renounce_the_treaty_of_trianon
 				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for HUN_the_communist_party
+				set_politics = { ruling_party = communism elections_allowed = no }
 				# Rewards for HUN_a_king_for_our_people
 				set_politics = { ruling_party = democratic elections_allowed = yes }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_hun_scenario_start_rule option = communist } }
-				# Rewards for HUN_a_king_for_our_people
-				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for HUN_renounce_the_treaty_of_trianon
 				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for HUN_a_king_for_our_people
+				set_politics = { ruling_party = democratic elections_allowed = yes }
 				# Rewards for HUN_the_communist_party
 				set_politics = { ruling_party = communism elections_allowed = no }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_hun_scenario_start_rule option = habsburg } }
+				# Rewards for HUN_renounce_the_treaty_of_trianon
+				add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for HUN_the_communist_party
 				set_politics = { ruling_party = communism elections_allowed = no }
 				# Rewards for HUN_a_king_for_our_people
 				set_politics = { ruling_party = democratic elections_allowed = yes }
-				# Rewards for HUN_renounce_the_treaty_of_trianon
-				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		IRQ = {
@@ -1134,6 +2038,15 @@ country_event = {
             add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for IRQ_the_hashemite_kingdom
 				set_politics = { ruling_party = neutrality }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_irq_scenario_start_rule option = golden_square } }
@@ -1142,26 +2055,71 @@ country_event = {
 				# Rewards for IRQ_the_golden_square
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		LAT = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_lat_scenario_start_rule option = ulmainis } }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_lat_scenario_start_rule option = perkonkrusts } }
 				# Rewards for LAT_the_perkonkrusts
 				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		LIT = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_lit_scenario_start_rule option = smetona } }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_lit_scenario_start_rule option = iron_wolf } }
 				# Rewards for LIT_the_iron_wolf
 				add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		MAN = {
@@ -1169,14 +2127,23 @@ country_event = {
 				limit = { has_game_rule = { rule = SAH_man_scenario_start_rule option = obedience } }
 				# Rewards for MAN_assertiveness
 				set_politics = { ruling_party = neutrality }
-				# Rewards for MAN_the_democratic_party
-				set_politics = { ruling_party = democratic elections_allowed = yes }
-            add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for MAN_the_communist_party
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
+				# Rewards for MAN_the_democratic_party
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+            add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for MAN_obedience
 				set_politics = { ruling_party = fascism }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_man_scenario_start_rule option = assertiveness } }
@@ -1190,32 +2157,59 @@ country_event = {
             add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for MAN_assertiveness
 				set_politics = { ruling_party = neutrality }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_man_scenario_start_rule option = democratic } }
-				# Rewards for MAN_obedience
-				set_politics = { ruling_party = fascism }
 				# Rewards for MAN_assertiveness
 				set_politics = { ruling_party = neutrality }
+				# Rewards for MAN_obedience
+				set_politics = { ruling_party = fascism }
 				# Rewards for MAN_the_communist_party
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for MAN_the_democratic_party
 				set_politics = { ruling_party = democratic elections_allowed = yes }
             add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_man_scenario_start_rule option = communist } }
-				# Rewards for MAN_obedience
-				set_politics = { ruling_party = fascism }
 				# Rewards for MAN_assertiveness
 				set_politics = { ruling_party = neutrality }
+				# Rewards for MAN_obedience
+				set_politics = { ruling_party = fascism }
 				# Rewards for MAN_the_democratic_party
 				set_politics = { ruling_party = democratic elections_allowed = yes }
             add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for MAN_the_communist_party
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		NOR = {
@@ -1225,6 +2219,15 @@ country_event = {
 				add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for NOR_the_communist_party
 				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_nor_scenario_start_rule option = quisling } }
@@ -1234,6 +2237,15 @@ country_event = {
 				add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for NOR_quisling_government
 				set_politics = { ruling_party = fascism }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_nor_scenario_start_rule option = communist } }
@@ -1241,11 +2253,29 @@ country_event = {
 				add_popularity = { ideology = fascism popularity = 0.1 }
 				# Rewards for NOR_the_communist_party
 				add_popularity = { ideology = communism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		NZL = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_nzl_scenario_start_rule option = labour } }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		PAR = {
@@ -1253,6 +2283,15 @@ country_event = {
 				limit = { has_game_rule = { rule = SAH_par_scenario_start_rule option = febrerista } }
 				# Rewards for PAR_the_febrerista_revolution
 				set_politics = { ruling_party = fascism }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		PER = {
@@ -1263,6 +2302,15 @@ country_event = {
             add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for PER_the_pahlavi_dynasty
 				set_politics = { ruling_party = neutrality }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_per_scenario_start_rule option = tudeh } }
@@ -1271,19 +2319,37 @@ country_event = {
 				# Rewards for PER_the_tudeh_party
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		PHI = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_phi_scenario_start_rule option = commonwealth } }
-				# Rewards for PHI_the_hukbalahap
-				set_politics = { ruling_party = communism }
-            add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for PHI_the_ganap_party
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for PHI_the_hukbalahap
+				set_politics = { ruling_party = communism }
+            add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for PHI_the_commonwealth
 				set_politics = { ruling_party = democratic }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_phi_scenario_start_rule option = ganap } }
@@ -1295,17 +2361,35 @@ country_event = {
 				# Rewards for PHI_the_ganap_party
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_phi_scenario_start_rule option = hukbalahap } }
-				# Rewards for PHI_the_commonwealth
-				set_politics = { ruling_party = democratic }
 				# Rewards for PHI_the_ganap_party
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for PHI_the_commonwealth
+				set_politics = { ruling_party = democratic }
 				# Rewards for PHI_the_hukbalahap
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		POR = {
@@ -1316,6 +2400,15 @@ country_event = {
             add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for POR_the_estado_novo
 				set_politics = { ruling_party = neutrality }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_por_scenario_start_rule option = popular_front } }
@@ -1324,6 +2417,15 @@ country_event = {
 				# Rewards for POR_the_popular_front
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		PRC = {
@@ -1337,17 +2439,35 @@ country_event = {
             add_stability = 0.05
 				# Rewards for PRC_maoism
 				set_politics = { ruling_party = communism }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_prc_scenario_start_rule option = orthodox_marxism } }
+				# Rewards for PRC_maoism
+				set_politics = { ruling_party = communism }
 				# Rewards for PRC_social_democracy
 				set_politics = { ruling_party = democratic elections_allowed = yes }
             add_popularity = { ideology = democratic popularity = 0.1 }
-				# Rewards for PRC_maoism
-				set_politics = { ruling_party = communism }
 				# Rewards for PRC_orthodox_marxism
 				add_popularity = { ideology = communism popularity = 0.1 }
             add_stability = 0.05
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_prc_scenario_start_rule option = social_democracy } }
@@ -1359,6 +2479,15 @@ country_event = {
 				# Rewards for PRC_social_democracy
 				set_politics = { ruling_party = democratic elections_allowed = yes }
             add_popularity = { ideology = democratic popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		SWI = {
@@ -1366,6 +2495,15 @@ country_event = {
 				limit = { has_game_rule = { rule = SAH_swi_scenario_start_rule option = federal_council } }
 				# Rewards for SWI_the_federal_council
 				set_politics = { ruling_party = democratic }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		URU = {
@@ -1373,36 +2511,63 @@ country_event = {
 				limit = { has_game_rule = { rule = SAH_uru_scenario_start_rule option = colorado } }
 				# Rewards for URU_the_colorado_party
 				set_politics = { ruling_party = democratic }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		WRL = {
 			if = {
 				limit = { has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists } }
-				# Rewards for WRL_democratic_reforms
-				set_politics = { ruling_party = democratic }
-            add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for WRL_military_dictatorship
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for WRL_democratic_reforms
+				set_politics = { ruling_party = democratic }
+            add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for WRL_cooperate_with_the_communists
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
 				# Rewards for WRL_cooperate_with_the_nationalists
 				set_politics = { ruling_party = neutrality }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 			if = {
 				limit = { has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists } }
-				# Rewards for WRL_democratic_reforms
-				set_politics = { ruling_party = democratic }
-            add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for WRL_military_dictatorship
 				set_politics = { ruling_party = fascism }
             add_popularity = { ideology = fascism popularity = 0.1 }
+				# Rewards for WRL_democratic_reforms
+				set_politics = { ruling_party = democratic }
+            add_popularity = { ideology = democratic popularity = 0.1 }
 				# Rewards for WRL_cooperate_with_the_nationalists
 				set_politics = { ruling_party = neutrality }
 				# Rewards for WRL_cooperate_with_the_communists
 				set_politics = { ruling_party = communism }
             add_popularity = { ideology = communism popularity = 0.1 }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 		AFG = {
@@ -1410,9 +2575,19 @@ country_event = {
 				limit = { has_game_rule = { rule = SAH_afg_scenario_start_rule option = barakzai } }
 				# Rewards for AFG_the_barakzai_dynasty
 				set_politics = { ruling_party = neutrality }
+				# Rebuilding State Tier logic
+				if = {
+					limit = { date < 1938.1.1 }
+					add_ideas = SAH_prolonged_rebuilding
+				}
+				if = {
+					limit = { date > 1938.1.1 }
+					add_ideas = SAH_stabilized_regime
+				}
 			}
 		}
 	}
+
 
 	option = {
 		name = SAH_init.1.a
