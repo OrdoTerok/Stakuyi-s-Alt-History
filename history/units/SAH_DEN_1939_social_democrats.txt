@@ -1,0 +1,144 @@
+### 1939 Generic Minor OOB for DEN (Social Democrats) ###
+# Auto-generated baseline army for playability.
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1th DEN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2th DEN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3th DEN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4th DEN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5th DEN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6th DEN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7th DEN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "8th DEN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9th DEN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "10th DEN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "11th DEN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "12th DEN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "13th DEN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "14th DEN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "15th DEN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1th DEN Armor"
+		location = 100000
+		division_template = "Armor Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	# --- Cavalry ---
+	division = {
+		name = "1th DEN Cavalry"
+		location = 100000
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "2th DEN Cavalry"
+		location = 100000
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "3th DEN Cavalry"
+		location = 100000
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+}

@@ -1,0 +1,606 @@
+### 1939 Alternative OOB for SOV (Fascist Destiny) ###
+# Using standard vanilla-like templates for SOV
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "7 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "8 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "9 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "10 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "11 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "13 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "14 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "15 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "16 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "17 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "18 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "19 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "20 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "21 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "22 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "23 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "24 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "25 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "26 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "27 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "28 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "29 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "30 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "31 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "32 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "33 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "34 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "35 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "36 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "37 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "38 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "39 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "40 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "41 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "42 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "43 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "44 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "45 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "46 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "47 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "48 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "49 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "50 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "51 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "52 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "53 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "54 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "55 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "56 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "57 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "58 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "59 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "60 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "61 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "62 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "63 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "64 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "65 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "66 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "67 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "68 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "69 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "70 Fascist Rifle Div."
+		location = 219 # Placeholder Province ID
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1 Vanguard Tank Div."
+		location = 219
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2 Vanguard Tank Div."
+		location = 219
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3 Vanguard Tank Div."
+		location = 219
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4 Vanguard Tank Div."
+		location = 219
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "5 Vanguard Tank Div."
+		location = 219
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+	# --- Cavalry / Garrison ---
+	division = {
+		name = "1 Sec. Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2 Sec. Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3 Sec. Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4 Sec. Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5 Sec. Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6 Sec. Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7 Sec. Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "8 Sec. Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9 Sec. Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "10 Sec. Cavalry"
+		location = 219
+		division_template = "Kavalericheskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+}

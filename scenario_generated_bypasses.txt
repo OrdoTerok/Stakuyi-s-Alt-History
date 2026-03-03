@@ -41,6 +41,22 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
+Focus: id = USA_paramilitary_training
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+		}
+
+Focus: id = USA_the_national_defense_state
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+		}
+
 Focus: id = USA_ally_with_the_silver_shirts
 Add this block right underneath cost/x/y:
 		bypass = {
@@ -58,22 +74,6 @@ Add this block right underneath cost/x/y:
 		}
 
 Focus: id = USA_voter_registration_act
-Add this block right underneath cost/x/y:
-		bypass = {
-			OR = {
-				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
-			}
-		}
-
-Focus: id = USA_paramilitary_training
-Add this block right underneath cost/x/y:
-		bypass = {
-			OR = {
-				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
-			}
-		}
-
-Focus: id = USA_the_national_defense_state
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -129,6 +129,22 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
+Focus: id = USA_wpa
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			}
+		}
+
+Focus: id = USA_war_production_board
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+			}
+		}
+
 Focus: id = USA_limited_intervention
 Add this block right underneath cost/x/y:
 		bypass = {
@@ -169,22 +185,6 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = USA_wpa
-Add this block right underneath cost/x/y:
-		bypass = {
-			OR = {
-				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
-			}
-		}
-
-Focus: id = USA_war_production_board
-Add this block right underneath cost/x/y:
-		bypass = {
-			OR = {
-				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
-			}
-		}
-
 Focus: id = USA_the_giant_wakes
 Add this block right underneath cost/x/y:
 		bypass = {
@@ -195,7 +195,7 @@ Add this block right underneath cost/x/y:
 
 
 --- File: ger.txt ---
-Focus: id = GER_oppose_hitler
+Focus: id = GER_communist_uprising
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -206,7 +206,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = GER_communist_uprising
+Focus: id = GER_oppose_hitler
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -341,7 +341,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = SOV_the_right_opposition
+Focus: id = SOV_beaten_but_not_defeated
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -354,7 +354,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = SOV_beaten_but_not_defeated
+Focus: id = SOV_the_right_opposition
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -404,7 +404,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = SOV_a_new_russia
+Focus: id = SOV_the_fascist_destiny
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -414,7 +414,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = SOV_the_fascist_destiny
+Focus: id = SOV_a_new_russia
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -452,7 +452,7 @@ Add this block right underneath cost/x/y:
 
 
 --- File: eng.txt ---
-Focus: id = ENG_concessions_to_the_trade_unions
+Focus: id = ENG_a_change_in_course
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -463,7 +463,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = ENG_a_change_in_course
+Focus: id = ENG_concessions_to_the_trade_unions
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -512,14 +512,6 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = ENG_early_mobilization
-Add this block right underneath cost/x/y:
-		bypass = {
-			OR = {
-				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
-			}
-		}
-
 Focus: id = ENG_the_shadow_scheme
 Add this block right underneath cost/x/y:
 		bypass = {
@@ -529,6 +521,14 @@ Add this block right underneath cost/x/y:
 		}
 
 Focus: id = ENG_appeasement_policy
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
+		}
+
+Focus: id = ENG_early_mobilization
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -766,17 +766,6 @@ Add this block right underneath cost/x/y:
 
 
 --- File: pol.txt ---
-Focus: id = POL_the_morges_front
-Add this block right underneath cost/x/y:
-		bypass = {
-			OR = {
-				has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution }
-				has_game_rule = { rule = SAH_pol_scenario_start_rule option = falanga }
-				has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern }
-				has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council }
-			}
-		}
-
 Focus: id = POL_the_polish_communist_party
 Add this block right underneath cost/x/y:
 		bypass = {
@@ -800,6 +789,17 @@ Add this block right underneath cost/x/y:
 		}
 
 Focus: id = POL_the_falanga
+Add this block right underneath cost/x/y:
+		bypass = {
+			OR = {
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = april_constitution }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = falanga }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = comintern }
+				has_game_rule = { rule = SAH_pol_scenario_start_rule option = regency_council }
+			}
+		}
+
+Focus: id = POL_the_morges_front
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -847,7 +847,7 @@ Add this block right underneath cost/x/y:
 
 
 --- File: can.txt ---
-Focus: id = CAN_swastika_clubs
+Focus: id = CAN_bring_the_unions_to_the_table
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -867,7 +867,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = CAN_bring_the_unions_to_the_table
+Focus: id = CAN_swastika_clubs
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -913,7 +913,7 @@ Add this block right underneath cost/x/y:
 
 
 --- File: ast.txt ---
-Focus: id = AST_support_the_centre_party
+Focus: id = AST_empower_the_workers
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -933,7 +933,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = AST_empower_the_workers
+Focus: id = AST_support_the_centre_party
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -1227,7 +1227,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = BRA_the_aln_revolt
+Focus: id = BRA_the_1937_elections
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -1237,7 +1237,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = BRA_the_1937_elections
+Focus: id = BRA_the_aln_revolt
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -1333,7 +1333,7 @@ Add this block right underneath cost/x/y:
 
 
 --- File: swe.txt ---
-Focus: id = SWE_sveriges_kommunistiska_parti
+Focus: id = SWE_the_right_wing_coalition
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -1343,7 +1343,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = SWE_the_right_wing_coalition
+Focus: id = SWE_sveriges_kommunistiska_parti
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -1476,7 +1476,7 @@ Add this block right underneath cost/x/y:
 
 
 --- File: bul.txt ---
-Focus: id = BUL_the_fatherland_front
+Focus: id = BUL_zveno
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -1486,7 +1486,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = BUL_zveno
+Focus: id = BUL_the_fatherland_front
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -1710,7 +1710,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = HUN_a_king_for_our_people
+Focus: id = HUN_invite_the_habsburg_prince
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -1721,7 +1721,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = HUN_invite_the_habsburg_prince
+Focus: id = HUN_a_king_for_our_people
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -1847,7 +1847,7 @@ Add this block right underneath cost/x/y:
 
 
 --- File: nor.txt ---
-Focus: id = NOR_the_right_wing_coalition
+Focus: id = NOR_the_communist_party
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -1857,7 +1857,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = NOR_the_communist_party
+Focus: id = NOR_the_right_wing_coalition
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -1927,7 +1927,7 @@ Add this block right underneath cost/x/y:
 
 
 --- File: phi.txt ---
-Focus: id = PHI_the_hukbalahap
+Focus: id = PHI_the_ganap_party
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -1937,7 +1937,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = PHI_the_ganap_party
+Focus: id = PHI_the_hukbalahap
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -2031,7 +2031,7 @@ Add this block right underneath cost/x/y:
 
 
 --- File: wrl.txt ---
-Focus: id = WRL_democratic_reforms
+Focus: id = WRL_military_dictatorship
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {
@@ -2040,7 +2040,7 @@ Add this block right underneath cost/x/y:
 			}
 		}
 
-Focus: id = WRL_military_dictatorship
+Focus: id = WRL_democratic_reforms
 Add this block right underneath cost/x/y:
 		bypass = {
 			OR = {

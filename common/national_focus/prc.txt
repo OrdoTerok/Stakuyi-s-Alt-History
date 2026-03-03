@@ -15,6 +15,18 @@ focus_tree = {
         id = PRC_maoism
 		bypass = {
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = maoism }
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = orthodox_marxism }
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = social_democracy }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = orthodox_marxism }
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = maoism }
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = social_democracy }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_prc_scenario_start_rule option = maoism }
 				has_game_rule = { rule = SAH_prc_scenario_start_rule option = orthodox_marxism }
 				has_game_rule = { rule = SAH_prc_scenario_start_rule option = social_democracy }
@@ -58,6 +70,18 @@ focus_tree = {
     focus = {
         id = PRC_orthodox_marxism
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = maoism }
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = orthodox_marxism }
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = social_democracy }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = orthodox_marxism }
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = maoism }
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = social_democracy }
+			}
 			OR = {
 				has_game_rule = { rule = SAH_prc_scenario_start_rule option = maoism }
 				has_game_rule = { rule = SAH_prc_scenario_start_rule option = orthodox_marxism }
@@ -103,6 +127,18 @@ focus_tree = {
     focus = {
         id = PRC_social_democracy
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = maoism }
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = orthodox_marxism }
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = social_democracy }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = orthodox_marxism }
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = maoism }
+				has_game_rule = { rule = SAH_prc_scenario_start_rule option = social_democracy }
+			}
 			OR = {
 				has_game_rule = { rule = SAH_prc_scenario_start_rule option = maoism }
 				has_game_rule = { rule = SAH_prc_scenario_start_rule option = orthodox_marxism }

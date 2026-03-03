@@ -1,0 +1,144 @@
+### 1939 Generic Minor OOB for FIN (Red Guards) ###
+# Auto-generated baseline army for playability.
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1th FIN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2th FIN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3th FIN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4th FIN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5th FIN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6th FIN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7th FIN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "8th FIN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9th FIN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "10th FIN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "11th FIN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "12th FIN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "13th FIN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "14th FIN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "15th FIN Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1th FIN Armor"
+		location = 100000
+		division_template = "Armor Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	# --- Cavalry ---
+	division = {
+		name = "1th FIN Cavalry"
+		location = 100000
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "2th FIN Cavalry"
+		location = 100000
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "3th FIN Cavalry"
+		location = 100000
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+}

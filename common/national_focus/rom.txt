@@ -14,6 +14,18 @@ focus_tree = {
     focus = {
         id = ROM_preserve_greater_romania
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = align_axis }
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = preserve_romania }
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = balkan_dominance }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = align_axis }
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = preserve_romania }
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = balkan_dominance }
+			}
 			has_game_rule = { rule = SAH_rom_scenario_start_rule option = preserve_romania }
 				has_game_rule = { rule = SAH_rom_scenario_start_rule option = align_axis }
 				has_game_rule = { rule = SAH_rom_scenario_start_rule option = balkan_dominance }
@@ -42,6 +54,16 @@ focus_tree = {
     focus = {
         id = ROM_the_royal_dictatorship
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = align_axis }
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = balkan_dominance }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = align_axis }
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = balkan_dominance }
+			}
 			has_game_rule = { rule = SAH_rom_scenario_start_rule option = align_axis }
 				has_game_rule = { rule = SAH_rom_scenario_start_rule option = balkan_dominance }
 			OR = {
@@ -81,6 +103,14 @@ focus_tree = {
     focus = {
         id = ROM_align_axis
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = align_axis }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = align_axis }
+			}
 			has_game_rule = { rule = SAH_rom_scenario_start_rule option = align_axis }
 			OR = {
 				has_game_rule = { rule = SAH_rom_scenario_start_rule option = align_axis }
@@ -122,6 +152,14 @@ focus_tree = {
     focus = {
         id = ROM_the_balkan_dominance
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = balkan_dominance }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = balkan_dominance }
+			}
 			has_game_rule = { rule = SAH_rom_scenario_start_rule option = balkan_dominance }
 			OR = {
 				has_game_rule = { rule = SAH_rom_scenario_start_rule option = balkan_dominance }
@@ -145,6 +183,15 @@ focus_tree = {
 
     focus = {
         id = ROM_expand_the_oil_industry
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = align_axis }
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = preserve_romania }
+				has_game_rule = { rule = SAH_rom_scenario_start_rule option = balkan_dominance }
+			}
+		}
+
         icon = GFX_goal_generic_production
         x = 4
         y = 4

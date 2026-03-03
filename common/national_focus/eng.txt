@@ -14,6 +14,20 @@ focus_tree = {
     focus = {
         id = ENG_steady_as_she_goes
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
 			has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
 				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
 				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
@@ -63,6 +77,20 @@ focus_tree = {
     focus = {
         id = ENG_a_change_in_course
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
 			has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
 				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
 				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
@@ -112,6 +140,20 @@ focus_tree = {
     focus = {
         id = ENG_organize_the_blackshirts
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
 			has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
 				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
 				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
@@ -165,6 +207,20 @@ focus_tree = {
     focus = {
         id = ENG_concessions_to_the_trade_unions
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
 			has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
 				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
 				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
@@ -218,6 +274,14 @@ focus_tree = {
     focus = {
         id = ENG_reinforce_the_empire
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
 			has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
 			OR = {
 				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
@@ -245,6 +309,14 @@ focus_tree = {
     focus = {
         id = ENG_rearmament
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
 			has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
 			OR = {
 				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
@@ -272,6 +344,14 @@ focus_tree = {
     focus = {
         id = ENG_the_shadow_scheme
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
 			has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
 			OR = {
 				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
@@ -301,6 +381,14 @@ focus_tree = {
     focus = {
         id = ENG_early_mobilization
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
 			has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
 			OR = {
 				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
@@ -328,6 +416,14 @@ focus_tree = {
     focus = {
         id = ENG_appeasement_policy
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
 			has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
 			OR = {
 				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
@@ -356,6 +452,14 @@ focus_tree = {
     focus = {
         id = ENG_confront_the_dictators
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
 			has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
 			OR = {
 				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
@@ -404,6 +508,14 @@ focus_tree = {
     focus = {
         id = ENG_churchill_government
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
 			has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
 			OR = {
 				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
@@ -488,6 +600,14 @@ focus_tree = {
     focus = {
         id = ENG_the_kings_party
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+			}
 			has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
 			OR = {
 				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
@@ -733,6 +853,14 @@ focus_tree = {
     focus = {
         id = ENG_march_on_london
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+			}
 			has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
 			OR = {
 				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
@@ -1009,6 +1137,14 @@ focus_tree = {
     focus = {
         id = ENG_the_communist_alternative
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+			}
 			has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
 			OR = {
 				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
@@ -1266,6 +1402,23 @@ focus_tree = {
 
     focus = {
         id = ENG_home_defense
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
+		}
+
         icon = GFX_goal_generic_national_unity
         x = 19
         y = 0
@@ -1285,6 +1438,23 @@ focus_tree = {
 
     focus = {
         id = ENG_expand_the_raf
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
+		}
+
         icon = GFX_goal_generic_build_airforce
         x = 18
         y = 1
@@ -1308,6 +1478,23 @@ focus_tree = {
 
     focus = {
         id = ENG_expand_the_royal_navy
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
+		}
+
         icon = GFX_goal_generic_build_navy
         x = 20
         y = 1
@@ -1331,6 +1518,23 @@ focus_tree = {
 
     focus = {
         id = ENG_radar_stations
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
+		}
+
         icon = GFX_goal_generic_secret_weapon
         x = 18
         y = 2
@@ -1353,6 +1557,23 @@ focus_tree = {
 
     focus = {
         id = ENG_the_fleet_in_being
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
+		}
+
         icon = GFX_goal_generic_navy_battleship
         x = 20
         y = 2
@@ -1452,6 +1673,23 @@ focus_tree = {
 
     focus = {
         id = ENG_general_rearmament
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = kings_party }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = mosley_fascist }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = communist_britain }
+				has_game_rule = { rule = SAH_eng_scenario_start_rule option = churchill }
+			}
+		}
+
         icon = GFX_goal_generic_production
         x = 19
         y = 4

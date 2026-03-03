@@ -1,0 +1,375 @@
+### 1939 Alternative OOB for ENG (King's Party) ###
+# Using standard vanilla-like templates for UK
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1st Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "2nd Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "3rd Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "4th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "5th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "6th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "7th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "8th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "9th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "10th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "11th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "12th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "13th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "14th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "15th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "16th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "17th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "18th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "19th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "20th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "21st Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "22nd Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "23rd Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "24th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "25th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "26th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "27th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "28th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "29th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "30th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "31st Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "32nd Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "33rd Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "34th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "35th Loyal Foot Guards"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1st Royal King's Armor"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2nd Royal King's Armor"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3rd Royal King's Armor"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4th Royal King's Armor"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "5th Royal King's Armor"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+	# --- Cavalry / Garrison ---
+	division = {
+		name = "1st Royal Dragoon Guards"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2nd Royal Dragoon Guards"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3rd Royal Dragoon Guards"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4th Royal Dragoon Guards"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5th Royal Dragoon Guards"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6th Royal Dragoon Guards"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7th Royal Dragoon Guards"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "8th Royal Dragoon Guards"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9th Royal Dragoon Guards"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "10th Royal Dragoon Guards"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "11th Royal Dragoon Guards"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "12th Royal Dragoon Guards"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+}

@@ -14,6 +14,18 @@ focus_tree = {
     focus = {
         id = GRE_the_metaxas_dictatorship
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = venizelist }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = metaxas }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = metaxas }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = venizelist }
+			}
 			has_game_rule = { rule = SAH_gre_scenario_start_rule option = metaxas }
 				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
 				has_game_rule = { rule = SAH_gre_scenario_start_rule option = venizelist }
@@ -56,6 +68,14 @@ focus_tree = {
     focus = {
         id = GRE_the_4th_of_august_regime
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
+			}
 			has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
 			OR = {
 				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
@@ -81,6 +101,18 @@ focus_tree = {
     focus = {
         id = GRE_the_venizelist_movement
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = venizelist }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = metaxas }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = metaxas }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = venizelist }
+			}
 			has_game_rule = { rule = SAH_gre_scenario_start_rule option = metaxas }
 				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
 				has_game_rule = { rule = SAH_gre_scenario_start_rule option = venizelist }
@@ -124,6 +156,14 @@ focus_tree = {
     focus = {
         id = GRE_revive_the_megali_idea
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
+			}
 			has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
 			OR = {
 				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
@@ -147,6 +187,15 @@ focus_tree = {
 
     focus = {
         id = GRE_hellenic_armed_forces
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = venizelist }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = metaxas }
+				has_game_rule = { rule = SAH_gre_scenario_start_rule option = megali_idea }
+			}
+		}
+
         icon = GFX_goal_generic_position_armies
         x = 6
         y = 3

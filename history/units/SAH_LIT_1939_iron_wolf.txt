@@ -1,0 +1,144 @@
+### 1939 Generic Minor OOB for LIT (Iron Wolf) ###
+# Auto-generated baseline army for playability.
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1th LIT Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2th LIT Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3th LIT Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4th LIT Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5th LIT Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6th LIT Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7th LIT Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "8th LIT Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9th LIT Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "10th LIT Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "11th LIT Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "12th LIT Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "13th LIT Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "14th LIT Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "15th LIT Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1th LIT Armor"
+		location = 100000
+		division_template = "Armor Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	# --- Cavalry ---
+	division = {
+		name = "1th LIT Cavalry"
+		location = 100000
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "2th LIT Cavalry"
+		location = 100000
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "3th LIT Cavalry"
+		location = 100000
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+}

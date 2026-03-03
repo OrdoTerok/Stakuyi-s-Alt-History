@@ -1,0 +1,144 @@
+### 1939 Generic Minor OOB for PER (Pahlavi) ###
+# Auto-generated baseline army for playability.
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1th PER Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2th PER Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3th PER Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4th PER Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5th PER Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6th PER Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7th PER Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "8th PER Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9th PER Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "10th PER Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "11th PER Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "12th PER Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "13th PER Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "14th PER Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "15th PER Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1th PER Armor"
+		location = 100000
+		division_template = "Armor Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	# --- Cavalry ---
+	division = {
+		name = "1th PER Cavalry"
+		location = 100000
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "2th PER Cavalry"
+		location = 100000
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "3th PER Cavalry"
+		location = 100000
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+}

@@ -15,6 +15,14 @@ focus_tree = {
         id = PAR_the_febrerista_revolution
 		bypass = {
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_par_scenario_start_rule option = febrerista }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_par_scenario_start_rule option = febrerista }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_par_scenario_start_rule option = febrerista }
 			}
 		}

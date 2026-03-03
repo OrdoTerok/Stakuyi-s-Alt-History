@@ -1,0 +1,396 @@
+### 1939 Alternative OOB for JAP (Democratic Diet) ###
+# Using standard vanilla-like templates for JAP
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "7 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "8 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "9 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "10 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "11 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "13 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "14 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "15 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "16 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "17 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "18 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "19 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "20 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "21 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "22 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "23 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "24 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "25 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "26 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "27 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "28 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "29 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "30 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "31 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "32 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "33 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "34 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "35 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "36 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "37 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "38 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "39 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "40 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "41 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "42 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "43 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "44 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "45 Self-Defense Inf."
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1 Self-Defense Armor"
+		location = 5202
+		division_template = "Sensha Shidan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2 Self-Defense Armor"
+		location = 5202
+		division_template = "Sensha Shidan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3 Self-Defense Armor"
+		location = 5202
+		division_template = "Sensha Shidan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4 Self-Defense Armor"
+		location = 5202
+		division_template = "Sensha Shidan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "5 Self-Defense Armor"
+		location = 5202
+		division_template = "Sensha Shidan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "6 Self-Defense Armor"
+		location = 5202
+		division_template = "Sensha Shidan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+	# --- Cavalry / Garrison ---
+	division = {
+		name = "1 Police Cavalry"
+		location = 5202
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2 Police Cavalry"
+		location = 5202
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3 Police Cavalry"
+		location = 5202
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4 Police Cavalry"
+		location = 5202
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+}

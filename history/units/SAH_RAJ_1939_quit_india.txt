@@ -1,0 +1,144 @@
+### 1939 Generic Minor OOB for RAJ (Quit India) ###
+# Auto-generated baseline army for playability.
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1th RAJ Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2th RAJ Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3th RAJ Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4th RAJ Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5th RAJ Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6th RAJ Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7th RAJ Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "8th RAJ Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9th RAJ Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "10th RAJ Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "11th RAJ Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "12th RAJ Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "13th RAJ Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "14th RAJ Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "15th RAJ Infantry"
+		location = 100000 # FALLBACK - REQUIRES CAPITAL ID UPDATE
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1th RAJ Armor"
+		location = 100000
+		division_template = "Armor Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	# --- Cavalry ---
+	division = {
+		name = "1th RAJ Cavalry"
+		location = 100000
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "2th RAJ Cavalry"
+		location = 100000
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "3th RAJ Cavalry"
+		location = 100000
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+}

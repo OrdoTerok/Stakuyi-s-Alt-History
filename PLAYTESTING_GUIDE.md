@@ -39,7 +39,7 @@ If you encounter a bug, **do not just describe it broadly in chat**. Use the exa
 **Bug Category:** 
 - [ ] Focus Tree Logic
 - [ ] AI Diplomatic Behavior
-- [ ] World-Song Tension System
+- [ ] Global Escalation Tension System
 - [ ] Game Rules / Shattered Timeline
 - [ ] Crash to Desktop (CTD) 
 

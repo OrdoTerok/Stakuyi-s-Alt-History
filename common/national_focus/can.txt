@@ -14,6 +14,18 @@ focus_tree = {
     focus = {
         id = CAN_the_british_north_america_act
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
+			}
 			has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
 				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
 				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
@@ -45,6 +57,14 @@ focus_tree = {
     focus = {
         id = CAN_send_in_the_zombies
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
+			}
 			has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
 			OR = {
 				has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
@@ -69,6 +89,18 @@ focus_tree = {
     focus = {
         id = CAN_patriation
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
+			}
 			has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
 				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
 				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
@@ -100,6 +132,18 @@ focus_tree = {
     focus = {
         id = CAN_swastika_clubs
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
+			}
 			has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
 				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
 				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
@@ -147,6 +191,14 @@ focus_tree = {
     focus = {
         id = CAN_national_unity_party
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
+			}
 			has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
 			OR = {
 				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
@@ -189,6 +241,18 @@ focus_tree = {
     focus = {
         id = CAN_bring_the_unions_to_the_table
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
+			}
 			has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
 				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
 				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
@@ -236,6 +300,14 @@ focus_tree = {
     focus = {
         id = CAN_communist_revolution
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
+			}
 			has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
 			OR = {
 				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
@@ -277,6 +349,15 @@ focus_tree = {
 
     focus = {
         id = CAN_defense_of_canada_regulations
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = fascist_canada }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = communist_canada }
+				has_game_rule = { rule = SAH_can_scenario_start_rule option = zombies }
+			}
+		}
+
         icon = GFX_goal_generic_production
         x = 8
         y = 4

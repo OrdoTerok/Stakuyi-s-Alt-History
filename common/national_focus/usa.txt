@@ -19,6 +19,20 @@ focus_tree = {
     focus = {
         id = USA_continue_the_new_deal
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
@@ -58,6 +72,14 @@ focus_tree = {
     focus = {
         id = USA_reestablish_the_gold_standard
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
@@ -97,6 +119,14 @@ focus_tree = {
     focus = {
         id = USA_america_first
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
@@ -140,6 +170,14 @@ focus_tree = {
     focus = {
         id = USA_suspend_the_persecution
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
@@ -192,6 +230,20 @@ focus_tree = {
     focus = {
         id = USA_wpa
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
@@ -217,6 +269,20 @@ focus_tree = {
     focus = {
         id = USA_war_department_expansion
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
@@ -243,6 +309,20 @@ focus_tree = {
     focus = {
         id = USA_neutrality_act
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
@@ -267,6 +347,20 @@ focus_tree = {
     focus = {
         id = USA_limited_intervention
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
@@ -291,6 +385,20 @@ focus_tree = {
     focus = {
         id = USA_war_production_board
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
@@ -314,6 +422,20 @@ focus_tree = {
     focus = {
         id = USA_selective_service_act
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
@@ -337,6 +459,20 @@ focus_tree = {
     focus = {
         id = USA_arsenal_of_democracy
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
@@ -361,6 +497,20 @@ focus_tree = {
     focus = {
         id = USA_the_giant_wakes
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
@@ -385,6 +535,23 @@ focus_tree = {
 
     focus = {
         id = USA_destroyers_for_bases
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
+		}
+
         icon = GFX_goal_generic_navy_battleship
         prerequisite = { focus = USA_the_giant_wakes }
         x = 5
@@ -404,6 +571,23 @@ focus_tree = {
     
     focus = {
         id = USA_lend_lease_act
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
+		}
+
         icon = GFX_goal_generic_trade
         prerequisite = { focus = USA_destroyers_for_bases }
         x = 5
@@ -435,6 +619,23 @@ focus_tree = {
 
     focus = {
         id = USA_war_plan_orange
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = giant_wakes }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
+		}
+
         icon = GFX_goal_generic_attack_allies
         prerequisite = { focus = USA_lend_lease_act }
         x = 6
@@ -472,6 +673,14 @@ focus_tree = {
     focus = {
         id = USA_america_first_committee
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
@@ -541,6 +750,14 @@ focus_tree = {
     focus = {
         id = USA_the_american_caesar
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
@@ -719,6 +936,14 @@ focus_tree = {
     focus = {
         id = USA_neutrality_to_the_end
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = american_caesar }
@@ -824,6 +1049,14 @@ focus_tree = {
     focus = {
         id = USA_paramilitary_training
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
@@ -865,6 +1098,14 @@ focus_tree = {
     focus = {
         id = USA_corporate_statism
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
@@ -889,6 +1130,14 @@ focus_tree = {
     focus = {
         id = USA_ally_with_the_silver_shirts
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
@@ -945,6 +1194,14 @@ focus_tree = {
     focus = {
         id = USA_the_national_defense_state
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
@@ -967,6 +1224,14 @@ focus_tree = {
     focus = {
         id = USA_voter_registration_act
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
@@ -1009,6 +1274,14 @@ focus_tree = {
     focus = {
         id = USA_the_fascist_menace
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = fascist_menace }
@@ -1178,6 +1451,14 @@ focus_tree = {
     focus = {
         id = USA_unholy_alliance
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
@@ -1220,6 +1501,14 @@ focus_tree = {
     focus = {
         id = USA_democratic_socialism
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
@@ -1331,6 +1620,14 @@ focus_tree = {
     focus = {
         id = USA_the_peoples_republic
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
+			}
 			has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }
 			OR = {
 				has_game_rule = { rule = SAH_usa_scenario_start_rule option = communist }

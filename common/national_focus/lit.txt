@@ -15,6 +15,14 @@ focus_tree = {
         id = LIT_the_smetona_dictatorship
 		bypass = {
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_lit_scenario_start_rule option = smetona }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_lit_scenario_start_rule option = smetona }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_lit_scenario_start_rule option = smetona }
 			}
 		}
@@ -37,6 +45,14 @@ focus_tree = {
     focus = {
         id = LIT_the_iron_wolf
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_lit_scenario_start_rule option = iron_wolf }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_lit_scenario_start_rule option = iron_wolf }
+			}
 			OR = {
 				has_game_rule = { rule = SAH_lit_scenario_start_rule option = iron_wolf }
 			}

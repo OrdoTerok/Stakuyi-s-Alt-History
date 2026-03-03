@@ -14,6 +14,18 @@ focus_tree = {
     focus = {
         id = SPR_the_nationalist_uprising
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = popular_front }
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = anti_fascist_unity }
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = falange }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = popular_front }
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = falange }
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = anti_fascist_unity }
+			}
 			has_game_rule = { rule = SAH_spr_scenario_start_rule option = popular_front }
 				has_game_rule = { rule = SAH_spr_scenario_start_rule option = falange }
 				has_game_rule = { rule = SAH_spr_scenario_start_rule option = anti_fascist_unity }
@@ -60,6 +72,14 @@ focus_tree = {
     focus = {
         id = SPR_the_falange
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = falange }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = falange }
+			}
 			has_game_rule = { rule = SAH_spr_scenario_start_rule option = falange }
 			OR = {
 				has_game_rule = { rule = SAH_spr_scenario_start_rule option = falange }
@@ -103,6 +123,18 @@ focus_tree = {
     focus = {
         id = SPR_the_popular_front
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = popular_front }
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = anti_fascist_unity }
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = falange }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = popular_front }
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = falange }
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = anti_fascist_unity }
+			}
 			has_game_rule = { rule = SAH_spr_scenario_start_rule option = popular_front }
 				has_game_rule = { rule = SAH_spr_scenario_start_rule option = falange }
 				has_game_rule = { rule = SAH_spr_scenario_start_rule option = anti_fascist_unity }
@@ -149,6 +181,14 @@ focus_tree = {
     focus = {
         id = SPR_anti_fascist_unity
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = anti_fascist_unity }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = anti_fascist_unity }
+			}
 			has_game_rule = { rule = SAH_spr_scenario_start_rule option = anti_fascist_unity }
 			OR = {
 				has_game_rule = { rule = SAH_spr_scenario_start_rule option = anti_fascist_unity }
@@ -190,6 +230,15 @@ focus_tree = {
 
     focus = {
         id = SPR_rebuild_the_nation
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = popular_front }
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = anti_fascist_unity }
+				has_game_rule = { rule = SAH_spr_scenario_start_rule option = falange }
+			}
+		}
+
         icon = GFX_goal_generic_production
         x = 4
         y = 3

@@ -1,0 +1,634 @@
+### 1939 Alternative OOB for JAP (Showa/Kodoha) ###
+# Using standard vanilla-like templates for JAP
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "7 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "8 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "9 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "10 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "11 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "13 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "14 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "15 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "16 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "17 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "18 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "19 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "20 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "21 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "22 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "23 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "24 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "25 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "26 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "27 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "28 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "29 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "30 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "31 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "32 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "33 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "34 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "35 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "36 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "37 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "38 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "39 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "40 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "41 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "42 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "43 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "44 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "45 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "46 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "47 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "48 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "49 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "50 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "51 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "52 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "53 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "54 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "55 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "56 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "57 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "58 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "59 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "60 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "61 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "62 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "63 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "64 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "65 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "66 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "67 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "68 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "69 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "70 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "71 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "72 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "73 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "74 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "75 Imperial Infantry"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1 Imperial Armor"
+		location = 5202
+		division_template = "Sensha Shidan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2 Imperial Armor"
+		location = 5202
+		division_template = "Sensha Shidan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3 Imperial Armor"
+		location = 5202
+		division_template = "Sensha Shidan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4 Imperial Armor"
+		location = 5202
+		division_template = "Sensha Shidan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+	# --- Cavalry / Garrison ---
+	division = {
+		name = "1 Imperial Cavalry"
+		location = 5202
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2 Imperial Cavalry"
+		location = 5202
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3 Imperial Cavalry"
+		location = 5202
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4 Imperial Cavalry"
+		location = 5202
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5 Imperial Cavalry"
+		location = 5202
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6 Imperial Cavalry"
+		location = 5202
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7 Imperial Cavalry"
+		location = 5202
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "8 Imperial Cavalry"
+		location = 5202
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9 Imperial Cavalry"
+		location = 5202
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "10 Imperial Cavalry"
+		location = 5202
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+}

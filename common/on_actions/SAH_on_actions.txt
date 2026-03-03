@@ -1,148 +1,324 @@
-﻿# ============================================================
-# Stakuyi's Alt History - On Actions
-# ============================================================
-# Hooks into HOI4's built-in event system.
-# on_startup fires for every country; the tag = GER guard
-# combined with the SAH_mod_initialized flag ensures the
-# framework initialises exactly once per playthrough.
-# ============================================================
-
-on_startup = {
-	effect = {
-		# Only run from GER (always present at vanilla start dates).
-		# The global flag prevents a second run if the player reloads.
-		if = {
-			limit = {
-				tag = GER
-				NOT = { has_global_flag = SAH_mod_initialized }
-			}
-			SAH_initialize_mod = yes
-		}
-	}
-}
-
-# Monthly pulse — used for ongoing community-path logic.
-on_monthly_pulse = {
-	effect = {
-		if = {
-			limit = {
-				tag = GER
-				has_global_flag = SAH_community_path_active
-			}
-			# TODO: add recurring monthly checks for active paths here.
-		}
-	}
-}
-
-# Weekly pulse — reserved for lighter, more frequent checks.
-on_weekly_pulse = {
-	effect = {
-		# TODO: add weekly path-maintenance logic here.
-	}
-}
-
-# Fires when any country capitulates — useful for path
-# branching after major defeats.
-on_capitulation = {
-	effect = {
-		# FROM = the country that capitulated
-		# ROOT = the winning country
-		# TODO: add post-capitulation path triggers here.
-	}
-}
-
-# Fires after a peace conference resolves.
-on_peace_conference_ended = {
-	effect = {
-		# TODO: add post-war path triggers here.
-	}
-}
-
-
-# ============================================================
-# Diplomatic Reactive Scripting Hub
-# ============================================================
-
-# Fires when a country changes its ruling party/ideology.
-on_ruling_party_change = {
-    effect = {
-        # ROOT = the country changing ideology
-        SAH_reactive_ideology_change = yes
-		SAH_evaluate_shattered_timeline = yes
-    }
-}
-
-# Fires when war is declared.
-on_declare_war = {
-    effect = {
-        # ROOT = attacker
-        # FROM = defender
-        SAH_reactive_war_declaration = yes
-		SAH_evaluate_shattered_timeline = yes
-		SAH_evaluate_world_song_effect = yes
-    }
-}
-
-# Fires when a nation is puppeted
-on_puppet_country = {
-    effect = {
-        # ROOT = The overlord.
-        # FROM = The subject.
-        SAH_reactive_puppeting = yes
-    }
-}
-
-# Fires when a nation joins a faction
-on_faction_joined = {
-    effect = {
-        # ROOT = country joining
-        # FROM = faction leader
-        SAH_reactive_faction_change = yes
-    }
-}
-
-# Periodic Checks
-
-
-# Also evaluate immediately when war is declared
-# Hooking into existing on_declare_war
-
-# Fires when a country capitulates
-on_capitulation = {
-	effect = {
-		# ROOT = Capitulating country
-		# FROM = Winning country
-		SAH_imperial_collapse_capitulation_effect = yes
-		SAH_evaluate_shattered_timeline = yes
-		SAH_evaluate_world_song_effect = yes
-	}
-}
-
-
-# Fires globally every month
-on_monthly = {
-	effect = {
-		if = {
-			limit = { SAH_is_performance_mode_enabled = yes }
-			every_country = {
-				limit = {
-					# The AI has fewer than 20 factories but somehow spammed >40 divisions
-					is_ai = yes
-					is_major = no
-					num_of_factories < 20
-					num_divisions > 40
-				}
-				# Hit them with a hidden event or effect that deletes units or applies a massive debuff
-				# For safety without crashing trades, we simply apply a massive training debuff
-				add_ideas = SAH_overextended_military_debuff
-			}
-			every_country = {
-				limit = {
-					has_idea = SAH_overextended_military_debuff
-					num_divisions < 35
-				}
-				remove_ideas = SAH_overextended_military_debuff
-			}
-		}
-	}
-}
+﻿# ============================================================
+
+# Stakuyi's Alt History - On Actions
+
+# ============================================================
+
+# Hooks into HOI4's built-in event system.
+
+# on_startup fires for every country; the tag = GER guard
+
+# combined with the SAH_mod_initialized flag ensures the
+
+# framework initialises exactly once per playthrough.
+
+# ============================================================
+
+
+
+on_startup = {
+	effect = {
+		# Only run from GER (always present at vanilla start dates).
+		# The global flag prevents a second run if the player reloads.
+		if = {
+			limit = {
+				tag = GER
+				NOT = { has_global_flag = SAH_mod_initialized }
+			}
+			SAH_initialize_mod = yes
+		}
+	}
+}
+
+
+
+# Monthly pulse — used for ongoing community-path logic.
+
+on_monthly_pulse = {
+
+	effect = {
+
+		if = {
+
+			limit = {
+
+				tag = GER
+
+				has_global_flag = SAH_community_path_active
+
+			}
+
+			# TODO: add recurring monthly checks for active paths here.
+
+		}
+
+	}
+
+}
+
+
+
+# Weekly pulse — reserved for lighter, more frequent checks.
+
+on_weekly_pulse = {
+
+	effect = {
+
+		# TODO: add weekly path-maintenance logic here.
+
+	}
+
+}
+
+
+
+# Fires when any country capitulates — useful for path
+
+# branching after major defeats.
+
+on_capitulation = {
+
+	effect = {
+
+		# FROM = the country that capitulated
+
+		# ROOT = the winning country
+
+		# TODO: add post-capitulation path triggers here.
+
+	}
+
+}
+
+
+
+# Fires after a peace conference resolves.
+
+on_peace_conference_ended = {
+
+	effect = {
+
+		# TODO: add post-war path triggers here.
+
+	}
+
+}
+
+
+
+
+
+# ============================================================
+
+# Diplomatic Reactive Scripting Hub
+
+# ============================================================
+
+
+
+# Fires when a country changes its ruling party/ideology.
+
+on_ruling_party_change = {
+
+    effect = {
+
+        # ROOT = the country changing ideology
+
+        SAH_reactive_ideology_change = yes
+
+		SAH_evaluate_shattered_timeline = yes
+
+    }
+
+}
+
+
+
+# Fires when war is declared.
+
+on_declare_war = {
+
+    effect = {
+
+        # ROOT = attacker
+
+        # FROM = defender
+
+        SAH_reactive_war_declaration = yes
+
+		SAH_evaluate_shattered_timeline = yes
+
+		SAH_evaluate_global_escalation_effect = yes
+
+    }
+
+}
+
+
+
+# Fires when a nation is puppeted
+
+on_puppet_country = {
+
+    effect = {
+
+        # ROOT = The overlord.
+
+        # FROM = The subject.
+
+        SAH_reactive_puppeting = yes
+
+    }
+
+}
+
+
+
+# Fires when a nation joins a faction
+
+on_faction_joined = {
+
+    effect = {
+
+        # ROOT = country joining
+
+        # FROM = faction leader
+
+        SAH_reactive_faction_change = yes
+
+    }
+
+}
+
+
+
+# Periodic Checks
+
+
+
+
+
+# Also evaluate immediately when war is declared
+
+# Hooking into existing on_declare_war
+
+
+
+# Fires when a country capitulates
+
+on_capitulation = {
+
+	effect = {
+
+		# ROOT = Capitulating country
+
+		# FROM = Winning country
+
+		SAH_imperial_collapse_capitulation_effect = yes
+
+		SAH_evaluate_shattered_timeline = yes
+
+		SAH_evaluate_global_escalation_effect = yes
+
+	}
+
+}
+
+
+
+
+
+# Fires globally every month
+
+on_monthly = {
+
+	effect = {
+
+		if = {
+
+			limit = { SAH_is_performance_mode_enabled = yes }
+
+			every_country = {
+
+				limit = {
+
+					# The AI has fewer than 20 factories but somehow spammed >40 divisions
+
+					is_ai = yes
+
+					is_major = no
+
+					num_of_factories < 20
+
+					num_divisions > 40
+
+				}
+
+				# Hit them with a hidden event or effect that deletes units or applies a massive debuff
+
+				# For safety without crashing trades, we simply apply a massive training debuff
+
+				add_ideas = SAH_overextended_military_debuff
+
+			}
+
+			every_country = {
+
+				limit = {
+
+					has_idea = SAH_overextended_military_debuff
+
+					num_divisions < 35
+
+				}
+
+				remove_ideas = SAH_overextended_military_debuff
+
+			}
+
+		}
+
+	}
+
+}
+
+
+
+# ============================================================
+# Diplomatic Reactive Scripting Hub
+# ============================================================
+
+# Fires when a country changes its ruling party/ideology.
+on_ruling_party_change = {
+    effect = {
+        # ROOT = the country changing ideology
+        SAH_reactive_ideology_change = yes
+    }
+}
+
+# Fires when war is declared.
+on_declare_war = {
+    effect = {
+        # ROOT = attacker
+        # FROM = defender
+        SAH_reactive_war_declaration = yes
+    }
+}
+
+# Fires when a nation is puppeted
+on_puppet_country = {
+    effect = {
+        # ROOT = The overlord.
+        # FROM = The subject.
+        SAH_reactive_puppeting = yes
+    }
+}
+
+# Fires when a nation joins a faction
+on_faction_joined = {
+    effect = {
+        # ROOT = country joining
+        # FROM = faction leader
+        SAH_reactive_faction_change = yes
+    }
+}

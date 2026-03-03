@@ -15,6 +15,18 @@ focus_tree = {
         id = NOR_the_nygaardsvold_cabinet
 		bypass = {
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = nygaardsvold }
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = quisling }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = nygaardsvold }
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = quisling }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_nor_scenario_start_rule option = nygaardsvold }
 				has_game_rule = { rule = SAH_nor_scenario_start_rule option = quisling }
 				has_game_rule = { rule = SAH_nor_scenario_start_rule option = communist }
@@ -60,6 +72,18 @@ focus_tree = {
         id = NOR_the_right_wing_coalition
 		bypass = {
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = nygaardsvold }
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = quisling }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = nygaardsvold }
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = quisling }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_nor_scenario_start_rule option = nygaardsvold }
 				has_game_rule = { rule = SAH_nor_scenario_start_rule option = quisling }
 				has_game_rule = { rule = SAH_nor_scenario_start_rule option = communist }
@@ -104,6 +128,14 @@ focus_tree = {
         id = NOR_quisling_government
 		bypass = {
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = quisling }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = quisling }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_nor_scenario_start_rule option = quisling }
 			}
 		}
@@ -144,6 +176,18 @@ focus_tree = {
     focus = {
         id = NOR_the_communist_party
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = nygaardsvold }
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = quisling }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = nygaardsvold }
+				has_game_rule = { rule = SAH_nor_scenario_start_rule option = quisling }
+			}
 			OR = {
 				has_game_rule = { rule = SAH_nor_scenario_start_rule option = nygaardsvold }
 				has_game_rule = { rule = SAH_nor_scenario_start_rule option = quisling }

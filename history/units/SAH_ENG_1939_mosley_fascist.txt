@@ -1,0 +1,403 @@
+### 1939 Alternative OOB for ENG (Mosley Fascist) ###
+# Using standard vanilla-like templates for UK
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1st Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "2nd Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "3rd Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "4th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "5th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "6th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "7th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "8th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "9th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "10th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "11th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "12th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "13th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "14th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "15th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "16th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "17th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "18th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "19th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "20th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "21st Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "22nd Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "23rd Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "24th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "25th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "26th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "27th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "28th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "29th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "30th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "31st Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "32nd Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "33rd Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "34th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "35th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "36th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "37th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "38th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "39th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "40th Blackshirt Division"
+		location = 338 # Placeholder Province ID (e.g., London / Midlands)
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1st Imperial Armoured Division"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2nd Imperial Armoured Division"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3rd Imperial Armoured Division"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4th Imperial Armoured Division"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "5th Imperial Armoured Division"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "6th Imperial Armoured Division"
+		location = 338
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+	# --- Cavalry / Garrison ---
+	division = {
+		name = "1st State Security Cavalry"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2nd State Security Cavalry"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3rd State Security Cavalry"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4th State Security Cavalry"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5th State Security Cavalry"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6th State Security Cavalry"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7th State Security Cavalry"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "8th State Security Cavalry"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9th State Security Cavalry"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "10th State Security Cavalry"
+		location = 338
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+}

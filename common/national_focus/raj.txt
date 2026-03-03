@@ -14,6 +14,18 @@ focus_tree = {
     focus = {
         id = RAJ_provincial_elections
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = indian_national_army }
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = quit_india }
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = provincial_elections }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = quit_india }
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = indian_national_army }
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = provincial_elections }
+			}
 			has_game_rule = { rule = SAH_raj_scenario_start_rule option = provincial_elections }
 				has_game_rule = { rule = SAH_raj_scenario_start_rule option = quit_india }
 				has_game_rule = { rule = SAH_raj_scenario_start_rule option = indian_national_army }
@@ -61,6 +73,18 @@ focus_tree = {
     focus = {
         id = RAJ_indian_national_congress
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = indian_national_army }
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = quit_india }
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = provincial_elections }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = quit_india }
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = indian_national_army }
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = provincial_elections }
+			}
 			has_game_rule = { rule = SAH_raj_scenario_start_rule option = provincial_elections }
 				has_game_rule = { rule = SAH_raj_scenario_start_rule option = quit_india }
 				has_game_rule = { rule = SAH_raj_scenario_start_rule option = indian_national_army }
@@ -90,6 +114,16 @@ focus_tree = {
     focus = {
         id = RAJ_quit_india_movement
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = indian_national_army }
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = quit_india }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = quit_india }
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = indian_national_army }
+			}
 			has_game_rule = { rule = SAH_raj_scenario_start_rule option = quit_india }
 				has_game_rule = { rule = SAH_raj_scenario_start_rule option = indian_national_army }
 			OR = {
@@ -117,6 +151,14 @@ focus_tree = {
     focus = {
         id = RAJ_indian_national_army
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = indian_national_army }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = indian_national_army }
+			}
 			has_game_rule = { rule = SAH_raj_scenario_start_rule option = indian_national_army }
 			OR = {
 				has_game_rule = { rule = SAH_raj_scenario_start_rule option = indian_national_army }
@@ -158,6 +200,15 @@ focus_tree = {
 
     focus = {
         id = RAJ_expand_the_railway_network
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = indian_national_army }
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = quit_india }
+				has_game_rule = { rule = SAH_raj_scenario_start_rule option = provincial_elections }
+			}
+		}
+
         icon = GFX_goal_generic_production
         x = 4
         y = 4

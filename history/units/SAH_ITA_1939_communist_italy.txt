@@ -1,0 +1,382 @@
+### 1939 Alternative OOB for ITA (Communist) ###
+# Using standard vanilla-like templates for ITA
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "7 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "8 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "9 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "10 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "11 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "13 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "14 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "15 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "16 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "17 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "18 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "19 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "20 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "21 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "22 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "23 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "24 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "25 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "26 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "27 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "28 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "29 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "30 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "31 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "32 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "33 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "34 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "35 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "36 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "37 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "38 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "39 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "40 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "41 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "42 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "43 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "44 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "45 Lavoratori Fanteria"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1 Brigata del Popolo"
+		location = 2
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2 Brigata del Popolo"
+		location = 2
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3 Brigata del Popolo"
+		location = 2
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+	# --- Cavalry / Garrison ---
+	division = {
+		name = "1 Milizia a Cavallo"
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2 Milizia a Cavallo"
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3 Milizia a Cavallo"
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4 Milizia a Cavallo"
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5 Milizia a Cavallo"
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+}

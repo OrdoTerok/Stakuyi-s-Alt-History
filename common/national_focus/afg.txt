@@ -15,6 +15,14 @@ focus_tree = {
         id = AFG_the_barakzai_dynasty
 		bypass = {
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_afg_scenario_start_rule option = barakzai }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_afg_scenario_start_rule option = barakzai }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_afg_scenario_start_rule option = barakzai }
 			}
 		}

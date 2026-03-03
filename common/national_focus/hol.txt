@@ -14,6 +14,16 @@ focus_tree = {
     focus = {
         id = HOL_form_the_new_government
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_hol_scenario_start_rule option = gateway_to_europe }
+				has_game_rule = { rule = SAH_hol_scenario_start_rule option = anton_mussert }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_hol_scenario_start_rule option = anton_mussert }
+				has_game_rule = { rule = SAH_hol_scenario_start_rule option = gateway_to_europe }
+			}
 			has_game_rule = { rule = SAH_hol_scenario_start_rule option = gateway_to_europe }
 				has_game_rule = { rule = SAH_hol_scenario_start_rule option = anton_mussert }
 			OR = {
@@ -54,6 +64,14 @@ focus_tree = {
     focus = {
         id = HOL_the_gateway_to_europe
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_hol_scenario_start_rule option = gateway_to_europe }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_hol_scenario_start_rule option = gateway_to_europe }
+			}
 			has_game_rule = { rule = SAH_hol_scenario_start_rule option = gateway_to_europe }
 			OR = {
 				has_game_rule = { rule = SAH_hol_scenario_start_rule option = gateway_to_europe }
@@ -78,6 +96,16 @@ focus_tree = {
     focus = {
         id = HOL_the_nsb
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_hol_scenario_start_rule option = gateway_to_europe }
+				has_game_rule = { rule = SAH_hol_scenario_start_rule option = anton_mussert }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_hol_scenario_start_rule option = anton_mussert }
+				has_game_rule = { rule = SAH_hol_scenario_start_rule option = gateway_to_europe }
+			}
 			has_game_rule = { rule = SAH_hol_scenario_start_rule option = gateway_to_europe }
 				has_game_rule = { rule = SAH_hol_scenario_start_rule option = anton_mussert }
 			OR = {
@@ -122,6 +150,14 @@ focus_tree = {
     focus = {
         id = HOL_anton_mussert
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_hol_scenario_start_rule option = anton_mussert }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_hol_scenario_start_rule option = anton_mussert }
+			}
 			has_game_rule = { rule = SAH_hol_scenario_start_rule option = anton_mussert }
 			OR = {
 				has_game_rule = { rule = SAH_hol_scenario_start_rule option = anton_mussert }
@@ -163,6 +199,14 @@ focus_tree = {
 
     focus = {
         id = HOL_invest_in_the_east_indies
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_hol_scenario_start_rule option = gateway_to_europe }
+				has_game_rule = { rule = SAH_hol_scenario_start_rule option = anton_mussert }
+			}
+		}
+
         icon = GFX_goal_generic_production
         x = 6
         y = 3

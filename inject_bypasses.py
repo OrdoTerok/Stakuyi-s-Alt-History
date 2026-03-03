@@ -8,13 +8,29 @@ def inject_bypasses():
 
     for _, config in SCENARIOS.items():
         rule_name = config['rule_name']
+        industrial_targets = config.get('industrial_targets', [])
+
         for opt_key, opt_data in config['starts'].items():
             chain = get_focus_chain(opt_data['target_focus'], all_focuses)
             for f_id in chain:
                 filepath = all_focuses[f_id]['file']
                 if filepath not in file_injections: file_injections[filepath] = {}
                 if f_id not in file_injections[filepath]: file_injections[filepath][f_id] = []
-                file_injections[filepath][f_id].append(f"has_game_rule = {{ rule = {rule_name} option = {opt_key} }}")
+                # Instead of append, add to a set to avoid dupes per focus per country condition
+                rule_str = f"has_game_rule = {{ rule = {rule_name} option = {opt_key} }}"
+                if rule_str not in file_injections[filepath][f_id]:
+                    file_injections[filepath][f_id].append(rule_str)
+                    
+            # Process industrial targets for this option
+            for industrial_target in industrial_targets:
+                chain_ind = get_focus_chain(industrial_target, all_focuses)
+                for f_id in chain_ind:
+                    filepath = all_focuses[f_id]['file']
+                    if filepath not in file_injections: file_injections[filepath] = {}
+                    if f_id not in file_injections[filepath]: file_injections[filepath][f_id] = []
+                    rule_str = f"has_game_rule = {{ rule = {rule_name} option = {opt_key} }}"
+                    if rule_str not in file_injections[filepath][f_id]:
+                        file_injections[filepath][f_id].append(rule_str)
 
     for filepath, injects in file_injections.items():
         with open(filepath, 'r', encoding='utf-8-sig') as f:
@@ -24,9 +40,13 @@ def inject_bypasses():
         
         # We parse the file to find where each focus is
         for f_id, conditions in injects.items():
+            # Exclude duplicate rules within the same focus block. Use a set
+            conditions = list(set(conditions))
+
             # Condense the generated rules
             rules_str = "\n\t\t\t\t".join(conditions)
-            bypass_payload = f"\n\t\tbypass = {{\n\t\t\tOR = {{\n\t\t\t\t{rules_str}\n\t\t\t}}\n\t\t}}\n"
+            # Make sure it only ever gets added once per focus block.
+            bypass_payload = f"\n\t\tbypass = {{\n\t\t\tOR = {{\n\t\t\t\thas_start_date > 1939.08.14\n\t\t\t\t{rules_str}\n\t\t\t}}\n\t\t}}\n"
 
             # Find where this focus starts
             # Match "focus = { ... id = f_id"
@@ -59,7 +79,7 @@ def inject_bypasses():
                     bp_match = re.search(r'\bbypass\s*=\s*\{', focus_block)
                     if bp_match:
                         insert_pos = bp_match.end()
-                        modified_focus = focus_block[:insert_pos] + f"\n\t\t\t{rules_str}" + focus_block[insert_pos:]
+                        modified_focus = focus_block[:insert_pos] + f"\n\t\t\tOR = {{\n\t\t\t\thas_start_date > 1939.08.14\n\t\t\t\t{rules_str}\n\t\t\t}}" + focus_block[insert_pos:]
                         new_content = new_content[:start_idx] + modified_focus + new_content[end_idx+1:]
                 else:
                     # Safe to inject new bypass block after 'id = ...'

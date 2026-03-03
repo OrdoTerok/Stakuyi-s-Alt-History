@@ -14,6 +14,18 @@ focus_tree = {
     focus = {
         id = SWE_the_per_albin_bus
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
+			}
 			has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus }
 				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
 				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
@@ -62,6 +74,18 @@ focus_tree = {
     focus = {
         id = SWE_the_right_wing_coalition
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
+			}
 			has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus }
 				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
 				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
@@ -109,6 +133,14 @@ focus_tree = {
     focus = {
         id = SWE_the_svea_rike
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
+			}
 			has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
 			OR = {
 				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
@@ -151,6 +183,18 @@ focus_tree = {
     focus = {
         id = SWE_sveriges_kommunistiska_parti
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
+			}
 			has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus }
 				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
 				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
@@ -197,6 +241,14 @@ focus_tree = {
     focus = {
         id = SWE_socialist_republic_of_sweden
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
+			}
 			has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
 			OR = {
 				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
@@ -238,6 +290,15 @@ focus_tree = {
 
     focus = {
         id = SWE_the_nordic_defence_council
+		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = socialist_republic }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = per_albin_bus }
+				has_game_rule = { rule = SAH_swe_scenario_start_rule option = svea_rike }
+			}
+		}
+
         icon = GFX_goal_generic_major_alliance
         x = 6
         y = 4

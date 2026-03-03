@@ -15,6 +15,18 @@ focus_tree = {
         id = FIN_the_finnish_model
 		bypass = {
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = finnish_model }
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = red_guards }
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = lapua_movement }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = lapua_movement }
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = red_guards }
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = finnish_model }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_fin_scenario_start_rule option = finnish_model }
 				has_game_rule = { rule = SAH_fin_scenario_start_rule option = lapua_movement }
 				has_game_rule = { rule = SAH_fin_scenario_start_rule option = red_guards }
@@ -72,6 +84,18 @@ focus_tree = {
     focus = {
         id = FIN_the_lapua_movement
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = finnish_model }
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = red_guards }
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = lapua_movement }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = lapua_movement }
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = red_guards }
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = finnish_model }
+			}
 			OR = {
 				has_game_rule = { rule = SAH_fin_scenario_start_rule option = finnish_model }
 				has_game_rule = { rule = SAH_fin_scenario_start_rule option = lapua_movement }
@@ -151,6 +175,18 @@ focus_tree = {
     focus = {
         id = FIN_the_red_guards
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = finnish_model }
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = red_guards }
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = lapua_movement }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = lapua_movement }
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = red_guards }
+				has_game_rule = { rule = SAH_fin_scenario_start_rule option = finnish_model }
+			}
 			OR = {
 				has_game_rule = { rule = SAH_fin_scenario_start_rule option = finnish_model }
 				has_game_rule = { rule = SAH_fin_scenario_start_rule option = lapua_movement }

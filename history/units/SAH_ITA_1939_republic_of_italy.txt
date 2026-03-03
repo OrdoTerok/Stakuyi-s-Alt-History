@@ -1,0 +1,312 @@
+### 1939 Alternative OOB for ITA (Democratic Republic) ###
+# Using standard vanilla-like templates for ITA
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "7 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "8 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "9 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "10 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "11 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "13 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "14 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "15 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "16 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "17 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "18 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "19 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "20 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "21 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "22 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "23 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "24 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "25 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "26 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "27 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "28 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "29 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "30 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "31 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "32 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "33 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "34 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "35 Republican Guard"
+		location = 2 # Placeholder Province ID
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1 Republican Armor"
+		location = 2
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2 Republican Armor"
+		location = 2
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3 Republican Armor"
+		location = 2
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4 Republican Armor"
+		location = 2
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+	# --- Cavalry / Garrison ---
+	division = {
+		name = "1 Constabulary Cav."
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2 Constabulary Cav."
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3 Constabulary Cav."
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4 Constabulary Cav."
+		location = 2
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+}

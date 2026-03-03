@@ -10,6 +10,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     "USA": {
         "rule_name": "SAH_usa_scenario_start_rule",
         "group_name": "SAH_GAME_RULES_GROUP",
+        "industrial_targets": ["USA_arsenal_of_democracy", "USA_war_plan_orange"],
         "starts": {
             "american_caesar": {
                 "target_focus": "USA_the_american_caesar",
@@ -36,6 +37,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     "GER": {
         "rule_name": "SAH_ger_scenario_start_rule",
         "group_name": "SAH_GAME_RULES_GROUP",
+        "industrial_targets": ["GER_kdf_wagen", "GER_army_innovations_2"],
         "starts": {
             "danzig_or_war": {
                 "target_focus": "GER_danzig_or_war",
@@ -62,6 +64,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     "SOV": {
         "rule_name": "SAH_sov_scenario_start_rule",
         "group_name": "SAH_GAME_RULES_GROUP",
+        "industrial_targets": ["SOV_relocate_industry_to_the_urals"],
         "starts": {
             "historical_stalin": {
                 "target_focus": "SOV_the_great_purge",
@@ -98,6 +101,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     "ENG": {
         "rule_name": "SAH_eng_scenario_start_rule",
         "group_name": "SAH_GAME_RULES_GROUP",
+        "industrial_targets": ["ENG_general_rearmament"],
         "starts": {
             "churchill": {
                 "target_focus": "ENG_churchill_government",
@@ -124,6 +128,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     "FRA": {
         "rule_name": "SAH_fra_scenario_start_rule",
         "group_name": "SAH_GAME_RULES_GROUP",
+        "industrial_targets": ["FRA_widespread_rearmament", "FRA_extend_the_maginot_line"],
         "starts": {
             "french_commune": {
                 "target_focus": "FRA_the_french_commune",
@@ -150,6 +155,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     "JAP": {
         "rule_name": "SAH_jap_scenario_start_rule",
         "group_name": "SAH_GAME_RULES_GROUP",
+        "industrial_targets": ["JAP_yamato_class_battleships", "JAP_spiritual_mobilization"],
         "starts": {
             "strike_south": {
                 "target_focus": "JAP_strike_south_doctrine",
@@ -176,6 +182,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     "ITA": {
         "rule_name": "SAH_ita_scenario_start_rule",
         "group_name": "SAH_GAME_RULES_GROUP",
+        "industrial_targets": ["ITA_expand_the_regia_marina", "ITA_expand_the_regia_aeronautica"],
         "starts": {
             "pact_of_steel": {
                 "target_focus": "ITA_solidify_the_pact_of_steel",
@@ -206,6 +213,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "POL": {
         "rule_name": "SAH_pol_scenario_start_rule",
+        "industrial_targets": ["POL_central_industrial_region"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "april_constitution": {
@@ -232,6 +240,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "CAN": {
         "rule_name": "SAH_can_scenario_start_rule",
+        "industrial_targets": ["CAN_defense_of_canada_regulations"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "zombies": {
@@ -253,6 +262,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "AST": {
         "rule_name": "SAH_ast_scenario_start_rule",
+        "industrial_targets": ["AST_standardize_rail_gauge"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "never_gallipoli_again": {
@@ -274,6 +284,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "SAF": {
         "rule_name": "SAH_saf_scenario_start_rule",
+        "industrial_targets": ["SAF_expand_the_gold_mining_industry"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "appeasement": {
@@ -295,6 +306,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "RAJ": {
         "rule_name": "SAH_raj_scenario_start_rule",
+        "industrial_targets": ["RAJ_expand_the_railway_network"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "provincial_elections": {
@@ -316,6 +328,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "ROM": {
         "rule_name": "SAH_rom_scenario_start_rule",
+        "industrial_targets": ["ROM_expand_the_oil_industry"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "preserve_romania": {
@@ -337,6 +350,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "YUG": {
         "rule_name": "SAH_yug_scenario_start_rule",
+        "industrial_targets": ["YUG_western_focus"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "regency_council": {
@@ -363,6 +377,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "GRE": {
         "rule_name": "SAH_gre_scenario_start_rule",
+        "industrial_targets": ["GRE_hellenic_armed_forces"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "metaxas": {
@@ -384,6 +399,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "TUR": {
         "rule_name": "SAH_tur_scenario_start_rule",
+        "industrial_targets": ["TUR_the_saadabad_pact"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "peace_at_home": {
@@ -400,6 +416,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "MEX": {
         "rule_name": "SAH_mex_scenario_start_rule",
+        "industrial_targets": ["MEX_hispanic_alliance"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "prm": {
@@ -421,6 +438,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "BRA": {
         "rule_name": "SAH_bra_scenario_start_rule",
+        "industrial_targets": ["BRA_the_coffee_valorization_program"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "estado_novo": {
@@ -442,6 +460,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "SPR": {
         "rule_name": "SAH_spr_scenario_start_rule",
+        "industrial_targets": ["SPR_rebuild_the_nation"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "popular_front": {
@@ -463,6 +482,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "HOL": {
         "rule_name": "SAH_hol_scenario_start_rule",
+        "industrial_targets": ["HOL_invest_in_the_east_indies"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "gateway_to_europe": {
@@ -479,6 +499,7 @@ SCENARIOS: Dict[str, Dict[str, Any]] = {
     },
     "SWE": {
         "rule_name": "SAH_swe_scenario_start_rule",
+        "industrial_targets": ["SWE_the_nordic_defence_council"],
         "group_name": "SAH_GAME_RULES_GROUP",
         "starts": {
             "per_albin_bus": {
@@ -1565,19 +1586,80 @@ FILTERED_REWARDS = [
     "add_command_power",
     "custom_effect_tooltip",
     "add_named_threat",
-    "start_civil_war"
+    "start_civil_war",
+    "country_event",
+    "news_event",
+    "declare_war",
+    "create_wargoal",
+    "add_popularity",
+    "add_equipment_to_stockpile"
+]
+
+# Rewards that should only be granted in 1936 to prevent double-dipping in 1939
+DATE_GATED_REWARDS = [
+    "add_building_construction",
+    "add_extra_state_shared_building_slots",
+    "create_unit",
+    "load_oob",
+    "spawn_unit",
+    "add_offsite_building",
+    "create_fleet",
+    "create_ship",
+    "add_research_slot",
+    "add_research_bonus",
+    "add_doctrine_cost_reduction",
+    "set_technology"
 ]
 
 def clean_rewards(reward_block: str) -> str:
-    """Removes 'fluff' rewards so day 1 scenarios aren't overpowered."""
+    """Removes 'fluff' and conflicting event rewards, and dynamically date-gates physical unit/factory spawns."""
     if not reward_block: return ""
     lines = reward_block.split('\n')
     out: list[str] = []
+    
+    skip_depth = 0
+    wrap_depths = []
+    current_depth = 0
+    
     for line in lines:
-        # If any filtered keyword is in the line, we skip it
-        if any(keyword in line for keyword in FILTERED_REWARDS):
+        # Are we currently skipping a block?
+        opens = line.count('{')
+        closes = line.count('}')
+        
+        if skip_depth > 0:
+            skip_depth += opens
+            skip_depth -= closes
+            current_depth += opens - closes
             continue
+            
+        # If any filtered keyword is in the line, we start skipping
+        if any(keyword in line for keyword in FILTERED_REWARDS):
+            if opens > closes:
+                skip_depth = opens - closes
+            continue
+            
+        # If any date-gated keyword is in the line, we wrap it in a 1936-only check
+        date_gated = any(keyword in line for keyword in DATE_GATED_REWARDS)
+        
+        if date_gated:
+            out.append("\t\t\t\t\t\tif = { limit = { date < 1938.1.1 }")
+            if opens > closes:
+                wrap_depths.append(current_depth)
+                out.append(line)
+            else:
+                out.append(line)
+                out.append("\t\t\t\t\t\t}")
+            
+            current_depth += opens - closes
+            continue
+            
         out.append(line)
+        current_depth += opens - closes
+        
+        if wrap_depths and current_depth == wrap_depths[-1]:
+            out.append("\t\t\t\t\t\t}")
+            wrap_depths.pop()
+            
     return '\n'.join(out)
 
 def read_all_focuses(mod_path: str = ".") -> Dict[str, Dict[str, Any]]:
@@ -1662,7 +1744,7 @@ def generate():
     all_focuses = read_all_focuses()
     
     # 1. Output string for SAH_init_events.txt
-    event_payload = "\t\t# --- AUTO-GENERATED SCENARIO STARTS ---\n"
+    event_payload = "\t\tif = { limit = { date > 1938.1.1 }\n\t\t\tSAH_adjust_1939_units = yes\n\t\t\tSAH_purge_1939_ideas = yes\n\t\t}\n\n\t\t# --- AUTO-GENERATED SCENARIO STARTS ---\n"
     
     # 2. Output string for the Game Rules
     rules_payload = "\n# --- AUTO-GENERATED SCENARIO RULES ---\n"
@@ -1698,16 +1780,50 @@ def generate():
             event_payload += f"\t\t\tif = {{\n\t\t\t\tlimit = {{ has_game_rule = {{ rule = {rule_name} option = {opt_key} }} }}\n"
             
             # Inject filtered rewards directly
+            final_ideology = None
             for f_id in chain:
                 raw_reward = all_focuses[f_id]['reward_block']
+                
+                # Extract ideology
+                matches = re.findall(r"set_politics\s*=\s*\{\s*ruling_party\s*=\s*(\w+)", raw_reward)
+                if matches:
+                    final_ideology = matches[-1]
+                
                 clean = clean_rewards(raw_reward)
                 # Strip leading/trailing braces from clean block
                 clean = clean.strip()
                 if clean.startswith('{'): clean = clean[1:]
                 if clean.endswith('}'): clean = clean[:-1]
-                
+
                 if clean.strip():
                     event_payload += f"\t\t\t\t# Rewards for {f_id}\n\t\t\t\t{clean.strip()}\n"
+            
+            if final_ideology:
+                event_payload += f"\t\t\t\t# Balance pie chart against 1939 setup\n"
+                event_payload += f"\t\t\t\tset_popularities = {{\n\t\t\t\t\t{final_ideology} = 100\n\t\t\t\t}}\n"
+
+            # --- TIER LOGIC ---
+            if 'historical' not in opt_key.lower() and 'infamous_decade' not in opt_key.lower() and 'catholic_bloc' not in opt_key.lower() and 'fatherland_front' not in opt_key.lower():
+                tier = config.get('tier', 2)
+                event_payload += "\t\t\t\t# Rebuilding State Tier logic\n"
+                
+                # 1936
+                event_payload += "\t\t\t\tif = {\n\t\t\t\t\tlimit = { date < 1938.1.1 }\n"
+                if tier == 1:
+                    event_payload += "\t\t\t\t\tadd_ideas = SAH_devastating_recovery\n"
+                elif tier == 2:
+                    event_payload += "\t\t\t\t\tadd_ideas = SAH_prolonged_rebuilding\n"
+                elif tier == 3:
+                    event_payload += "\t\t\t\t\tadd_ideas = SAH_stabilized_regime\n"
+                event_payload += "\t\t\t\t}\n"
+                
+                # 1939 (Degrades by 1)
+                event_payload += "\t\t\t\tif = {\n\t\t\t\t\tlimit = { date > 1938.1.1 }\n"
+                if tier == 1:
+                    event_payload += "\t\t\t\t\tadd_ideas = SAH_prolonged_rebuilding\n"
+                elif tier == 2:
+                    event_payload += "\t\t\t\t\tadd_ideas = SAH_stabilized_regime\n"
+                event_payload += "\t\t\t\t}\n"
 
             event_payload += "\t\t\t}\n"
 

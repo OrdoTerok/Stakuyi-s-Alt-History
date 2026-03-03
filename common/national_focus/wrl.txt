@@ -23,6 +23,16 @@ focus_tree = {
         id = WRL_cooperate_with_the_nationalists
 		bypass = {
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists }
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists }
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists }
 				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists }
 			}
@@ -62,6 +72,16 @@ focus_tree = {
     focus = {
         id = WRL_democratic_reforms
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists }
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists }
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists }
+			}
 			OR = {
 				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists }
 				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists }
@@ -103,6 +123,16 @@ focus_tree = {
     focus = {
         id = WRL_military_dictatorship
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists }
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists }
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists }
+			}
 			OR = {
 				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists }
 				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists }
@@ -148,6 +178,16 @@ focus_tree = {
     focus = {
         id = WRL_cooperate_with_the_communists
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists }
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists }
+				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists }
+			}
 			OR = {
 				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = nationalists }
 				has_game_rule = { rule = SAH_wrl_scenario_start_rule option = communists }

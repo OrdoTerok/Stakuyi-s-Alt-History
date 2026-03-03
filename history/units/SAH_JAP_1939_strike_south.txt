@@ -1,0 +1,564 @@
+### 1939 Alternative OOB for JAP (Historical Fascist) ###
+# Using standard vanilla-like templates for JAP
+
+units = {
+
+	# --- Infantry ---
+	division = {
+		name = "1 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "7 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "8 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "9 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "10 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "11 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "13 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "14 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "15 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "16 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "17 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "18 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "19 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "20 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "21 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "22 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "23 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "24 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "25 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "26 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "27 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "28 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "29 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "30 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "31 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "32 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "33 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "34 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "35 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "36 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "37 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "38 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "39 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "40 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "41 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "42 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "43 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "44 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "45 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "46 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "47 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "48 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "49 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "50 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "51 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "52 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "53 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "54 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "55 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "56 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "57 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "58 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "59 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "60 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "61 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "62 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "63 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "64 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "65 Hohei Shidan"
+		location = 5202 # Placeholder Province ID
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	# --- Armor ---
+	division = {
+		name = "1 Sensha Shidan"
+		location = 5202
+		division_template = "Sensha Shidan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2 Sensha Shidan"
+		location = 5202
+		division_template = "Sensha Shidan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3 Sensha Shidan"
+		location = 5202
+		division_template = "Sensha Shidan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4 Sensha Shidan"
+		location = 5202
+		division_template = "Sensha Shidan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "5 Sensha Shidan"
+		location = 5202
+		division_template = "Sensha Shidan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "6 Sensha Shidan"
+		location = 5202
+		division_template = "Sensha Shidan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "7 Sensha Shidan"
+		location = 5202
+		division_template = "Sensha Shidan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "8 Sensha Shidan"
+		location = 5202
+		division_template = "Sensha Shidan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+
+	# --- Cavalry / Garrison ---
+	division = {
+		name = "1 Kihei Shidan"
+		location = 5202
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2 Kihei Shidan"
+		location = 5202
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3 Kihei Shidan"
+		location = 5202
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4 Kihei Shidan"
+		location = 5202
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5 Kihei Shidan"
+		location = 5202
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6 Kihei Shidan"
+		location = 5202
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+}

@@ -15,6 +15,20 @@ focus_tree = {
         id = MAN_obedience
 		bypass = {
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = assertiveness }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = democratic }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = obedience }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = democratic }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = obedience }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = assertiveness }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_man_scenario_start_rule option = obedience }
 				has_game_rule = { rule = SAH_man_scenario_start_rule option = assertiveness }
 				has_game_rule = { rule = SAH_man_scenario_start_rule option = democratic }
@@ -61,6 +75,20 @@ focus_tree = {
         id = MAN_assertiveness
 		bypass = {
 			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = assertiveness }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = democratic }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = obedience }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = democratic }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = obedience }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = assertiveness }
+			}
+			OR = {
 				has_game_rule = { rule = SAH_man_scenario_start_rule option = obedience }
 				has_game_rule = { rule = SAH_man_scenario_start_rule option = assertiveness }
 				has_game_rule = { rule = SAH_man_scenario_start_rule option = democratic }
@@ -102,6 +130,20 @@ focus_tree = {
     focus = {
         id = MAN_the_democratic_party
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = assertiveness }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = democratic }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = obedience }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = democratic }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = obedience }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = assertiveness }
+			}
 			OR = {
 				has_game_rule = { rule = SAH_man_scenario_start_rule option = obedience }
 				has_game_rule = { rule = SAH_man_scenario_start_rule option = assertiveness }
@@ -145,6 +187,20 @@ focus_tree = {
     focus = {
         id = MAN_the_communist_party
 		bypass = {
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = assertiveness }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = democratic }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = obedience }
+			}
+			OR = {
+				has_start_date > 1939.08.14
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = democratic }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = communist }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = obedience }
+				has_game_rule = { rule = SAH_man_scenario_start_rule option = assertiveness }
+			}
 			OR = {
 				has_game_rule = { rule = SAH_man_scenario_start_rule option = obedience }
 				has_game_rule = { rule = SAH_man_scenario_start_rule option = assertiveness }
